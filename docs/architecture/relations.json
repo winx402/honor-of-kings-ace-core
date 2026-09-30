@@ -1,0 +1,470 @@
+{
+  "definition_version": "0.1.0",
+  "status": "type_catalog_only_no_game_assertions",
+  "polymorphic_types": {
+    "ContentDefinition": [
+      "HeroDefinition",
+      "ChessplayerDefinition",
+      "CardDefinition",
+      "EquipmentDefinition",
+      "TalentDefinition",
+      "SpecialUnitDefinition"
+    ],
+    "RuntimeInstance": [
+      "CardInstance",
+      "UnitInstance",
+      "EquipmentInstance"
+    ],
+    "RevisionedRecord": [
+      "ContentRevision",
+      "RuleDefinition",
+      "RelationAssertion"
+    ],
+    "UnitDefinition": [
+      "HeroDefinition",
+      "SpecialUnitDefinition"
+    ]
+  },
+  "relation_assertion_fields": [
+    "relation_id",
+    "relation_type",
+    "source_id",
+    "target_id",
+    "source_revision_id",
+    "target_revision_id",
+    "scope_id",
+    "condition_ref",
+    "claim_refs",
+    "text_verification",
+    "mechanism_verification",
+    "validity_status",
+    "relation_layer",
+    "runtime_context",
+    "observed_at",
+    "expires_at",
+    "source_definition_revision_id",
+    "target_definition_revision_id",
+    "relation_attributes"
+  ],
+  "field_notes": {
+    "revision_refs": "静态关系两端引用内容修订；实例关系引用实例ID及对应定义修订；尚未确定的修订显式unknown。",
+    "allowed_shape": "关系类型允许的结构，实际基数与唯一性由特定scope中的规则约束；不是已验证游戏上限。",
+    "instance_relations": "仅定义未来实验/快照表达所需类型，不存用户账号或私人对局。",
+    "runtime_context": "实例关系需要match_ref、round_ref、phase、snapshot_ref或其他足以定位观察的上下文；不使用用户账号。静态关系不伪造这些字段。",
+    "temporal_fields": "observed_at/ expires_at用于实例关系的观察与有效期；未确认有效期显式unknown，不能假定永久。",
+    "relation_attributes": "关系类型专用参数：located_in可含position_ref或position={coordinate_system,x,y}，equipped_with可含slot_ref；未知位置显式unknown。参数不能代替目标ID、适用范围或实例快照。",
+    "snapshot_semantics": "实例关系必须归于明确snapshot_ref或等价不可变观察上下文；同一实例在不同快照的属性可以不同。observed_at不自动表示状态在两个观察之间持续有效；有效区间仅在有证据时填。many_to_one等约束只在相同上下文中判断。"
+  },
+  "relations": [
+    {
+      "id": "member_of",
+      "source_type": "HeroDefinition",
+      "target_type": "Faction",
+      "layer": "identity",
+      "meaning": "英雄归属阵营",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "has_role",
+      "source_type": "HeroDefinition",
+      "target_type": "Role",
+      "layer": "identity",
+      "meaning": "英雄具有定位",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "represents",
+      "source_type": "CardDefinition",
+      "target_type": "HeroDefinition",
+      "layer": "identity",
+      "meaning": "英雄牌指向英雄定义",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "has_card_variant",
+      "source_type": "CardDefinition",
+      "target_type": "CardVariant",
+      "layer": "identity",
+      "meaning": "牌的复制/转瞬/觉醒等变体引用基础牌",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "has_awakening_variant",
+      "source_type": "HeroDefinition",
+      "target_type": "AwakeningVariant",
+      "layer": "identity",
+      "meaning": "英雄定义有觉醒效果变体",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "has_skill_milestone",
+      "source_type": "HeroDefinition",
+      "target_type": "SkillMilestone",
+      "layer": "identity",
+      "meaning": "等级门槛引用技能强化",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "uses_ability",
+      "source_type": "ContentDefinition",
+      "target_type": "AbilityDefinition",
+      "layer": "semantic",
+      "meaning": "英雄/棋手/装备/天赋引用技能或规则能力",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "uses_effect",
+      "source_type": "AbilityDefinition",
+      "target_type": "EffectDefinition",
+      "layer": "semantic",
+      "meaning": "能力包含效果",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "has_keyword",
+      "source_type": "ContentDefinition",
+      "target_type": "KeywordDefinition",
+      "layer": "semantic",
+      "meaning": "内容附带或授予关键词",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "listens_to",
+      "source_type": "EffectDefinition",
+      "target_type": "EventDefinition",
+      "layer": "semantic",
+      "meaning": "效果监听事件，不表示已验证触发次序",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "requires_condition",
+      "source_type": "EffectDefinition",
+      "target_type": "Condition",
+      "layer": "semantic",
+      "meaning": "效果的适用条件",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "selects_targets",
+      "source_type": "EffectDefinition",
+      "target_type": "TargetSelector",
+      "layer": "semantic",
+      "meaning": "效果如何选取目标",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "uses_formula",
+      "source_type": "EffectDefinition",
+      "target_type": "Formula",
+      "layer": "semantic",
+      "meaning": "效果参数或变化量由公式描述",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "applies_status",
+      "source_type": "EffectDefinition",
+      "target_type": "StatusDefinition",
+      "layer": "semantic",
+      "meaning": "效果施加状态",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "grants_keyword",
+      "source_type": "EffectDefinition",
+      "target_type": "KeywordDefinition",
+      "layer": "semantic",
+      "meaning": "效果可动态赋予关键词",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "generates_card",
+      "source_type": "EffectDefinition",
+      "target_type": "CardDefinition",
+      "layer": "semantic",
+      "meaning": "效果生成/给予卡牌的候选关系，带条件和池规则",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "spawns_unit",
+      "source_type": "EffectDefinition",
+      "target_type": "UnitDefinition",
+      "layer": "semantic",
+      "meaning": "效果创建特殊单位定义的实例",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "grants_equipment",
+      "source_type": "EffectDefinition",
+      "target_type": "EquipmentDefinition",
+      "layer": "semantic",
+      "meaning": "效果赋予装备",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "has_secret_task",
+      "source_type": "ChessplayerDefinition",
+      "target_type": "SecretTask",
+      "layer": "identity",
+      "meaning": "棋手定义秘技任务",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "rewards_card",
+      "source_type": "SecretTask",
+      "target_type": "CardDefinition",
+      "layer": "semantic",
+      "meaning": "任务完成发放秘技牌",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "has_exclusive_talent",
+      "source_type": "ChessplayerDefinition",
+      "target_type": "TalentDefinition",
+      "layer": "identity",
+      "meaning": "棋手关联专属天赋",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "offers_talent",
+      "source_type": "TalentPool",
+      "target_type": "TalentDefinition",
+      "layer": "availability",
+      "meaning": "候选池包含天赋，附范围或权重未知",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "offers_forge_result",
+      "source_type": "ForgeOptionSet",
+      "target_type": "EquipmentDefinition",
+      "layer": "availability",
+      "meaning": "铸造选择池包含成品装备",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "selects_chessplayer",
+      "source_type": "ParticipantState",
+      "target_type": "ChessplayerDefinition",
+      "layer": "instance",
+      "meaning": "局内参与者选择棋手",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "instance_of_card",
+      "source_type": "CardInstance",
+      "target_type": "CardDefinition",
+      "layer": "instance",
+      "meaning": "具体手牌指向定义",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "instance_of_unit",
+      "source_type": "UnitInstance",
+      "target_type": "UnitDefinition",
+      "layer": "instance",
+      "meaning": "参战单位指向英雄或特殊单位定义",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "owns_card",
+      "source_type": "ParticipantState",
+      "target_type": "CardInstance",
+      "layer": "instance",
+      "meaning": "卡牌实例归属参与者",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "owns_unit",
+      "source_type": "ParticipantState",
+      "target_type": "UnitInstance",
+      "layer": "instance",
+      "meaning": "场上/战斗单位归属参与者",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "located_in",
+      "source_type": "RuntimeInstance",
+      "target_type": "ZoneState",
+      "layer": "instance",
+      "meaning": "实例位于区域或位置，携带时间与坐标",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "equipped_with",
+      "source_type": "UnitInstance",
+      "target_type": "EquipmentInstance",
+      "layer": "instance",
+      "meaning": "具体单位穿戴装备",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "active_talent",
+      "source_type": "ParticipantState",
+      "target_type": "TalentDefinition",
+      "layer": "instance",
+      "meaning": "参与者已选择的天赋",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "snapshot_of",
+      "source_type": "CombatSnapshot",
+      "target_type": "ParticipantState",
+      "layer": "instance",
+      "meaning": "战斗数据与养成状态之间的映射",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "derives_from",
+      "source_type": "RuntimeInstance",
+      "target_type": "RuntimeInstance",
+      "layer": "instance",
+      "meaning": "复制/召唤实例的来源，不自动继承属性",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "overrides",
+      "source_type": "RuleOverride",
+      "target_type": "RevisionedRecord",
+      "layer": "scope",
+      "meaning": "模式/范围下覆盖特定版本记录",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "available_in",
+      "source_type": "RevisionedRecord",
+      "target_type": "RulesetScope",
+      "layer": "scope",
+      "meaning": "对象或规则适用范围",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "revision_of",
+      "source_type": "ContentRevision",
+      "target_type": "EntityId",
+      "layer": "scope",
+      "meaning": "版本记录属于稳定实体",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "changes",
+      "source_type": "ChangeSet",
+      "target_type": "ContentRevision",
+      "layer": "scope",
+      "meaning": "变化引用前后版本，区分描述/机制/数值",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "supported_by",
+      "source_type": "Claim",
+      "target_type": "Evidence",
+      "layer": "evidence",
+      "meaning": "主张由证据支持，非直接认证为真",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "checks_claim",
+      "source_type": "ValidationCase",
+      "target_type": "Claim",
+      "layer": "evidence",
+      "meaning": "检查或实测针对的主张",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "instance_of_equipment",
+      "source_type": "EquipmentInstance",
+      "target_type": "EquipmentDefinition",
+      "layer": "instance",
+      "meaning": "具体装备指向其定义修订",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "has_progression",
+      "source_type": "UnitInstance",
+      "target_type": "HeroProgression",
+      "layer": "instance",
+      "meaning": "英雄类型单位关联其养成状态，特殊单位是否适用由定义说明",
+      "allowed_shape": "many_to_one"
+    }
+  ],
+  "transitions": [
+    {
+      "id": "play_hero_card",
+      "subject": "CardInstance",
+      "precondition": "场上无该英雄/已有该英雄",
+      "result": "创建单位或同名合成；计数及觉醒按适用规则",
+      "owner_module": "cards",
+      "related_module": "heroes"
+    },
+    {
+      "id": "awaken",
+      "subject": "HeroProgression",
+      "precondition": "觉醒进度满足条件",
+      "result": "觉醒状态及卡牌/场上转换；保留规则待核对",
+      "owner_module": "heroes",
+      "related_module": "cards"
+    },
+    {
+      "id": "level_up_chessplayer",
+      "subject": "ParticipantState",
+      "precondition": "资源与经验条件满足",
+      "result": "棋手等级变化；触发天赋/上阵/商店规则",
+      "owner_module": "economy",
+      "related_module": "chessplayers"
+    },
+    {
+      "id": "complete_secret_task",
+      "subject": "TaskProgress",
+      "precondition": "任务完成",
+      "result": "生成秘技牌；是否重复领取依规则",
+      "owner_module": "chessplayers",
+      "related_module": "cards"
+    },
+    {
+      "id": "select_talent",
+      "subject": "TalentOffer",
+      "precondition": "合法选择或刷新",
+      "result": "持久天赋成为效果来源；可能生成牌",
+      "owner_module": "talents",
+      "related_module": "mechanics"
+    },
+    {
+      "id": "forge_equipment",
+      "subject": "CardInstance",
+      "precondition": "合法载体、对象及选择",
+      "result": "产生并穿戴成品装备，消耗规则另记",
+      "owner_module": "cards",
+      "related_module": "equipment"
+    },
+    {
+      "id": "resolve_auction",
+      "subject": "AuctionRule",
+      "precondition": "出价结束与胜出判定",
+      "result": "发放拍品、扣能量、分红；顺序待核对",
+      "owner_module": "economy",
+      "related_module": "cards"
+    },
+    {
+      "id": "start_combat",
+      "subject": "RoundState",
+      "precondition": "对局进入战斗窗口",
+      "result": "建立战斗快照并产生开战事件",
+      "owner_module": "match",
+      "related_module": "combat"
+    },
+    {
+      "id": "unit_death",
+      "subject": "UnitInstance",
+      "precondition": "阵亡条件满足",
+      "result": "牺牲、复生、召唤及结算链；优先级未知",
+      "owner_module": "combat",
+      "related_module": "mechanics"
+    },
+    {
+      "id": "settle_round",
+      "subject": "RoundState",
+      "precondition": "战斗结果确定",
+      "result": "棋手生命及淘汰、临时状态清理、后续事件",
+      "owner_module": "combat",
+      "related_module": "match"
+    }
+  ]
+}

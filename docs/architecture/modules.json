@@ -1,0 +1,357 @@
+{
+  "definition_version": "0.1.0",
+  "status": "defined_not_implemented",
+  "dependency_semantics": "A.depends_on 包含 B 表示理解或实现 A 需要 B 的契约；非数据流/触发顺序。范围与来源字段是所有内容的共用契约。",
+  "modules": [
+    {
+      "id": "vocabulary",
+      "name": "公共标识与词汇",
+      "kind": "support",
+      "paths": [
+        "schemas/",
+        "entities/taxonomies/"
+      ],
+      "depends_on": [],
+      "objects": [
+        "EntityId",
+        "RevisionId",
+        "Faction",
+        "Role",
+        "Attribute",
+        "ResourceType",
+        "ZoneType"
+      ],
+      "responsibility": "内部标识、阵营与定位词汇、属性/资源单位、区域类型；不预设所有分类或数值",
+      "boundary": "不同模块引用同一词汇；阵营归属不自动推导人数羁绊"
+    },
+    {
+      "id": "provenance",
+      "name": "来源与证据",
+      "kind": "support",
+      "paths": [
+        "docs/research/"
+      ],
+      "depends_on": [
+        "vocabulary"
+      ],
+      "objects": [
+        "Source",
+        "Evidence",
+        "Claim",
+        "Conflict",
+        "ReusePermission"
+      ],
+      "responsibility": "记录出处、采集时间、原文定位、版本线索、公开复用权限及互相冲突的主张",
+      "boundary": "来源可信度、文字核对和机制实测分别记录"
+    },
+    {
+      "id": "versions",
+      "name": "版本与适用范围",
+      "kind": "support",
+      "paths": [
+        "versions/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "provenance"
+      ],
+      "objects": [
+        "GameBuild",
+        "RulesetScope",
+        "ContentRevision",
+        "ChangeSet"
+      ],
+      "responsibility": "区分客户端版本、规则生效版本、地区/服务器、测试或正式环境、模式及必要的段位门槛",
+      "boundary": "未知范围不能默认当前；描述修改与行为改变分开"
+    },
+    {
+      "id": "match",
+      "name": "对局与回合",
+      "kind": "domain",
+      "paths": [
+        "rules/match/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "mechanics"
+      ],
+      "objects": [
+        "MatchDefinition",
+        "ParticipantState",
+        "RoundState",
+        "ZoneState",
+        "SettlementRule"
+      ],
+      "responsibility": "参与者、阶段、回合转换、手牌/商店/场上等区域、上阵限制、对手与生命淘汰结算",
+      "boundary": "拥有局内状态的归属和阶段；不制定伤害公式或通用效果算法"
+    },
+    {
+      "id": "economy",
+      "name": "能量、商店与拍卖",
+      "kind": "domain",
+      "paths": [
+        "rules/economy/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "match",
+        "mechanics"
+      ],
+      "objects": [
+        "ResourceRule",
+        "ShopRule",
+        "PoolRule",
+        "AuctionRule",
+        "AuctionLot",
+        "Bid",
+        "DividendRule"
+      ],
+      "responsibility": "能量获得/消耗、商店刷新与锁定、候选和公共池、拍品、竞价、分红及奖励发放",
+      "boundary": "品阶与购买价格不同；购牌、获得牌、用牌是不同动作"
+    },
+    {
+      "id": "chessplayers",
+      "name": "棋手与秘技",
+      "kind": "domain",
+      "paths": [
+        "entities/chessplayers/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "mechanics"
+      ],
+      "objects": [
+        "ChessplayerDefinition",
+        "SecretTask",
+        "TaskProgress",
+        "SkillProgress"
+      ],
+      "responsibility": "棋手定义、技能引用、任务条件、秘技奖励和专属天赋关联",
+      "boundary": "棋手定义与局内参与者不同；棋手可以生成牌/单位或参与输出"
+    },
+    {
+      "id": "heroes",
+      "name": "英雄、成长与觉醒",
+      "kind": "domain",
+      "paths": [
+        "entities/heroes/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "mechanics"
+      ],
+      "objects": [
+        "HeroDefinition",
+        "HeroProgression",
+        "AwakeningVariant",
+        "SkillMilestone"
+      ],
+      "responsibility": "英雄阵营/定位/品阶/基础属性、等级成长、觉醒进度与前后变体、等级技能强化",
+      "boundary": "英雄等级、临时等级、觉醒进度、品阶不是同一状态"
+    },
+    {
+      "id": "cards",
+      "name": "卡牌与衍生内容",
+      "kind": "domain",
+      "paths": [
+        "entities/cards/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "mechanics"
+      ],
+      "objects": [
+        "CardDefinition",
+        "CardInstance",
+        "CardVariant",
+        "CardChoice"
+      ],
+      "responsibility": "英雄牌、效果牌、秘技牌、装备载体与天赋载体的定义引用，获得/复制/使用/消耗和转瞬等生命周期",
+      "boundary": "卡牌是使用载体；英雄、天赋、装备和效果的定义不在这里重复存储"
+    },
+    {
+      "id": "equipment",
+      "name": "装备与铸造",
+      "kind": "domain",
+      "paths": [
+        "entities/equipment/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "mechanics"
+      ],
+      "objects": [
+        "EquipmentDefinition",
+        "EquipmentInstance",
+        "ForgeOptionSet",
+        "EquipRestriction"
+      ],
+      "responsibility": "基础材料载体对应的铸造选择、成品装备、属性效果、穿戴/唯一/转移/移除限制和特殊装备",
+      "boundary": "铸造池不默认两散件配方；特殊单位是否可装备逐项记录"
+    },
+    {
+      "id": "talents",
+      "name": "天赋与选择池",
+      "kind": "domain",
+      "paths": [
+        "entities/talents/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "mechanics"
+      ],
+      "objects": [
+        "TalentDefinition",
+        "TalentPool",
+        "TalentOffer",
+        "TalentSelection"
+      ],
+      "responsibility": "天赋品阶、候选池、选择/刷新规则、专属/特邀可用条件和持续效果引用",
+      "boundary": "选择持久天赋与使用天赋牌不同；触发条件可涉及局外门槛"
+    },
+    {
+      "id": "mechanics",
+      "name": "关键词、事件与效果",
+      "kind": "domain",
+      "paths": [
+        "rules/mechanics/",
+        "entities/abilities/",
+        "entities/keywords/",
+        "entities/statuses/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions"
+      ],
+      "objects": [
+        "KeywordDefinition",
+        "EventDefinition",
+        "AbilityDefinition",
+        "EffectDefinition",
+        "Condition",
+        "TargetSelector",
+        "Formula",
+        "StatusDefinition"
+      ],
+      "responsibility": "事件语义、条件、选目标、公式与单位、效果动作、持续期/叠加/唯一限制、复合效果和触发链",
+      "boundary": "不从文案自动确定优先级；关键词、技能、效果和战斗状态分别定义"
+    },
+    {
+      "id": "combat",
+      "name": "战斗与特殊单位",
+      "kind": "domain",
+      "paths": [
+        "rules/combat/",
+        "entities/units/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "match",
+        "heroes",
+        "chessplayers",
+        "equipment",
+        "mechanics"
+      ],
+      "objects": [
+        "UnitDefinition",
+        "SpecialUnitDefinition",
+        "UnitInstance",
+        "CombatSnapshot",
+        "DamageRule",
+        "TargetingRule",
+        "SpawnRule"
+      ],
+      "responsibility": "英雄/棋手衍生单位/图腾等参战对象、站位/目标、普攻/法力/技能、伤害防御、召唤/阵亡/复生及战斗状态清理",
+      "boundary": "场上养成状态与战斗快照不同；特殊单位的占位、继承与结算贡献可未知"
+    },
+    {
+      "id": "modes",
+      "name": "模式与规则变体",
+      "kind": "domain",
+      "paths": [
+        "rules/modes/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "match",
+        "economy",
+        "chessplayers",
+        "heroes",
+        "cards",
+        "equipment",
+        "talents",
+        "mechanics",
+        "combat"
+      ],
+      "objects": [
+        "ModeDefinition",
+        "AvailabilityRule",
+        "RuleOverride",
+        "SettlementVariant"
+      ],
+      "responsibility": "模式启用内容、规则覆盖、特邀等局内变体与必要的段位/队伍结算条件",
+      "boundary": "段位门槛不是独立模式；不因旧文件名推断模式已上线或与别的模式相同"
+    },
+    {
+      "id": "relations",
+      "name": "对象关系索引",
+      "kind": "support",
+      "paths": [
+        "relations/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "versions",
+        "provenance"
+      ],
+      "objects": [
+        "RelationType",
+        "RelationAssertion"
+      ],
+      "responsibility": "显式对象引用、版本适用性、证据及关系类型；跨模块导航",
+      "boundary": "索引不复制对象属性，不把未知关系发布为真；状态转换单独记录"
+    },
+    {
+      "id": "validation",
+      "name": "验证与覆盖率",
+      "kind": "support",
+      "paths": [
+        "scripts/",
+        "docs/validation/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "provenance",
+        "versions",
+        "match",
+        "economy",
+        "chessplayers",
+        "heroes",
+        "cards",
+        "equipment",
+        "talents",
+        "mechanics",
+        "combat",
+        "modes",
+        "relations"
+      ],
+      "objects": [
+        "ValidationCase",
+        "Observation",
+        "VerificationStatus",
+        "CoverageReport"
+      ],
+      "responsibility": "将格式/引用/版本一致性检查、游戏内文字核对、机制实验与完整性统计分开",
+      "boundary": "本模块当前只有定义；不代表已有可运行引擎、实验自动化或全量覆盖"
+    }
+  ]
+}

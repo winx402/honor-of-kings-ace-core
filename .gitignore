@@ -13,3 +13,6 @@ node_modules/
 .venv/
 __pycache__/
 *.pyc
+
+# 官方网页与配图的本地研究快照
+/references/official/

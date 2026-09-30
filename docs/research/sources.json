@@ -1,0 +1,117 @@
+{
+  "research_date": "2026-10-01",
+  "purpose": "支撑模块与关系定义；非完整现行规则集",
+  "sources": [
+    {
+      "id": "official-beginner-guide",
+      "kind": "official_web",
+      "url": "https://wxq.qq.com/cp/a202609xszy/index.html",
+      "title": "王者万象棋官方新手指引",
+      "retrieval": "HTTP正文及两张配图读取成功；web读取超时",
+      "published_at": null,
+      "game_version": null,
+      "applicability": "中文新手指引；正式服当前客户端一致性尚未核对",
+      "text_verification": "source_checked",
+      "mechanism_verification": "untested",
+      "public_reuse": "link_and_original_summary_only",
+      "reviewed_on": "2026-10-01"
+    },
+    {
+      "id": "official-update-20260924",
+      "kind": "official_account_post",
+      "url": "https://www.taptap.cn/moment/851825583556921530",
+      "title": "9月24日版本更新v1.3.1",
+      "retrieval": "官方账号正文",
+      "published_at": "2026-09-23",
+      "effective_date": "2026-09-24",
+      "game_version": "1.3.1",
+      "applicability": "该公告所述更新，不自动升级为1.4.1完整规则",
+      "text_verification": "source_checked",
+      "mechanism_verification": "untested",
+      "public_reuse": "link_and_original_summary_only",
+      "reviewed_on": "2026-10-01"
+    },
+    {
+      "id": "official-keyword-preparation",
+      "kind": "official_account_post",
+      "url": "https://www.taptap.cn/moment/840571229957001144",
+      "title": "半分钟玩懂关键词：整备",
+      "published_at": "2026-08-23",
+      "game_version": null,
+      "retrieval": "帖子正文；未观看视频",
+      "text_verification": "source_checked",
+      "mechanism_verification": "untested",
+      "public_reuse": "link_and_original_summary_only",
+      "reviewed_on": "2026-10-01"
+    },
+    {
+      "id": "official-keyword-opening",
+      "kind": "official_account_post",
+      "url": "https://www.taptap.cn/moment/840550555410498024",
+      "title": "半分钟玩懂关键词：开团",
+      "published_at": "2026-08-23",
+      "game_version": null,
+      "retrieval": "帖子正文；未观看视频",
+      "text_verification": "source_checked",
+      "mechanism_verification": "untested",
+      "public_reuse": "link_and_original_summary_only",
+      "reviewed_on": "2026-10-01"
+    },
+    {
+      "id": "official-keyword-entrance",
+      "kind": "official_account_post",
+      "url": "https://www.taptap.cn/moment/840363330051770359",
+      "title": "半分钟玩懂关键词：登场",
+      "published_at": "2026-08-23",
+      "game_version": null,
+      "retrieval": "帖子正文；未观看视频",
+      "text_verification": "source_checked",
+      "mechanism_verification": "untested",
+      "public_reuse": "link_and_original_summary_only",
+      "reviewed_on": "2026-10-01"
+    },
+    {
+      "id": "community-qipu-snapshot",
+      "kind": "community_snapshot",
+      "url": "https://github.com/the-beating-light-of-the-nail/wanxiang-qipu",
+      "revision": "ef3c25e0caeba650bb7c88242fe110ee3ce22057",
+      "retrieval": "既有本地快照，本次未刷新上游",
+      "game_version": null,
+      "applicability": "历史候选；含混写与字段缺口",
+      "text_verification": "conflicting",
+      "mechanism_verification": "untested",
+      "public_reuse": "local_research_only",
+      "reviewed_on": "2026-10-01"
+    },
+    {
+      "id": "community-mengfei-snapshot",
+      "kind": "community_snapshot",
+      "url": "https://github.com/andyau810/-wiki",
+      "revision": null,
+      "retrieval": "既有0729文件，本次未刷新上游；是否本人制作未确认",
+      "game_version": null,
+      "applicability": "记录级混有终极测试与秋季测试",
+      "text_verification": "source_checked_not_current",
+      "mechanism_verification": "untested",
+      "public_reuse": "local_research_only",
+      "reviewed_on": "2026-10-01"
+    },
+    {
+      "id": "historical-game-images",
+      "kind": "local_game_screenshot",
+      "url": null,
+      "retrieval": "既有9月30日证据目录，本次重新查看曜卡面和公告截图",
+      "game_version": "公告及入口截图显示1.4.1；不推定旧卡面对应同版本",
+      "applicability": "历史画面证据，无本次运行核验",
+      "text_verification": "historical_observation",
+      "mechanism_verification": "untested",
+      "public_reuse": "local_research_only",
+      "reviewed_on": "2026-10-01"
+    }
+  ],
+  "runtime_attempt": {
+    "result": "blocked",
+    "reason": "CUA游戏应用路径读取超时，未成功进行图鉴检查或机制实验"
+  },
+  "raw_snapshots": "仅本地保存，不公开提交"
+}
