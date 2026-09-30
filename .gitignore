@@ -1,0 +1,15 @@
+# 仅保留本地的第三方资料、截图与会话记录
+/references/community/
+/evidence/
+/docs/会话交接.md
+/docs/任务状态.md
+/docs/来源与证据.md
+/docs/资料清单.json
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+*.pyc
