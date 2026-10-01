@@ -146,6 +146,35 @@
       "text_verification": "source_checked",
       "mechanism_verification": "untested",
       "public_reuse": "link_and_original_summary_only"
+    },
+    {
+      "id": "community-wzwxq",
+      "kind": "community_knowledge_site",
+      "url": "https://wzwxq.com/mechanics",
+      "title": "王者万象棋wiki百科 - 万象棋知识站",
+      "reviewed_on": "2026-10-01",
+      "publisher_status": "玩家知识站线索明确；腾讯运营或授权未获证实，备案主体未核实",
+      "identity_evidence": [
+        "首页/公开前端自称玩家知识库，社群与联系指向何慕粉丝社群",
+        "页脚显示浙ICP备2026058437号；只核对展示号码，不以备案号证明官方归属",
+        "转载公告链接原文至腾讯官网wxq.qq.com"
+      ],
+      "observed_pages": [
+        "https://wzwxq.com/mechanics",
+        "https://wzwxq.com/mechanics/hero-shop-odds",
+        "https://wzwxq.com/explore/hero-sulie",
+        "https://wzwxq.com/analysis/dps",
+        "https://wzwxq.com/lineups"
+      ],
+      "retrieval": "浏览器渲染文字抽样核对；首页HTML及公开前端归属线索检查；非全量采集",
+      "published_at": null,
+      "game_version": null,
+      "applicability": "按对象、字段、页面分别核对；站内官方日期标签不自动等于规则版本，未知范围不升级为当前正式服",
+      "text_verification": "source_checked_sample_only",
+      "mechanism_verification": "untested",
+      "source_independence": "转载需追溯原文；卡面与成长模型、计算工具的依赖可能同源，不算独立实测",
+      "public_reuse": "link_and_original_summary_only",
+      "comparison_doc": "docs/research/wzwxq对照.md"
     }
   ],
   "runtime_attempt": {

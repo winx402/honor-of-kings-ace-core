@@ -1,5 +1,5 @@
 {
-  "definition_version": "0.2.0",
+  "definition_version": "0.3.0",
   "status": "type_catalog_only_no_game_assertions",
   "polymorphic_types": {
     "ContentDefinition": [
@@ -58,9 +58,10 @@
     "instance_relations": "仅定义未来实验/快照表达所需类型，不存用户账号或私人对局。",
     "runtime_context": "实例关系需要match_ref、round_ref、phase、snapshot_ref或其他足以定位观察的上下文；不使用用户账号。静态关系不伪造这些字段。",
     "temporal_fields": "observed_at/ expires_at用于实例关系的观察与有效期；未确认有效期显式unknown，不能假定永久。",
-    "relation_attributes": "关系类型专用参数：located_in可含position_ref或position={coordinate_system,x,y}，equipped_with可含slot_ref；未知位置显式unknown。参数不能代替目标ID、适用范围或实例快照。",
+    "relation_attributes": "关系类型专用参数：located_in可含position_ref或position={coordinate_system,x,y}，equipped_with可含slot_ref；未知位置显式unknown。参数不能代替目标ID、适用范围或实例快照。；策略装备建议用lineup_slot_ref定位模板内阵容位，并注明必需/优先/备选，不能把建议当实例穿戴。",
     "snapshot_semantics": "实例关系必须归于明确snapshot_ref或等价不可变观察上下文；同一实例在不同快照的属性可以不同。observed_at不自动表示状态在两个观察之间持续有效；有效区间仅在有证据时填。many_to_one等约束只在相同上下文中判断。",
-    "claim_kind": "规则事实(rule_fact)、联动主张(synergy_claim)、策略建议(strategy_advice)、统计评价(statistical_assessment)分开；strategy层必须说明适用范围、来源和条件，不以机制实测状态代替策略效果评价。"
+    "claim_kind": "规则事实(rule_fact)、联动主张(synergy_claim)、策略建议(strategy_advice)、统计评价(statistical_assessment)分开；strategy层必须说明适用范围、来源和条件，不以机制实测状态代替策略效果评价。",
+    "source_independence": "网页、转载及计算工具可共用原始数据；source_derived_from与SourceLineage记录来源链。相同主张的同源转述不累计为独立支持，依赖未知时不能宣称独立。"
   },
   "relations": [
     {
@@ -541,6 +542,78 @@
       "target_type": "CardDefinition",
       "layer": "strategy",
       "meaning": "阵容推荐关键效果牌或其他衍生牌，带获取与使用时机",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "samples_from",
+      "source_type": "SamplingRule",
+      "target_type": "PoolRule",
+      "layer": "semantic",
+      "meaning": "随机过程引用候选池规则；当前余量由PoolState另记",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "uses_distribution",
+      "source_type": "SamplingRule",
+      "target_type": "ProbabilityDistribution",
+      "layer": "semantic",
+      "meaning": "按条件选择分布，费用层概率与指定对象概率分开",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "shop_sampling",
+      "source_type": "ShopRule",
+      "target_type": "SamplingRule",
+      "layer": "semantic",
+      "meaning": "商店栏位/刷新过程引用抽样规则，不预设栏位独立",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "offer_sampling",
+      "source_type": "TalentPool",
+      "target_type": "SamplingRule",
+      "layer": "semantic",
+      "meaning": "天赋候选池引用抽样规则；池成员关系不等于概率",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "calculation_for",
+      "source_type": "CalculationScenario",
+      "target_type": "ContentDefinition",
+      "layer": "evidence",
+      "meaning": "计算条件引用明确对象修订、等级与装备，不是实际对局观察",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "calculation_result",
+      "source_type": "CalculationResult",
+      "target_type": "CalculationScenario",
+      "layer": "evidence",
+      "meaning": "结果对应输入、模型修订与计算口径",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "calculation_coverage",
+      "source_type": "CalculationScenario",
+      "target_type": "ModelCoverage",
+      "layer": "evidence",
+      "meaning": "计算场景声明支持、遗漏、近似及未知项",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "compares_claim",
+      "source_type": "FieldComparison",
+      "target_type": "Claim",
+      "layer": "evidence",
+      "meaning": "字段比对引用两侧主张与范围，不自动提升实测状态",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "source_derived_from",
+      "source_type": "Source",
+      "target_type": "Source",
+      "layer": "evidence",
+      "meaning": "整理/转载/工具输入来源追溯上游；未知依赖显式记录",
       "allowed_shape": "many_to_many"
     }
   ],

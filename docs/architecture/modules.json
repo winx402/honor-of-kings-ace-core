@@ -1,5 +1,5 @@
 {
-  "definition_version": "0.2.0",
+  "definition_version": "0.3.0",
   "status": "defined_not_implemented",
   "dependency_semantics": "A.depends_on 包含 B 表示理解或实现 A 需要 B 的契约；非数据流/触发顺序。范围与来源字段是所有内容的共用契约。",
   "modules": [
@@ -39,9 +39,10 @@
         "Evidence",
         "Claim",
         "Conflict",
-        "ReusePermission"
+        "ReusePermission",
+        "SourceLineage"
       ],
-      "responsibility": "记录出处、采集时间、原文定位、版本线索、公开复用权限及互相冲突的主张",
+      "responsibility": "记录出处、采集时间、原文定位、版本线索、公开复用权限及互相冲突的主张；转载、同源数据与派生计算的来源链及独立性",
       "boundary": "来源可信度、文字核对和机制实测分别记录"
     },
     {
@@ -106,9 +107,10 @@
         "AuctionRule",
         "AuctionLot",
         "Bid",
-        "DividendRule"
+        "DividendRule",
+        "PoolState"
       ],
-      "responsibility": "能量获得/消耗、商店刷新与锁定、候选和公共池、拍品、竞价、分红及奖励发放",
+      "responsibility": "能量获得/消耗、商店刷新与锁定、候选和公共池、拍品、竞价、分红及奖励发放；公共池剩余量快照及商店/锦囊的抽样过程引用",
       "boundary": "品阶与购买价格不同；购牌、获得牌、用牌是不同动作"
     },
     {
@@ -238,9 +240,11 @@
         "Condition",
         "TargetSelector",
         "Formula",
-        "StatusDefinition"
+        "StatusDefinition",
+        "ProbabilityDistribution",
+        "SamplingRule"
       ],
-      "responsibility": "事件语义、条件、选目标、公式与单位、效果动作、持续期/叠加/唯一限制、复合效果和触发链",
+      "responsibility": "事件语义、条件、选目标、公式与单位、效果动作、持续期/叠加/唯一限制、复合效果和触发链；随机过程的分布、条件、权重与有无放回/去重规则",
       "boundary": "不从文案自动确定优先级；关键词、技能、效果和战斗状态分别定义"
     },
     {
@@ -389,9 +393,13 @@
         "ValidationCase",
         "Observation",
         "VerificationStatus",
-        "CoverageReport"
+        "CoverageReport",
+        "CalculationScenario",
+        "ModelCoverage",
+        "CalculationResult",
+        "FieldComparison"
       ],
-      "responsibility": "将格式/引用/版本一致性检查、游戏内文字核对、机制实验与完整性统计分开",
+      "responsibility": "将格式/引用/版本一致性检查、游戏内文字核对、机制实验与完整性统计分开；条件化计算与字段交叉核对，保留模型假设、遗漏、误差与同源限制",
       "boundary": "本模块当前只有定义；不代表已有可运行引擎、实验自动化或全量覆盖"
     }
   ]

@@ -6,6 +6,8 @@
 
 边界：本模块当前只有定义；不代表已有可运行引擎、实验自动化或全量覆盖。
 
-对象：`ValidationCase`、`Observation`、`VerificationStatus`、`CoverageReport`。
+对象：`ValidationCase`、`Observation`、`VerificationStatus`、`CoverageReport`、`CalculationScenario`、`ModelCoverage`、`CalculationResult`、`FieldComparison`。
+
+字段交叉比对保留双方版本、单位和来源链。计算场景保留输入、模型修订、支持项、遗漏与近似；同源计算不能充当独立实测。具体契约见[知识站对照](../research/wzwxq对照.md)。
 
 详见[模块与关系定义](../../docs/模块与关系.md)。
