@@ -1,74 +1,26 @@
 {
-  "catalog_version": "0.1.0",
-  "status": "discovery_seed_not_complete_current_rules",
-  "reviewed_on": "2026-10-01",
-  "identifier_note": "标识与分类为本项目建模命名，不是官方API或官方英文译名；当前可用性未在游戏入口核对。",
+  "catalog_version": "0.2.0",
+  "status": "partial_mode_catalog",
+  "identifier_note": "标识与分类为本项目建模命名，不是官方API或官方英文译名。",
   "entries": [
     {
       "id": "mode.wanxiang_tournament",
       "name": "万象大赛",
       "classification": "gameplay",
-      "source_refs": [
-        "official-beginner-guide"
-      ],
-      "classification_status": "project_model",
-      "current_availability": "unknown",
-      "full_rules_status": "not_collected",
-      "missing": [
-        "当前完整规则版本",
-        "排位/其他入口清单",
-        "匹配与计分规则"
-      ]
+      "current_availability": "unknown"
     },
     {
       "id": "queue.ranked",
       "name": "排位赛",
       "classification": "queue",
       "gameplay_ref": "mode.wanxiang_tournament",
-      "source_refs": [
-        "official-update-20260526",
-        "official-update-20260924"
-      ],
-      "classification_status": "project_model_supported_by_named_ranked_tournament_in_test_announcement",
-      "current_availability": "unknown",
-      "full_rules_status": "not_collected",
-      "missing": [
-        "参与条件",
-        "段位及赛季",
-        "单排/组排规则",
-        "匹配规则",
-        "名次计分与有分同享完整条件"
-      ]
+      "current_availability": "unknown"
     },
     {
       "id": "mode.diamond_frenzy",
       "name": "钻石狂潮",
       "classification": "gameplay",
-      "source_refs": [
-        "official-update-20260526",
-        "official-update-20260820-test",
-        "official-update-20260924"
-      ],
-      "classification_status": "project_model",
-      "current_availability": "unknown",
-      "full_rules_status": "not_collected",
-      "known_source_dimensions": [
-        "独立初始阵容与事件",
-        "模式专属天赋/装备变化",
-        "场次分档与钻石结算线索"
-      ],
-      "dimension_scope": "来自测试期更新公告，仅作为需要采集的字段维度",
-      "missing": [
-        "当前开放与解锁",
-        "完整资源及结算规则",
-        "初始阵容池",
-        "事件/卡池/天赋/装备差异"
-      ]
+      "current_availability": "unknown"
     }
-  ],
-  "further_discovery": [
-    "王牌对决",
-    "残局挑战",
-    "其他匹配/训练/娱乐入口：名称与归属待核对"
   ]
 }

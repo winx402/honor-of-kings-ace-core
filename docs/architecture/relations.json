@@ -1,6 +1,6 @@
 {
-  "definition_version": "0.3.0",
-  "status": "type_catalog_only_no_game_assertions",
+  "definition_version": "0.4.0",
+  "status": "relation_type_catalog",
   "polymorphic_types": {
     "ContentDefinition": [
       "HeroDefinition",
@@ -39,13 +39,9 @@
     "target_revision_id",
     "scope_id",
     "condition_ref",
-    "claim_refs",
-    "text_verification",
-    "mechanism_verification",
     "validity_status",
     "relation_layer",
     "runtime_context",
-    "observed_at",
     "expires_at",
     "source_definition_revision_id",
     "target_definition_revision_id",
@@ -54,14 +50,13 @@
   ],
   "field_notes": {
     "revision_refs": "静态关系两端引用内容修订；实例关系引用实例ID及对应定义修订；尚未确定的修订显式unknown。",
-    "allowed_shape": "关系类型允许的结构，实际基数与唯一性由特定scope中的规则约束；不是已验证游戏上限。",
-    "instance_relations": "仅定义未来实验/快照表达所需类型，不存用户账号或私人对局。",
-    "runtime_context": "实例关系需要match_ref、round_ref、phase、snapshot_ref或其他足以定位观察的上下文；不使用用户账号。静态关系不伪造这些字段。",
-    "temporal_fields": "observed_at/ expires_at用于实例关系的观察与有效期；未确认有效期显式unknown，不能假定永久。",
-    "relation_attributes": "关系类型专用参数：located_in可含position_ref或position={coordinate_system,x,y}，equipped_with可含slot_ref；未知位置显式unknown。参数不能代替目标ID、适用范围或实例快照。；策略装备建议用lineup_slot_ref定位模板内阵容位，并注明必需/优先/备选，不能把建议当实例穿戴。",
-    "snapshot_semantics": "实例关系必须归于明确snapshot_ref或等价不可变观察上下文；同一实例在不同快照的属性可以不同。observed_at不自动表示状态在两个观察之间持续有效；有效区间仅在有证据时填。many_to_one等约束只在相同上下文中判断。",
-    "claim_kind": "规则事实(rule_fact)、联动主张(synergy_claim)、策略建议(strategy_advice)、统计评价(statistical_assessment)分开；strategy层必须说明适用范围、来源和条件，不以机制实测状态代替策略效果评价。",
-    "source_independence": "网页、转载及计算工具可共用原始数据；source_derived_from与SourceLineage记录来源链。相同主张的同源转述不累计为独立支持，依赖未知时不能宣称独立。"
+    "allowed_shape": "关系类型允许的结构；实际基数与唯一性由特定scope中的规则约束，不表示数量上限。",
+    "instance_relations": "表达局内状态所需的关系类型，不存用户账号或私人对局。",
+    "runtime_context": "实例关系需要match_ref、round_ref、phase、snapshot_ref或等价不可变状态上下文；不使用用户账号。静态关系不伪造局内字段。",
+    "temporal_fields": "expires_at记录局内状态有效期；未知有效期不假定永久。",
+    "relation_attributes": "关系类型专用参数：located_in可含position_ref或position={coordinate_system,x,y}，equipped_with可含slot_ref；未知位置显式unknown。参数不能代替目标ID、适用范围或实例快照；策略装备建议用lineup_slot_ref定位模板内阵容位，并注明必需/优先/备选，不能把建议当实例穿戴。",
+    "snapshot_semantics": "实例关系归于明确snapshot_ref或等价不可变状态上下文；同一实例在不同快照的属性可以不同。有效区间未知时不假定状态持续；many_to_one等约束在相同上下文中判断。",
+    "claim_kind": "rule_fact、synergy_claim、strategy_advice、statistical_assessment区分规则、联动、建议和统计评价；策略关系注明适用范围和条件。"
   },
   "relations": [
     {
@@ -141,7 +136,7 @@
       "source_type": "EffectDefinition",
       "target_type": "EventDefinition",
       "layer": "semantic",
-      "meaning": "效果监听事件，不表示已验证触发次序",
+      "meaning": "效果监听事件，触发次序另行定义",
       "allowed_shape": "many_to_many"
     },
     {
@@ -361,22 +356,6 @@
       "allowed_shape": "many_to_many"
     },
     {
-      "id": "supported_by",
-      "source_type": "Claim",
-      "target_type": "Evidence",
-      "layer": "evidence",
-      "meaning": "主张由证据支持，非直接认证为真",
-      "allowed_shape": "many_to_many"
-    },
-    {
-      "id": "checks_claim",
-      "source_type": "ValidationCase",
-      "target_type": "Claim",
-      "layer": "evidence",
-      "meaning": "检查或实测针对的主张",
-      "allowed_shape": "many_to_many"
-    },
-    {
       "id": "instance_of_equipment",
       "source_type": "EquipmentInstance",
       "target_type": "EquipmentDefinition",
@@ -397,7 +376,7 @@
       "source_type": "QueueDefinition",
       "target_type": "ModeDefinition",
       "layer": "scope",
-      "meaning": "排位等队列使用某玩法基线；具体关联需有来源",
+      "meaning": "排位等队列使用某玩法基线",
       "allowed_shape": "many_to_one"
     },
     {
@@ -469,7 +448,7 @@
       "source_type": "LineupTemplate",
       "target_type": "SynergyClaim",
       "layer": "strategy",
-      "meaning": "阵容引用联动主张及其验证状态",
+      "meaning": "阵容引用联动关系及适用条件",
       "allowed_shape": "many_to_many"
     },
     {
@@ -513,14 +492,6 @@
       "allowed_shape": "many_to_many"
     },
     {
-      "id": "recommendation_source",
-      "source_type": "RecommendationClaim",
-      "target_type": "Source",
-      "layer": "evidence",
-      "meaning": "策略主张的原始作者/出处；来源不等于验证",
-      "allowed_shape": "many_to_many"
-    },
-    {
       "id": "lineup_applies_to",
       "source_type": "LineupTemplate",
       "target_type": "PlayContextDefinition",
@@ -533,7 +504,7 @@
       "source_type": "LineupTemplate",
       "target_type": "LineupArchetype",
       "layer": "strategy",
-      "meaning": "具体阵容模板归于某流派，同流派允许多版本/多作者方案",
+      "meaning": "具体阵容模板归于某流派，同流派允许多个版本或搭配方案",
       "allowed_shape": "many_to_many"
     },
     {
@@ -575,46 +546,6 @@
       "layer": "semantic",
       "meaning": "天赋候选池引用抽样规则；池成员关系不等于概率",
       "allowed_shape": "many_to_many"
-    },
-    {
-      "id": "calculation_for",
-      "source_type": "CalculationScenario",
-      "target_type": "ContentDefinition",
-      "layer": "evidence",
-      "meaning": "计算条件引用明确对象修订、等级与装备，不是实际对局观察",
-      "allowed_shape": "many_to_many"
-    },
-    {
-      "id": "calculation_result",
-      "source_type": "CalculationResult",
-      "target_type": "CalculationScenario",
-      "layer": "evidence",
-      "meaning": "结果对应输入、模型修订与计算口径",
-      "allowed_shape": "many_to_one"
-    },
-    {
-      "id": "calculation_coverage",
-      "source_type": "CalculationScenario",
-      "target_type": "ModelCoverage",
-      "layer": "evidence",
-      "meaning": "计算场景声明支持、遗漏、近似及未知项",
-      "allowed_shape": "many_to_one"
-    },
-    {
-      "id": "compares_claim",
-      "source_type": "FieldComparison",
-      "target_type": "Claim",
-      "layer": "evidence",
-      "meaning": "字段比对引用两侧主张与范围，不自动提升实测状态",
-      "allowed_shape": "many_to_many"
-    },
-    {
-      "id": "source_derived_from",
-      "source_type": "Source",
-      "target_type": "Source",
-      "layer": "evidence",
-      "meaning": "整理/转载/工具输入来源追溯上游；未知依赖显式记录",
-      "allowed_shape": "many_to_many"
     }
   ],
   "transitions": [
@@ -630,7 +561,7 @@
       "id": "awaken",
       "subject": "HeroProgression",
       "precondition": "觉醒进度满足条件",
-      "result": "觉醒状态及卡牌/场上转换；保留规则待核对",
+      "result": "觉醒状态及卡牌/场上转换；保留规则由适用定义指定",
       "owner_module": "heroes",
       "related_module": "cards"
     },
@@ -670,7 +601,7 @@
       "id": "resolve_auction",
       "subject": "AuctionRule",
       "precondition": "出价结束与胜出判定",
-      "result": "发放拍品、扣能量、分红；顺序待核对",
+      "result": "发放拍品、扣能量、分红；顺序由适用规则指定",
       "owner_module": "economy",
       "related_module": "cards"
     },

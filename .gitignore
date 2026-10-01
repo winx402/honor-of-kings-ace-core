@@ -1,10 +1,15 @@
-# 仅保留本地的第三方资料、截图与会话记录
-/references/community/
+# 知识生产资料不进入结果库
+/references/
 /evidence/
+/docs/research/
+/docs/validation/
+/scripts/
 /docs/会话交接.md
 /docs/任务状态.md
 /docs/来源与证据.md
 /docs/资料清单.json
+/docs/名称来源.md
+/docs/游戏理解与依据.md
 .DS_Store
 .env
 .env.*
@@ -13,6 +18,3 @@ node_modules/
 .venv/
 __pycache__/
 *.pyc
-
-# 官方网页与配图的本地研究快照
-/references/official/

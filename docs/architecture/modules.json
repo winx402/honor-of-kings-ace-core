@@ -1,7 +1,7 @@
 {
-  "definition_version": "0.3.0",
-  "status": "defined_not_implemented",
-  "dependency_semantics": "A.depends_on 包含 B 表示理解或实现 A 需要 B 的契约；非数据流/触发顺序。范围与来源字段是所有内容的共用契约。",
+  "definition_version": "0.4.0",
+  "status": "content_model",
+  "dependency_semantics": "A.depends_on 包含 B 表示 A 的内容定义使用 B 的契约；非数据流或触发顺序。",
   "modules": [
     {
       "id": "vocabulary",
@@ -25,27 +25,6 @@
       "boundary": "不同模块引用同一词汇；阵营归属不自动推导人数羁绊"
     },
     {
-      "id": "provenance",
-      "name": "来源与证据",
-      "kind": "support",
-      "paths": [
-        "docs/research/"
-      ],
-      "depends_on": [
-        "vocabulary"
-      ],
-      "objects": [
-        "Source",
-        "Evidence",
-        "Claim",
-        "Conflict",
-        "ReusePermission",
-        "SourceLineage"
-      ],
-      "responsibility": "记录出处、采集时间、原文定位、版本线索、公开复用权限及互相冲突的主张；转载、同源数据与派生计算的来源链及独立性",
-      "boundary": "来源可信度、文字核对和机制实测分别记录"
-    },
-    {
       "id": "versions",
       "name": "版本与适用范围",
       "kind": "support",
@@ -53,8 +32,7 @@
         "versions/"
       ],
       "depends_on": [
-        "vocabulary",
-        "provenance"
+        "vocabulary"
       ],
       "objects": [
         "GameBuild",
@@ -318,7 +296,6 @@
       ],
       "depends_on": [
         "vocabulary",
-        "provenance",
         "versions",
         "modes",
         "heroes",
@@ -343,7 +320,7 @@
         "MetaSnapshot"
       ],
       "responsibility": "阵容流派及常见阵容目录、核心与可替换位、棋手/装备/天赋/效果牌搭配、联动解释、前中后期运营、站位、转型、克制及版本环境评价",
-      "boundary": "规则事实、联动推断、打法建议和统计评价分开；常见/强势需口径与时效；不复制实体规则，不把打法推荐写入基础机制"
+      "boundary": "规则、联动、打法建议和统计评价分开；常见/强势保留适用范围、口径与时效；不复制实体规则，不把打法推荐写入基础机制"
     },
     {
       "id": "relations",
@@ -354,53 +331,14 @@
       ],
       "depends_on": [
         "vocabulary",
-        "versions",
-        "provenance"
+        "versions"
       ],
       "objects": [
         "RelationType",
         "RelationAssertion"
       ],
-      "responsibility": "显式对象引用、版本适用性、证据及关系类型；跨模块导航",
-      "boundary": "索引不复制对象属性，不把未知关系发布为真；状态转换单独记录"
-    },
-    {
-      "id": "validation",
-      "name": "验证与覆盖率",
-      "kind": "support",
-      "paths": [
-        "scripts/",
-        "docs/validation/"
-      ],
-      "depends_on": [
-        "vocabulary",
-        "provenance",
-        "versions",
-        "match",
-        "economy",
-        "chessplayers",
-        "heroes",
-        "cards",
-        "equipment",
-        "talents",
-        "mechanics",
-        "combat",
-        "modes",
-        "relations",
-        "strategy"
-      ],
-      "objects": [
-        "ValidationCase",
-        "Observation",
-        "VerificationStatus",
-        "CoverageReport",
-        "CalculationScenario",
-        "ModelCoverage",
-        "CalculationResult",
-        "FieldComparison"
-      ],
-      "responsibility": "将格式/引用/版本一致性检查、游戏内文字核对、机制实验与完整性统计分开；条件化计算与字段交叉核对，保留模型假设、遗漏、误差与同源限制",
-      "boundary": "本模块当前只有定义；不代表已有可运行引擎、实验自动化或全量覆盖"
+      "responsibility": "显式对象引用、版本适用性及关系类型；跨模块导航",
+      "boundary": "索引不复制对象属性；不把未知关系发布为确定事实；状态转换单独记录"
     }
   ]
 }
