@@ -1,5 +1,5 @@
 {
-  "definition_version": "0.1.0",
+  "definition_version": "0.2.0",
   "status": "type_catalog_only_no_game_assertions",
   "polymorphic_types": {
     "ContentDefinition": [
@@ -23,6 +23,11 @@
     "UnitDefinition": [
       "HeroDefinition",
       "SpecialUnitDefinition"
+    ],
+    "PlayContextDefinition": [
+      "ModeDefinition",
+      "QueueDefinition",
+      "CompetitionFormatDefinition"
     ]
   },
   "relation_assertion_fields": [
@@ -44,7 +49,8 @@
     "expires_at",
     "source_definition_revision_id",
     "target_definition_revision_id",
-    "relation_attributes"
+    "relation_attributes",
+    "claim_kind"
   ],
   "field_notes": {
     "revision_refs": "静态关系两端引用内容修订；实例关系引用实例ID及对应定义修订；尚未确定的修订显式unknown。",
@@ -53,7 +59,8 @@
     "runtime_context": "实例关系需要match_ref、round_ref、phase、snapshot_ref或其他足以定位观察的上下文；不使用用户账号。静态关系不伪造这些字段。",
     "temporal_fields": "observed_at/ expires_at用于实例关系的观察与有效期；未确认有效期显式unknown，不能假定永久。",
     "relation_attributes": "关系类型专用参数：located_in可含position_ref或position={coordinate_system,x,y}，equipped_with可含slot_ref；未知位置显式unknown。参数不能代替目标ID、适用范围或实例快照。",
-    "snapshot_semantics": "实例关系必须归于明确snapshot_ref或等价不可变观察上下文；同一实例在不同快照的属性可以不同。observed_at不自动表示状态在两个观察之间持续有效；有效区间仅在有证据时填。many_to_one等约束只在相同上下文中判断。"
+    "snapshot_semantics": "实例关系必须归于明确snapshot_ref或等价不可变观察上下文；同一实例在不同快照的属性可以不同。observed_at不自动表示状态在两个观察之间持续有效；有效区间仅在有证据时填。many_to_one等约束只在相同上下文中判断。",
+    "claim_kind": "规则事实(rule_fact)、联动主张(synergy_claim)、策略建议(strategy_advice)、统计评价(statistical_assessment)分开；strategy层必须说明适用范围、来源和条件，不以机制实测状态代替策略效果评价。"
   },
   "relations": [
     {
@@ -383,6 +390,158 @@
       "layer": "instance",
       "meaning": "英雄类型单位关联其养成状态，特殊单位是否适用由定义说明",
       "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "queue_for",
+      "source_type": "QueueDefinition",
+      "target_type": "ModeDefinition",
+      "layer": "scope",
+      "meaning": "排位等队列使用某玩法基线；具体关联需有来源",
+      "allowed_shape": "many_to_one"
+    },
+    {
+      "id": "overlays_mode",
+      "source_type": "CompetitionFormatDefinition",
+      "target_type": "ModeDefinition",
+      "layer": "scope",
+      "meaning": "竞赛或房间形式关联基础玩法",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "has_event_pool",
+      "source_type": "ModeDefinition",
+      "target_type": "GlobalEventPool",
+      "layer": "availability",
+      "meaning": "模式使用特定全局事件池",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "includes_preset",
+      "source_type": "ModeDefinition",
+      "target_type": "PresetLineupDefinition",
+      "layer": "availability",
+      "meaning": "模式规定或投放的初始阵容，与攻略模板分开",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "has_lineup_slot",
+      "source_type": "LineupTemplate",
+      "target_type": "LineupSlot",
+      "layer": "strategy",
+      "meaning": "阵容模板由核心位/功能位/可替换位组成",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "slot_candidate",
+      "source_type": "LineupSlot",
+      "target_type": "ContentDefinition",
+      "layer": "strategy",
+      "meaning": "阵容位引用候选英雄或卡牌；数量/角色另记",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "prefers_chessplayer",
+      "source_type": "LineupTemplate",
+      "target_type": "ChessplayerDefinition",
+      "layer": "strategy",
+      "meaning": "阵容推荐或要求棋手，非强制游戏规则",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "recommends_equipment",
+      "source_type": "LineupTemplate",
+      "target_type": "EquipmentDefinition",
+      "layer": "strategy",
+      "meaning": "装备搭配建议，区分必需/优先/备选及理由",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "recommends_talent",
+      "source_type": "LineupTemplate",
+      "target_type": "TalentDefinition",
+      "layer": "strategy",
+      "meaning": "天赋搭配建议，带条件和优先级",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "uses_synergy",
+      "source_type": "LineupTemplate",
+      "target_type": "SynergyClaim",
+      "layer": "strategy",
+      "meaning": "阵容引用联动主张及其验证状态",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "exploits_effect",
+      "source_type": "SynergyClaim",
+      "target_type": "EffectDefinition",
+      "layer": "strategy",
+      "meaning": "联动解释引用具体效果修订",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "has_strategy_guide",
+      "source_type": "LineupTemplate",
+      "target_type": "StrategyGuide",
+      "layer": "strategy",
+      "meaning": "运营、站位、转型与操作步骤",
+      "allowed_shape": "one_to_many"
+    },
+    {
+      "id": "alternative_slot",
+      "source_type": "LineupSlot",
+      "target_type": "LineupSlot",
+      "layer": "strategy",
+      "meaning": "替代方案，带适用条件和代价",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "counters_lineup",
+      "source_type": "LineupTemplate",
+      "target_type": "LineupTemplate",
+      "layer": "strategy",
+      "meaning": "有条件的克制建议或观察，不能默认为确定胜负",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "evaluated_in",
+      "source_type": "LineupTemplate",
+      "target_type": "MetaSnapshot",
+      "layer": "strategy",
+      "meaning": "阵容的常见/强势评价引用范围、时间窗及口径",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "recommendation_source",
+      "source_type": "RecommendationClaim",
+      "target_type": "Source",
+      "layer": "evidence",
+      "meaning": "策略主张的原始作者/出处；来源不等于验证",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "lineup_applies_to",
+      "source_type": "LineupTemplate",
+      "target_type": "PlayContextDefinition",
+      "layer": "scope",
+      "meaning": "阵容策略适用于特定玩法/队列/竞赛形式",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "variant_of_archetype",
+      "source_type": "LineupTemplate",
+      "target_type": "LineupArchetype",
+      "layer": "strategy",
+      "meaning": "具体阵容模板归于某流派，同流派允许多版本/多作者方案",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "recommends_card",
+      "source_type": "LineupTemplate",
+      "target_type": "CardDefinition",
+      "layer": "strategy",
+      "meaning": "阵容推荐关键效果牌或其他衍生牌，带获取与使用时机",
+      "allowed_shape": "many_to_many"
     }
   ],
   "transitions": [

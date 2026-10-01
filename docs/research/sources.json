@@ -107,6 +107,45 @@
       "mechanism_verification": "untested",
       "public_reuse": "local_research_only",
       "reviewed_on": "2026-10-01"
+    },
+    {
+      "id": "official-update-20260526",
+      "kind": "official_account_post",
+      "url": "https://www.taptap.cn/moment/807943215318565363",
+      "title": "5月26日版本更新公告",
+      "reviewed_on": "2026-10-01",
+      "game_version": null,
+      "applicability": "2026年终测整备内容验证；不代表当前正式服完整规则",
+      "retrieval": "官方账号正文",
+      "text_verification": "source_checked",
+      "mechanism_verification": "untested",
+      "public_reuse": "link_and_original_summary_only"
+    },
+    {
+      "id": "official-update-20260820-test",
+      "kind": "official_account_post",
+      "url": "https://www.taptap.cn/moment/839252912495396596",
+      "title": "8月20日体验服不停机更新公告",
+      "reviewed_on": "2026-10-01",
+      "game_version": null,
+      "applicability": "2026年体验服；用作模式独立规则线索，不升级为当前正式服",
+      "retrieval": "官方账号正文",
+      "text_verification": "source_checked",
+      "mechanism_verification": "untested",
+      "public_reuse": "link_and_original_summary_only"
+    },
+    {
+      "id": "official-lineup-page",
+      "kind": "official_web",
+      "url": "https://wxq.qq.com/cp/a20260707sfgw/m_teamlist.html",
+      "title": "官网移动阵容页",
+      "reviewed_on": "2026-10-01",
+      "game_version": null,
+      "applicability": "页面源码有新手/综合/热门及阵容预览/运营/棋手分区，但也有其他游戏模板占位；未核对渲染后的真实列表，不收录其中占位阵容",
+      "retrieval": "HTTP读取页面源码",
+      "text_verification": "source_checked",
+      "mechanism_verification": "untested",
+      "public_reuse": "link_and_original_summary_only"
     }
   ],
   "runtime_attempt": {

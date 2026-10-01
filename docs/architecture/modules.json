@@ -1,5 +1,5 @@
 {
-  "definition_version": "0.1.0",
+  "definition_version": "0.2.0",
   "status": "defined_not_implemented",
   "dependency_semantics": "A.depends_on 包含 B 表示理解或实现 A 需要 B 的契约；非数据流/触发顺序。范围与来源字段是所有内容的共用契约。",
   "modules": [
@@ -274,7 +274,7 @@
     },
     {
       "id": "modes",
-      "name": "模式与规则变体",
+      "name": "游戏模式、队列与规则变体",
       "kind": "domain",
       "paths": [
         "rules/modes/"
@@ -294,12 +294,52 @@
       ],
       "objects": [
         "ModeDefinition",
+        "QueueDefinition",
+        "CompetitionFormatDefinition",
         "AvailabilityRule",
         "RuleOverride",
-        "SettlementVariant"
+        "SettlementVariant",
+        "GlobalEventPool",
+        "PresetLineupDefinition"
       ],
-      "responsibility": "模式启用内容、规则覆盖、特邀等局内变体与必要的段位/队伍结算条件",
-      "boundary": "段位门槛不是独立模式；不因旧文件名推断模式已上线或与别的模式相同"
+      "responsibility": "玩法模式与排位队列目录、参与/开放条件、匹配/组队/段位规则、模式资源与初始阵容、专属事件/卡池/天赋/装备、结算与版本覆盖",
+      "boundary": "玩法、排位队列、竞赛形式和局内变体分维度；模式规定的初始阵容属于规则内容，攻略推荐的阵容属于strategy；不把旧测试服改动视为现行规则"
+    },
+    {
+      "id": "strategy",
+      "name": "阵容搭配、打法与版本环境",
+      "kind": "domain",
+      "paths": [
+        "strategies/"
+      ],
+      "depends_on": [
+        "vocabulary",
+        "provenance",
+        "versions",
+        "modes",
+        "heroes",
+        "chessplayers",
+        "cards",
+        "equipment",
+        "talents",
+        "mechanics",
+        "combat",
+        "economy"
+      ],
+      "objects": [
+        "LineupArchetype",
+        "LineupTemplate",
+        "LineupSlot",
+        "SynergyClaim",
+        "StrategyGuide",
+        "PositionPlan",
+        "SubstitutionPlan",
+        "MatchupClaim",
+        "RecommendationClaim",
+        "MetaSnapshot"
+      ],
+      "responsibility": "阵容流派及常见阵容目录、核心与可替换位、棋手/装备/天赋/效果牌搭配、联动解释、前中后期运营、站位、转型、克制及版本环境评价",
+      "boundary": "规则事实、联动推断、打法建议和统计评价分开；常见/强势需口径与时效；不复制实体规则，不把打法推荐写入基础机制"
     },
     {
       "id": "relations",
@@ -342,7 +382,8 @@
         "mechanics",
         "combat",
         "modes",
-        "relations"
+        "relations",
+        "strategy"
       ],
       "objects": [
         "ValidationCase",
