@@ -9,3 +9,5 @@
 对象：`KeywordDefinition`、`EventDefinition`、`AbilityDefinition`、`EffectDefinition`、`Condition`、`TargetSelector`、`Formula`、`StatusDefinition`。
 
 详见[模块与关系定义](../../docs/模块与关系.md)。
+
+知识条目：[catalog.json](catalog.json)。

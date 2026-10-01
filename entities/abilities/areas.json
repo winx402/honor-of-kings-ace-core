@@ -1,0 +1,17 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "area.yixing-void-board",
+      "名称": "虚空棋盘",
+      "类别": "英雄技能区域",
+      "关联英雄": "hero.1971",
+      "关联技能": "万变之局",
+      "概括": "弈星选择敌人最多的一排绘出虚空棋盘，1.5秒后成型，范围内法伤为100+0.5×法攻；10级系数提高到1.0，40级禁止敌人进出棋盘，100级持续5.5秒。",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated"
+    }
+  ]
+}

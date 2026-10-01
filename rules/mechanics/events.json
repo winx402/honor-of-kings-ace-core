@@ -1,0 +1,42 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "event.unit_death",
+      "name": "英雄阵亡"
+    },
+    {
+      "id": "event.hero_synthesis",
+      "name": "英雄合成"
+    },
+    {
+      "id": "event.round_start",
+      "name": "回合开始"
+    },
+    {
+      "id": "event.card_played",
+      "name": "卡牌使用完成"
+    },
+    {
+      "id": "event.combat_win",
+      "name": "战斗胜利"
+    },
+    {
+      "id": "event.combat_start",
+      "name": "战斗开始"
+    },
+    {
+      "id": "event.deployed_hero_sold",
+      "name": "上阵英雄出售"
+    },
+    {
+      "id": "event.combat_loss",
+      "name": "战斗失败"
+    },
+    {
+      "id": "event.combat_end",
+      "name": "战斗结束"
+    }
+  ]
+}

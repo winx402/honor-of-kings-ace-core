@@ -1,0 +1,70 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "rule.match.participants",
+      "title": "对局人数与生命",
+      "kind": "rule_fact",
+      "summary": "万象大赛由六名棋手参赛，每位棋手从60点生命开始。",
+      "values": {
+        "participants": 6,
+        "initial_health": 60
+      }
+    },
+    {
+      "id": "rule.match.opponents",
+      "title": "回合对手",
+      "kind": "rule_fact",
+      "summary": "每回合匹配一名对手，双方以阵容进行自动战斗。",
+      "unknowns": [
+        "配对排除和轮换算法"
+      ]
+    },
+    {
+      "id": "rule.match.elimination",
+      "title": "淘汰与胜负",
+      "kind": "rule_fact",
+      "summary": "败者扣除自身棋手生命；棋手生命耗尽后淘汰，最后存活者获胜。",
+      "values": {
+        "elimination_health": 0
+      },
+      "unknowns": [
+        "同时淘汰的名次判定",
+        "平局的扣血处理"
+      ]
+    },
+    {
+      "id": "rule.match.hero_deployment",
+      "title": "打出英雄牌",
+      "kind": "rule_fact",
+      "summary": "将手中的英雄牌放入战场：没有同名英雄时生成英雄，有同名英雄时进行合成并提升等级。"
+    },
+    {
+      "id": "rule.match.levels",
+      "title": "英雄等级",
+      "kind": "rule_fact",
+      "summary": "常规英雄初次上阵为1级，等级上限999；英雄等级与棋手等级分别计算。",
+      "values": {
+        "initial_hero_level": 1,
+        "maximum_hero_level": 999
+      }
+    },
+    {
+      "id": "rule.match.capacity",
+      "title": "上阵容量",
+      "kind": "rule_fact",
+      "summary": "棋手成长中有增加上阵名额的节点，上阵容量不等同英雄等级。",
+      "unknowns": [
+        "全部等级的容量表",
+        "特殊单位是否占用名额"
+      ]
+    },
+    {
+      "id": "rule.match.factions",
+      "title": "阵营与定位",
+      "kind": "rule_fact",
+      "summary": "英雄具有阵营和战斗定位。阵营是效果筛选条件，不能仅从阵营名称推导人数羁绊。"
+    }
+  ]
+}

@@ -1,26 +1,79 @@
 {
-  "catalog_version": "0.2.0",
-  "status": "partial_mode_catalog",
-  "identifier_note": "标识与分类为本项目建模命名，不是官方API或官方英文译名。",
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
   "entries": [
     {
       "id": "mode.wanxiang_tournament",
       "name": "万象大赛",
       "classification": "gameplay",
-      "current_availability": "unknown"
+      "game_version": null,
+      "current_availability": "unknown",
+      "definition": "六名棋手通过购牌、成长和布阵进行逐回合淘汰对战。",
+      "facts": [
+        "初始棋手生命60，每回合随机匹配对手；生命归零淘汰，最后存活者获胜。",
+        "能量用于购牌、刷新、升级、主动能力与竞拍等具体操作。",
+        "升级获得天赋，指定等级增加上阵容量；英雄等级与棋手等级分别成长。"
+      ],
+      "rule_refs": [
+        "rule.match.participants",
+        "rule.match.elimination",
+        "rule.economy.talent_select"
+      ],
+      "unknowns": [
+        "精确扣血公式、平局和超时结算",
+        "完整上阵容量表、商店概率与拍卖序列"
+      ]
     },
     {
       "id": "queue.ranked",
       "name": "排位赛",
       "classification": "queue",
+      "game_version": null,
       "gameplay_ref": "mode.wanxiang_tournament",
-      "current_availability": "unknown"
+      "current_availability": "unknown",
+      "definition": "使用万象大赛规则进行段位成长的队列。",
+      "facts": [
+        "万象大赛有段位及赛季段位奖励。",
+        "白银段位阶段开放每场一次天赋刷新；具体边界见规则条目。"
+      ],
+      "unknowns": [
+        "完整段位梯度、分数门槛和名次得分公式",
+        "组队分数分配规则",
+        "当期赛季的阵营禁用与队列限制"
+      ]
     },
     {
       "id": "mode.diamond_frenzy",
       "name": "钻石狂潮",
       "classification": "gameplay",
-      "current_availability": "unknown"
+      "entry_group": "王牌对决",
+      "game_version": null,
+      "current_availability": "unknown",
+      "definition": null,
+      "facts": [
+        "房间入场涉及钻石门槛。"
+      ],
+      "unknowns": [
+        "当前入场级别、钻石门槛及解锁条件",
+        "参赛费、筹码、竞拍、分红和结算完整公式",
+        "棋手能力、普通商店与初始卡组规则",
+        "特殊事件、专属内容和与万象大赛的规则差异"
+      ]
+    },
+    {
+      "id": "mode.peak_trial",
+      "name": "巅峰试炼",
+      "classification": "gameplay",
+      "game_version": null,
+      "current_availability": "unknown",
+      "definition": null,
+      "facts": [
+        "部分效果牌与天赋包的解锁条件包含巅峰试炼分数。"
+      ],
+      "unknowns": [
+        "参与条件、完整对局规则、得分及结算",
+        "与万象大赛和钻石狂潮的规则差异"
+      ]
     }
   ]
 }

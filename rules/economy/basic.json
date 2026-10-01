@@ -1,0 +1,131 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "rule.economy.round_income",
+      "title": "能量结转",
+      "kind": "rule_fact",
+      "summary": "回合给予能量，未花完的能量可以留到后续回合。",
+      "unknowns": [
+        "逐回合基础收入表"
+      ]
+    },
+    {
+      "id": "rule.economy.hero_buy_cost",
+      "title": "英雄牌购买",
+      "kind": "rule_fact",
+      "summary": "英雄牌的常规购买价格是3能量；英雄品阶不是购买价格。",
+      "values": {
+        "hero_buy_energy": 3
+      }
+    },
+    {
+      "id": "rule.economy.effect_buy_cost",
+      "title": "效果牌购买",
+      "kind": "rule_fact",
+      "summary": "效果牌按各牌的购买价格支付能量，不套用英雄牌的固定价格。"
+    },
+    {
+      "id": "rule.economy.sell",
+      "title": "出售",
+      "kind": "rule_fact",
+      "summary": "出售手中的英雄牌或已经上阵的英雄，常规各得1能量。出售上阵英雄还可能触发其退场效果。",
+      "values": {
+        "hero_card_sell_energy": 1,
+        "deployed_hero_sell_energy": 1
+      }
+    },
+    {
+      "id": "rule.economy.upgrade",
+      "title": "棋手升级",
+      "kind": "rule_fact",
+      "summary": "可以花费能量提升棋手等级；本次升级费用取决于当前升级需求，不是恒定价格。"
+    },
+    {
+      "id": "rule.economy.bid",
+      "title": "竞拍胜者",
+      "kind": "rule_fact",
+      "summary": "固定节点进行共同竞拍。最高出价获得拍品；同价时由较早出价者获得。未竞得拍品的出价不扣除购买能量。",
+      "unknowns": [
+        "精确竞拍回合表",
+        "有效出价的更新规则",
+        "竞拍出价与即时可用能量的约束"
+      ]
+    },
+    {
+      "id": "rule.economy.dividend",
+      "title": "竞拍分红",
+      "kind": "rule_fact",
+      "summary": "有效出价形成分红池；结束后向参赛棋手分配，低生命者分红比例较高。",
+      "unknowns": [
+        "具体权重与取整公式",
+        "购买支出与分红发放顺序"
+      ]
+    },
+    {
+      "id": "rule.economy.talent_select",
+      "title": "升级选择天赋",
+      "kind": "rule_fact",
+      "summary": "棋手升级时免费从三个候选天赋中选择一个；天赋分为铜、银、金三个品阶。",
+      "values": {
+        "offer_size": 3,
+        "select_count": 1,
+        "cost": 0,
+        "tiers": [
+          {
+            "rank": 1,
+            "name": "铜"
+          },
+          {
+            "rank": 2,
+            "name": "银"
+          },
+          {
+            "rank": 3,
+            "name": "金"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rule.economy.same_talent_quality",
+      "title": "天赋品阶同步",
+      "kind": "rule_fact",
+      "summary": "同场六位玩家达到相同棋手等级时，获得相同的天赋品阶。"
+    },
+    {
+      "id": "rule.economy.talent_refresh",
+      "title": "天赋刷新",
+      "kind": "rule_fact",
+      "summary": "达到白银段位后，一局拥有一次天赋刷新机会。",
+      "values": {
+        "refreshes_per_match": 1,
+        "rank_gate": "白银"
+      },
+      "unknowns": [
+        "临界段位解锁的客户端表述"
+      ]
+    },
+    {
+      "id": "rule.economy.exclusive_talent",
+      "title": "棋手专属天赋",
+      "kind": "rule_fact",
+      "summary": "棋手达到6级时可以领取专属天赋。",
+      "values": {
+        "chessplayer_level": 6
+      }
+    },
+    {
+      "id": "rule.economy.shop_sampling",
+      "title": "分层概率",
+      "kind": "semantic_boundary",
+      "summary": "品阶层被选中与某一名英雄被抽中是两个随机结果。具体英雄概率还取决于完整候选与抽样规则。",
+      "unknowns": [
+        "现行逐等级品阶层概率",
+        "指定英雄抽样与去重规则",
+        "公共牌库完整库存数"
+      ]
+    }
+  ]
+}

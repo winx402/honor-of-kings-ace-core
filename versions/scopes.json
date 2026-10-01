@@ -1,0 +1,17 @@
+{
+  "knowledge_version": "0.1.0",
+  "entries": [
+    {
+      "id": "scope.cn.wanxiang.undated",
+      "name": "中文万象规则，平衡版本未指定",
+      "game_version": null,
+      "language": "zh-CN",
+      "mode_ref": null,
+      "interpretation": "本目录条目未统一绑定客户端或平衡版本；模式适用性由具体条目说明，不能自动推及所有模式。",
+      "unknowns": [
+        "每项数值的客户端和平衡版本",
+        "模式间的对象可用池与覆盖规则"
+      ]
+    }
+  ]
+}

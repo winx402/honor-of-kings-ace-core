@@ -1,0 +1,46 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "faction.heluo",
+      "name": "河洛",
+      "aliases": [],
+      "note": "阵营归属；不表示仅上阵该阵营人数就自动获得加成。"
+    },
+    {
+      "id": "faction.zhulu",
+      "name": "逐鹿",
+      "aliases": [],
+      "note": "阵营归属；不表示仅上阵该阵营人数就自动获得加成。"
+    },
+    {
+      "id": "faction.sunset",
+      "name": "日落海",
+      "aliases": [],
+      "note": "阵营归属；不表示仅上阵该阵营人数就自动获得加成。"
+    },
+    {
+      "id": "faction.three_kingdoms",
+      "name": "三分之地",
+      "aliases": [
+        "三分"
+      ],
+      "note": "阵营归属；不表示仅上阵该阵营人数就自动获得加成。"
+    },
+    {
+      "id": "faction.great_river",
+      "name": "大河流域",
+      "aliases": [
+        "大河"
+      ],
+      "note": "阵营归属；不表示仅上阵该阵营人数就自动获得加成。"
+    },
+    {
+      "id": "faction.none",
+      "name": "无阵营",
+      "aliases": [],
+      "note": "无阵营标签，不代表第六种阵营机制。"
+    }
+  ]
+}

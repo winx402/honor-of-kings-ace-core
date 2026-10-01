@@ -9,3 +9,5 @@
 对象：`MatchDefinition`、`ParticipantState`、`RoundState`、`ZoneState`、`SettlementRule`。
 
 详见[模块与关系定义](../../docs/模块与关系.md)。
+
+知识条目：[basic.json](basic.json)。

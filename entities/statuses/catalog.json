@@ -1,0 +1,46 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "status.temporary_level",
+      "name": "临时等级",
+      "definition": "当前战斗中的等级增减，战斗结束清除。",
+      "expires_on": "event.combat_end",
+      "rule_ref": "rule.combat.temporary_level"
+    },
+    {
+      "id": "status.shield",
+      "name": "护盾",
+      "definition": "由具体技能或装备提供的防护量；数值、伤害类型限制与持续时间按对应能力。",
+      "examples": [
+        "ability.hero.5221.1"
+      ],
+      "unknowns": [
+        "不同护盾间的优先级和叠加规则"
+      ]
+    },
+    {
+      "id": "status.stun",
+      "name": "眩晕",
+      "definition": "战斗控制状态；具体范围、目标和时长按施加能力。",
+      "examples": [
+        "ability.hero.1941.1"
+      ],
+      "unknowns": [
+        "免疫、净化、重叠与计时通用规则"
+      ]
+    },
+    {
+      "id": "status.silence",
+      "name": "沉默",
+      "definition": "限制技能使用的战斗控制状态；目标与持续条件按具体能力。",
+      "examples": [
+        "ability.hero.1181.1"
+      ],
+      "unknowns": [
+        "免疫、净化及与施法中动作交互的通用规则"
+      ]
+    }
+  ]
+}

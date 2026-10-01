@@ -1,0 +1,4020 @@
+{
+  "范围": {
+    "适用范围": "中文规则；客户端版本、平衡版本与模式差异未指定。",
+    "未知项": [
+      "本目录不等同于各模式的完整可获得池；关联预览中的单位不默认可在商店购买。",
+      "带当前值或动态占位符的数值不是固定常量。",
+      "结算顺序、叠加优先级与各模式差异未指定。"
+    ]
+  },
+  "数量": 258,
+  "条目": [
+    {
+      "id": "talent.623003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "兵行诡招",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第一轮拍卖",
+      "效果概括": "获得时棋手扣10生命；开战全英雄临时等级加2。胜利恢复1棋手生命，临时等级加成再增长1。"
+    },
+    {
+      "id": "talent.613003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "里程碑",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "初始阵容",
+      "效果概括": "棋手达到5级获能量6及装备箱1张。"
+    },
+    {
+      "id": "talent.635041",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三分新援",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖",
+      "效果概括": "能量增加2，随机获得三分2或3阶英雄1张。"
+    },
+    {
+      "id": "talent.613005",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "整装待发",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "初始阵容",
+      "效果概括": "若本回合未使用英雄牌，下回合开始额外获能量2。"
+    },
+    {
+      "id": "talent.613006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "先苦后甜",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "初始阵容",
+      "效果概括": "取此天赋之后输2场，棋手经验奖励6。"
+    },
+    {
+      "id": "talent.613007",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "防御领域",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "初始阵容",
+      "效果概括": "每次棋手受伤少2点。"
+    },
+    {
+      "id": "talent.635036",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "日落海新援",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.671003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "存款利息",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "立即获能量3；每回合结束每存7能量增加1能量。"
+    },
+    {
+      "id": "talent.635031",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大河新援",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第六轮拍卖",
+      "效果概括": "获得2能量和随机一张2—3阶大河流域英雄牌。"
+    },
+    {
+      "id": "talent.681028",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "破格",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "每回合自动商店刷新含1个高一阶英雄。"
+    },
+    {
+      "id": "talent.635026",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "逐鹿新援",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第六轮拍卖"
+    },
+    {
+      "id": "talent.671010",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "二象性",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "二象坍缩"
+        }
+      ],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "获得二象坍缩1张；其随机触发一种获取英雄牌的效果。"
+    },
+    {
+      "id": "talent.635014",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "河洛新援",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第五轮拍卖"
+    },
+    {
+      "id": "talent.671012",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "预言家",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "胜利预言"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "失败预言"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.614005",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三十而立",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "初始阵容",
+      "效果概括": "备战中英雄等级合计达到30时奖励棋手经验6。"
+    },
+    {
+      "id": "talent.681026",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "好聚好散",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "体面离场"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "获得体面离场1张；移除英雄时按觉醒进度0/1/2/3奖励能量3/5/7/9。"
+    },
+    {
+      "id": "talent.681025",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "瓶中人",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "契约瓶"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635603",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "狂铁·强化",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "狂铁"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.681024",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战争头牌",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "每回合选出1个品阶数字；当回合打出该品阶英雄额外等级加4。"
+    },
+    {
+      "id": "talent.681022",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "节能商店",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "手动刷新后总有1张卡降价1能量。"
+    },
+    {
+      "id": "talent.634020",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "随机成长",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第三轮拍卖",
+      "效果概括": "开战时最高品阶英雄中1名永久等级加4。"
+    },
+    {
+      "id": "talent.681021",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "微弱优势",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "打出觉醒英雄牌时，该英雄增加22%暴击率和11%物理、法术吸血，每名英雄仅一次。"
+    },
+    {
+      "id": "talent.622001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "双人游",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.633003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "加速成长",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "加速成长"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "获得2张加速成长，每张可给指定英雄增加5等级。"
+    },
+    {
+      "id": "talent.681020",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "刻舟减蓝",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.681009",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "猪猪",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.632008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "专注射击",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖"
+    },
+    {
+      "id": "talent.681018",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "班叔的遗留物",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "2级电磁弹簧"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.632006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "银算盘",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "卖出场上英雄，随机另一英雄等级加2。"
+    },
+    {
+      "id": "talent.632002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "五福临门",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "五福临门"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "获得同名天赋牌1张，可随机获取5张英雄。"
+    },
+    {
+      "id": "talent.632001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "小电池包",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "立即补充5能量。"
+    },
+    {
+      "id": "talent.623002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "复印机",
+      "品阶": 1,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "复印机"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第一轮拍卖",
+      "效果概括": "获得两张天赋牌复印机，可指定1—3阶英雄获得其英雄牌。"
+    },
+    {
+      "id": "talent.671017",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "一个响指",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "听天由命"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.671006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "小小的助力",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.623008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "终极复印机",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "终极复印机"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.681010",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "扩编名额",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "可买2次人口，每次支付8能量、人口上限加1。"
+    },
+    {
+      "id": "talent.681014",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "补给线：开团",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.622009",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "常胜将军",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.622006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "中坚力量",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.632009",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "如法炮制",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖"
+    },
+    {
+      "id": "talent.632010",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "消费返利",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "加速成长"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "累计消费每15能量奖励加速成长1张，可给目标增加5等级。"
+    },
+    {
+      "id": "talent.622005",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "凯旋征召",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.632013",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "金算盘",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "卖出场上英雄使随机英雄等级加3。"
+    },
+    {
+      "id": "talent.632014",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "超专注射击",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖"
+    },
+    {
+      "id": "talent.633001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "电池包",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "立即补充8能量。"
+    },
+    {
+      "id": "talent.633002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "结伴",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "3阶英雄兑换券"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖"
+    },
+    {
+      "id": "talent.622002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "人才市场",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "人才搜寻"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第一轮拍卖",
+      "效果概括": "奖励人才搜寻3张。"
+    },
+    {
+      "id": "talent.633013",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "同路人",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "同回合每出4张同阵营英雄，随机奖励该阵营1张英雄。"
+    },
+    {
+      "id": "talent.681008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战前叫阵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.633017",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "重装上阵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第三轮拍卖",
+      "效果概括": "开战时装备至少2件的英雄获得15%增伤及15%减伤。"
+    },
+    {
+      "id": "talent.633018",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "成年礼",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.681006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "前线堡垒",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.634001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大电池包",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.634012",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "限制性进化",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "限制性进化"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.634013",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "援军",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "援军"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.681004",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "群英荟萃",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.634015",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "自适应武装",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "自适应武装"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.634018",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "虚构装备",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.634019",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术模组",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.615005",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "极限操作",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.634021",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "控能达人",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第四轮拍卖"
+    },
+    {
+      "id": "talent.634025",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "强者自强",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第四轮拍卖"
+    },
+    {
+      "id": "talent.634026",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "破败之力",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第四轮拍卖"
+    },
+    {
+      "id": "talent.681003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "抢攻",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "立即获得普通装备1张；后续5回合累计对棋手伤害20则奖励10能量。"
+    },
+    {
+      "id": "talent.681002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神秘英雄",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "神秘英雄"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.634031",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "随机进化",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第四轮拍卖"
+    },
+    {
+      "id": "talent.671020",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "厉兵秣马",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636312",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "擂台猛虎",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "猛虎擂台"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.671016",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "拍卖专家",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "拍卖重现：一"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "拍卖重现：二"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "拍卖重现：三"
+        }
+      ],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.614008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三十而达",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.671015",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "透支",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "超速成长",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "超速成长"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第五轮拍卖",
+      "效果概括": "获得1张指定英雄增加15等级的天赋牌。"
+    },
+    {
+      "id": "talent.614004",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "王牌认证",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "初始阵容",
+      "效果概括": "开战若有至少3个4至5阶英雄，获2至3阶效果锦囊1张。"
+    },
+    {
+      "id": "talent.671011",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "祝你好运",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "碰碰运气"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.614003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "临时增幅",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.635015",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "河洛来客",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "李信"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第五轮拍卖"
+    },
+    {
+      "id": "talent.614002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "紧急行动",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.635017",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "河洛精兵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第五轮拍卖"
+    },
+    {
+      "id": "talent.671009",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "富贵险中求",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "一刀穷一刀富"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "险中求富"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635021",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "前浪的荣光",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "前浪的荣光"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第六轮拍卖",
+      "效果概括": "获得2张同名天赋牌，各将指定英雄后奖励同阵营高1至2阶英雄1张。"
+    },
+    {
+      "id": "talent.635024",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "全军列阵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "全军列阵"
+        }
+      ],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第六轮拍卖",
+      "效果概括": "指定1名英雄后召唤同阵营单位补满人口，但品阶不超过商店可购上限。"
+    },
+    {
+      "id": "talent.681027",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大买卖",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635027",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "逐鹿来客",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "蒙犽"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第六轮拍卖"
+    },
+    {
+      "id": "talent.671007",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "逆袭之路",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635029",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "逐鹿精兵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第六轮拍卖"
+    },
+    {
+      "id": "talent.623007",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "伤害转化器",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.613010",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "绝对领域",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.635032",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大河来客",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "刘邦"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.613009",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "卧薪尝胆",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.635034",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大河精兵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.671002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "小身体大能量",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "开战英雄体型缩小、攻速加60%、暴击率加40%、最大生命减20%。"
+    },
+    {
+      "id": "talent.613008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "重大里程碑",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.635037",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "日落海来客",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "雅典娜"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.671001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "一分钱一分货",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "等价交换"
+        }
+      ],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635039",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "日落海精兵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.646011",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "怒神项链",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "怒神项链"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.613004",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "人才济济",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "人才搜寻"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.635042",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三分来客",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "小乔"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.646004",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "法潮灵杖",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "法潮灵杖"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635044",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三分精兵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.646003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "断念",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "断念"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "破阵战芒",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "破阵战芒"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636101",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "能量改造",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "破妄之刃",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "破妄之刃"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636103",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "光棱塔",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "瞬影连斩",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "闪现英雄击败敌方单位时，立即闪现至最近敌人处，并无敌0.5秒。"
+    },
+    {
+      "id": "talent.636105",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "场外供能",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636106",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "积极整备",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "星源装甲"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "星源狩枪"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "星源合金盾"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "胜之不武",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "胜之不武"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.63700801",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "崛起",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "百里守约"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "马可波罗"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636601",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "协同一致",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636516",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "荆棘牢笼",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636514",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "因缘际会",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636115",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "动能灌注",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636117",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "智能装甲",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "随机获得一件日落海专属装备；英雄每穿戴一件该类装备，其整备额外触发一次。"
+    },
+    {
+      "id": "talent.636201",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "多彩古币",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "古币"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "精致古币"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636512",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "坚不可摧",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636510",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "图腾启灵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636509",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "化为熊灵",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636206",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "传家宝",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636209",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "古币翻新",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "古币"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636506",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "生命绽放",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "鬼谷子"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "先知图腾"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636213",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "献祭之赐",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "李信"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636415",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "贤士登门",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636215",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "零钱兑换",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "破损古币"
+        }
+      ],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636413",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "乘胜追击",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "高阶推演战术"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636217",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "最终守卫",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "最后一名河洛英雄受到致命伤害时获得无敌和50%攻速，初始持续1秒；本场英雄每触发过一次牺牲，无敌时间增加0.25秒，攻速增益仍为1秒。"
+    },
+    {
+      "id": "talent.636218",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "古币契约",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.613002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "保持进步",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.636412",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "鲸吞",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "庄周"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636221",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "幸运硬币",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636224",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "红豆之托",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "王维"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636409",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "强力小弟",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636401",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "技高一筹",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636304",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "乐善好施",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "己方英雄触发登场时，随机两名三分英雄各增加2级。"
+    },
+    {
+      "id": "talent.636317",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "膨化生命",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636306",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "一身是胆",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "赵云"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "惊雷之龙"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636307",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "卧龙威势",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "诸葛亮"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636314",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "锦囊妙计",
+      "品阶": 2,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "锦囊"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636219",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "钱生战力",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636313",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "控制感应",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636309",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "怒涛",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636315",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三三得三",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636316",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "挂帅上阵",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "获得一张挂帅牌：令指定三分英雄的等级等同于最近一名三分英雄。"
+    },
+    {
+      "id": "talent.636305",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "搏战",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636318",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三分领袖",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636303",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "四重奏",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636402",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "意外之财",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636403",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "令行如流",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "获得一张战术牌，此后每个回合开始再获一张；棋手达到5级后必定为高阶战术。"
+    },
+    {
+      "id": "talent.636404",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "穷兵黩武",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636406",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "复现",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636301",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "鬼神降临",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636410",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "演武",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636411",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "罡气护体",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636220",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "暴君归来",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636216",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "千金换酒",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "李白"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636214",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "丝绸之路",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "古币"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "精致古币"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636417",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "春风化雨",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "回合开始获得一张上阵逐鹿英雄的同名牌；上一轮获胜时改为两张。"
+    },
+    {
+      "id": "talent.636418",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "水晶穹顶",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636501",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "望梅止渴",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "望梅止渴"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636503",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "四海来援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636504",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "命运图腾",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636505",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神明庇佑",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636211",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "自我奉献",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636507",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "始祖熊灵",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "始祖熊灵"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "奖励不占人口的大河单位始祖熊灵；开战单位数量每比敌人多1，其永久等级加2。"
+    },
+    {
+      "id": "talent.636508",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "熊魂附甲",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636205",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "一起发财",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636204",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "古币机",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636511",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "虚妄转生",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636203",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "升值",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636513",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "灵祭升华",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636114",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "核心裂痕",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "盗火"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636113",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "能源置换",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636517",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神鹰锻匠",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "流云之刺"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "翼苍穹盾"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "掠魂爪"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "永冻霜羽"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "苍穹王权"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "唤鹰骨笛"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636112",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "全域共鸣",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636602",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "升格",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "蒙恬"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "米莱狄"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "大司命"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636603",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "千里相聚",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636604",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "身外身",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "孙悟空"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "获得孙悟空1张；悟空施法叫出2化身各攻击1次，每胜利化身数量永久加1。"
+    },
+    {
+      "id": "talent.637001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "兄妹",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "铠"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "露娜"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.637003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "兽觉",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "裴擒虎"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "云中君"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.637004",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "巨像",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "蒙恬"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "米莱狄"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "猩红神兽"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "蔚蓝神兽"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.637006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "舞力全开",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.63700601",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "起舞",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "貂蝉"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "上官婉儿"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.637007",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "箭雨",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "公孙离"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "虞姬"
+        }
+      ],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.637008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "双生突袭",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636108",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "双重分配",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.637010",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "毒奶",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "蔡文姬"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "扁鹊"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.637011",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "逐星",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "曜"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "李白"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "获得李白与曜各1张；二者共战，李白施法让曜模仿，3次后形成融合技能，具体融合招式待补。"
+    },
+    {
+      "id": "talent.637012",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "宝盒",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "孙悟空"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "露娜"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "获得露娜与悟空各1张；共战时一方致死退场6秒，若另一方期间仍活则满生命满法力返回。"
+    },
+    {
+      "id": "talent.637016",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "旋刃",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "李元芳"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "公孙离"
+        }
+      ],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "慕名而来",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "狂野帷幕",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636107",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "积少成多",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638004",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "超级蓄能",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638005",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "镜像迷离",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "摄人心魄",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "公孙离"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "猪八戒"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "孙悟空"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638007",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "控魂",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "公孙离"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "猪八戒"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "孙悟空"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636104",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "能量汲取",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖",
+      "效果概括": "出售上阵英雄时，把其等级提供给阿科米亚核心。"
+    },
+    {
+      "id": "talent.638009",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "双生相",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.638010",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "生生不息",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.636102",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "定向传输",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635046",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "点兵点将",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "点兵点将"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635045",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三分强援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635043",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三分增援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.646005",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "护命灵珠",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "护命灵珠"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "光辉圣铠",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "光辉圣铠"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646007",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "魂祭绝刃",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "魂祭绝刃"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "根源之力",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "根源之力"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646009",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "灵泉项链",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "灵泉项链"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646010",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "魂灭灵冠",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "魂灭灵冠"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635040",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "日落海强援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.646012",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "强敌克星",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "强敌克星"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646013",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "灵泉法杖",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "灵泉法杖"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646015",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "鼓舞之戒",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "鼓舞之戒"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646016",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "梦魇之牙",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "梦魇之牙"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.646017",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "末世",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "末世"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635038",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "日落海增援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.635035",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大河强援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.635033",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大河增援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第七轮拍卖"
+    },
+    {
+      "id": "talent.635030",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "逐鹿强援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第六轮拍卖"
+    },
+    {
+      "id": "talent.635028",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "逐鹿增援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第六轮拍卖"
+    },
+    {
+      "id": "talent.671008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "拾荒者",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "5阶英雄兑换券"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635018",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "河洛强援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第五轮拍卖"
+    },
+    {
+      "id": "talent.635016",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "河洛增援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第五轮拍卖"
+    },
+    {
+      "id": "talent.635013",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "天兵",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第五轮拍卖"
+    },
+    {
+      "id": "talent.635012",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "守护灵",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第五轮拍卖"
+    },
+    {
+      "id": "talent.671013",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "群星璀璨",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "4阶英雄兑换券"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "5阶英雄兑换券"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.635001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "特大电池包",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第五轮拍卖"
+    },
+    {
+      "id": "talent.634037",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "强者恒强",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第四轮拍卖",
+      "效果概括": "开战觉醒英雄双攻各加50；全体觉醒时额外双吸血20%。"
+    },
+    {
+      "id": "talent.634035",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "随机强化",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第四轮拍卖"
+    },
+    {
+      "id": "talent.671018",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "无影手",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.671019",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "学霸",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "留级证明"
+        }
+      ],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.634032",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "破败神威",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第四轮拍卖"
+    },
+    {
+      "id": "talent.671021",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "绝境逆袭",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.681001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "买橘子去",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "站这别动"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.634030",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战略中枢",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "有福同享"
+        }
+      ],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第四轮拍卖"
+    },
+    {
+      "id": "talent.634028",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "虚构武装",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第四轮拍卖"
+    },
+    {
+      "id": "talent.634014",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "延迟满足",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "延迟满足"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.633020",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "全副武装",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第三轮拍卖"
+    },
+    {
+      "id": "talent.633014",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "同心协力",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "第二轮拍卖"
+    },
+    {
+      "id": "talent.632012",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "泉水",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第二轮拍卖",
+      "效果概括": "每回合开始棋手治疗3；满生命时改获经验4。"
+    },
+    {
+      "id": "talent.623001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "三人游",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.681011",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "扩编高峰",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.681012",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "补给线：整备",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.681013",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "补给线：牺牲",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.622010",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "中流砥柱",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.681015",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "补给线：登场",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.681016",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "混沌次元",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "混沌裂隙"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.622008",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "小咖秀",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包一",
+      "解锁条件": "万象大赛达到1320分或者巅峰试炼达到1000分或者钻石狂潮达到3000分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.622003",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "永不独行",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "双人同行·2阶"
+        },
+        {
+          "关系": "关联预览",
+          "名称": "双人同行·3阶"
+        }
+      ],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.615006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "搏命",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.615002",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "紧急救援",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "5阶英雄兑换券"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.681023",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "危险数字",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包四",
+      "解锁条件": "万象大赛达到2170分",
+      "出现阶段": "第八轮拍卖"
+    },
+    {
+      "id": "talent.615001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大明星",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "大明星"
+        }
+      ],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "第一轮拍卖"
+    },
+    {
+      "id": "talent.614007",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "王牌部队",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.614006",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "有舍有得",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "天赋包二",
+      "解锁条件": "万象大赛达到1520分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.614001",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "资深猎头",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [
+        {
+          "关系": "关联预览",
+          "名称": "资深猎头"
+        }
+      ],
+      "天赋包": "天赋包三",
+      "解锁条件": "万象大赛达到1820分",
+      "出现阶段": "初始阵容"
+    },
+    {
+      "id": "talent.613011",
+      "game_version": null,
+      "knowledge_version": "0.1.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "无限进步",
+      "品阶": 3,
+      "阵营": null,
+      "关联": [],
+      "天赋包": "初始天赋",
+      "解锁条件": "万象大赛达到1200分",
+      "出现阶段": "初始阵容"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "slot.three-kingdom-entry.1",
+      "lineup_ref": "lineup.three-kingdom-entry",
+      "role": "core",
+      "hero_ref": "hero.1231"
+    },
+    {
+      "id": "slot.three-kingdom-entry.2",
+      "lineup_ref": "lineup.three-kingdom-entry",
+      "role": "engine",
+      "hero_ref": "hero.1841"
+    },
+    {
+      "id": "slot.three-kingdom-entry.3",
+      "lineup_ref": "lineup.three-kingdom-entry",
+      "role": "support",
+      "hero_ref": "hero.1071"
+    },
+    {
+      "id": "slot.three-kingdom-entry.4",
+      "lineup_ref": "lineup.three-kingdom-entry",
+      "role": "support",
+      "hero_ref": "hero.1411"
+    },
+    {
+      "id": "slot.three-kingdom-entry.5",
+      "lineup_ref": "lineup.three-kingdom-entry",
+      "role": "engine",
+      "hero_ref": "hero.1061"
+    },
+    {
+      "id": "slot.three-kingdom-entry.6",
+      "lineup_ref": "lineup.three-kingdom-entry",
+      "role": "support",
+      "hero_ref": "hero.1241"
+    },
+    {
+      "id": "slot.three-kingdom-entry.7",
+      "lineup_ref": "lineup.three-kingdom-entry",
+      "role": "engine",
+      "hero_ref": "hero.1281"
+    },
+    {
+      "id": "slot.sunset-ready.1",
+      "lineup_ref": "lineup.sunset-ready",
+      "role": "core",
+      "hero_ref": "hero.1421"
+    },
+    {
+      "id": "slot.sunset-ready.2",
+      "lineup_ref": "lineup.sunset-ready",
+      "role": "engine",
+      "hero_ref": "hero.1591"
+    },
+    {
+      "id": "slot.sunset-ready.3",
+      "lineup_ref": "lineup.sunset-ready",
+      "role": "support",
+      "hero_ref": "hero.5031"
+    },
+    {
+      "id": "slot.sunset-ready.4",
+      "lineup_ref": "lineup.sunset-ready",
+      "role": "support",
+      "hero_ref": "hero.5141"
+    },
+    {
+      "id": "slot.sunset-ready.5",
+      "lineup_ref": "lineup.sunset-ready",
+      "role": "support",
+      "hero_ref": "hero.5041"
+    },
+    {
+      "id": "slot.sunset-ready.6",
+      "lineup_ref": "lineup.sunset-ready",
+      "role": "engine",
+      "hero_ref": "hero.1831"
+    },
+    {
+      "id": "slot.sunset-ready.7",
+      "lineup_ref": "lineup.sunset-ready",
+      "role": "engine",
+      "hero_ref": "hero.5631"
+    },
+    {
+      "id": "slot.river-totems.1",
+      "lineup_ref": "lineup.river-totems",
+      "role": "core",
+      "hero_ref": "hero.5191"
+    },
+    {
+      "id": "slot.river-totems.2",
+      "lineup_ref": "lineup.river-totems",
+      "role": "engine",
+      "hero_ref": "hero.1741"
+    },
+    {
+      "id": "slot.river-totems.3",
+      "lineup_ref": "lineup.river-totems",
+      "role": "engine",
+      "hero_ref": "hero.1561"
+    },
+    {
+      "id": "slot.river-totems.4",
+      "lineup_ref": "lineup.river-totems",
+      "role": "engine",
+      "hero_ref": "hero.5771"
+    },
+    {
+      "id": "slot.river-totems.5",
+      "lineup_ref": "lineup.river-totems",
+      "role": "engine",
+      "hero_ref": "hero.1891"
+    },
+    {
+      "id": "slot.river-totems.6",
+      "lineup_ref": "lineup.river-totems",
+      "role": "engine",
+      "hero_ref": "hero.5171"
+    },
+    {
+      "id": "slot.river-totems.7",
+      "lineup_ref": "lineup.river-totems",
+      "role": "support",
+      "hero_ref": "hero.1871"
+    },
+    {
+      "id": "slot.heluocoins.1",
+      "lineup_ref": "lineup.heluocoins",
+      "role": "core",
+      "hero_ref": "hero.1951"
+    },
+    {
+      "id": "slot.heluocoins.2",
+      "lineup_ref": "lineup.heluocoins",
+      "role": "engine",
+      "hero_ref": "hero.5131"
+    },
+    {
+      "id": "slot.heluocoins.3",
+      "lineup_ref": "lineup.heluocoins",
+      "role": "engine",
+      "hero_ref": "hero.5091"
+    },
+    {
+      "id": "slot.heluocoins.4",
+      "lineup_ref": "lineup.heluocoins",
+      "role": "engine",
+      "hero_ref": "hero.1441"
+    },
+    {
+      "id": "slot.heluocoins.5",
+      "lineup_ref": "lineup.heluocoins",
+      "role": "support",
+      "hero_ref": "hero.1751"
+    },
+    {
+      "id": "slot.heluocoins.6",
+      "lineup_ref": "lineup.heluocoins",
+      "role": "support",
+      "hero_ref": "hero.1861"
+    },
+    {
+      "id": "slot.heluocoins.7",
+      "lineup_ref": "lineup.heluocoins",
+      "role": "engine",
+      "hero_ref": "hero.1731"
+    },
+    {
+      "id": "slot.zhulu-tactics.1",
+      "lineup_ref": "lineup.zhulu-tactics",
+      "role": "core",
+      "hero_ref": "hero.5241"
+    },
+    {
+      "id": "slot.zhulu-tactics.2",
+      "lineup_ref": "lineup.zhulu-tactics",
+      "role": "engine",
+      "hero_ref": "hero.1211"
+    },
+    {
+      "id": "slot.zhulu-tactics.3",
+      "lineup_ref": "lineup.zhulu-tactics",
+      "role": "engine",
+      "hero_ref": "hero.5231"
+    },
+    {
+      "id": "slot.zhulu-tactics.4",
+      "lineup_ref": "lineup.zhulu-tactics",
+      "role": "engine",
+      "hero_ref": "hero.1201"
+    },
+    {
+      "id": "slot.zhulu-tactics.5",
+      "lineup_ref": "lineup.zhulu-tactics",
+      "role": "engine",
+      "hero_ref": "hero.1391"
+    },
+    {
+      "id": "slot.zhulu-tactics.6",
+      "lineup_ref": "lineup.zhulu-tactics",
+      "role": "engine",
+      "hero_ref": "hero.1131"
+    },
+    {
+      "id": "slot.zhulu-tactics.7",
+      "lineup_ref": "lineup.zhulu-tactics",
+      "role": "engine",
+      "hero_ref": "hero.1121"
+    }
+  ]
+}

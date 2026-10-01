@@ -1,0 +1,166 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "talent.exclusive.player.10",
+      "name": "魅力无限",
+      "player_ref": "player.10",
+      "ability_ref": "ability.player.10.3",
+      "unlock_level": 6,
+      "summary": "每回合第1张打出的效果牌结算2次。"
+    },
+    {
+      "id": "talent.exclusive.player.11",
+      "name": "巨型玩偶",
+      "player_ref": "player.11",
+      "ability_ref": "ability.player.11.3",
+      "unlock_level": 6,
+      "summary": "小鹿等级加30并获得小鹿的庇护。"
+    },
+    {
+      "id": "talent.exclusive.player.20",
+      "name": "即刻起舞",
+      "player_ref": "player.20",
+      "ability_ref": "ability.player.20.3",
+      "unlock_level": 6,
+      "summary": "从3种枫叶舞强化中选1。"
+    },
+    {
+      "id": "talent.exclusive.player.21",
+      "name": "镜花影",
+      "player_ref": "player.21",
+      "ability_ref": "ability.player.21.3",
+      "unlock_level": 6,
+      "summary": "购买商店英雄留下镜像复制，不推进秘技任务。"
+    },
+    {
+      "id": "talent.exclusive.player.22",
+      "name": "潮起潮落",
+      "player_ref": "player.22",
+      "ability_ref": "ability.player.22.3",
+      "unlock_level": 6,
+      "summary": "开战随机传送临时等级100的英雄，无卡牌效果；此等级每回合加40。"
+    },
+    {
+      "id": "talent.exclusive.player.24",
+      "name": "月之特调",
+      "player_ref": "player.24",
+      "ability_ref": "ability.player.24.3",
+      "unlock_level": 6,
+      "summary": "小菟每提供5级增益追加随机属性：攻速15%/双吸血2%/双抗2；累计每提供65级再获小菟送福。"
+    },
+    {
+      "id": "talent.exclusive.player.25",
+      "name": "余音绕梁",
+      "player_ref": "player.25",
+      "ability_ref": "ability.player.25.3",
+      "unlock_level": 6,
+      "summary": "惊鸿调可演奏次数增加3。"
+    },
+    {
+      "id": "talent.exclusive.player.31",
+      "name": "引擎升级",
+      "player_ref": "player.31",
+      "ability_ref": "ability.player.31.3",
+      "unlock_level": 6,
+      "summary": "获得梦幻引擎替换商店；棋手生命≤30且战斗败北可再次获得。"
+    },
+    {
+      "id": "talent.exclusive.player.32",
+      "name": "瓜分宝藏",
+      "player_ref": "player.32",
+      "ability_ref": "ability.player.32.3",
+      "unlock_level": 6,
+      "summary": "从两种英雄强化选1。"
+    },
+    {
+      "id": "talent.exclusive.player.33",
+      "name": "惊才绝艳",
+      "player_ref": "player.33",
+      "ability_ref": "ability.player.33.3",
+      "unlock_level": 6,
+      "summary": "得到奇才1张，可指定英雄并获其对应牌4张。"
+    },
+    {
+      "id": "talent.exclusive.player.34",
+      "name": "冰雪秘藏",
+      "player_ref": "player.34",
+      "ability_ref": "ability.player.34.3",
+      "unlock_level": 6,
+      "summary": "从3种增益中选1。"
+    },
+    {
+      "id": "talent.exclusive.player.35",
+      "name": "成品方案",
+      "player_ref": "player.35",
+      "ability_ref": "ability.player.35.3",
+      "unlock_level": 6,
+      "summary": "选1种机关强化方案，共3候选。"
+    },
+    {
+      "id": "talent.exclusive.player.36",
+      "name": "神之一手",
+      "player_ref": "player.36",
+      "ability_ref": "ability.player.36.3",
+      "unlock_level": 6,
+      "summary": "开战复制敌方最高等级英雄，临时加入己方战场。"
+    },
+    {
+      "id": "talent.exclusive.player.38",
+      "name": "时光宝藏",
+      "player_ref": "player.38",
+      "ability_ref": "ability.player.38.3",
+      "unlock_level": 6,
+      "summary": "获得更强的永恒时之回环，可记录12张英雄或效果牌。"
+    },
+    {
+      "id": "talent.exclusive.player.39",
+      "name": "飞龙在天",
+      "player_ref": "player.39",
+      "ability_ref": "ability.player.39.3",
+      "unlock_level": 6,
+      "summary": "强化卦象：节每回合额外能量4；丰每回合临时刷新8次。"
+    },
+    {
+      "id": "talent.exclusive.player.40",
+      "name": "狂欢时刻",
+      "player_ref": "player.40",
+      "ability_ref": "ability.player.40.3",
+      "unlock_level": 6,
+      "summary": "获打成一片1张。"
+    },
+    {
+      "id": "talent.exclusive.player.41",
+      "name": "完美演出",
+      "player_ref": "player.41",
+      "ability_ref": "ability.player.41.3",
+      "unlock_level": 6,
+      "summary": "封神一瞬目标开战获得双吸血30%和15秒免控，仍可被压制。"
+    },
+    {
+      "id": "talent.exclusive.player.43",
+      "name": "特权决策",
+      "player_ref": "player.43",
+      "ability_ref": "ability.player.43.3",
+      "unlock_level": 6,
+      "summary": "颁布1个全员生效决策，自己另获特权增益。"
+    },
+    {
+      "id": "talent.exclusive.player.50",
+      "name": "火力全开",
+      "player_ref": "player.50",
+      "ability_ref": "ability.player.50.3",
+      "unlock_level": 6,
+      "summary": "攻击力提升比例为己方英雄等级总和×0.5%。"
+    },
+    {
+      "id": "talent.exclusive.player.51",
+      "name": "超级连接",
+      "player_ref": "player.51",
+      "ability_ref": "ability.player.51.3",
+      "unlock_level": 6,
+      "summary": "直接获大改装1张；开战飞行器连接英雄随机增加自身等级10%至30%的临时等级。"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "keyword.sacrifice",
+      "name": "牺牲",
+      "category": "阵亡触发",
+      "summary": "英雄阵亡时结算其牺牲效果。",
+      "event_ref": "event.unit_death"
+    },
+    {
+      "id": "keyword.synthesis",
+      "name": "合成",
+      "category": "卡牌操作",
+      "summary": "使用场上已存在的同名英雄牌，对该英雄进行结合与强化。",
+      "event_ref": "event.hero_synthesis"
+    },
+    {
+      "id": "keyword.prepare",
+      "name": "整备",
+      "category": "回合触发",
+      "summary": "每个回合开始时结算整备效果。",
+      "event_ref": "event.round_start"
+    },
+    {
+      "id": "keyword.entry",
+      "name": "登场",
+      "category": "卡牌操作",
+      "summary": "使用带登场效果的卡牌后触发其登场内容。",
+      "event_ref": "event.card_played"
+    },
+    {
+      "id": "keyword.triumph",
+      "name": "凯旋",
+      "category": "战斗结算",
+      "summary": "英雄在场且本轮获胜时结算凯旋效果。",
+      "event_ref": "event.combat_win"
+    },
+    {
+      "id": "keyword.combat_start",
+      "name": "开团",
+      "category": "战斗触发",
+      "summary": "进入战斗时结算开团效果。",
+      "event_ref": "event.combat_start"
+    },
+    {
+      "id": "keyword.exit",
+      "name": "退场",
+      "category": "出售触发",
+      "summary": "场上英雄被出售时结算退场效果；不等同于阵亡。",
+      "event_ref": "event.deployed_hero_sold"
+    },
+    {
+      "id": "keyword.defeat",
+      "name": "败阵",
+      "category": "战斗结算",
+      "summary": "英雄在场且本轮战斗失败时结算败阵效果。",
+      "event_ref": "event.combat_loss"
+    },
+    {
+      "id": "keyword.temporary_level",
+      "name": "临时等级",
+      "category": "成长状态",
+      "summary": "仅在当前战斗保留的等级，战斗结束时移除。",
+      "event_ref": "event.combat_end"
+    },
+    {
+      "id": "keyword.arkomia_core",
+      "name": "阿科米亚核心",
+      "category": "特殊单位",
+      "summary": "核心等级在开团时分配成日落海英雄的临时等级，每个英雄至多接收一半核心等级。",
+      "event_ref": "event.combat_start"
+    },
+    {
+      "id": "keyword.totem",
+      "name": "图腾",
+      "category": "特殊单位",
+      "summary": "大河流域相关单位，在存活期间提供各自效果。"
+    },
+    {
+      "id": "keyword.take_level",
+      "name": "夺取",
+      "category": "卡牌操作",
+      "summary": "使用此牌时，从周围一格内随机一名己方英雄夺取最多十级；临时等级不在夺取范围。",
+      "event_ref": "event.card_played"
+    },
+    {
+      "id": "keyword.blink",
+      "name": "闪现",
+      "category": "战斗触发",
+      "summary": "开战时跳至敌方镜像格，落点冲突规则未知。",
+      "event_ref": "event.combat_start"
+    },
+    {
+      "id": "keyword.resurrection",
+      "name": "复生",
+      "category": "战斗状态",
+      "summary": "阵亡后返回战斗，基础恢复量为一半生命；各英雄单回合次数上限十次，具体技能条件另行适用。",
+      "event_ref": "event.unit_death"
+    }
+  ]
+}

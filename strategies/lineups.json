@@ -1,0 +1,516 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "name": "三分登场流",
+      "family": "登场联动",
+      "logic": "曹操的整备重触三分登场；蔡文姬响应三分英雄牌，小乔响应登场，形成等级成长。吕布接替前期输出。",
+      "route": [
+        "1—3回合：孙尚香开局，缺牌用弈星或牛魔；第2回合升2级，找蔡文姬、曹操、赵云。",
+        "4—7回合：补貂蝉，升3级；优先觉醒曹操、蔡文姬，备换帅后升4级找小乔。",
+        "8—11回合：升5级找吕布、周瑜；先让吕布靠近孙尚香上阵，以换帅交换等级，再卖孙尚香补周瑜。",
+        "12回合后：需要保护吕布时，赵云可换太乙真人。"
+      ],
+      "position": "以曹操承伤，吕布输出，小乔置后；周瑜可补防装与法源之杯。",
+      "replacement": "缺赵云、貂蝉、周瑜时，可暂用甄姬、阿轲等三分或登场英雄。换帅交换指定三分与最近三分的等级；遗志移除目标并把永久等级转给随机友军，应控制接收目标。",
+      "minimum_conditions": [
+        "对应阵营本局可用",
+        "上阵容量足够；未到容量先按运营阶段组装",
+        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
+        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
+      ],
+      "id": "lineup.three-kingdom-entry",
+      "kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "progressive_route",
+      "power_rank": null,
+      "heroes": [
+        {
+          "hero_ref": "hero.1231",
+          "name": "吕布",
+          "role": "core"
+        },
+        {
+          "hero_ref": "hero.1841",
+          "name": "蔡文姬",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1071",
+          "name": "赵云",
+          "role": "support"
+        },
+        {
+          "hero_ref": "hero.1411",
+          "name": "貂蝉",
+          "role": "support"
+        },
+        {
+          "hero_ref": "hero.1061",
+          "name": "小乔",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1241",
+          "name": "周瑜",
+          "role": "support"
+        },
+        {
+          "hero_ref": "hero.1281",
+          "name": "曹操",
+          "role": "engine"
+        }
+      ],
+      "chessplayer_refs": [
+        "player.33",
+        "player.32",
+        "player.24"
+      ],
+      "talent_refs": [
+        "talent.636304",
+        "talent.636316"
+      ],
+      "equipment_choices": [
+        {
+          "hero_ref": "hero.1231",
+          "equipment_refs": [
+            "equipment.643803",
+            "equipment.643103",
+            "equipment.643704"
+          ],
+          "requirement": "alternatives"
+        },
+        {
+          "hero_ref": "hero.1281",
+          "equipment_refs": [
+            "equipment.643603",
+            "equipment.643805",
+            "equipment.643502"
+          ],
+          "requirement": "alternatives"
+        }
+      ],
+      "talent_conditions": [
+        {
+          "talent_ref": "talent.636304",
+          "summary": "己方英雄触发登场时，随机两名三分英雄各增加2级。"
+        },
+        {
+          "talent_ref": "talent.636316",
+          "summary": "获得一张挂帅牌：令指定三分英雄的等级等同于最近一名三分英雄。"
+        }
+      ]
+    },
+    {
+      "name": "日落海整备流",
+      "family": "整备联动",
+      "logic": "整备英雄提升阿科米亚核心，朵莉亚响应整备、海诺响应核心升级；雅典娜在开团时再触发整备。核心分配临时等级给日落海英雄。",
+      "route": [
+        "1—3回合：优先狂铁，第2回合升2级。",
+        "4—7回合：升3级，补米莱狄、亚连，找朵莉亚和安琪拉并觉醒。",
+        "8—11回合：升5级补雅典娜、海诺，继续觉醒整备组件。",
+        "12回合后：有空位时，可用露娜触发整备。"
+      ],
+      "position": "对手有闪现时，以友军围住安琪拉；雅典娜承担前排。",
+      "replacement": "决胜回合可只保留雅典娜和安琪拉或海诺，将核心分配集中；这是牺牲后续成长换取当前战力的选择。远洋宝藏可提供日落海装备。",
+      "minimum_conditions": [
+        "对应阵营本局可用",
+        "上阵容量足够；未到容量先按运营阶段组装",
+        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
+        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
+      ],
+      "id": "lineup.sunset-ready",
+      "kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "progressive_route",
+      "power_rank": null,
+      "heroes": [
+        {
+          "hero_ref": "hero.1421",
+          "name": "安琪拉",
+          "role": "core"
+        },
+        {
+          "hero_ref": "hero.1591",
+          "name": "朵莉亚",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.5031",
+          "name": "狂铁",
+          "role": "support"
+        },
+        {
+          "hero_ref": "hero.5141",
+          "name": "亚连",
+          "role": "support"
+        },
+        {
+          "hero_ref": "hero.5041",
+          "name": "米莱狄",
+          "role": "support"
+        },
+        {
+          "hero_ref": "hero.1831",
+          "name": "雅典娜",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.5631",
+          "name": "海诺",
+          "role": "engine"
+        }
+      ],
+      "chessplayer_refs": [
+        "player.50",
+        "player.24",
+        "player.40"
+      ],
+      "talent_refs": [
+        "talent.636104",
+        "talent.636117"
+      ],
+      "equipment_choices": [
+        {
+          "hero_ref": "hero.1421",
+          "equipment_refs": [
+            "equipment.643402",
+            "equipment.643202",
+            "equipment.643803"
+          ],
+          "requirement": "alternatives"
+        },
+        {
+          "hero_ref": "hero.1831",
+          "equipment_refs": [
+            "equipment.643501",
+            "equipment.643603",
+            "equipment.643502"
+          ],
+          "requirement": "alternatives"
+        }
+      ],
+      "talent_conditions": [
+        {
+          "talent_ref": "talent.636104",
+          "summary": "出售上阵英雄时，把其等级提供给阿科米亚核心。"
+        },
+        {
+          "talent_ref": "talent.636117",
+          "summary": "随机获得一件日落海专属装备；英雄每穿戴一件该类装备，其整备额外触发一次。"
+        }
+      ]
+    },
+    {
+      "name": "大河图腾流",
+      "family": "图腾联动",
+      "logic": "三名召唤者提供三种图腾；虞姬按图腾数成长，张良响应开团。敖隐随图腾持续增加攻速与临时等级，东皇太一改变图腾受击优先级。",
+      "route": [
+        "1—3回合：牛魔、干将莫邪过渡，第2回合升2级。",
+        "4—7回合：升3级找虞姬、鬼谷子、张良、少司缘；装备先给虞姬，组件各一张后升4级找大司命。",
+        "8—11回合：升5级补敖隐、东皇太一，输出装备移给敖隐。",
+        "12回合后：觉醒核心；有空位时补太乙真人或瑶。"
+      ],
+      "position": "以英雄和图腾围住敖隐，减少后排被切；东皇太一前排承伤。",
+      "replacement": "决赛可把张良换成太乙真人保护敖隐；瑶可携带控制装备补容错。",
+      "minimum_conditions": [
+        "对应阵营本局可用",
+        "上阵容量足够；未到容量先按运营阶段组装",
+        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
+        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
+      ],
+      "id": "lineup.river-totems",
+      "kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "progressive_route",
+      "power_rank": null,
+      "heroes": [
+        {
+          "hero_ref": "hero.5191",
+          "name": "敖隐",
+          "role": "core"
+        },
+        {
+          "hero_ref": "hero.1741",
+          "name": "虞姬",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1561",
+          "name": "张良",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.5771",
+          "name": "少司缘",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1891",
+          "name": "鬼谷子",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.5171",
+          "name": "大司命",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1871",
+          "name": "东皇太一",
+          "role": "support"
+        }
+      ],
+      "chessplayer_refs": [
+        "player.50",
+        "player.11",
+        "player.24"
+      ],
+      "talent_refs": [
+        "talent.623002",
+        "talent.635031"
+      ],
+      "equipment_choices": [
+        {
+          "hero_ref": "hero.5191",
+          "equipment_refs": [
+            "equipment.643205",
+            "equipment.643302",
+            "equipment.643208"
+          ],
+          "requirement": "alternatives"
+        },
+        {
+          "hero_ref": "hero.1871",
+          "equipment_refs": [
+            "equipment.643501",
+            "equipment.643603",
+            "equipment.643502"
+          ],
+          "requirement": "alternatives"
+        }
+      ],
+      "talent_conditions": [
+        {
+          "talent_ref": "talent.623002",
+          "summary": "获得两张天赋牌复印机，可指定1—3阶英雄获得其英雄牌。"
+        },
+        {
+          "talent_ref": "talent.635031",
+          "summary": "获得2能量和随机一张2—3阶大河流域英雄牌。"
+        }
+      ]
+    },
+    {
+      "name": "河洛古币流",
+      "family": "古币单核",
+      "logic": "古币产出集中养百里玄策，玄策整备根据上一回合闪现英雄击败数成长；钟馗削减击败者临时等级，太乙真人提供复生。",
+      "route": [
+        "1—3回合：李元芳或弈星开局，第2回合升2级找玄策；可拿盾山，古币给玄策。",
+        "4—7回合：升3级，优先觉醒玄策，补程咬金、钟馗。",
+        "8—11回合：升4级找上官婉儿、太乙真人，11回合前升5级；继续觉醒已有组件。",
+        "12回合后：补玄策装备与觉醒；战力不足可评估等级转移或五阶转型。遗志接收者随机；化铁为金随机变为未在场五阶，不能指定李信或花木兰。"
+      ],
+      "position": "李元芳、太乙真人靠近玄策，确保最近目标正确；按敌方主输出位置调整玄策。",
+      "replacement": "遗志不转移临时等级；化铁为金限1—3阶目标，转为随机未在场五阶英雄，觉醒并保留当前等级（包括临时等级）。李信为4阶，不能通过化铁为金获得。",
+      "minimum_conditions": [
+        "对应阵营本局可用",
+        "上阵容量足够；未到容量先按运营阶段组装",
+        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
+        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
+      ],
+      "id": "lineup.heluocoins",
+      "kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "progressive_route",
+      "power_rank": null,
+      "heroes": [
+        {
+          "hero_ref": "hero.1951",
+          "name": "百里玄策",
+          "role": "core"
+        },
+        {
+          "hero_ref": "hero.5131",
+          "name": "上官婉儿",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.5091",
+          "name": "盾山",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1441",
+          "name": "程咬金",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1751",
+          "name": "钟馗",
+          "role": "support"
+        },
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人",
+          "role": "support"
+        },
+        {
+          "hero_ref": "hero.1731",
+          "name": "李元芳",
+          "role": "engine"
+        }
+      ],
+      "chessplayer_refs": [
+        "player.41",
+        "player.24",
+        "player.40"
+      ],
+      "talent_refs": [
+        "talent.638008",
+        "talent.681021"
+      ],
+      "equipment_choices": [
+        {
+          "hero_ref": "hero.1951",
+          "equipment_refs": [
+            "equipment.643103",
+            "equipment.643803",
+            "equipment.643301"
+          ],
+          "requirement": "alternatives"
+        },
+        {
+          "hero_ref": "hero.1441",
+          "equipment_refs": [
+            "equipment.643404",
+            "equipment.643502",
+            "equipment.643601"
+          ],
+          "requirement": "alternatives"
+        }
+      ],
+      "talent_conditions": [
+        {
+          "talent_ref": "talent.638008",
+          "summary": "闪现英雄击败敌方单位时，立即闪现至最近敌人处，并无敌0.5秒。"
+        },
+        {
+          "talent_ref": "talent.681021",
+          "summary": "打出觉醒英雄牌时，该英雄增加22%暴击率和11%物理、法术吸血，每名英雄仅一次。"
+        }
+      ]
+    },
+    {
+      "name": "逐鹿战术牌流",
+      "family": "效果牌联动",
+      "logic": "各组件产出战术牌，使用效果牌时由芈月给装备最多的逐鹿英雄加等级。蒙犽必须保持该目标身份。",
+      "route": [
+        "1—3回合：弈星过渡，第2回合升2级找芈月。",
+        "4—7回合：升3级补西施、老夫子、白起，优先觉醒芈月后升4级；缺觉醒也应继续推进。",
+        "8—11回合：升5级补蒙犽、庄周、鲁班七号；觉醒优先芈月、西施、白起，再完善输出。",
+        "12回合后：继续找蒙犽、鲁班七号；空位补太乙真人或海月。"
+      ],
+      "position": "蒙犽后排、白起前排；确保蒙犽装备件数严格多于其他逐鹿英雄。",
+      "replacement": "无空位又需复生时，可用太乙真人替换老夫子。闹闹适配以开局选到逐鹿为条件。",
+      "minimum_conditions": [
+        "对应阵营本局可用",
+        "上阵容量足够；未到容量先按运营阶段组装",
+        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
+        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
+      ],
+      "id": "lineup.zhulu-tactics",
+      "kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "progressive_route",
+      "power_rank": null,
+      "heroes": [
+        {
+          "hero_ref": "hero.5241",
+          "name": "蒙犽",
+          "role": "core"
+        },
+        {
+          "hero_ref": "hero.1211",
+          "name": "芈月",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.5231",
+          "name": "西施",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1201",
+          "name": "白起",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1391",
+          "name": "老夫子",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1131",
+          "name": "庄周",
+          "role": "engine"
+        },
+        {
+          "hero_ref": "hero.1121",
+          "name": "鲁班七号",
+          "role": "engine"
+        }
+      ],
+      "chessplayer_refs": [
+        "player.33",
+        "player.10",
+        "player.40"
+      ],
+      "talent_refs": [
+        "talent.636417",
+        "talent.636403"
+      ],
+      "equipment_choices": [
+        {
+          "hero_ref": "hero.5241",
+          "equipment_refs": [
+            "equipment.643103",
+            "equipment.643803",
+            "equipment.643402"
+          ],
+          "requirement": "alternatives"
+        },
+        {
+          "hero_ref": "hero.1201",
+          "equipment_refs": [
+            "equipment.643501",
+            "equipment.643502",
+            "equipment.643601"
+          ],
+          "requirement": "alternatives"
+        }
+      ],
+      "talent_conditions": [
+        {
+          "talent_ref": "talent.636417",
+          "summary": "回合开始获得一张上阵逐鹿英雄的同名牌；上一轮获胜时改为两张。"
+        },
+        {
+          "talent_ref": "talent.636403",
+          "summary": "获得一张战术牌，此后每个回合开始再获一张；棋手达到5级后必定为高阶战术。"
+        }
+      ]
+    }
+  ]
+}

@@ -9,3 +9,5 @@
 对象：`CardDefinition`、`CardInstance`、`CardVariant`、`CardChoice`。
 
 详见[模块与关系定义](../../docs/模块与关系.md)。
+
+知识条目：[effects.json](effects.json)。

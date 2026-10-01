@@ -9,3 +9,5 @@
 对象：`TalentDefinition`、`TalentPool`、`TalentOffer`、`TalentSelection`。
 
 详见[模块与关系定义](../../docs/模块与关系.md)。
+
+知识条目：[catalog.json](catalog.json)。

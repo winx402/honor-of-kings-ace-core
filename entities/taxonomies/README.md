@@ -9,3 +9,5 @@
 对象：`EntityId`、`RevisionId`、`Faction`、`Role`、`Attribute`、`ResourceType`、`ZoneType`。
 
 详见[模块与关系定义](../../docs/模块与关系.md)。
+
+知识条目：[factions.json](factions.json)。

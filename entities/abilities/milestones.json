@@ -1,0 +1,1587 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "milestone.hero.1941.10",
+      "hero_ref": "hero.1941",
+      "ability_ref": "ability.hero.1941.1",
+      "level": 10,
+      "summary": "伤害系数提高至1.2×物攻，削减物防改为8点。"
+    },
+    {
+      "id": "milestone.hero.1941.40",
+      "hero_ref": "hero.1941",
+      "ability_ref": "ability.hero.1941.1",
+      "level": 40,
+      "summary": "首次战斗阵亡可复生，恢复至50%最大生命。"
+    },
+    {
+      "id": "milestone.hero.1941.100",
+      "hero_ref": "hero.1941",
+      "ability_ref": "ability.hero.1941.1",
+      "level": 100,
+      "summary": "复生恢复至满生命；周边1格敌人被击飞眩晕1秒并受10%最大生命的物理伤害。"
+    },
+    {
+      "id": "milestone.hero.5221.10",
+      "hero_ref": "hero.5221",
+      "ability_ref": "ability.hero.5221.1",
+      "level": 10,
+      "summary": "施法获得100+1.0×物攻的4秒护盾。"
+    },
+    {
+      "id": "milestone.hero.5221.40",
+      "hero_ref": "hero.5221",
+      "ability_ref": "ability.hero.5221.1",
+      "level": 40,
+      "summary": "每第3次技能额外击飞并眩晕目标0.5秒。"
+    },
+    {
+      "id": "milestone.hero.5221.100",
+      "hero_ref": "hero.5221",
+      "ability_ref": "ability.hero.5221.1",
+      "level": 100,
+      "summary": "施法后追加1次强化普攻：伤害130+1.3×物攻，治疗200+0.75×物攻。"
+    },
+    {
+      "id": "milestone.hero.1181.10",
+      "hero_ref": "hero.1181",
+      "ability_ref": "ability.hero.1181.1",
+      "level": 10,
+      "summary": "炸弹伤害改为100+1.75×法攻。"
+    },
+    {
+      "id": "milestone.hero.1181.40",
+      "hero_ref": "hero.1181",
+      "ability_ref": "ability.hero.1181.1",
+      "level": 40,
+      "summary": "每第3次技能向敌方生命最高的3个目标分别投弹。"
+    },
+    {
+      "id": "milestone.hero.1181.100",
+      "hero_ref": "hero.1181",
+      "ability_ref": "ability.hero.1181.1",
+      "level": 100,
+      "summary": "炸弹附着期间沉默承载目标。"
+    },
+    {
+      "id": "milestone.hero.5031.10",
+      "hero_ref": "hero.5031",
+      "ability_ref": "ability.hero.5031.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5031.40",
+      "hero_ref": "hero.5031",
+      "ability_ref": "ability.hero.5031.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5031.100",
+      "hero_ref": "hero.5031",
+      "ability_ref": "ability.hero.5031.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1111.10",
+      "hero_ref": "hero.1111",
+      "ability_ref": "ability.hero.1111.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1111.40",
+      "hero_ref": "hero.1111",
+      "ability_ref": "ability.hero.1111.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1111.100",
+      "hero_ref": "hero.1111",
+      "ability_ref": "ability.hero.1111.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1971.10",
+      "hero_ref": "hero.1971",
+      "ability_ref": "ability.hero.1971.1",
+      "level": 10,
+      "summary": "伤害提高至100+1.0×法攻。"
+    },
+    {
+      "id": "milestone.hero.1971.40",
+      "hero_ref": "hero.1971",
+      "ability_ref": "ability.hero.1971.1",
+      "level": 40,
+      "summary": "棋盘持续期间，敌人无法进出棋盘。"
+    },
+    {
+      "id": "milestone.hero.1971.100",
+      "hero_ref": "hero.1971",
+      "ability_ref": "ability.hero.1971.1",
+      "level": 100,
+      "summary": "棋盘持续时间延长至5.5秒。"
+    },
+    {
+      "id": "milestone.hero.1821.10",
+      "hero_ref": "hero.1821",
+      "ability_ref": "ability.hero.1821.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1821.40",
+      "hero_ref": "hero.1821",
+      "ability_ref": "ability.hero.1821.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1821.100",
+      "hero_ref": "hero.1821",
+      "ability_ref": "ability.hero.1821.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1731.10",
+      "hero_ref": "hero.1731",
+      "ability_ref": "ability.hero.1731.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1731.40",
+      "hero_ref": "hero.1731",
+      "ability_ref": "ability.hero.1731.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1731.100",
+      "hero_ref": "hero.1731",
+      "ability_ref": "ability.hero.1731.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1681.10",
+      "hero_ref": "hero.1681",
+      "ability_ref": "ability.hero.1681.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1681.40",
+      "hero_ref": "hero.1681",
+      "ability_ref": "ability.hero.1681.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1681.100",
+      "hero_ref": "hero.1681",
+      "ability_ref": "ability.hero.1681.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5141.10",
+      "hero_ref": "hero.5141",
+      "ability_ref": "ability.hero.5141.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5141.40",
+      "hero_ref": "hero.5141",
+      "ability_ref": "ability.hero.5141.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5141.100",
+      "hero_ref": "hero.5141",
+      "ability_ref": "ability.hero.5141.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5041.10",
+      "hero_ref": "hero.5041",
+      "ability_ref": "ability.hero.5041.1",
+      "level": 10,
+      "summary": "单次召唤2只；仆从普攻法攻系数改为0.6。"
+    },
+    {
+      "id": "milestone.hero.5041.40",
+      "hero_ref": "hero.5041",
+      "ability_ref": "ability.hero.5041.1",
+      "level": 40,
+      "summary": "仆从额外生命取100%法攻；数量已满时再施法会将其生命回满。"
+    },
+    {
+      "id": "milestone.hero.5041.100",
+      "hero_ref": "hero.5041",
+      "ability_ref": "ability.hero.5041.1",
+      "level": 100,
+      "summary": "仆从数量上限提高到4。"
+    },
+    {
+      "id": "milestone.hero.1351.10",
+      "hero_ref": "hero.1351",
+      "ability_ref": "ability.hero.1351.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1351.40",
+      "hero_ref": "hero.1351",
+      "ability_ref": "ability.hero.1351.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1351.100",
+      "hero_ref": "hero.1351",
+      "ability_ref": "ability.hero.1351.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1891.10",
+      "hero_ref": "hero.1891",
+      "ability_ref": "ability.hero.1891.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1891.40",
+      "hero_ref": "hero.1891",
+      "ability_ref": "ability.hero.1891.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1891.100",
+      "hero_ref": "hero.1891",
+      "ability_ref": "ability.hero.1891.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1981.10",
+      "hero_ref": "hero.1981",
+      "ability_ref": "ability.hero.1981.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1981.40",
+      "hero_ref": "hero.1981",
+      "ability_ref": "ability.hero.1981.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1981.100",
+      "hero_ref": "hero.1981",
+      "ability_ref": "ability.hero.1981.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1211.10",
+      "hero_ref": "hero.1211",
+      "ability_ref": "ability.hero.1211.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1211.40",
+      "hero_ref": "hero.1211",
+      "ability_ref": "ability.hero.1211.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1211.100",
+      "hero_ref": "hero.1211",
+      "ability_ref": "ability.hero.1211.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.3121.10",
+      "hero_ref": "hero.3121",
+      "ability_ref": "ability.hero.3121.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.3121.40",
+      "hero_ref": "hero.3121",
+      "ability_ref": "ability.hero.3121.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.3121.100",
+      "hero_ref": "hero.3121",
+      "ability_ref": "ability.hero.3121.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5091.10",
+      "hero_ref": "hero.5091",
+      "ability_ref": "ability.hero.5091.1",
+      "level": 10,
+      "summary": "减伤35%，状态持续8秒。"
+    },
+    {
+      "id": "milestone.hero.5091.40",
+      "hero_ref": "hero.5091",
+      "ability_ref": "ability.hero.5091.1",
+      "level": 40,
+      "summary": "扩大盾范围，接触敌人攻速降低35%。"
+    },
+    {
+      "id": "milestone.hero.5091.100",
+      "hero_ref": "hero.5091",
+      "ability_ref": "ability.hero.5091.1",
+      "level": 100,
+      "summary": "开战立即架盾，维持整个回合。"
+    },
+    {
+      "id": "milestone.hero.1281.10",
+      "hero_ref": "hero.1281",
+      "ability_ref": "ability.hero.1281.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1281.40",
+      "hero_ref": "hero.1281",
+      "ability_ref": "ability.hero.1281.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1281.100",
+      "hero_ref": "hero.1281",
+      "ability_ref": "ability.hero.1281.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1741.10",
+      "hero_ref": "hero.1741",
+      "ability_ref": "ability.hero.1741.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1741.40",
+      "hero_ref": "hero.1741",
+      "ability_ref": "ability.hero.1741.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1741.100",
+      "hero_ref": "hero.1741",
+      "ability_ref": "ability.hero.1741.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1321.10",
+      "hero_ref": "hero.1321",
+      "ability_ref": "ability.hero.1321.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1321.40",
+      "hero_ref": "hero.1321",
+      "ability_ref": "ability.hero.1321.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1321.100",
+      "hero_ref": "hero.1321",
+      "ability_ref": "ability.hero.1321.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1071.10",
+      "hero_ref": "hero.1071",
+      "ability_ref": "ability.hero.1071.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1071.40",
+      "hero_ref": "hero.1071",
+      "ability_ref": "ability.hero.1071.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1071.100",
+      "hero_ref": "hero.1071",
+      "ability_ref": "ability.hero.1071.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1911.10",
+      "hero_ref": "hero.1911",
+      "ability_ref": "ability.hero.1911.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1911.40",
+      "hero_ref": "hero.1911",
+      "ability_ref": "ability.hero.1911.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1911.100",
+      "hero_ref": "hero.1911",
+      "ability_ref": "ability.hero.1911.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1991.10",
+      "hero_ref": "hero.1991",
+      "ability_ref": "ability.hero.1991.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1991.40",
+      "hero_ref": "hero.1991",
+      "ability_ref": "ability.hero.1991.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1991.100",
+      "hero_ref": "hero.1991",
+      "ability_ref": "ability.hero.1991.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1961.10",
+      "hero_ref": "hero.1961",
+      "ability_ref": "ability.hero.1961.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1961.40",
+      "hero_ref": "hero.1961",
+      "ability_ref": "ability.hero.1961.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1961.100",
+      "hero_ref": "hero.1961",
+      "ability_ref": "ability.hero.1961.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1081.10",
+      "hero_ref": "hero.1081",
+      "ability_ref": "ability.hero.1081.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1081.40",
+      "hero_ref": "hero.1081",
+      "ability_ref": "ability.hero.1081.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1081.100",
+      "hero_ref": "hero.1081",
+      "ability_ref": "ability.hero.1081.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1951.10",
+      "hero_ref": "hero.1951",
+      "ability_ref": "ability.hero.1951.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1951.40",
+      "hero_ref": "hero.1951",
+      "ability_ref": "ability.hero.1951.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1951.100",
+      "hero_ref": "hero.1951",
+      "ability_ref": "ability.hero.1951.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1051.10",
+      "hero_ref": "hero.1051",
+      "ability_ref": "ability.hero.1051.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1051.40",
+      "hero_ref": "hero.1051",
+      "ability_ref": "ability.hero.1051.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1051.100",
+      "hero_ref": "hero.1051",
+      "ability_ref": "ability.hero.1051.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5271.10",
+      "hero_ref": "hero.5271",
+      "ability_ref": "ability.hero.5271.1",
+      "level": 10,
+      "summary": "每名士兵分摊比例改为12%。"
+    },
+    {
+      "id": "milestone.hero.5271.40",
+      "hero_ref": "hero.5271",
+      "ability_ref": "ability.hero.5271.1",
+      "level": 40,
+      "summary": "单次生成2名、存量上限4名。"
+    },
+    {
+      "id": "milestone.hero.5271.100",
+      "hero_ref": "hero.5271",
+      "ability_ref": "ability.hero.5271.1",
+      "level": 100,
+      "summary": "单次生成4名士兵。"
+    },
+    {
+      "id": "milestone.hero.1841.10",
+      "hero_ref": "hero.1841",
+      "ability_ref": "ability.hero.1841.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1841.40",
+      "hero_ref": "hero.1841",
+      "ability_ref": "ability.hero.1841.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1841.100",
+      "hero_ref": "hero.1841",
+      "ability_ref": "ability.hero.1841.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5061.10",
+      "hero_ref": "hero.5061",
+      "ability_ref": "ability.hero.5061.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5061.40",
+      "hero_ref": "hero.5061",
+      "ability_ref": "ability.hero.5061.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5061.100",
+      "hero_ref": "hero.5061",
+      "ability_ref": "ability.hero.5061.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5641.10",
+      "hero_ref": "hero.5641",
+      "ability_ref": "ability.hero.5641.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5641.40",
+      "hero_ref": "hero.5641",
+      "ability_ref": "ability.hero.5641.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5641.100",
+      "hero_ref": "hero.5641",
+      "ability_ref": "ability.hero.5641.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1771.10",
+      "hero_ref": "hero.1771",
+      "ability_ref": "ability.hero.1771.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1771.40",
+      "hero_ref": "hero.1771",
+      "ability_ref": "ability.hero.1771.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1771.100",
+      "hero_ref": "hero.1771",
+      "ability_ref": "ability.hero.1771.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1931.10",
+      "hero_ref": "hero.1931",
+      "ability_ref": "ability.hero.1931.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1931.40",
+      "hero_ref": "hero.1931",
+      "ability_ref": "ability.hero.1931.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1931.100",
+      "hero_ref": "hero.1931",
+      "ability_ref": "ability.hero.1931.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1201.10",
+      "hero_ref": "hero.1201",
+      "ability_ref": "ability.hero.1201.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1201.40",
+      "hero_ref": "hero.1201",
+      "ability_ref": "ability.hero.1201.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1201.100",
+      "hero_ref": "hero.1201",
+      "ability_ref": "ability.hero.1201.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5011.10",
+      "hero_ref": "hero.5011",
+      "ability_ref": "ability.hero.5011.1",
+      "level": 10,
+      "summary": "治疗法攻系数改为0.9。"
+    },
+    {
+      "id": "milestone.hero.5011.40",
+      "hero_ref": "hero.5011",
+      "ability_ref": "ability.hero.5011.1",
+      "level": 40,
+      "summary": "目标另获25点双抗，持续5秒。"
+    },
+    {
+      "id": "milestone.hero.5011.100",
+      "hero_ref": "hero.5011",
+      "ability_ref": "ability.hero.5011.1",
+      "level": 100,
+      "summary": "额外治疗20%最大生命。"
+    },
+    {
+      "id": "milestone.hero.1161.10",
+      "hero_ref": "hero.1161",
+      "ability_ref": "ability.hero.1161.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1161.40",
+      "hero_ref": "hero.1161",
+      "ability_ref": "ability.hero.1161.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1161.100",
+      "hero_ref": "hero.1161",
+      "ability_ref": "ability.hero.1161.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5181.10",
+      "hero_ref": "hero.5181",
+      "ability_ref": "ability.hero.5181.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5181.40",
+      "hero_ref": "hero.5181",
+      "ability_ref": "ability.hero.5181.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5181.100",
+      "hero_ref": "hero.5181",
+      "ability_ref": "ability.hero.5181.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5021.10",
+      "hero_ref": "hero.5021",
+      "ability_ref": "ability.hero.5021.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5021.40",
+      "hero_ref": "hero.5021",
+      "ability_ref": "ability.hero.5021.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5021.100",
+      "hero_ref": "hero.5021",
+      "ability_ref": "ability.hero.5021.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1391.10",
+      "hero_ref": "hero.1391",
+      "ability_ref": "ability.hero.1391.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1391.40",
+      "hero_ref": "hero.1391",
+      "ability_ref": "ability.hero.1391.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1391.100",
+      "hero_ref": "hero.1391",
+      "ability_ref": "ability.hero.1391.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5231.10",
+      "hero_ref": "hero.5231",
+      "ability_ref": "ability.hero.5231.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5231.40",
+      "hero_ref": "hero.5231",
+      "ability_ref": "ability.hero.5231.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5231.100",
+      "hero_ref": "hero.5231",
+      "ability_ref": "ability.hero.5231.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1141.10",
+      "hero_ref": "hero.1141",
+      "ability_ref": "ability.hero.1141.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1141.40",
+      "hero_ref": "hero.1141",
+      "ability_ref": "ability.hero.1141.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1141.100",
+      "hero_ref": "hero.1141",
+      "ability_ref": "ability.hero.1141.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5111.10",
+      "hero_ref": "hero.5111",
+      "ability_ref": "ability.hero.5111.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5111.40",
+      "hero_ref": "hero.5111",
+      "ability_ref": "ability.hero.5111.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5111.100",
+      "hero_ref": "hero.5111",
+      "ability_ref": "ability.hero.5111.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1441.10",
+      "hero_ref": "hero.1441",
+      "ability_ref": "ability.hero.1441.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1441.40",
+      "hero_ref": "hero.1441",
+      "ability_ref": "ability.hero.1441.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1441.100",
+      "hero_ref": "hero.1441",
+      "ability_ref": "ability.hero.1441.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1331.10",
+      "hero_ref": "hero.1331",
+      "ability_ref": "ability.hero.1331.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1331.40",
+      "hero_ref": "hero.1331",
+      "ability_ref": "ability.hero.1331.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1331.100",
+      "hero_ref": "hero.1331",
+      "ability_ref": "ability.hero.1331.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1561.10",
+      "hero_ref": "hero.1561",
+      "ability_ref": "ability.hero.1561.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1561.40",
+      "hero_ref": "hero.1561",
+      "ability_ref": "ability.hero.1561.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1561.100",
+      "hero_ref": "hero.1561",
+      "ability_ref": "ability.hero.1561.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5771.10",
+      "hero_ref": "hero.5771",
+      "ability_ref": "ability.hero.5771.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5771.40",
+      "hero_ref": "hero.5771",
+      "ability_ref": "ability.hero.5771.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5771.100",
+      "hero_ref": "hero.5771",
+      "ability_ref": "ability.hero.5771.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1661.10",
+      "hero_ref": "hero.1661",
+      "ability_ref": "ability.hero.1661.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1661.40",
+      "hero_ref": "hero.1661",
+      "ability_ref": "ability.hero.1661.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1661.100",
+      "hero_ref": "hero.1661",
+      "ability_ref": "ability.hero.1661.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1751.10",
+      "hero_ref": "hero.1751",
+      "ability_ref": "ability.hero.1751.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1751.40",
+      "hero_ref": "hero.1751",
+      "ability_ref": "ability.hero.1751.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1751.100",
+      "hero_ref": "hero.1751",
+      "ability_ref": "ability.hero.1751.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1411.10",
+      "hero_ref": "hero.1411",
+      "ability_ref": "ability.hero.1411.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1411.40",
+      "hero_ref": "hero.1411",
+      "ability_ref": "ability.hero.1411.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1411.100",
+      "hero_ref": "hero.1411",
+      "ability_ref": "ability.hero.1411.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1421.10",
+      "hero_ref": "hero.1421",
+      "ability_ref": "ability.hero.1421.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1421.40",
+      "hero_ref": "hero.1421",
+      "ability_ref": "ability.hero.1421.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1421.100",
+      "hero_ref": "hero.1421",
+      "ability_ref": "ability.hero.1421.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5051.10",
+      "hero_ref": "hero.5051",
+      "ability_ref": "ability.hero.5051.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5051.40",
+      "hero_ref": "hero.5051",
+      "ability_ref": "ability.hero.5051.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5051.100",
+      "hero_ref": "hero.5051",
+      "ability_ref": "ability.hero.5051.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5311.10",
+      "hero_ref": "hero.5311",
+      "ability_ref": "ability.hero.5311.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5311.40",
+      "hero_ref": "hero.5311",
+      "ability_ref": "ability.hero.5311.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5311.100",
+      "hero_ref": "hero.5311",
+      "ability_ref": "ability.hero.5311.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1591.10",
+      "hero_ref": "hero.1591",
+      "ability_ref": "ability.hero.1591.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1591.40",
+      "hero_ref": "hero.1591",
+      "ability_ref": "ability.hero.1591.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1591.100",
+      "hero_ref": "hero.1591",
+      "ability_ref": "ability.hero.1591.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5451.10",
+      "hero_ref": "hero.5451",
+      "ability_ref": "ability.hero.5451.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5451.40",
+      "hero_ref": "hero.5451",
+      "ability_ref": "ability.hero.5451.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5451.100",
+      "hero_ref": "hero.5451",
+      "ability_ref": "ability.hero.5451.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5131.10",
+      "hero_ref": "hero.5131",
+      "ability_ref": "ability.hero.5131.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5131.40",
+      "hero_ref": "hero.5131",
+      "ability_ref": "ability.hero.5131.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5131.100",
+      "hero_ref": "hero.5131",
+      "ability_ref": "ability.hero.5131.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.3551.10",
+      "hero_ref": "hero.3551",
+      "ability_ref": "ability.hero.3551.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.3551.40",
+      "hero_ref": "hero.3551",
+      "ability_ref": "ability.hero.3551.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.3551.100",
+      "hero_ref": "hero.3551",
+      "ability_ref": "ability.hero.3551.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1191.10",
+      "hero_ref": "hero.1191",
+      "ability_ref": "ability.hero.1191.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1191.40",
+      "hero_ref": "hero.1191",
+      "ability_ref": "ability.hero.1191.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1191.100",
+      "hero_ref": "hero.1191",
+      "ability_ref": "ability.hero.1191.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1101.10",
+      "hero_ref": "hero.1101",
+      "ability_ref": "ability.hero.1101.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1101.40",
+      "hero_ref": "hero.1101",
+      "ability_ref": "ability.hero.1101.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1101.100",
+      "hero_ref": "hero.1101",
+      "ability_ref": "ability.hero.1101.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5071.10",
+      "hero_ref": "hero.5071",
+      "ability_ref": "ability.hero.5071.1",
+      "level": 10,
+      "summary": "剑气伤害改为100+2.2×物攻。"
+    },
+    {
+      "id": "milestone.hero.5071.40",
+      "hero_ref": "hero.5071",
+      "ability_ref": "ability.hero.5071.1",
+      "level": 40,
+      "summary": "每次技能挥出3道剑气。"
+    },
+    {
+      "id": "milestone.hero.5071.100",
+      "hero_ref": "hero.5071",
+      "ability_ref": "ability.hero.5071.1",
+      "level": 100,
+      "summary": "阵亡后以具有另一套技能的狂暴形态完美复生；该形态独特技能细节待补。"
+    },
+    {
+      "id": "milestone.hero.1311.10",
+      "hero_ref": "hero.1311",
+      "ability_ref": "ability.hero.1311.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1311.40",
+      "hero_ref": "hero.1311",
+      "ability_ref": "ability.hero.1311.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1311.100",
+      "hero_ref": "hero.1311",
+      "ability_ref": "ability.hero.1311.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1831.10",
+      "hero_ref": "hero.1831",
+      "ability_ref": "ability.hero.1831.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1831.40",
+      "hero_ref": "hero.1831",
+      "ability_ref": "ability.hero.1831.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1831.100",
+      "hero_ref": "hero.1831",
+      "ability_ref": "ability.hero.1831.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1861.10",
+      "hero_ref": "hero.1861",
+      "ability_ref": "ability.hero.1861.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1861.40",
+      "hero_ref": "hero.1861",
+      "ability_ref": "ability.hero.1861.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1861.100",
+      "hero_ref": "hero.1861",
+      "ability_ref": "ability.hero.1861.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1671.10",
+      "hero_ref": "hero.1671",
+      "ability_ref": "ability.hero.1671.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1671.40",
+      "hero_ref": "hero.1671",
+      "ability_ref": "ability.hero.1671.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1671.100",
+      "hero_ref": "hero.1671",
+      "ability_ref": "ability.hero.1671.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1271.10",
+      "hero_ref": "hero.1271",
+      "ability_ref": "ability.hero.1271.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1271.40",
+      "hero_ref": "hero.1271",
+      "ability_ref": "ability.hero.1271.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1271.100",
+      "hero_ref": "hero.1271",
+      "ability_ref": "ability.hero.1271.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1061.10",
+      "hero_ref": "hero.1061",
+      "ability_ref": "ability.hero.1061.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1061.40",
+      "hero_ref": "hero.1061",
+      "ability_ref": "ability.hero.1061.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1061.100",
+      "hero_ref": "hero.1061",
+      "ability_ref": "ability.hero.1061.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5171.10",
+      "hero_ref": "hero.5171",
+      "ability_ref": "ability.hero.5171.1",
+      "level": 10,
+      "summary": "主动治疗改为250+10%最大生命。"
+    },
+    {
+      "id": "milestone.hero.5171.40",
+      "hero_ref": "hero.5171",
+      "ability_ref": "ability.hero.5171.1",
+      "level": 40,
+      "summary": "神巫状态普攻可同时连接至多3名敌人。"
+    },
+    {
+      "id": "milestone.hero.5171.100",
+      "hero_ref": "hero.5171",
+      "ability_ref": "ability.hero.5171.1",
+      "level": 100,
+      "summary": "灵体存量上限提高至3。"
+    },
+    {
+      "id": "milestone.hero.1131.10",
+      "hero_ref": "hero.1131",
+      "ability_ref": "ability.hero.1131.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1131.40",
+      "hero_ref": "hero.1131",
+      "ability_ref": "ability.hero.1131.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1131.100",
+      "hero_ref": "hero.1131",
+      "ability_ref": "ability.hero.1131.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1491.10",
+      "hero_ref": "hero.1491",
+      "ability_ref": "ability.hero.1491.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1491.40",
+      "hero_ref": "hero.1491",
+      "ability_ref": "ability.hero.1491.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1491.100",
+      "hero_ref": "hero.1491",
+      "ability_ref": "ability.hero.1491.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1901.10",
+      "hero_ref": "hero.1901",
+      "ability_ref": "ability.hero.1901.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1901.40",
+      "hero_ref": "hero.1901",
+      "ability_ref": "ability.hero.1901.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1901.100",
+      "hero_ref": "hero.1901",
+      "ability_ref": "ability.hero.1901.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1501.10",
+      "hero_ref": "hero.1501",
+      "ability_ref": "ability.hero.1501.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1501.40",
+      "hero_ref": "hero.1501",
+      "ability_ref": "ability.hero.1501.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1501.100",
+      "hero_ref": "hero.1501",
+      "ability_ref": "ability.hero.1501.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5241.10",
+      "hero_ref": "hero.5241",
+      "ability_ref": "ability.hero.5241.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5241.40",
+      "hero_ref": "hero.5241",
+      "ability_ref": "ability.hero.5241.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5241.100",
+      "hero_ref": "hero.5241",
+      "ability_ref": "ability.hero.5241.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1871.10",
+      "hero_ref": "hero.1871",
+      "ability_ref": "ability.hero.1871.1",
+      "level": 10,
+      "summary": "球的伤害与治疗比例都提高至5%。"
+    },
+    {
+      "id": "milestone.hero.1871.40",
+      "hero_ref": "hero.1871",
+      "ability_ref": "ability.hero.1871.1",
+      "level": 40,
+      "summary": "压制期间球转速增加50%。"
+    },
+    {
+      "id": "milestone.hero.1871.100",
+      "hero_ref": "hero.1871",
+      "ability_ref": "ability.hero.1871.1",
+      "level": 100,
+      "summary": "压制持续到契约一方阵亡。"
+    },
+    {
+      "id": "milestone.hero.5191.10",
+      "hero_ref": "hero.5191",
+      "ability_ref": "ability.hero.5191.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5191.40",
+      "hero_ref": "hero.5191",
+      "ability_ref": "ability.hero.5191.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5191.100",
+      "hero_ref": "hero.5191",
+      "ability_ref": "ability.hero.5191.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5251.10",
+      "hero_ref": "hero.5251",
+      "ability_ref": "ability.hero.5251.1",
+      "level": 10,
+      "summary": "伤害系数改为0.9×法攻，获得250护盾。"
+    },
+    {
+      "id": "milestone.hero.5251.40",
+      "hero_ref": "hero.5251",
+      "ability_ref": "ability.hero.5251.1",
+      "level": 40,
+      "summary": "拉拽目标上限3。"
+    },
+    {
+      "id": "milestone.hero.5251.100",
+      "hero_ref": "hero.5251",
+      "ability_ref": "ability.hero.5251.1",
+      "level": 100,
+      "summary": "拉拽目标上限6。"
+    },
+    {
+      "id": "milestone.hero.1541.10",
+      "hero_ref": "hero.1541",
+      "ability_ref": "ability.hero.1541.1",
+      "level": 10,
+      "summary": "轻剑各段系数1.05；重剑眩晕改为2.5秒。"
+    },
+    {
+      "id": "milestone.hero.1541.40",
+      "hero_ref": "hero.1541",
+      "ability_ref": "ability.hero.1541.1",
+      "level": 40,
+      "summary": "轻剑连续斩至目标死亡；重剑蓄力时免伤40%。"
+    },
+    {
+      "id": "milestone.hero.1541.100",
+      "hero_ref": "hero.1541",
+      "ability_ref": "ability.hero.1541.1",
+      "level": 100,
+      "summary": "轻剑击杀回满法力并冲向随机敌人；重剑范围覆盖全场。"
+    },
+    {
+      "id": "milestone.hero.5371.10",
+      "hero_ref": "hero.5371",
+      "ability_ref": "ability.hero.5371.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5371.40",
+      "hero_ref": "hero.5371",
+      "ability_ref": "ability.hero.5371.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5371.100",
+      "hero_ref": "hero.5371",
+      "ability_ref": "ability.hero.5371.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1481.10",
+      "hero_ref": "hero.1481",
+      "ability_ref": "ability.hero.1481.1",
+      "level": 10,
+      "summary": "伤害改为140+1.4×法攻。"
+    },
+    {
+      "id": "milestone.hero.1481.40",
+      "hero_ref": "hero.1481",
+      "ability_ref": "ability.hero.1481.1",
+      "level": 40,
+      "summary": "多2道波；敌方治疗降低50%持续5秒，不能叠加。"
+    },
+    {
+      "id": "milestone.hero.1481.100",
+      "hero_ref": "hero.1481",
+      "ability_ref": "ability.hero.1481.1",
+      "level": 100,
+      "summary": "向周围8方向发波。"
+    },
+    {
+      "id": "milestone.hero.1361.10",
+      "hero_ref": "hero.1361",
+      "ability_ref": "ability.hero.1361.1",
+      "level": 10,
+      "summary": "单阵法攻系数1.0。"
+    },
+    {
+      "id": "milestone.hero.1361.40",
+      "hero_ref": "hero.1361",
+      "ability_ref": "ability.hero.1361.1",
+      "level": 40,
+      "summary": "吟唱结束追加全敌巨阵伤害100+1.25×法攻。"
+    },
+    {
+      "id": "milestone.hero.1361.100",
+      "hero_ref": "hero.1361",
+      "ability_ref": "ability.hero.1361.1",
+      "level": 100,
+      "summary": "吟唱持续整回合；每5次伤害追加1次巨阵。"
+    },
+    {
+      "id": "milestone.hero.1231.10",
+      "hero_ref": "hero.1231",
+      "ability_ref": "ability.hero.1231.1",
+      "level": 10,
+      "summary": "技能伤害改为120+2.0×物攻。"
+    },
+    {
+      "id": "milestone.hero.1231.40",
+      "hero_ref": "hero.1231",
+      "ability_ref": "ability.hero.1231.1",
+      "level": 40,
+      "summary": "附加5秒100%攻速。"
+    },
+    {
+      "id": "milestone.hero.1231.100",
+      "hero_ref": "hero.1231",
+      "ability_ref": "ability.hero.1231.1",
+      "level": 100,
+      "summary": "技能范围覆盖整个战场。"
+    },
+    {
+      "id": "milestone.hero.5211.10",
+      "hero_ref": "hero.5211",
+      "ability_ref": "ability.hero.5211.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.5211.40",
+      "hero_ref": "hero.5211",
+      "ability_ref": "ability.hero.5211.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.5211.100",
+      "hero_ref": "hero.5211",
+      "ability_ref": "ability.hero.5211.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1121.10",
+      "hero_ref": "hero.1121",
+      "ability_ref": "ability.hero.1121.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1121.40",
+      "hero_ref": "hero.1121",
+      "ability_ref": "ability.hero.1121.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1121.100",
+      "hero_ref": "hero.1121",
+      "ability_ref": "ability.hero.1121.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.5631.10",
+      "hero_ref": "hero.5631",
+      "ability_ref": "ability.hero.5631.1",
+      "level": 10,
+      "summary": "主杖150+2.5×法攻，子杖100+1.5×法攻。"
+    },
+    {
+      "id": "milestone.hero.5631.40",
+      "hero_ref": "hero.5631",
+      "ability_ref": "ability.hero.5631.1",
+      "level": 40,
+      "summary": "连续施法2次。"
+    },
+    {
+      "id": "milestone.hero.5631.100",
+      "hero_ref": "hero.5631",
+      "ability_ref": "ability.hero.5631.1",
+      "level": 100,
+      "summary": "子杖目标最多14名。"
+    },
+    {
+      "id": "milestone.hero.1461.10",
+      "hero_ref": "hero.1461",
+      "ability_ref": "ability.hero.1461.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1461.40",
+      "hero_ref": "hero.1461",
+      "ability_ref": "ability.hero.1461.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1461.100",
+      "hero_ref": "hero.1461",
+      "ability_ref": "ability.hero.1461.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1761.10",
+      "hero_ref": "hero.1761",
+      "ability_ref": "ability.hero.1761.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1761.40",
+      "hero_ref": "hero.1761",
+      "ability_ref": "ability.hero.1761.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1761.100",
+      "hero_ref": "hero.1761",
+      "ability_ref": "ability.hero.1761.1",
+      "level": 100
+    },
+    {
+      "id": "milestone.hero.1241.10",
+      "hero_ref": "hero.1241",
+      "ability_ref": "ability.hero.1241.1",
+      "level": 10
+    },
+    {
+      "id": "milestone.hero.1241.40",
+      "hero_ref": "hero.1241",
+      "ability_ref": "ability.hero.1241.1",
+      "level": 40
+    },
+    {
+      "id": "milestone.hero.1241.100",
+      "hero_ref": "hero.1241",
+      "ability_ref": "ability.hero.1241.1",
+      "level": 100
+    }
+  ]
+}

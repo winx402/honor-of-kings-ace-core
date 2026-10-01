@@ -1,0 +1,85 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "rule.combat.card_vs_skill",
+      "title": "卡面效果与战斗技能",
+      "kind": "semantic_boundary",
+      "summary": "英雄牌的卡面效果用于事件联动；参战英雄的战斗技能另有目标、伤害、控制和成长节点。两者不能合并成一个技能字段。"
+    },
+    {
+      "id": "rule.combat.temporary_level",
+      "title": "临时等级",
+      "kind": "rule_fact",
+      "summary": "临时等级在战斗结束时清除；永久等级继续用于英雄成长。"
+    },
+    {
+      "id": "rule.combat.resurrection",
+      "title": "复生基础语义",
+      "kind": "rule_fact",
+      "summary": "复生使阵亡英雄返回战斗；基础关键词描述恢复一半生命，一名英雄一回合至多复生十次。具体技能可另行规定恢复生命或条件。",
+      "values": {
+        "base_health_fraction": 0.5,
+        "per_hero_round_limit": 10
+      },
+      "unknowns": [
+        "同次阵亡中复生和牺牲的优先级",
+        "各类复活是否共享该计数"
+      ]
+    },
+    {
+      "id": "rule.combat.blink",
+      "title": "闪现位置",
+      "kind": "rule_fact",
+      "summary": "开战时，闪现英雄跳到敌方战场中的镜像位置。",
+      "unknowns": [
+        "目标格被占用时的落点规则"
+      ]
+    },
+    {
+      "id": "rule.combat.totems",
+      "title": "图腾",
+      "kind": "rule_fact",
+      "summary": "图腾是大河流域相关特殊单位，存活期间提供对应效果。图腾并不等于英雄牌。",
+      "unknowns": [
+        "每种图腾占位和计数规则",
+        "是否可穿装备的通用规则"
+      ]
+    },
+    {
+      "id": "rule.combat.core",
+      "title": "阿科米亚核心",
+      "kind": "rule_fact",
+      "summary": "开战时，把核心等级作为临时等级平均提供给己方日落海英雄；单名英雄分配量上限为核心等级的一半。",
+      "values": {
+        "single_hero_share_cap_fraction": 0.5
+      },
+      "unknowns": [
+        "分配余数的处理",
+        "没有目标英雄时的处理"
+      ]
+    },
+    {
+      "id": "rule.combat.order",
+      "title": "事件顺序边界",
+      "kind": "semantic_boundary",
+      "summary": "开团、阵亡、牺牲、复生和召唤可能形成事件链。关键词规定触发条件，不能单独决定同一时点多个效果的执行顺序。",
+      "unknowns": [
+        "统一优先级表"
+      ]
+    },
+    {
+      "id": "rule.combat.damage_model",
+      "title": "伤害与回蓝",
+      "kind": "semantic_boundary",
+      "summary": "伤害量由具体技能、属性及目标条件决定。生命、法力和防御是不同量；棋手能量不能替代单位法力。",
+      "unknowns": [
+        "现行全局防御公式与取整",
+        "普攻和受伤回蓝通用数值",
+        "全局攻速上限",
+        "棋手战败扣血完整公式"
+      ]
+    }
+  ]
+}

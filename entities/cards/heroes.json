@@ -1,0 +1,601 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "card.hero.1941",
+      "name": "苏烈",
+      "kind": "hero_card",
+      "hero_ref": "hero.1941",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5221",
+      "name": "曜",
+      "kind": "hero_card",
+      "hero_ref": "hero.5221",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1181",
+      "name": "孙膑",
+      "kind": "hero_card",
+      "hero_ref": "hero.1181",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5031",
+      "name": "狂铁",
+      "kind": "hero_card",
+      "hero_ref": "hero.5031",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1111",
+      "name": "孙尚香",
+      "kind": "hero_card",
+      "hero_ref": "hero.1111",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1971",
+      "name": "弈星",
+      "kind": "hero_card",
+      "hero_ref": "hero.1971",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1821",
+      "name": "干将莫邪",
+      "kind": "hero_card",
+      "hero_ref": "hero.1821",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1731",
+      "name": "李元芳",
+      "kind": "hero_card",
+      "hero_ref": "hero.1731",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1681",
+      "name": "牛魔",
+      "kind": "hero_card",
+      "hero_ref": "hero.1681",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5141",
+      "name": "亚连",
+      "kind": "hero_card",
+      "hero_ref": "hero.5141",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5041",
+      "name": "米莱狄",
+      "kind": "hero_card",
+      "hero_ref": "hero.5041",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1351",
+      "name": "项羽",
+      "kind": "hero_card",
+      "hero_ref": "hero.1351",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1891",
+      "name": "鬼谷子",
+      "kind": "hero_card",
+      "hero_ref": "hero.1891",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1981",
+      "name": "梦奇",
+      "kind": "hero_card",
+      "hero_ref": "hero.1981",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1211",
+      "name": "芈月",
+      "kind": "hero_card",
+      "hero_ref": "hero.1211",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.3121",
+      "name": "沈梦溪",
+      "kind": "hero_card",
+      "hero_ref": "hero.3121",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5091",
+      "name": "盾山",
+      "kind": "hero_card",
+      "hero_ref": "hero.5091",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1281",
+      "name": "曹操",
+      "kind": "hero_card",
+      "hero_ref": "hero.1281",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1741",
+      "name": "虞姬",
+      "kind": "hero_card",
+      "hero_ref": "hero.1741",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1321",
+      "name": "马可波罗",
+      "kind": "hero_card",
+      "hero_ref": "hero.1321",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1071",
+      "name": "赵云",
+      "kind": "hero_card",
+      "hero_ref": "hero.1071",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1911",
+      "name": "大乔",
+      "kind": "hero_card",
+      "hero_ref": "hero.1911",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1991",
+      "name": "公孙离",
+      "kind": "hero_card",
+      "hero_ref": "hero.1991",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1961",
+      "name": "百里守约",
+      "kind": "hero_card",
+      "hero_ref": "hero.1961",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1081",
+      "name": "墨子",
+      "kind": "hero_card",
+      "hero_ref": "hero.1081",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1951",
+      "name": "百里玄策",
+      "kind": "hero_card",
+      "hero_ref": "hero.1951",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1051",
+      "name": "廉颇",
+      "kind": "hero_card",
+      "hero_ref": "hero.1051",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5271",
+      "name": "蒙恬",
+      "kind": "hero_card",
+      "hero_ref": "hero.5271",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1841",
+      "name": "蔡文姬",
+      "kind": "hero_card",
+      "hero_ref": "hero.1841",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5061",
+      "name": "云中君",
+      "kind": "hero_card",
+      "hero_ref": "hero.5061",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5641",
+      "name": "姬小满",
+      "kind": "hero_card",
+      "hero_ref": "hero.5641",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1771",
+      "name": "苍",
+      "kind": "hero_card",
+      "hero_ref": "hero.1771",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1931",
+      "name": "铠",
+      "kind": "hero_card",
+      "hero_ref": "hero.1931",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1201",
+      "name": "白起",
+      "kind": "hero_card",
+      "hero_ref": "hero.1201",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5011",
+      "name": "明世隐",
+      "kind": "hero_card",
+      "hero_ref": "hero.5011",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1161",
+      "name": "阿轲",
+      "kind": "hero_card",
+      "hero_ref": "hero.1161",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5181",
+      "name": "马超",
+      "kind": "hero_card",
+      "hero_ref": "hero.5181",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5021",
+      "name": "裴擒虎",
+      "kind": "hero_card",
+      "hero_ref": "hero.5021",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1391",
+      "name": "老夫子",
+      "kind": "hero_card",
+      "hero_ref": "hero.1391",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5231",
+      "name": "西施",
+      "kind": "hero_card",
+      "hero_ref": "hero.5231",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1141",
+      "name": "刘禅",
+      "kind": "hero_card",
+      "hero_ref": "hero.1141",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5111",
+      "name": "猪八戒",
+      "kind": "hero_card",
+      "hero_ref": "hero.5111",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1441",
+      "name": "程咬金",
+      "kind": "hero_card",
+      "hero_ref": "hero.1441",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1331",
+      "name": "狄仁杰",
+      "kind": "hero_card",
+      "hero_ref": "hero.1331",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1561",
+      "name": "张良",
+      "kind": "hero_card",
+      "hero_ref": "hero.1561",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5771",
+      "name": "少司缘",
+      "kind": "hero_card",
+      "hero_ref": "hero.5771",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1661",
+      "name": "亚瑟",
+      "kind": "hero_card",
+      "hero_ref": "hero.1661",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1751",
+      "name": "钟馗",
+      "kind": "hero_card",
+      "hero_ref": "hero.1751",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1411",
+      "name": "貂蝉",
+      "kind": "hero_card",
+      "hero_ref": "hero.1411",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1421",
+      "name": "安琪拉",
+      "kind": "hero_card",
+      "hero_ref": "hero.1421",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5051",
+      "name": "瑶",
+      "kind": "hero_card",
+      "hero_ref": "hero.5051",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5311",
+      "name": "镜",
+      "kind": "hero_card",
+      "hero_ref": "hero.5311",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1591",
+      "name": "朵莉亚",
+      "kind": "hero_card",
+      "hero_ref": "hero.1591",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5451",
+      "name": "莱西奥",
+      "kind": "hero_card",
+      "hero_ref": "hero.5451",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5131",
+      "name": "上官婉儿",
+      "kind": "hero_card",
+      "hero_ref": "hero.5131",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.3551",
+      "name": "艾琳",
+      "kind": "hero_card",
+      "hero_ref": "hero.3551",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1191",
+      "name": "扁鹊",
+      "kind": "hero_card",
+      "hero_ref": "hero.1191",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1101",
+      "name": "嬴政",
+      "kind": "hero_card",
+      "hero_ref": "hero.1101",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5071",
+      "name": "李信",
+      "kind": "hero_card",
+      "hero_ref": "hero.5071",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1311",
+      "name": "李白",
+      "kind": "hero_card",
+      "hero_ref": "hero.1311",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1831",
+      "name": "雅典娜",
+      "kind": "hero_card",
+      "hero_ref": "hero.1831",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1861",
+      "name": "太乙真人",
+      "kind": "hero_card",
+      "hero_ref": "hero.1861",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1671",
+      "name": "孙悟空",
+      "kind": "hero_card",
+      "hero_ref": "hero.1671",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1271",
+      "name": "甄姬",
+      "kind": "hero_card",
+      "hero_ref": "hero.1271",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1061",
+      "name": "小乔",
+      "kind": "hero_card",
+      "hero_ref": "hero.1061",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5171",
+      "name": "大司命",
+      "kind": "hero_card",
+      "hero_ref": "hero.5171",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1131",
+      "name": "庄周",
+      "kind": "hero_card",
+      "hero_ref": "hero.1131",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1491",
+      "name": "刘邦",
+      "kind": "hero_card",
+      "hero_ref": "hero.1491",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1901",
+      "name": "诸葛亮",
+      "kind": "hero_card",
+      "hero_ref": "hero.1901",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1501",
+      "name": "韩信",
+      "kind": "hero_card",
+      "hero_ref": "hero.1501",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5241",
+      "name": "蒙犽",
+      "kind": "hero_card",
+      "hero_ref": "hero.5241",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1871",
+      "name": "东皇太一",
+      "kind": "hero_card",
+      "hero_ref": "hero.1871",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5191",
+      "name": "敖隐",
+      "kind": "hero_card",
+      "hero_ref": "hero.5191",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5251",
+      "name": "鲁班大师",
+      "kind": "hero_card",
+      "hero_ref": "hero.5251",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1541",
+      "name": "花木兰",
+      "kind": "hero_card",
+      "hero_ref": "hero.1541",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5371",
+      "name": "司空震",
+      "kind": "hero_card",
+      "hero_ref": "hero.5371",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1481",
+      "name": "姜子牙",
+      "kind": "hero_card",
+      "hero_ref": "hero.1481",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1361",
+      "name": "武则天",
+      "kind": "hero_card",
+      "hero_ref": "hero.1361",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1231",
+      "name": "吕布",
+      "kind": "hero_card",
+      "hero_ref": "hero.1231",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5211",
+      "name": "海月",
+      "kind": "hero_card",
+      "hero_ref": "hero.5211",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1121",
+      "name": "鲁班七号",
+      "kind": "hero_card",
+      "hero_ref": "hero.1121",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.5631",
+      "name": "海诺",
+      "kind": "hero_card",
+      "hero_ref": "hero.5631",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1461",
+      "name": "露娜",
+      "kind": "hero_card",
+      "hero_ref": "hero.1461",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1761",
+      "name": "杨玉环",
+      "kind": "hero_card",
+      "hero_ref": "hero.1761",
+      "awakening_available": true
+    },
+    {
+      "id": "card.hero.1241",
+      "name": "周瑜",
+      "kind": "hero_card",
+      "hero_ref": "hero.1241",
+      "awakening_available": true
+    }
+  ]
+}

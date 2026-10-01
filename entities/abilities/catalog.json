@@ -1,0 +1,1441 @@
+{
+  "knowledge_version": "0.1.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "ability.hero.1941.1",
+      "name": "豪烈万军",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1941",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "周边物理范围伤害=80+0.8×物攻；削减物防4点，持续5秒。"
+    },
+    {
+      "id": "ability.hero.5221.1",
+      "name": "逐星",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5221",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "对当前目标造成100+1.3×物攻的物理伤害。"
+    },
+    {
+      "id": "ability.hero.1181.1",
+      "name": "时空爆弹",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1181",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "对目标投放2秒延迟炸弹，炸弹覆盖附近1格，伤害为50+1.0×法攻。"
+    },
+    {
+      "id": "ability.hero.5031.1",
+      "name": "碎裂之击",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5031",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1111.1",
+      "name": "红莲爆弹",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1111",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1971.1",
+      "name": "万变之局",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1971",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "选择敌人最多的一排形成虚空棋盘，1.5秒后成型，对范围内敌人造成100+0.5×法攻的法术伤害。"
+    },
+    {
+      "id": "ability.hero.1821.1",
+      "name": "雌雄双剑",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1821",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1731.1",
+      "name": "谍影重重",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1731",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1681.1",
+      "name": "山崩地裂",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1681",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5141.1",
+      "name": "流星斩",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5141",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5041.1",
+      "name": "机械仆从",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5041",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "在最远敌人附近生成机械仆从，继承100%法攻；其普攻造成50+0.3×法攻的法伤。达到仆从上限后施法给仆从加15%攻速，持续5秒。"
+    },
+    {
+      "id": "ability.hero.1351.1",
+      "name": "破釜沉舟",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1351",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1891.1",
+      "name": "万物有灵",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1891",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1981.1",
+      "name": "梦境萦绕",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1981",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1211.1",
+      "name": "幻翼仆从",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1211",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.3121.1",
+      "name": "综合爆款",
+      "kind": "combat_skill",
+      "owner_ref": "hero.3121",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5091.1",
+      "name": "不动如山",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5091",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "防御状态持续3秒，减伤25%，每秒向身前造成50点法伤。"
+    },
+    {
+      "id": "ability.hero.1281.1",
+      "name": "霸道枭雄",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1281",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1741.1",
+      "name": "阵前舞",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1741",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1321.1",
+      "name": "华丽左轮",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1321",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1071.1",
+      "name": "破云之龙",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1071",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1911.1",
+      "name": "鲤跃之潮",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1911",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1991.1",
+      "name": "孤鹜断霞",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1991",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1961.1",
+      "name": "瞄准",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1961",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1081.1",
+      "name": "墨守成规",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1081",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1951.1",
+      "name": "梦魇钩锁",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1951",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1051.1",
+      "name": "勇士之魂",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1051",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5271.1",
+      "name": "玄雍众将",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5271",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "技能生成1名士兵，持续20秒，上限2名；每名分摊蒙恬5%所受伤害。"
+    },
+    {
+      "id": "ability.hero.1841.1",
+      "name": "思无邪",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1841",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5061.1",
+      "name": "若英·华彩",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5061",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5641.1",
+      "name": "强攻代守",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5641",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1771.1",
+      "name": "领袖姿态",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1771",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1931.1",
+      "name": "不灭魔躯",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1931",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1201.1",
+      "name": "生命回响",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1201",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5011.1",
+      "name": "泰卦·长生",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5011",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "备战连接最近友方英雄；施法同时治疗自己及连接目标，治疗量100+0.6×法攻。"
+    },
+    {
+      "id": "ability.hero.1161.1",
+      "name": "弧光",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1161",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5181.1",
+      "name": "魔影突袭",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5181",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5021.1",
+      "name": "虎啸生风",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5021",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1391.1",
+      "name": "举一反三",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1391",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5231.1",
+      "name": "幻纱之灵",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5231",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1141.1",
+      "name": "机关魔爪",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1141",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5111.1",
+      "name": "肉弹蹦床",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5111",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1441.1",
+      "name": "正义潜能",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1441",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1331.1",
+      "name": "迅捷",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1331",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1561.1",
+      "name": "言灵·操纵",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1561",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5771.1",
+      "name": "因缘际会",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5771",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1661.1",
+      "name": "誓约之盾",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1661",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1751.1",
+      "name": "湮灭之锁",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1751",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1411.1",
+      "name": "语·花印",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1411",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1421.1",
+      "name": "炽热光辉",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1421",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5051.1",
+      "name": "独立兮山之上",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5051",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5311.1",
+      "name": "裂空",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5311",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1591.1",
+      "name": "逐浪",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1591",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5451.1",
+      "name": "传奇英雄登场",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5451",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5131.1",
+      "name": "篆法·疾势",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5131",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.3551.1",
+      "name": "叶舞·致意",
+      "kind": "combat_skill",
+      "owner_ref": "hero.3551",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1191.1",
+      "name": "万变灵药",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1191",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1101.1",
+      "name": "至尊王权",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1101",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5071.1",
+      "name": "力量觉醒",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5071",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "免控蓄力后挥剑气，命中物理伤害50+1.8×物攻。"
+    },
+    {
+      "id": "ability.hero.1311.1",
+      "name": "青莲剑歌",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1311",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1831.1",
+      "name": "敬畏圣盾",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1831",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1861.1",
+      "name": "第三只手",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1861",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1671.1",
+      "name": "大圣神威",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1671",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1271.1",
+      "name": "叹息水流",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1271",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1061.1",
+      "name": "甜蜜恋风",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1061",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5171.1",
+      "name": "魂归忘忧",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5171",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "普攻为3秒5段、每段0.5×物攻。主动覆盖2格，伤害150+2.0×物攻，治疗100+5%最大生命，并凝聚1敌方灵体。神巫状态禁回法力，普攻改带10+1%最大生命治疗。"
+    },
+    {
+      "id": "ability.hero.1131.1",
+      "name": "天人合一",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1131",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1491.1",
+      "name": "统御战场",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1491",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1901.1",
+      "name": "元气弹",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1901",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1501.1",
+      "name": "国士无双",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1501",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5241.1",
+      "name": "飞弹援袭",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5241",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1871.1",
+      "name": "堕神契约",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1871",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "3颗球接触敌人时造成其3%最大生命法伤，并治疗自身3%最大生命。主动压制敌人5秒，双方承担等量伤害；距离过远会断开。"
+    },
+    {
+      "id": "ability.hero.5191.1",
+      "name": "隐介藏形",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5191",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5251.1",
+      "name": "助推跳跃",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5251",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "跃入敌人密集处，拉拽3格范围内1敌人；落点伤害50+0.6×法攻、眩晕0.5秒。"
+    },
+    {
+      "id": "ability.hero.1541.1",
+      "name": "长城巡守者",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1541",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "轻重剑可经场上剑切换。轻剑7段各0.8×物攻；重剑免控蓄力3秒，伤害80+0.6×物攻，击飞眩晕1.5秒。"
+    },
+    {
+      "id": "ability.hero.5371.1",
+      "name": "雷霆万钧",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5371",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1481.1",
+      "name": "天人法则",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1481",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "免控聚能2秒后向最远敌人方向释放波，伤害80+0.8×法攻；同一目标多次中波，每次伤害衰减15%、封顶60%。"
+    },
+    {
+      "id": "ability.hero.1361.1",
+      "name": "君命无二",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1361",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "吟唱8秒，每0.75秒随机攻击1敵人，伤害100+0.75×法攻，并降治疗50%持续6秒、不叠加。3秒内同一目标连中每次伤害衰减15%、最多45%。"
+    },
+    {
+      "id": "ability.hero.1231.1",
+      "name": "魔神降世",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1231",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "普攻覆盖身前范围；技能跳入密集区，2格敌人受120+1.2×物攻、击飞1秒、降治疗70%持续5秒。每命中1敌治疗自身5%最大生命，随后5秒物理吸血提高20%。"
+    },
+    {
+      "id": "ability.hero.5211.1",
+      "name": "流光",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5211",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1121.1",
+      "name": "空中支援",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1121",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.5631.1",
+      "name": "追芒",
+      "kind": "combat_skill",
+      "owner_ref": "hero.5631",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ],
+      "summary": "主杖朝当前目标方向伤害100+1.5×法攻；分裂子杖向邻近2敌造成50+1.0×法攻。"
+    },
+    {
+      "id": "ability.hero.1461.1",
+      "name": "新月突击",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1461",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1761.1",
+      "name": "惊鸿调",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1761",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.hero.1241.1",
+      "name": "烽火赤壁",
+      "kind": "combat_skill",
+      "owner_ref": "hero.1241",
+      "milestone_levels": [
+        10,
+        40,
+        100
+      ]
+    },
+    {
+      "id": "ability.player.10.1",
+      "owner_ref": "player.10",
+      "name": "怦然心动",
+      "kind": "chessplayer_skill",
+      "summary": "累计购买每4张卡获随机效果牌1张。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.10.2",
+      "owner_ref": "player.10",
+      "name": "心动节拍",
+      "kind": "secret_task",
+      "summary": "怦然心动累计触发5/4/3次分别完成阶段，奖励心之引力。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.10.3",
+      "owner_ref": "player.10",
+      "name": "魅力无限",
+      "kind": "exclusive_talent",
+      "summary": "每回合第1张打出的效果牌结算2次。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.11.1",
+      "owner_ref": "player.11",
+      "name": "可爱小鹿",
+      "kind": "chessplayer_skill",
+      "summary": "开局召唤小鹿，每回合等级加2，上回合胜利另加4。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.11.2",
+      "owner_ref": "player.11",
+      "name": "超绝可爱小鹿",
+      "kind": "secret_task",
+      "summary": "每3回合获得神奇小鹿。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.11.3",
+      "owner_ref": "player.11",
+      "name": "巨型玩偶",
+      "kind": "exclusive_talent",
+      "summary": "小鹿等级加30并获得小鹿的庇护。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.20.1",
+      "owner_ref": "player.20",
+      "name": "枫叶舞",
+      "kind": "chessplayer_skill",
+      "summary": "主动指定英雄，受到其最大生命20%的伤害时获得护盾并传送到纸伞位置；护盾数值及单次/累计受伤判定待补。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.20.2",
+      "owner_ref": "player.20",
+      "name": "惊鸿游龙",
+      "kind": "secret_task",
+      "summary": "指定英雄击杀达到3/7/11/15时获翩跹舞步并各解锁一项特性，共4项。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.20.3",
+      "owner_ref": "player.20",
+      "name": "即刻起舞",
+      "kind": "exclusive_talent",
+      "summary": "从3种枫叶舞强化中选1。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.21.1",
+      "owner_ref": "player.21",
+      "name": "无穷镜像",
+      "kind": "chessplayer_skill",
+      "summary": "主动获取镜像1张，技能每使用4次其费用递增1。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.21.2",
+      "owner_ref": "player.21",
+      "name": "镜像之力",
+      "kind": "secret_task",
+      "summary": "使用4张镜像奖励万镜。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.21.3",
+      "owner_ref": "player.21",
+      "name": "镜花影",
+      "kind": "exclusive_talent",
+      "summary": "购买商店英雄留下镜像复制，不推进秘技任务。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.22.1",
+      "owner_ref": "player.22",
+      "name": "温柔呼唤",
+      "kind": "chessplayer_skill",
+      "summary": "主动随机获得2至5阶转瞬英雄1张。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.22.2",
+      "owner_ref": "player.22",
+      "name": "海的拥抱",
+      "kind": "secret_task",
+      "summary": "每4回合获得潮汐的交响。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.22.3",
+      "owner_ref": "player.22",
+      "name": "潮起潮落",
+      "kind": "exclusive_talent",
+      "summary": "开战随机传送临时等级100的英雄，无卡牌效果；此等级每回合加40。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.24.1",
+      "owner_ref": "player.24",
+      "name": "小菟助力",
+      "kind": "chessplayer_skill",
+      "summary": "主动让小菟随机给英雄加2等级，每累计使用1次，下次等级增益再加1。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.24.2",
+      "owner_ref": "player.24",
+      "name": "兔飞猛进",
+      "kind": "secret_task",
+      "summary": "己方等级总和到50/150/375时奖励小菟送福。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.24.3",
+      "owner_ref": "player.24",
+      "name": "月之特调",
+      "kind": "exclusive_talent",
+      "summary": "小菟每提供5级增益追加随机属性：攻速15%/双吸血2%/双抗2；累计每提供65级再获小菟送福。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.25.1",
+      "owner_ref": "player.25",
+      "name": "霓裳曲",
+      "kind": "chessplayer_skill",
+      "summary": "每打出3张非觉醒英雄牌，按出牌类型弹奏一次对应效果。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.25.2",
+      "owner_ref": "player.25",
+      "name": "自成曲调",
+      "kind": "secret_task",
+      "summary": "累计弹奏6次获惊鸿调，最多奖励2张。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.25.3",
+      "owner_ref": "player.25",
+      "name": "余音绕梁",
+      "kind": "exclusive_talent",
+      "summary": "惊鸿调可演奏次数增加3。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.31.1",
+      "owner_ref": "player.31",
+      "name": "梦境游戏",
+      "kind": "chessplayer_skill",
+      "summary": "棋手每升级获随机效果牌1张。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.31.2",
+      "owner_ref": "player.31",
+      "name": "美梦成真",
+      "kind": "secret_task",
+      "summary": "棋手到5级、6级分别奖励如梦似幻。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.31.3",
+      "owner_ref": "player.31",
+      "name": "引擎升级",
+      "kind": "exclusive_talent",
+      "summary": "获得梦幻引擎替换商店；棋手生命≤30且战斗败北可再次获得。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.32.1",
+      "owner_ref": "player.32",
+      "name": "寻宝之旅",
+      "kind": "chessplayer_skill",
+      "summary": "每打出4张至多3阶英雄牌，获随机宝藏1张。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.32.2",
+      "owner_ref": "player.32",
+      "name": "终极宝藏",
+      "kind": "secret_task",
+      "summary": "使用7张宝藏后获终极宝藏。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.32.3",
+      "owner_ref": "player.32",
+      "name": "瓜分宝藏",
+      "kind": "exclusive_talent",
+      "summary": "从两种英雄强化选1。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.33.1",
+      "owner_ref": "player.33",
+      "name": "神来之笔",
+      "kind": "chessplayer_skill",
+      "summary": "每4次英雄合成获即兴创作1张。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.33.2",
+      "owner_ref": "player.33",
+      "name": "天生我才",
+      "kind": "secret_task",
+      "summary": "用6张即兴创作获灵感爆发。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.33.3",
+      "owner_ref": "player.33",
+      "name": "惊才绝艳",
+      "kind": "exclusive_talent",
+      "summary": "得到奇才1张，可指定英雄并获其对应牌4张。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.34.1",
+      "owner_ref": "player.34",
+      "name": "冰之心",
+      "kind": "chessplayer_skill",
+      "summary": "主动冻结目标英雄，战斗结束将其变为高1阶随机英雄并保留等级。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.34.2",
+      "owner_ref": "player.34",
+      "name": "极寒冰冻",
+      "kind": "secret_task",
+      "summary": "回合5与8获得深度冻结。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.34.3",
+      "owner_ref": "player.34",
+      "name": "冰雪秘藏",
+      "kind": "exclusive_talent",
+      "summary": "从3种增益中选1。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.35.1",
+      "owner_ref": "player.35",
+      "name": "神匠",
+      "kind": "chessplayer_skill",
+      "summary": "开局得便携式机关；棋手2/3/4/5级各随机获陷阱、弹簧、屏障之一。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.35.2",
+      "owner_ref": "player.35",
+      "name": "机关跃迁",
+      "kind": "secret_task",
+      "summary": "螺丝换构筑升级，最多10张；陷阱/弹簧触发分别加3/2螺丝，屏障毁坏加5；兑换门槛待补。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.35.3",
+      "owner_ref": "player.35",
+      "name": "成品方案",
+      "kind": "exclusive_talent",
+      "summary": "选1种机关强化方案，共3候选。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.36.1",
+      "owner_ref": "player.36",
+      "name": "棋道万象",
+      "kind": "chessplayer_skill",
+      "summary": "本回合战斗开始时，随机复制一名敌方英雄。",
+      "unlock_level": 1,
+      "unknowns": [
+        "使用方式与跨回合有效性未指定。"
+      ]
+    },
+    {
+      "id": "ability.player.36.2",
+      "owner_ref": "player.36",
+      "name": "谋而后定",
+      "kind": "secret_task",
+      "summary": "回合4/8/12各得驭势。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.36.3",
+      "owner_ref": "player.36",
+      "name": "神之一手",
+      "kind": "exclusive_talent",
+      "summary": "开战复制敌方最高等级英雄，临时加入己方战场。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.38.1",
+      "owner_ref": "player.38",
+      "name": "时光倒流",
+      "kind": "chessplayer_skill",
+      "summary": "主动随机重放上回合用过的一张非觉醒英雄牌或效果牌。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.38.2",
+      "owner_ref": "player.38",
+      "name": "时间魔法",
+      "kind": "secret_task",
+      "summary": "首次单回合打出8张英雄/效果牌获时之回环。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.38.3",
+      "owner_ref": "player.38",
+      "name": "时光宝藏",
+      "kind": "exclusive_talent",
+      "summary": "获得更强的永恒时之回环，可记录12张英雄或效果牌。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.39.1",
+      "owner_ref": "player.39",
+      "name": "先知卦象",
+      "kind": "chessplayer_skill",
+      "summary": "主动二选一卦象，持续3回合。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.39.2",
+      "owner_ref": "player.39",
+      "name": "天降鸿运",
+      "kind": "secret_task",
+      "summary": "回合6和10得到命运馈赠。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.39.3",
+      "owner_ref": "player.39",
+      "name": "飞龙在天",
+      "kind": "exclusive_talent",
+      "summary": "强化卦象：节每回合额外能量4；丰每回合临时刷新8次。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.40.1",
+      "owner_ref": "player.40",
+      "name": "派对泡泡",
+      "kind": "chessplayer_skill",
+      "summary": "从随机2阵营选1，之后技能费用1能量，每用一次得此阵营英雄1张。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.40.2",
+      "owner_ref": "player.40",
+      "name": "快乐集结",
+      "kind": "secret_task",
+      "summary": "上阵6名所选阵营英雄得到朋友多多。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.40.3",
+      "owner_ref": "player.40",
+      "name": "狂欢时刻",
+      "kind": "exclusive_talent",
+      "summary": "获打成一片1张。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.41.1",
+      "owner_ref": "player.41",
+      "name": "钦定主角",
+      "kind": "chessplayer_skill",
+      "summary": "主动指定主角，其每打出2张英雄或效果牌加1级，每回合最多加5。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.41.2",
+      "owner_ref": "player.41",
+      "name": "封神时刻",
+      "kind": "secret_task",
+      "summary": "己方首名到25级的英雄解锁封神一瞬。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.41.3",
+      "owner_ref": "player.41",
+      "name": "完美演出",
+      "kind": "exclusive_talent",
+      "summary": "封神一瞬目标开战获得双吸血30%和15秒免控，仍可被压制。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.43.1",
+      "owner_ref": "player.43",
+      "name": "最高决策者",
+      "kind": "chessplayer_skill",
+      "summary": "开局得战略决策；用过后首次发布至高决策时再获战略决策1张。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.43.2",
+      "owner_ref": "player.43",
+      "name": "至高之主",
+      "kind": "secret_task",
+      "summary": "每4回合获至高决策。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.43.3",
+      "owner_ref": "player.43",
+      "name": "特权决策",
+      "kind": "exclusive_talent",
+      "summary": "颁布1个全员生效决策，自己另获特权增益。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.50.1",
+      "owner_ref": "player.50",
+      "name": "究极弩炮",
+      "kind": "chessplayer_skill",
+      "summary": "开战自己参与武器攻击，基础物攻20；每拥有1名等级≥10的1至3阶英雄，攻击力再加20。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.50.2",
+      "owner_ref": "player.50",
+      "name": "枪炮艺术",
+      "kind": "secret_task",
+      "summary": "累计对棋手伤害到10/15/20/30时获武器改造。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.50.3",
+      "owner_ref": "player.50",
+      "name": "火力全开",
+      "kind": "exclusive_talent",
+      "summary": "攻击力提升比例为己方英雄等级总和×0.5%。",
+      "unlock_level": 6
+    },
+    {
+      "id": "ability.player.51.1",
+      "owner_ref": "player.51",
+      "name": "特制灵异追踪器",
+      "kind": "chessplayer_skill",
+      "summary": "获取飞行器；棋手达到3级获顿悟时刻。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.51.2",
+      "owner_ref": "player.51",
+      "name": "驱鬼!加大力度!",
+      "kind": "secret_task",
+      "summary": "神秘力量累计5/10/20/35时获灵异探测大改装。",
+      "unlock_level": 1
+    },
+    {
+      "id": "ability.player.51.3",
+      "owner_ref": "player.51",
+      "name": "超级连接",
+      "kind": "exclusive_talent",
+      "summary": "直接获大改装1张；开战飞行器连接英雄随机增加自身等级10%至30%的临时等级。",
+      "unlock_level": 6
+    }
+  ]
+}
