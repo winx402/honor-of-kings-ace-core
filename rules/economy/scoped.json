@@ -1,0 +1,229 @@
+{
+  "knowledge_version": "0.2.0",
+  "entries": [
+    {
+      "id": "rule.economy.round_income.demonstration",
+      "scope_id": "scope.cn.wanxiang.demonstration.undated",
+      "summary": "基础能量随回合阶段增加；余量结转。",
+      "values": {
+        "income_by_round": [
+          {
+            "from": 1,
+            "to": 3,
+            "energy": 6
+          },
+          {
+            "from": 4,
+            "to": 7,
+            "energy": 8
+          },
+          {
+            "from": 8,
+            "to": 11,
+            "energy": 12
+          },
+          {
+            "from": 12,
+            "to": null,
+            "energy": 15
+          }
+        ]
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.economy.bid_schedule.demonstration",
+      "scope_id": "scope.cn.wanxiang.demonstration.undated",
+      "summary": "三轮竞拍分别在第3、7、11战斗回合结束后发生；最后一次为第11回合之后。",
+      "values": {
+        "after_combat_rounds": [
+          3,
+          7,
+          11
+        ],
+        "lots": [
+          {
+            "after": 3,
+            "kind": "英雄牌",
+            "tiers": [
+              2,
+              3
+            ]
+          },
+          {
+            "after": 7,
+            "kind": "英雄牌",
+            "tiers": [
+              4,
+              5
+            ]
+          },
+          {
+            "after": 11,
+            "kind": "效果牌",
+            "tiers": [
+              6
+            ]
+          }
+        ],
+        "lot_count": "存活棋手人数",
+        "starting_energy": 1
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.economy.bid_switching.demonstration",
+      "scope_id": "scope.cn.wanxiang.demonstration.undated",
+      "summary": "当前最高出价者不能换拍品；非最高者可换拍品，之前参与竞拍的能量不实际支出。结束时未选择者由系统以默认1能量分配。",
+      "values": {
+        "highest_bidder_can_switch": false,
+        "nonhighest_can_switch": true,
+        "unselected_assignment_cost": 1
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.economy.shop_level3.display",
+      "scope_id": "scope.cn.wanxiang.display.undated",
+      "summary": "三级棋手显示的英雄品阶概率为20%、50%、30%、0%、0%。",
+      "values": {
+        "player_level": 3,
+        "tiers": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "probability": [
+          0.2,
+          0.5,
+          0.3,
+          0,
+          0
+        ]
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.bag_gain.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "打出与已上阵英雄同名的英雄牌计一次合成；累计三次合成取得一个效果锦囊。",
+      "values": {
+        "syntheses_per_bag": 3
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.pool_counts.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "公共牌库中每种同名英雄牌数量依品阶递减。",
+      "values": {
+        "copies_by_tier": {
+          "1": 14,
+          "2": 11,
+          "3": 9,
+          "4": 8,
+          "5": 6
+        }
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.pool_occupation.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "获得英雄牌或商店展示英雄牌都会占用公共库余量。刷新商店、出售手牌归还占用，出售已上阵英雄归还其累计占用数量。",
+      "values": {
+        "shop_display_occupies": true
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.shop_tier.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "棋手等级越高，高阶英雄牌出现机会越高；效果牌整体出现机会低于英雄牌，其品阶分布与英雄牌相同。",
+      "values": {
+        "effect_card_probability": null,
+        "tier_matrix": null
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.pool_awakening.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "未觉醒英雄的同名合成牌继续占库；觉醒后后续合成所用同名牌归还公共库。",
+      "values": {},
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.pool_generated.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "英雄牌生成效果优先取仍有余量的候选；候选余量全部为零仍可生成，并继续占库，允许实际余量变成负数。",
+      "values": {
+        "may_make_pool_negative": true
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.shop_slots.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "商店初始三个槽，达到青铜段位增加一个槽。",
+      "values": {
+        "initial_slots": 3,
+        "bronze_addition": 1
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.bag_tier.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "锦囊阶与棋手等级一致；六级棋手取得五阶锦囊。锦囊结果通常不高于锦囊阶加一。",
+      "values": {
+        "bag_tier_by_player_level": {
+          "1": 1,
+          "2": 2,
+          "3": 3,
+          "4": 4,
+          "5": 5,
+          "6": 5
+        },
+        "usual_result_tier_max_difference": 1,
+        "result_probability_matrix": null
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.shop_refresh.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "英雄牌标价三能量；战败或拍卖之后取得一次免费刷新。每轮战斗结束自动刷新商店一次。",
+      "values": {
+        "hero_energy_cost": 3,
+        "free_refresh_after_defeat": 1,
+        "free_refresh_after_auction": 1,
+        "automatic_refresh_after_combat": 1
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.talent_choice.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "棋手每次升级免费从三项天赋选一项；六名玩家在相同棋手等级获得相同天赋品阶。白银段位起每场有一次天赋刷新。",
+      "values": {
+        "options": 3,
+        "selected": 1,
+        "silver_refreshes_per_match": 1
+      },
+      "current_applicability": "unspecified"
+    }
+  ]
+}

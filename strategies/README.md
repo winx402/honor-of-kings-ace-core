@@ -9,3 +9,9 @@
 模式规定的初始阵容属于modes；推荐搭配属于strategy。详见[游戏模式与阵容](../docs/游戏模式与阵容.md)。
 
 [阵容模板](lineups.json)。
+
+[流派](archetypes.json)。
+
+[资源循环](resource-cycles.json)。
+
+[运营理解](insights.json)。

@@ -1,5 +1,5 @@
 {
-  "knowledge_version": "0.1.0",
+  "knowledge_version": "0.2.0",
   "scope_id": "scope.cn.wanxiang.undated",
   "entries": [
     {
@@ -7,1197 +7,1365 @@
       "hero_ref": "hero.1941",
       "ability_ref": "ability.hero.1941.1",
       "level": 10,
-      "summary": "伤害系数提高至1.2×物攻，削减物防改为8点。"
+      "summary": "物伤改为80+1.2×物攻；削减物防改为8点。"
     },
     {
       "id": "milestone.hero.1941.40",
       "hero_ref": "hero.1941",
       "ability_ref": "ability.hero.1941.1",
       "level": 40,
-      "summary": "首次战斗阵亡可复生，恢复至50%最大生命。"
+      "summary": "每场战斗第一次被击败后复生，复生生命为最大生命的50%。"
     },
     {
       "id": "milestone.hero.1941.100",
       "hero_ref": "hero.1941",
       "ability_ref": "ability.hero.1941.1",
       "level": 100,
-      "summary": "复生恢复至满生命；周边1格敌人被击飞眩晕1秒并受10%最大生命的物理伤害。"
+      "summary": "复生生命改为最大生命的100%；同时使周围1格敌人击飞眩晕1秒，承受10%最大生命的物伤。该伤害的生命值归属未明。"
     },
     {
       "id": "milestone.hero.5221.10",
       "hero_ref": "hero.5221",
       "ability_ref": "ability.hero.5221.1",
       "level": 10,
-      "summary": "施法获得100+1.0×物攻的4秒护盾。"
+      "summary": "施法附加护盾100+1.0×物攻，维持4秒。"
     },
     {
       "id": "milestone.hero.5221.40",
       "hero_ref": "hero.5221",
       "ability_ref": "ability.hero.5221.1",
       "level": 40,
-      "summary": "每第3次技能额外击飞并眩晕目标0.5秒。"
+      "summary": "每累计3次施法，第3次额外击飞并眩晕目标0.5秒。"
     },
     {
       "id": "milestone.hero.5221.100",
       "hero_ref": "hero.5221",
       "ability_ref": "ability.hero.5221.1",
       "level": 100,
-      "summary": "施法后追加1次强化普攻：伤害130+1.3×物攻，治疗200+0.75×物攻。"
+      "summary": "每次施法后获得一次强化普攻：物伤130+1.3×物攻，且自身治疗200+0.75×物攻。"
     },
     {
       "id": "milestone.hero.1181.10",
       "hero_ref": "hero.1181",
       "ability_ref": "ability.hero.1181.1",
       "level": 10,
-      "summary": "炸弹伤害改为100+1.75×法攻。"
+      "summary": "炸弹法伤改为100+1.75×法攻。"
     },
     {
       "id": "milestone.hero.1181.40",
       "hero_ref": "hero.1181",
       "ability_ref": "ability.hero.1181.1",
       "level": 40,
-      "summary": "每第3次技能向敌方生命最高的3个目标分别投弹。"
+      "summary": "每第3次施法改向敌方生命最高的3个目标各投一枚炸弹。"
     },
     {
       "id": "milestone.hero.1181.100",
       "hero_ref": "hero.1181",
       "ability_ref": "ability.hero.1181.1",
       "level": 100,
-      "summary": "炸弹附着期间沉默承载目标。"
+      "summary": "炸弹尚未爆炸的附着阶段，承载目标被沉默。"
     },
     {
       "id": "milestone.hero.5031.10",
       "hero_ref": "hero.5031",
       "ability_ref": "ability.hero.5031.1",
-      "level": 10
+      "level": 10,
+      "summary": "施法获护盾100+10%自身最大生命，持续4秒。"
     },
     {
       "id": "milestone.hero.5031.40",
       "hero_ref": "hero.5031",
       "ability_ref": "ability.hero.5031.1",
-      "level": 40
+      "level": 40,
+      "summary": "技能每命中一名敌人，护盾量再增加100。"
     },
     {
       "id": "milestone.hero.5031.100",
       "hero_ref": "hero.5031",
       "ability_ref": "ability.hero.5031.1",
-      "level": 100
+      "level": 100,
+      "summary": "护盾破裂时治疗自身10%最大生命。"
     },
     {
       "id": "milestone.hero.1111.10",
       "hero_ref": "hero.1111",
       "ability_ref": "ability.hero.1111.1",
-      "level": 10
+      "level": 10,
+      "summary": "弩炮物伤改为50+1.5×物攻。"
     },
     {
       "id": "milestone.hero.1111.40",
       "hero_ref": "hero.1111",
       "ability_ref": "ability.hero.1111.1",
-      "level": 40
+      "level": 40,
+      "summary": "命中后爆炸，附近敌人额外承受该技能伤害的60%。"
     },
     {
       "id": "milestone.hero.1111.100",
       "hero_ref": "hero.1111",
       "ability_ref": "ability.hero.1111.1",
-      "level": 100
+      "level": 100,
+      "summary": "额外射出一发强化弩炮，其伤害为普通弩炮的1.5倍。"
     },
     {
       "id": "milestone.hero.1971.10",
       "hero_ref": "hero.1971",
       "ability_ref": "ability.hero.1971.1",
       "level": 10,
-      "summary": "伤害提高至100+1.0×法攻。"
+      "summary": "成型伤害改为100+1.0×法攻。"
     },
     {
       "id": "milestone.hero.1971.40",
       "hero_ref": "hero.1971",
       "ability_ref": "ability.hero.1971.1",
       "level": 40,
-      "summary": "棋盘持续期间，敌人无法进出棋盘。"
+      "summary": "棋盘存在期间，敌人不能跨越棋盘边界进入或离开。"
     },
     {
       "id": "milestone.hero.1971.100",
       "hero_ref": "hero.1971",
       "ability_ref": "ability.hero.1971.1",
       "level": 100,
-      "summary": "棋盘持续时间延长至5.5秒。"
+      "summary": "棋盘存续改为5.5秒。"
     },
     {
       "id": "milestone.hero.1821.10",
       "hero_ref": "hero.1821",
       "ability_ref": "ability.hero.1821.1",
-      "level": 10
+      "level": 10,
+      "summary": "飞剑伤害改为150+1.0×法攻。"
     },
     {
       "id": "milestone.hero.1821.40",
       "hero_ref": "hero.1821",
       "ability_ref": "ability.hero.1821.1",
-      "level": 40
+      "level": 40,
+      "summary": "每第2次施法多放一对飞剑。"
     },
     {
       "id": "milestone.hero.1821.100",
       "hero_ref": "hero.1821",
       "ability_ref": "ability.hero.1821.1",
-      "level": 100
+      "level": 100,
+      "summary": "飞剑伤害进一步改为150+2.0×法攻。"
     },
     {
       "id": "milestone.hero.1731.10",
       "hero_ref": "hero.1731",
       "ability_ref": "ability.hero.1731.1",
-      "level": 10
+      "level": 10,
+      "summary": "印记爆炸物伤提高到1.5×物攻。"
     },
     {
       "id": "milestone.hero.1731.40",
       "hero_ref": "hero.1731",
       "ability_ref": "ability.hero.1731.1",
-      "level": 40
+      "level": 40,
+      "summary": "普攻命中也加一层印记。"
     },
     {
       "id": "milestone.hero.1731.100",
       "hero_ref": "hero.1731",
       "ability_ref": "ability.hero.1731.1",
-      "level": 100
+      "level": 100,
+      "summary": "每次引爆令自身攻速增加25%，最多累计5层。"
     },
     {
       "id": "milestone.hero.1681.10",
       "hero_ref": "hero.1681",
       "ability_ref": "ability.hero.1681.1",
-      "level": 10
+      "level": 10,
+      "summary": "斧击物伤改为30+1.2×物攻。"
     },
     {
       "id": "milestone.hero.1681.40",
       "hero_ref": "hero.1681",
       "ability_ref": "ability.hero.1681.1",
-      "level": 40
+      "level": 40,
+      "summary": "技能同时使目标击飞并眩晕1秒。"
     },
     {
       "id": "milestone.hero.1681.100",
       "hero_ref": "hero.1681",
       "ability_ref": "ability.hero.1681.1",
-      "level": 100
+      "level": 100,
+      "summary": "击飞眩晕时长改为3秒。"
     },
     {
       "id": "milestone.hero.5141.10",
       "hero_ref": "hero.5141",
       "ability_ref": "ability.hero.5141.1",
-      "level": 10
+      "level": 10,
+      "summary": "主动连斩改为5段，并击飞目标。"
     },
     {
       "id": "milestone.hero.5141.40",
       "hero_ref": "hero.5141",
       "ability_ref": "ability.hero.5141.1",
-      "level": 40
+      "level": 40,
+      "summary": "连斩改为7段，物理部分系数改为115%；施法后怒气最多可累计20层。"
     },
     {
       "id": "milestone.hero.5141.100",
       "hero_ref": "hero.5141",
       "ability_ref": "ability.hero.5141.1",
-      "level": 100
+      "level": 100,
+      "summary": "技能作用区域改为大范围圆形；具体格数未给定。"
     },
     {
       "id": "milestone.hero.5041.10",
       "hero_ref": "hero.5041",
       "ability_ref": "ability.hero.5041.1",
       "level": 10,
-      "summary": "单次召唤2只；仆从普攻法攻系数改为0.6。"
+      "summary": "每次召唤两只，仆从普攻法伤改为50+0.6×法攻。"
     },
     {
       "id": "milestone.hero.5041.40",
       "hero_ref": "hero.5041",
       "ability_ref": "ability.hero.5041.1",
       "level": 40,
-      "summary": "仆从额外生命取100%法攻；数量已满时再施法会将其生命回满。"
+      "summary": "仆从生命另加米莱狄100%法攻；满员时再次施法改为使仆从生命回满。"
     },
     {
       "id": "milestone.hero.5041.100",
       "hero_ref": "hero.5041",
       "ability_ref": "ability.hero.5041.1",
       "level": 100,
-      "summary": "仆从数量上限提高到4。"
+      "summary": "仆从存量上限改为4。"
     },
     {
       "id": "milestone.hero.1351.10",
       "hero_ref": "hero.1351",
       "ability_ref": "ability.hero.1351.1",
-      "level": 10
+      "level": 10,
+      "summary": "主动治疗改为300+8%最大生命。"
     },
     {
       "id": "milestone.hero.1351.40",
       "hero_ref": "hero.1351",
       "ability_ref": "ability.hero.1351.1",
-      "level": 40
+      "level": 40,
+      "summary": "怒吼使周围1格敌人攻速降低50%，维持5秒。"
     },
     {
       "id": "milestone.hero.1351.100",
       "hero_ref": "hero.1351",
       "ability_ref": "ability.hero.1351.1",
-      "level": 100
+      "level": 100,
+      "summary": "技能每命中一名敌人，自身减伤增加10%；最多5层，存续到本回合结束。"
     },
     {
       "id": "milestone.hero.1891.10",
       "hero_ref": "hero.1891",
       "ability_ref": "ability.hero.1891.1",
-      "level": 10
+      "level": 10,
+      "summary": "临时等级加成改为10。"
     },
     {
       "id": "milestone.hero.1891.40",
       "hero_ref": "hero.1891",
       "ability_ref": "ability.hero.1891.1",
-      "level": 40
+      "level": 40,
+      "summary": "每次技能增益的目标数增加1。"
     },
     {
       "id": "milestone.hero.1891.100",
       "hero_ref": "hero.1891",
       "ability_ref": "ability.hero.1891.1",
-      "level": 100
+      "level": 100,
+      "summary": "临时等级增益与持续秒数均翻倍。"
     },
     {
       "id": "milestone.hero.1981.10",
       "hero_ref": "hero.1981",
       "ability_ref": "ability.hero.1981.1",
-      "level": 10
+      "level": 10,
+      "summary": "治疗改为100+10%最大生命；泡泡法伤改为50+1.0×法攻。"
     },
     {
       "id": "milestone.hero.1981.40",
       "hero_ref": "hero.1981",
       "ability_ref": "ability.hero.1981.1",
-      "level": 40
+      "level": 40,
+      "summary": "额外保护一名友方生命最低单位。"
     },
     {
       "id": "milestone.hero.1981.100",
       "hero_ref": "hero.1981",
       "ability_ref": "ability.hero.1981.1",
-      "level": 100
+      "level": 100,
+      "summary": "治疗进一步改为100+20%最大生命。"
     },
     {
       "id": "milestone.hero.1211.10",
       "hero_ref": "hero.1211",
       "ability_ref": "ability.hero.1211.1",
-      "level": 10
+      "level": 10,
+      "summary": "仆从攻击伤害与治疗系数均改为1.0×芈月法攻。"
     },
     {
       "id": "milestone.hero.1211.40",
       "hero_ref": "hero.1211",
       "ability_ref": "ability.hero.1211.1",
-      "level": 40
+      "level": 40,
+      "summary": "仆从数量改为5只。"
     },
     {
       "id": "milestone.hero.1211.100",
       "hero_ref": "hero.1211",
       "ability_ref": "ability.hero.1211.1",
-      "level": 100
+      "level": 100,
+      "summary": "每次窃取的物防、法防分别改为2点。"
     },
     {
       "id": "milestone.hero.3121.10",
       "hero_ref": "hero.3121",
       "ability_ref": "ability.hero.3121.1",
-      "level": 10
+      "level": 10,
+      "summary": "炸弹法伤改为125+1.75×法攻。"
     },
     {
       "id": "milestone.hero.3121.40",
       "hero_ref": "hero.3121",
       "ability_ref": "ability.hero.3121.1",
-      "level": 40
+      "level": 40,
+      "summary": "爆炸半径比基础增加1格。"
     },
     {
       "id": "milestone.hero.3121.100",
       "hero_ref": "hero.3121",
       "ability_ref": "ability.hero.3121.1",
-      "level": 100
+      "level": 100,
+      "summary": "爆炸同时使敌人眩晕0.5秒。"
     },
     {
       "id": "milestone.hero.5091.10",
       "hero_ref": "hero.5091",
       "ability_ref": "ability.hero.5091.1",
       "level": 10,
-      "summary": "减伤35%，状态持续8秒。"
+      "summary": "减伤改为35%，架盾时长改为8秒。"
     },
     {
       "id": "milestone.hero.5091.40",
       "hero_ref": "hero.5091",
       "ability_ref": "ability.hero.5091.1",
       "level": 40,
-      "summary": "扩大盾范围，接触敌人攻速降低35%。"
+      "summary": "盾面积扩大；与盾接触的敌人攻速降低35%。"
     },
     {
       "id": "milestone.hero.5091.100",
       "hero_ref": "hero.5091",
       "ability_ref": "ability.hero.5091.1",
       "level": 100,
-      "summary": "开战立即架盾，维持整个回合。"
+      "summary": "战斗开始立即架盾，维持到本回合结束。"
     },
     {
       "id": "milestone.hero.1281.10",
       "hero_ref": "hero.1281",
       "ability_ref": "ability.hero.1281.1",
-      "level": 10
+      "level": 10,
+      "summary": "基础攻击力加成改为50%。"
     },
     {
       "id": "milestone.hero.1281.40",
       "hero_ref": "hero.1281",
       "ability_ref": "ability.hero.1281.1",
-      "level": 40
+      "level": 40,
+      "summary": "增益持续再加5秒；强化时普攻发射可穿透的剑气。"
     },
     {
       "id": "milestone.hero.1281.100",
       "hero_ref": "hero.1281",
       "ability_ref": "ability.hero.1281.1",
-      "level": 100
+      "level": 100,
+      "summary": "技能增益期附加30%物理吸血。"
     },
     {
       "id": "milestone.hero.1741.10",
       "hero_ref": "hero.1741",
       "ability_ref": "ability.hero.1741.1",
-      "level": 10
+      "level": 10,
+      "summary": "每箭物伤改为50+1.2×物攻。"
     },
     {
       "id": "milestone.hero.1741.40",
       "hero_ref": "hero.1741",
       "ability_ref": "ability.hero.1741.1",
-      "level": 40
+      "level": 40,
+      "summary": "落地获得50%攻速，维持3秒。"
     },
     {
       "id": "milestone.hero.1741.100",
       "hero_ref": "hero.1741",
       "ability_ref": "ability.hero.1741.1",
-      "level": 100
+      "level": 100,
+      "summary": "冲向目标的阶段另使其眩晕1.5秒。"
     },
     {
       "id": "milestone.hero.1321.10",
       "hero_ref": "hero.1321",
       "ability_ref": "ability.hero.1321.1",
-      "level": 10
+      "level": 10,
+      "summary": "每弹物伤改为40+0.3×物攻。"
     },
     {
       "id": "milestone.hero.1321.40",
       "hero_ref": "hero.1321",
       "ability_ref": "ability.hero.1321.1",
-      "level": 40
+      "level": 40,
+      "summary": "基础弹数改为16发。"
     },
     {
       "id": "milestone.hero.1321.100",
       "hero_ref": "hero.1321",
       "ability_ref": "ability.hero.1321.1",
-      "level": 100
+      "level": 100,
+      "summary": "子弹命中的敌人被永久标记；友军攻击带标记敌人时攻速提高50%。该攻速存续时长未给出。"
     },
     {
       "id": "milestone.hero.1071.10",
       "hero_ref": "hero.1071",
       "ability_ref": "ability.hero.1071.1",
-      "level": 10
+      "level": 10,
+      "summary": "每刺物伤改为60+1.0×物攻，治疗改为80。"
     },
     {
       "id": "milestone.hero.1071.40",
       "hero_ref": "hero.1071",
       "ability_ref": "ability.hero.1071.1",
-      "level": 40
+      "level": 40,
+      "summary": "生命低于最大值50%时，刺击多3次。"
     },
     {
       "id": "milestone.hero.1071.100",
       "hero_ref": "hero.1071",
       "ability_ref": "ability.hero.1071.1",
-      "level": 100
+      "level": 100,
+      "summary": "生命低于30%时，技能伤害和治疗乘1.5；首次降至30%以下时获护盾100+30%最大生命。"
     },
     {
       "id": "milestone.hero.1911.10",
       "hero_ref": "hero.1911",
       "ability_ref": "ability.hero.1911.1",
-      "level": 10
+      "level": 10,
+      "summary": "普通波浪法伤改为100+1.5×法攻。"
     },
     {
       "id": "milestone.hero.1911.40",
       "hero_ref": "hero.1911",
       "ability_ref": "ability.hero.1911.1",
-      "level": 40
+      "level": 40,
+      "summary": "每第3次施法改用巨浪，法伤100+2.0×法攻。"
     },
     {
       "id": "milestone.hero.1911.100",
       "hero_ref": "hero.1911",
       "ability_ref": "ability.hero.1911.1",
-      "level": 100
+      "level": 100,
+      "summary": "每次施法均使用巨浪。"
     },
     {
       "id": "milestone.hero.1991.10",
       "hero_ref": "hero.1991",
       "ability_ref": "ability.hero.1991.1",
-      "level": 10
+      "level": 10,
+      "summary": "离伞期间自身攻速增加30%；伞首个命中目标被击退并眩晕1.5秒。"
     },
     {
       "id": "milestone.hero.1991.40",
       "hero_ref": "hero.1991",
       "ability_ref": "ability.hero.1991.1",
-      "level": 40
+      "level": 40,
+      "summary": "离伞期间攻速加成提高至50%。"
     },
     {
       "id": "milestone.hero.1991.100",
       "hero_ref": "hero.1991",
       "ability_ref": "ability.hero.1991.1",
-      "level": 100
+      "level": 100,
+      "summary": "控制时长改为2.5秒，击退距离增大；具体增幅未给定。"
     },
     {
       "id": "milestone.hero.1961.10",
       "hero_ref": "hero.1961",
       "ability_ref": "ability.hero.1961.1",
-      "level": 10
+      "level": 10,
+      "summary": "狙击物伤改为200+8.0×物攻。"
     },
     {
       "id": "milestone.hero.1961.40",
       "hero_ref": "hero.1961",
       "ability_ref": "ability.hero.1961.1",
-      "level": 40
+      "level": 40,
+      "summary": "子弹击败敌人后能继续飞行；每次后续伤害衰减30%，最多衰减60%。"
     },
     {
       "id": "milestone.hero.1961.100",
       "hero_ref": "hero.1961",
       "ability_ref": "ability.hero.1961.1",
-      "level": 100
+      "level": 100,
+      "summary": "取消狙击穿透的伤害衰减。"
     },
     {
       "id": "milestone.hero.1081.10",
       "hero_ref": "hero.1081",
       "ability_ref": "ability.hero.1081.1",
-      "level": 10
+      "level": 10,
+      "summary": "每跳法伤改为50+0.75×法攻。"
     },
     {
       "id": "milestone.hero.1081.40",
       "hero_ref": "hero.1081",
       "ability_ref": "ability.hero.1081.1",
-      "level": 40
+      "level": 40,
+      "summary": "每次屏障伤害另使目标眩晕0.5秒。"
     },
     {
       "id": "milestone.hero.1081.100",
       "hero_ref": "hero.1081",
       "ability_ref": "ability.hero.1081.1",
-      "level": 100
+      "level": 100,
+      "summary": "屏障最多持续5秒。"
     },
     {
       "id": "milestone.hero.1951.10",
       "hero_ref": "hero.1951",
       "ability_ref": "ability.hero.1951.1",
-      "level": 10
+      "level": 10,
+      "summary": "钩镰物伤改为50+1.3×物攻；未区分两段的覆盖。"
     },
     {
       "id": "milestone.hero.1951.40",
       "hero_ref": "hero.1951",
       "ability_ref": "ability.hero.1951.1",
-      "level": 40
+      "level": 40,
+      "summary": "钩住维持6秒；落地后玄策立即突进目标背后，路径敌人受物伤100+2.0×物攻；对被钩目标的普攻物伤为1.2×物攻。"
     },
     {
       "id": "milestone.hero.1951.100",
       "hero_ref": "hero.1951",
       "ability_ref": "ability.hero.1951.1",
-      "level": 100
+      "level": 100,
+      "summary": "施法标记当前目标并降低其双防各10；标记目标死亡使玄策攻速+150%、移速+40%，维持5秒。"
     },
     {
       "id": "milestone.hero.1051.10",
       "hero_ref": "hero.1051",
       "ability_ref": "ability.hero.1051.1",
-      "level": 10
+      "level": 10,
+      "summary": "物伤改为50+1.2×物攻；自身护盾改为250。"
     },
     {
       "id": "milestone.hero.1051.40",
       "hero_ref": "hero.1051",
       "ability_ref": "ability.hero.1051.1",
-      "level": 40
+      "level": 40,
+      "summary": "每次施法后护盾量再加40，最多成长5次。"
     },
     {
       "id": "milestone.hero.1051.100",
       "hero_ref": "hero.1051",
       "ability_ref": "ability.hero.1051.1",
-      "level": 100
+      "level": 100,
+      "summary": "每次直接获得成长满后的护盾量，无需累积施法；另治疗自身10%最大生命。"
     },
     {
       "id": "milestone.hero.5271.10",
       "hero_ref": "hero.5271",
       "ability_ref": "ability.hero.5271.1",
       "level": 10,
-      "summary": "每名士兵分摊比例改为12%。"
+      "summary": "每名士兵分伤改为12%。"
     },
     {
       "id": "milestone.hero.5271.40",
       "hero_ref": "hero.5271",
       "ability_ref": "ability.hero.5271.1",
       "level": 40,
-      "summary": "单次生成2名、存量上限4名。"
+      "summary": "每次召两名，存量上限改为4。"
     },
     {
       "id": "milestone.hero.5271.100",
       "hero_ref": "hero.5271",
       "ability_ref": "ability.hero.5271.1",
       "level": 100,
-      "summary": "单次生成4名士兵。"
+      "summary": "每次召四名士兵。"
     },
     {
       "id": "milestone.hero.1841.10",
       "hero_ref": "hero.1841",
       "ability_ref": "ability.hero.1841.1",
-      "level": 10
+      "level": 10,
+      "summary": "区域友军另获物防、法防各6点。"
     },
     {
       "id": "milestone.hero.1841.40",
       "hero_ref": "hero.1841",
       "ability_ref": "ability.hero.1841.1",
-      "level": 40
+      "level": 40,
+      "summary": "每秒治疗改为80，双防加成各改为12。"
     },
     {
       "id": "milestone.hero.1841.100",
       "hero_ref": "hero.1841",
       "ability_ref": "ability.hero.1841.1",
-      "level": 100
+      "level": 100,
+      "summary": "影响范围扩大为周围2格，每秒治疗改为150。"
     },
     {
       "id": "milestone.hero.5061.10",
       "hero_ref": "hero.5061",
       "ability_ref": "ability.hero.5061.1",
-      "level": 10
+      "level": 10,
+      "summary": "羽箭物伤改为50+1.2×物攻。"
     },
     {
       "id": "milestone.hero.5061.40",
       "hero_ref": "hero.5061",
       "ability_ref": "ability.hero.5061.1",
-      "level": 40
+      "level": 40,
+      "summary": "普攻命中也给目标加一层撕裂。"
     },
     {
       "id": "milestone.hero.5061.100",
       "hero_ref": "hero.5061",
       "ability_ref": "ability.hero.5061.1",
-      "level": 100
+      "level": 100,
+      "summary": "羽箭覆盖半径扩大1格。"
     },
     {
       "id": "milestone.hero.5641.10",
       "hero_ref": "hero.5641",
       "ability_ref": "ability.hero.5641.1",
-      "level": 10
+      "level": 10,
+      "summary": "飞踢物伤改为150+1.5×物攻。"
     },
     {
       "id": "milestone.hero.5641.40",
       "hero_ref": "hero.5641",
       "ability_ref": "ability.hero.5641.1",
-      "level": 40
+      "level": 40,
+      "summary": "技能施加5秒印记；姬小满和友军对带印记敌人的伤害增加40%。"
     },
     {
       "id": "milestone.hero.5641.100",
       "hero_ref": "hero.5641",
       "ability_ref": "ability.hero.5641.1",
-      "level": 100
+      "level": 100,
+      "summary": "击退后腾空，空中减伤70%；随后砸向当前目标，区域敌人受1.5×物攻的物伤并被击飞。"
     },
     {
       "id": "milestone.hero.1771.10",
       "hero_ref": "hero.1771",
       "ability_ref": "ability.hero.1771.1",
-      "level": 10
+      "level": 10,
+      "summary": "狼魂普攻物伤改为1.2×物攻。"
     },
     {
       "id": "milestone.hero.1771.40",
       "hero_ref": "hero.1771",
       "ability_ref": "ability.hero.1771.1",
-      "level": 40
+      "level": 40,
+      "summary": "狼魂提供苍物攻的累计上限改为60%。"
     },
     {
       "id": "milestone.hero.1771.100",
       "hero_ref": "hero.1771",
       "ability_ref": "ability.hero.1771.1",
-      "level": 100
+      "level": 100,
+      "summary": "主动改为召三道狼魂冲锋。"
     },
     {
       "id": "milestone.hero.1931.10",
       "hero_ref": "hero.1931",
       "ability_ref": "ability.hero.1931.1",
-      "level": 10
+      "level": 10,
+      "summary": "固定减伤改为20点；魔铠期间每第3次普攻获200护盾，不能叠加。"
     },
     {
       "id": "milestone.hero.1931.40",
       "hero_ref": "hero.1931",
       "ability_ref": "ability.hero.1931.1",
-      "level": 40
+      "level": 40,
+      "summary": "魔铠期间每第3次普攻再给目标1.0×物攻的额外法伤。"
     },
     {
       "id": "milestone.hero.1931.100",
       "hero_ref": "hero.1931",
       "ability_ref": "ability.hero.1931.1",
-      "level": 100
+      "level": 100,
+      "summary": "开战就立即进入魔铠状态。"
     },
     {
       "id": "milestone.hero.1201.10",
       "hero_ref": "hero.1201",
       "ability_ref": "ability.hero.1201.1",
-      "level": 10
+      "level": 10,
+      "summary": "施法另获20%最大生命的护盾，维持4秒。"
     },
     {
       "id": "milestone.hero.1201.40",
       "hero_ref": "hero.1201",
       "ability_ref": "ability.hero.1201.1",
-      "level": 40
+      "level": 40,
+      "summary": "护盾改为200+30%最大生命。"
     },
     {
       "id": "milestone.hero.1201.100",
       "hero_ref": "hero.1201",
       "ability_ref": "ability.hero.1201.1",
-      "level": 100
+      "level": 100,
+      "summary": "嘲讽时间改为4秒。"
     },
     {
       "id": "milestone.hero.5011.10",
       "hero_ref": "hero.5011",
       "ability_ref": "ability.hero.5011.1",
       "level": 10,
-      "summary": "治疗法攻系数改为0.9。"
+      "summary": "治疗量改为100+0.9×法攻。"
     },
     {
       "id": "milestone.hero.5011.40",
       "hero_ref": "hero.5011",
       "ability_ref": "ability.hero.5011.1",
       "level": 40,
-      "summary": "目标另获25点双抗，持续5秒。"
+      "summary": "技能目标另获双防各25，维持5秒。"
     },
     {
       "id": "milestone.hero.5011.100",
       "hero_ref": "hero.5011",
       "ability_ref": "ability.hero.5011.1",
       "level": 100,
-      "summary": "额外治疗20%最大生命。"
+      "summary": "技能再治疗20%最大生命；按各受疗者最大生命计的口径未在正文进一步说明。"
     },
     {
       "id": "milestone.hero.1161.10",
       "hero_ref": "hero.1161",
       "ability_ref": "ability.hero.1161.1",
-      "level": 10
+      "level": 10,
+      "summary": "单次物伤改为30+1.3×物攻。"
     },
     {
       "id": "milestone.hero.1161.40",
       "hero_ref": "hero.1161",
       "ability_ref": "ability.hero.1161.1",
-      "level": 40
+      "level": 40,
+      "summary": "开战后的20秒内不会被敌方优先攻击。"
     },
     {
       "id": "milestone.hero.1161.100",
       "hero_ref": "hero.1161",
       "ability_ref": "ability.hero.1161.1",
-      "level": 100
+      "level": 100,
+      "summary": "整场战斗不被优先攻击，技能一定暴击。"
     },
     {
       "id": "milestone.hero.5181.10",
       "hero_ref": "hero.5181",
       "ability_ref": "ability.hero.5181.1",
-      "level": 10
+      "level": 10,
+      "summary": "突袭物伤改为50+1.5×物攻。"
     },
     {
       "id": "milestone.hero.5181.40",
       "hero_ref": "hero.5181",
       "ability_ref": "ability.hero.5181.1",
-      "level": 40
+      "level": 40,
+      "summary": "突袭暴击时回收场上冷晖枪；回收路径敌人受0.5×物攻的物伤。"
     },
     {
       "id": "milestone.hero.5181.100",
       "hero_ref": "hero.5181",
       "ability_ref": "ability.hero.5181.1",
-      "level": 100
+      "level": 100,
+      "summary": "每累计回收3把枪，下次技能改为最多6次连续突袭。"
     },
     {
       "id": "milestone.hero.5021.10",
       "hero_ref": "hero.5021",
       "ability_ref": "ability.hero.5021.1",
-      "level": 10
+      "level": 10,
+      "summary": "猛击物伤改为1.5×物攻。"
     },
     {
       "id": "milestone.hero.5021.40",
       "hero_ref": "hero.5021",
       "ability_ref": "ability.hero.5021.1",
-      "level": 40
+      "level": 40,
+      "summary": "开战立即变虎，并使攻速、移速各提高30%。"
     },
     {
       "id": "milestone.hero.5021.100",
       "hero_ref": "hero.5021",
       "ability_ref": "ability.hero.5021.1",
-      "level": 100
+      "level": 100,
+      "summary": "虎形态属性加成翻倍；猛击物伤改为2.0×物攻。"
     },
     {
       "id": "milestone.hero.1391.10",
       "hero_ref": "hero.1391",
       "ability_ref": "ability.hero.1391.1",
-      "level": 10
+      "level": 10,
+      "summary": "减伤改为45%。"
     },
     {
       "id": "milestone.hero.1391.40",
       "hero_ref": "hero.1391",
       "ability_ref": "ability.hero.1391.1",
-      "level": 40
+      "level": 40,
+      "summary": "增益期间每次受伤治疗20生命，总治疗量最多160。"
     },
     {
       "id": "milestone.hero.1391.100",
       "hero_ref": "hero.1391",
       "ability_ref": "ability.hero.1391.1",
-      "level": 100
+      "level": 100,
+      "summary": "取消受伤触发治疗的总量上限。"
     },
     {
       "id": "milestone.hero.5231.10",
       "hero_ref": "hero.5231",
       "ability_ref": "ability.hero.5231.1",
-      "level": 10
+      "level": 10,
+      "summary": "出现法伤改为100+1.2×法攻，正常爆炸改为100+1.5×法攻。"
     },
     {
       "id": "milestone.hero.5231.40",
       "hero_ref": "hero.5231",
       "ability_ref": "ability.hero.5231.1",
-      "level": 40
+      "level": 40,
+      "summary": "目标离开球所在阵位会被拉回；到位立刻引爆并消除球，法伤100且周边敌人眩晕2秒。此提前引爆值与正常爆炸值分别记载。"
     },
     {
       "id": "milestone.hero.5231.100",
       "hero_ref": "hero.5231",
       "ability_ref": "ability.hero.5231.1",
-      "level": 100
+      "level": 100,
+      "summary": "引爆眩晕时长改为3.5秒。"
     },
     {
       "id": "milestone.hero.1141.10",
       "hero_ref": "hero.1141",
       "ability_ref": "ability.hero.1141.1",
-      "level": 10
+      "level": 10,
+      "summary": "护盾改为300。"
     },
     {
       "id": "milestone.hero.1141.40",
       "hero_ref": "hero.1141",
       "ability_ref": "ability.hero.1141.1",
-      "level": 40
+      "level": 40,
+      "summary": "护盾改为400，存续期间减伤30%。"
     },
     {
       "id": "milestone.hero.1141.100",
       "hero_ref": "hero.1141",
       "ability_ref": "ability.hero.1141.1",
-      "level": 100
+      "level": 100,
+      "summary": "护盾改为600+5%最大生命；目标眩晕改为3秒。"
     },
     {
       "id": "milestone.hero.5111.10",
       "hero_ref": "hero.5111",
       "ability_ref": "ability.hero.5111.1",
-      "level": 10
+      "level": 10,
+      "summary": "落地法伤比例改为10%自身最大生命。"
     },
     {
       "id": "milestone.hero.5111.40",
       "hero_ref": "hero.5111",
       "ability_ref": "ability.hero.5111.1",
-      "level": 40
+      "level": 40,
+      "summary": "受伤成长总上限改为60层。"
     },
     {
       "id": "milestone.hero.5111.100",
       "hero_ref": "hero.5111",
       "ability_ref": "ability.hero.5111.1",
-      "level": 100
+      "level": 100,
+      "summary": "移除总层数上限及移速损失，但一回合最多新增100层；主动改跳向敌人密集处。"
     },
     {
       "id": "milestone.hero.1441.10",
       "hero_ref": "hero.1441",
       "ability_ref": "ability.hero.1441.1",
-      "level": 10
+      "level": 10,
+      "summary": "记载的治疗量改为60+10%最大生命。"
     },
     {
       "id": "milestone.hero.1441.40",
       "hero_ref": "hero.1441",
       "ability_ref": "ability.hero.1441.1",
-      "level": 40
+      "level": 40,
+      "summary": "技能期间另获得15%减伤。"
     },
     {
       "id": "milestone.hero.1441.100",
       "hero_ref": "hero.1441",
       "ability_ref": "ability.hero.1441.1",
-      "level": 100
+      "level": 100,
+      "summary": "施法瞬间再治疗25%已损失生命。"
     },
     {
       "id": "milestone.hero.1331.10",
       "hero_ref": "hero.1331",
       "ability_ref": "ability.hero.1331.1",
-      "level": 10
+      "level": 10,
+      "summary": "每层基础攻速加成改为90%。"
     },
     {
       "id": "milestone.hero.1331.40",
       "hero_ref": "hero.1331",
       "ability_ref": "ability.hero.1331.1",
-      "level": 40
+      "level": 40,
+      "summary": "每第3次普攻用蓝牌，目标受1.5×物攻的物伤。"
     },
     {
       "id": "milestone.hero.1331.100",
       "hero_ref": "hero.1331",
       "ability_ref": "ability.hero.1331.1",
-      "level": 100
+      "level": 100,
+      "summary": "全部普攻改用蓝牌；每第10次再改黄牌，附加0.5秒眩晕。"
     },
     {
       "id": "milestone.hero.1561.10",
       "hero_ref": "hero.1561",
       "ability_ref": "ability.hero.1561.1",
-      "level": 10
+      "level": 10,
+      "summary": "每跳法伤改为100+0.5×法攻。"
     },
     {
       "id": "milestone.hero.1561.40",
       "hero_ref": "hero.1561",
       "ability_ref": "ability.hero.1561.1",
-      "level": 40
+      "level": 40,
+      "summary": "每0.5秒再扣目标5法力。"
     },
     {
       "id": "milestone.hero.1561.100",
       "hero_ref": "hero.1561",
       "ability_ref": "ability.hero.1561.1",
-      "level": 100
+      "level": 100,
+      "summary": "压制改为3秒，并清空目标法力。"
     },
     {
       "id": "milestone.hero.5771.10",
       "hero_ref": "hero.5771",
       "ability_ref": "ability.hero.5771.1",
-      "level": 10
+      "level": 10,
+      "summary": "沿途治疗改为150+1.0×法攻。"
     },
     {
       "id": "milestone.hero.5771.40",
       "hero_ref": "hero.5771",
       "ability_ref": "ability.hero.5771.1",
-      "level": 40
+      "level": 40,
+      "summary": "沿途友军另获30%攻速、维持4秒。"
     },
     {
       "id": "milestone.hero.5771.100",
       "hero_ref": "hero.5771",
       "ability_ref": "ability.hero.5771.1",
-      "level": 100
+      "level": 100,
+      "summary": "沿途敌人受法伤150+0.5×法攻；敌方伤害输出降低15%，维持5秒。"
     },
     {
       "id": "milestone.hero.1661.10",
       "hero_ref": "hero.1661",
       "ability_ref": "ability.hero.1661.1",
-      "level": 10
+      "level": 10,
+      "summary": "圣盾每秒物伤改为0.8×物攻，减伤改为25%。"
     },
     {
       "id": "milestone.hero.1661.40",
       "hero_ref": "hero.1661",
       "ability_ref": "ability.hero.1661.1",
-      "level": 40
+      "level": 40,
+      "summary": "减伤存续改为8秒。"
     },
     {
       "id": "milestone.hero.1661.100",
       "hero_ref": "hero.1661",
       "ability_ref": "ability.hero.1661.1",
-      "level": 100
+      "level": 100,
+      "summary": "施法跃向敌人密集处，追加自身最大生命15%的法伤；范围敌人在3秒内不能回复法力。"
     },
     {
       "id": "milestone.hero.1751.10",
       "hero_ref": "hero.1751",
       "ability_ref": "ability.hero.1751.1",
-      "level": 10
+      "level": 10,
+      "summary": "开战法力立即充满。"
     },
     {
       "id": "milestone.hero.1751.40",
       "hero_ref": "hero.1751",
       "ability_ref": "ability.hero.1751.1",
-      "level": 40
+      "level": 40,
+      "summary": "钩锁法伤改为50+1.5×法攻。"
     },
     {
       "id": "milestone.hero.1751.100",
       "hero_ref": "hero.1751",
       "ability_ref": "ability.hero.1751.1",
-      "level": 100
+      "level": 100,
+      "summary": "最大法力值降低50；最低法力上限未载。"
     },
     {
       "id": "milestone.hero.1411.10",
       "hero_ref": "hero.1411",
       "ability_ref": "ability.hero.1411.1",
-      "level": 10
+      "level": 10,
+      "summary": "每球法伤改为50+0.6×法攻。"
     },
     {
       "id": "milestone.hero.1411.40",
       "hero_ref": "hero.1411",
       "ability_ref": "ability.hero.1411.1",
-      "level": 40
+      "level": 40,
+      "summary": "花球总数增加4。"
     },
     {
       "id": "milestone.hero.1411.100",
       "hero_ref": "hero.1411",
       "ability_ref": "ability.hero.1411.1",
-      "level": 100
+      "level": 100,
+      "summary": "施法会先远离敌人；位移距离未载。"
     },
     {
       "id": "milestone.hero.1421.10",
       "hero_ref": "hero.1421",
       "ability_ref": "ability.hero.1421.1",
-      "level": 10
+      "level": 10,
+      "summary": "每跳法伤系数改为0.17×法攻。"
     },
     {
       "id": "milestone.hero.1421.40",
       "hero_ref": "hero.1421",
       "ability_ref": "ability.hero.1421.1",
-      "level": 40
+      "level": 40,
+      "summary": "光束条数改为3。"
     },
     {
       "id": "milestone.hero.1421.100",
       "hero_ref": "hero.1421",
       "ability_ref": "ability.hero.1421.1",
-      "level": 100
+      "level": 100,
+      "summary": "每击败一名敌人，光束持续再延2秒，伤害再增加15%。"
     },
     {
       "id": "milestone.hero.5051.10",
       "hero_ref": "hero.5051",
       "ability_ref": "ability.hero.5051.1",
-      "level": 10
+      "level": 10,
+      "summary": "附身额外提供双攻各30、双防各10；护盾改为300+25%瑶最大生命。"
     },
     {
       "id": "milestone.hero.5051.40",
       "hero_ref": "hero.5051",
       "ability_ref": "ability.hero.5051.1",
-      "level": 40
+      "level": 40,
+      "summary": "附身攻击另使受击敌人眩晕0.5秒。"
     },
     {
       "id": "milestone.hero.5051.100",
       "hero_ref": "hero.5051",
       "ability_ref": "ability.hero.5051.1",
-      "level": 100
+      "level": 100,
+      "summary": "向保护目标分享瑶主要属性的30%：最大生命、双攻、双防、攻速。"
     },
     {
       "id": "milestone.hero.5311.10",
       "hero_ref": "hero.5311",
       "ability_ref": "ability.hero.5311.1",
-      "level": 10
+      "level": 10,
+      "summary": "物伤改为80+1.2×物攻。"
     },
     {
       "id": "milestone.hero.5311.40",
       "hero_ref": "hero.5311",
       "ability_ref": "ability.hero.5311.1",
-      "level": 40
+      "level": 40,
+      "summary": "物伤改为80+1.5×物攻，并生成一名镜像攻击。"
     },
     {
       "id": "milestone.hero.5311.100",
       "hero_ref": "hero.5311",
       "ability_ref": "ability.hero.5311.1",
-      "level": 100
+      "level": 100,
+      "summary": "生成镜像数改为两名；施法另治疗自身450生命。"
     },
     {
       "id": "milestone.hero.1591.10",
       "hero_ref": "hero.1591",
       "ability_ref": "ability.hero.1591.1",
-      "level": 10
+      "level": 10,
+      "summary": "落地治疗改为100+1.5×法攻，法力回复改为20。"
     },
     {
       "id": "milestone.hero.1591.40",
       "hero_ref": "hero.1591",
       "ability_ref": "ability.hero.1591.1",
-      "level": 40
+      "level": 40,
+      "summary": "水域可持续到回合结束；人鱼普攻获得的法力也分享给水域友军。"
     },
     {
       "id": "milestone.hero.1591.100",
       "hero_ref": "hero.1591",
       "ability_ref": "ability.hero.1591.1",
-      "level": 100
+      "level": 100,
+      "summary": "落地立即回复水域友军最大法力的100%；基础落地回蓝仍不作用自身。"
     },
     {
       "id": "milestone.hero.5451.10",
       "hero_ref": "hero.5451",
       "ability_ref": "ability.hero.5451.1",
-      "level": 10
+      "level": 10,
+      "summary": "烟内攻速加成改为50%。"
     },
     {
       "id": "milestone.hero.5451.40",
       "hero_ref": "hero.5451",
       "ability_ref": "ability.hero.5451.1",
-      "level": 40
+      "level": 40,
+      "summary": "自身与烟内友军集火同一敌人；烟内友军每次造成伤害额外给小火鹰一层充能。"
     },
     {
       "id": "milestone.hero.5451.100",
       "hero_ref": "hero.5451",
       "ability_ref": "ability.hero.5451.1",
-      "level": 100
+      "level": 100,
+      "summary": "施法立即连发5枚强化飞弹，并把储能容量改为10层，快速发射模式维持5秒。"
     },
     {
       "id": "milestone.hero.5131.10",
       "hero_ref": "hero.5131",
       "ability_ref": "ability.hero.5131.1",
-      "level": 10
+      "level": 10,
+      "summary": "笔墨法伤改为100+1.5×法攻。"
     },
     {
       "id": "milestone.hero.5131.40",
       "hero_ref": "hero.5131",
       "ability_ref": "ability.hero.5131.1",
-      "level": 40
+      "level": 40,
+      "summary": "笔墨每命中一名敌人，伤害提高50%，累计最多提高150%。"
     },
     {
       "id": "milestone.hero.5131.100",
       "hero_ref": "hero.5131",
       "ability_ref": "ability.hero.5131.1",
-      "level": 100
+      "level": 100,
+      "summary": "笔墨基础法伤改为100+2.4×法攻。"
     },
     {
       "id": "milestone.hero.3551.10",
       "hero_ref": "hero.3551",
       "ability_ref": "ability.hero.3551.1",
-      "level": 10
+      "level": 10,
+      "summary": "主动各段法伤系数改为1.5×法攻。"
     },
     {
       "id": "milestone.hero.3551.40",
       "hero_ref": "hero.3551",
       "ability_ref": "ability.hero.3551.1",
-      "level": 40
+      "level": 40,
+      "summary": "月桂到30层再进化：每次普攻获2法攻并追加0.1×法攻的法伤。"
     },
     {
       "id": "milestone.hero.3551.100",
       "hero_ref": "hero.3551",
       "ability_ref": "ability.hero.3551.1",
-      "level": 100
+      "level": 100,
+      "summary": "开战绕场飞行，攻击距离无限；每次施法令普攻具穿透5秒。"
     },
     {
       "id": "milestone.hero.1191.10",
       "hero_ref": "hero.1191",
       "ability_ref": "ability.hero.1191.1",
-      "level": 10
+      "level": 10,
+      "summary": "每秒治疗与伤害均改为20+0.9×法攻。"
     },
     {
       "id": "milestone.hero.1191.40",
       "hero_ref": "hero.1191",
       "ability_ref": "ability.hero.1191.1",
-      "level": 40
+      "level": 40,
+      "summary": "药瓶数改为5。"
     },
     {
       "id": "milestone.hero.1191.100",
       "hero_ref": "hero.1191",
       "ability_ref": "ability.hero.1191.1",
-      "level": 100
+      "level": 100,
+      "summary": "药液同时给友军40%攻速并使敌人攻速降低40%。"
     },
     {
       "id": "milestone.hero.1101.10",
       "hero_ref": "hero.1101",
       "ability_ref": "ability.hero.1101.1",
-      "level": 10
+      "level": 10,
+      "summary": "每剑法伤改为15+0.15×法攻。"
     },
     {
       "id": "milestone.hero.1101.40",
       "hero_ref": "hero.1101",
       "ability_ref": "ability.hero.1101.1",
-      "level": 40
+      "level": 40,
+      "summary": "基础飞剑数改为100；每击败一名敌人，技能延长2秒。"
     },
     {
       "id": "milestone.hero.1101.100",
       "hero_ref": "hero.1101",
       "ability_ref": "ability.hero.1101.1",
-      "level": 100
+      "level": 100,
+      "summary": "基础飞剑数改为120；每击败一名敌人，作用范围增加2格，最多增加4格。"
     },
     {
       "id": "milestone.hero.5071.10",
       "hero_ref": "hero.5071",
       "ability_ref": "ability.hero.5071.1",
       "level": 10,
-      "summary": "剑气伤害改为100+2.2×物攻。"
+      "summary": "剑气物伤改为100+2.2×物攻。"
     },
     {
       "id": "milestone.hero.5071.40",
       "hero_ref": "hero.5071",
       "ability_ref": "ability.hero.5071.1",
       "level": 40,
-      "summary": "每次技能挥出3道剑气。"
+      "summary": "一次放出三道剑气。"
     },
     {
       "id": "milestone.hero.5071.100",
       "hero_ref": "hero.5071",
       "ability_ref": "ability.hero.5071.1",
       "level": 100,
-      "summary": "阵亡后以具有另一套技能的狂暴形态完美复生；该形态独特技能细节待补。"
+      "summary": "死亡后以狂暴形态完美复生；狂暴形态采用独立技能，应参见其衍生定义。"
     },
     {
       "id": "milestone.hero.1311.10",
       "hero_ref": "hero.1311",
       "ability_ref": "ability.hero.1311.1",
-      "level": 10
+      "level": 10,
+      "summary": "每段斩击物伤改为1.2×物攻，仍按范围分摊。"
     },
     {
       "id": "milestone.hero.1311.40",
       "hero_ref": "hero.1311",
       "ability_ref": "ability.hero.1311.1",
-      "level": 40
+      "level": 40,
+      "summary": "每段斩击物伤改为1.5×物攻。"
     },
     {
       "id": "milestone.hero.1311.100",
       "hero_ref": "hero.1311",
       "ability_ref": "ability.hero.1311.1",
-      "level": 100
+      "level": 100,
+      "summary": "斩击期间无法被选中。"
     },
     {
       "id": "milestone.hero.1831.10",
       "hero_ref": "hero.1831",
       "ability_ref": "ability.hero.1831.1",
-      "level": 10
+      "level": 10,
+      "summary": "护盾比例改为35%最大生命。"
     },
     {
       "id": "milestone.hero.1831.40",
       "hero_ref": "hero.1831",
       "ability_ref": "ability.hero.1831.1",
-      "level": 40
+      "level": 40,
+      "summary": "反击另使敌人眩晕1.5秒。"
     },
     {
       "id": "milestone.hero.1831.100",
       "hero_ref": "hero.1831",
       "ability_ref": "ability.hero.1831.1",
-      "level": 100
+      "level": 100,
+      "summary": "反击范围再扩大1格。"
     },
     {
       "id": "milestone.hero.1861.10",
       "hero_ref": "hero.1861",
       "ability_ref": "ability.hero.1861.1",
-      "level": 10
+      "level": 10,
+      "summary": "施法自身得400护盾。"
     },
     {
       "id": "milestone.hero.1861.40",
       "hero_ref": "hero.1861",
       "ability_ref": "ability.hero.1861.1",
-      "level": 40
+      "level": 40,
+      "summary": "护盾被打破，附近1格敌人受400法伤。"
     },
     {
       "id": "milestone.hero.1861.100",
       "hero_ref": "hero.1861",
       "ability_ref": "ability.hero.1861.1",
-      "level": 100
+      "level": 100,
+      "summary": "拉动途中，对自身周围1格敌人造成1秒击飞。"
     },
     {
       "id": "milestone.hero.1671.10",
       "hero_ref": "hero.1671",
       "ability_ref": "ability.hero.1671.1",
-      "level": 10
+      "level": 10,
+      "summary": "物伤改为100+5.0×物攻。"
     },
     {
       "id": "milestone.hero.1671.40",
       "hero_ref": "hero.1671",
       "ability_ref": "ability.hero.1671.1",
-      "level": 40
+      "level": 40,
+      "summary": "物伤改为100+7.0×物攻，作用范围改为2格。"
     },
     {
       "id": "milestone.hero.1671.100",
       "hero_ref": "hero.1671",
       "ability_ref": "ability.hero.1671.1",
-      "level": 100
+      "level": 100,
+      "summary": "作用范围进一步扩大至4格。"
     },
     {
       "id": "milestone.hero.1271.10",
       "hero_ref": "hero.1271",
       "ability_ref": "ability.hero.1271.1",
-      "level": 10
+      "level": 10,
+      "summary": "单次水流法伤改为30+0.75×法攻。"
     },
     {
       "id": "milestone.hero.1271.40",
       "hero_ref": "hero.1271",
       "ability_ref": "ability.hero.1271.1",
-      "level": 40
+      "level": 40,
+      "summary": "冻结增加1秒；解冻时再受法伤50+1.0×法攻。"
     },
     {
       "id": "milestone.hero.1271.100",
       "hero_ref": "hero.1271",
       "ability_ref": "ability.hero.1271.1",
-      "level": 100
+      "level": 100,
+      "summary": "弹射上限再增加4次。"
     },
     {
       "id": "milestone.hero.1061.10",
       "hero_ref": "hero.1061",
       "ability_ref": "ability.hero.1061.1",
-      "level": 10
+      "level": 10,
+      "summary": "每跳法伤系数改为0.15×法攻。"
     },
     {
       "id": "milestone.hero.1061.40",
       "hero_ref": "hero.1061",
       "ability_ref": "ability.hero.1061.1",
-      "level": 40
+      "level": 40,
+      "summary": "另浮空一名附近敌人。"
     },
     {
       "id": "milestone.hero.1061.100",
       "hero_ref": "hero.1061",
       "ability_ref": "ability.hero.1061.1",
-      "level": 100
+      "level": 100,
+      "summary": "再浮空一名最远敌人。"
     },
     {
       "id": "milestone.hero.5171.10",
@@ -1211,377 +1379,548 @@
       "hero_ref": "hero.5171",
       "ability_ref": "ability.hero.5171.1",
       "level": 40,
-      "summary": "神巫状态普攻可同时连接至多3名敌人。"
+      "summary": "神巫状态能同时攻击范围内至多三名敌人。"
     },
     {
       "id": "milestone.hero.5171.100",
       "hero_ref": "hero.5171",
       "ability_ref": "ability.hero.5171.1",
       "level": 100,
-      "summary": "灵体存量上限提高至3。"
+      "summary": "灵体最多同时存在三名。"
     },
     {
       "id": "milestone.hero.1131.10",
       "hero_ref": "hero.1131",
       "ability_ref": "ability.hero.1131.1",
-      "level": 10
+      "level": 10,
+      "summary": "护盾量改为300。"
     },
     {
       "id": "milestone.hero.1131.40",
       "hero_ref": "hero.1131",
       "ability_ref": "ability.hero.1131.1",
-      "level": 40
+      "level": 40,
+      "summary": "受保护单位在护盾存续期免控。"
     },
     {
       "id": "milestone.hero.1131.100",
       "hero_ref": "hero.1131",
       "ability_ref": "ability.hero.1131.1",
-      "level": 100
+      "level": 100,
+      "summary": "技能目标扩为全部友军。"
     },
     {
       "id": "milestone.hero.1491.10",
       "hero_ref": "hero.1491",
       "ability_ref": "ability.hero.1491.1",
-      "level": 10
+      "level": 10,
+      "summary": "每秒自身护盾改为80；每有15法攻提高20%攻速，是否取整未载。"
     },
     {
       "id": "milestone.hero.1491.40",
       "hero_ref": "hero.1491",
       "ability_ref": "ability.hero.1491.1",
-      "level": 40
+      "level": 40,
+      "summary": "技能期每秒给周围1格友军80护盾。"
     },
     {
       "id": "milestone.hero.1491.100",
       "hero_ref": "hero.1491",
       "ability_ref": "ability.hero.1491.1",
-      "level": 100
+      "level": 100,
+      "summary": "护盾破裂对周围1格敌人造成法伤100+0.5×法攻。"
     },
     {
       "id": "milestone.hero.1901.10",
       "hero_ref": "hero.1901",
       "ability_ref": "ability.hero.1901.1",
-      "level": 10
+      "level": 10,
+      "summary": "主伤害改为150+2.0×法攻。"
     },
     {
       "id": "milestone.hero.1901.40",
       "hero_ref": "hero.1901",
       "ability_ref": "ability.hero.1901.1",
-      "level": 40
+      "level": 40,
+      "summary": "元气弹击败目标时，自身回复最大法力的70%。"
     },
     {
       "id": "milestone.hero.1901.100",
       "hero_ref": "hero.1901",
       "ability_ref": "ability.hero.1901.1",
-      "level": 100
+      "level": 100,
+      "summary": "主伤害改为250+3.0×法攻，再射4颗小弹，各为主伤害的25%。"
     },
     {
       "id": "milestone.hero.1501.10",
       "hero_ref": "hero.1501",
       "ability_ref": "ability.hero.1501.1",
-      "level": 10
+      "level": 10,
+      "summary": "主动挑击物伤改为100+1.5×物攻。"
     },
     {
       "id": "milestone.hero.1501.40",
       "hero_ref": "hero.1501",
       "ability_ref": "ability.hero.1501.1",
-      "level": 40
+      "level": 40,
+      "summary": "追加戳刺，物伤100+2.0×物攻；如戳刺击败目标，立即冲向下个目标，挑飞并造成100+2.0×物攻物伤。"
     },
     {
       "id": "milestone.hero.1501.100",
       "hero_ref": "hero.1501",
       "ability_ref": "ability.hero.1501.1",
-      "level": 100
+      "level": 100,
+      "summary": "主动改为三段范围打击；记载对主目标物伤100+2.0×物攻、其他目标200物伤，末段击飞周围1格敌人。伤害值按每段还是三段合计，未明确。"
     },
     {
       "id": "milestone.hero.5241.10",
       "hero_ref": "hero.5241",
       "ability_ref": "ability.hero.5241.1",
-      "level": 10
+      "level": 10,
+      "summary": "单弹物伤改为30+1.5×物攻。"
     },
     {
       "id": "milestone.hero.5241.40",
       "hero_ref": "hero.5241",
       "ability_ref": "ability.hero.5241.1",
-      "level": 40
+      "level": 40,
+      "summary": "同目标后续伤害衰减改为10%。"
     },
     {
       "id": "milestone.hero.5241.100",
       "hero_ref": "hero.5241",
       "ability_ref": "ability.hero.5241.1",
-      "level": 100
+      "level": 100,
+      "summary": "起始导弹数改为11；每次施法令下一次导弹再多1，最多20枚。"
     },
     {
       "id": "milestone.hero.1871.10",
       "hero_ref": "hero.1871",
       "ability_ref": "ability.hero.1871.1",
       "level": 10,
-      "summary": "球的伤害与治疗比例都提高至5%。"
+      "summary": "球的伤害与治疗比例均改为5%，两者分别按受击者和东皇最大生命。"
     },
     {
       "id": "milestone.hero.1871.40",
       "hero_ref": "hero.1871",
       "ability_ref": "ability.hero.1871.1",
       "level": 40,
-      "summary": "压制期间球转速增加50%。"
+      "summary": "压制期间球转速提高50%。"
     },
     {
       "id": "milestone.hero.1871.100",
       "hero_ref": "hero.1871",
       "ability_ref": "ability.hero.1871.1",
       "level": 100,
-      "summary": "压制持续到契约一方阵亡。"
+      "summary": "契约时长改为直至其中一方死亡；距离中断条件是否被覆盖未另说明。"
     },
     {
       "id": "milestone.hero.5191.10",
       "hero_ref": "hero.5191",
       "ability_ref": "ability.hero.5191.1",
-      "level": 10
+      "level": 10,
+      "summary": "随机解锁火、雨武器之一并造成范围伤害：火武器让普攻追加0.1×物攻的真伤；雨武器让普攻治疗20生命、施法另治疗100生命。"
     },
     {
       "id": "milestone.hero.5191.40",
       "hero_ref": "hero.5191",
       "ability_ref": "ability.hero.5191.1",
-      "level": 40
+      "level": 40,
+      "summary": "火武器普攻真伤系数改为0.15×物攻；雨武器普攻治疗改为20+2%最大生命，施法治疗改为350。"
     },
     {
       "id": "milestone.hero.5191.100",
       "hero_ref": "hero.5191",
       "ability_ref": "ability.hero.5191.1",
-      "level": 100
+      "level": 100,
+      "summary": "火与雨两种武器效果同时生效。"
     },
     {
       "id": "milestone.hero.5251.10",
       "hero_ref": "hero.5251",
       "ability_ref": "ability.hero.5251.1",
       "level": 10,
-      "summary": "伤害系数改为0.9×法攻，获得250护盾。"
+      "summary": "落地法伤改为50+0.9×法攻，自身得250护盾。"
     },
     {
       "id": "milestone.hero.5251.40",
       "hero_ref": "hero.5251",
       "ability_ref": "ability.hero.5251.1",
       "level": 40,
-      "summary": "拉拽目标上限3。"
+      "summary": "最多拉控三名敌人。"
     },
     {
       "id": "milestone.hero.5251.100",
       "hero_ref": "hero.5251",
       "ability_ref": "ability.hero.5251.1",
       "level": 100,
-      "summary": "拉拽目标上限6。"
+      "summary": "最多拉控六名敌人。"
     },
     {
       "id": "milestone.hero.1541.10",
       "hero_ref": "hero.1541",
       "ability_ref": "ability.hero.1541.1",
       "level": 10,
-      "summary": "轻剑各段系数1.05；重剑眩晕改为2.5秒。"
+      "summary": "轻剑每段物伤改为1.05×物攻；重剑眩晕改为2.5秒。"
     },
     {
       "id": "milestone.hero.1541.40",
       "hero_ref": "hero.1541",
       "ability_ref": "ability.hero.1541.1",
       "level": 40,
-      "summary": "轻剑连续斩至目标死亡；重剑蓄力时免伤40%。"
+      "summary": "轻剑持续斩至目标死亡；重剑蓄力阶段减伤40%。"
     },
     {
       "id": "milestone.hero.1541.100",
       "hero_ref": "hero.1541",
       "ability_ref": "ability.hero.1541.1",
       "level": 100,
-      "summary": "轻剑击杀回满法力并冲向随机敌人；重剑范围覆盖全场。"
+      "summary": "轻剑击败目标后立即回满法力并冲至随机敌人；重剑范围扩为全战场。"
     },
     {
       "id": "milestone.hero.5371.10",
       "hero_ref": "hero.5371",
       "ability_ref": "ability.hero.5371.1",
-      "level": 10
+      "level": 10,
+      "summary": "雷鼓法伤改为50+1.0×法攻。"
     },
     {
       "id": "milestone.hero.5371.40",
       "hero_ref": "hero.5371",
       "ability_ref": "ability.hero.5371.1",
-      "level": 40
+      "level": 40,
+      "summary": "雷鼓后进入雷霆之王形态8秒。"
     },
     {
       "id": "milestone.hero.5371.100",
       "hero_ref": "hero.5371",
       "ability_ref": "ability.hero.5371.1",
-      "level": 100
+      "level": 100,
+      "summary": "开战即进入雷霆之王并对全场雷鼓法伤，形态维持到回合结束。"
     },
     {
       "id": "milestone.hero.1481.10",
       "hero_ref": "hero.1481",
       "ability_ref": "ability.hero.1481.1",
       "level": 10,
-      "summary": "伤害改为140+1.4×法攻。"
+      "summary": "冲击波法伤改为140+1.4×法攻。"
     },
     {
       "id": "milestone.hero.1481.40",
       "hero_ref": "hero.1481",
       "ability_ref": "ability.hero.1481.1",
       "level": 40,
-      "summary": "多2道波；敌方治疗降低50%持续5秒，不能叠加。"
+      "summary": "另发两道波；命中敌人治疗效果降低50%，持续5秒，不能叠加。"
     },
     {
       "id": "milestone.hero.1481.100",
       "hero_ref": "hero.1481",
       "ability_ref": "ability.hero.1481.1",
       "level": 100,
-      "summary": "向周围8方向发波。"
+      "summary": "冲击波改向周围8方向发射。"
     },
     {
       "id": "milestone.hero.1361.10",
       "hero_ref": "hero.1361",
       "ability_ref": "ability.hero.1361.1",
       "level": 10,
-      "summary": "单阵法攻系数1.0。"
+      "summary": "普通法阵法伤改为100+1.0×法攻。"
     },
     {
       "id": "milestone.hero.1361.40",
       "hero_ref": "hero.1361",
       "ability_ref": "ability.hero.1361.1",
       "level": 40,
-      "summary": "吟唱结束追加全敌巨阵伤害100+1.25×法攻。"
+      "summary": "吟唱结束追加全场巨阵，所有敌人各受法伤100+1.25×法攻。"
     },
     {
       "id": "milestone.hero.1361.100",
       "hero_ref": "hero.1361",
       "ability_ref": "ability.hero.1361.1",
       "level": 100,
-      "summary": "吟唱持续整回合；每5次伤害追加1次巨阵。"
+      "summary": "吟唱至回合结束；每造成5次伤害，追加一次全场巨阵，法伤仍100+1.25×法攻。"
     },
     {
       "id": "milestone.hero.1231.10",
       "hero_ref": "hero.1231",
       "ability_ref": "ability.hero.1231.1",
       "level": 10,
-      "summary": "技能伤害改为120+2.0×物攻。"
+      "summary": "主动物伤改为120+2.0×物攻。"
     },
     {
       "id": "milestone.hero.1231.40",
       "hero_ref": "hero.1231",
       "ability_ref": "ability.hero.1231.1",
       "level": 40,
-      "summary": "附加5秒100%攻速。"
+      "summary": "技能后5秒自身另获100%攻速。"
     },
     {
       "id": "milestone.hero.1231.100",
       "hero_ref": "hero.1231",
       "ability_ref": "ability.hero.1231.1",
       "level": 100,
-      "summary": "技能范围覆盖整个战场。"
+      "summary": "主动范围扩为整个战场。"
     },
     {
       "id": "milestone.hero.5211.10",
       "hero_ref": "hero.5211",
       "ability_ref": "ability.hero.5211.1",
-      "level": 10
+      "level": 10,
+      "summary": "首球法伤改为100+2.5×法攻。"
     },
     {
       "id": "milestone.hero.5211.40",
       "hero_ref": "hero.5211",
       "ability_ref": "ability.hero.5211.1",
-      "level": 40
+      "level": 40,
+      "summary": "施法获得50+10%最大生命护盾，持续5秒，可叠加。"
     },
     {
       "id": "milestone.hero.5211.100",
       "hero_ref": "hero.5211",
       "ability_ref": "ability.hero.5211.1",
-      "level": 100
+      "level": 100,
+      "summary": "第一次施法建立水月幻境，每5秒给友军100护盾与10法力；敌人受0.5秒眩晕及5%最大生命的真伤。敌方生命基准及幻境范围未详述。"
     },
     {
       "id": "milestone.hero.1121.10",
       "hero_ref": "hero.1121",
       "ability_ref": "ability.hero.1121.1",
-      "level": 10
+      "level": 10,
+      "summary": "炸弹物伤改为50+1.0×物攻，弹坑每秒物伤改为1.0×物攻。"
     },
     {
       "id": "milestone.hero.1121.40",
       "hero_ref": "hero.1121",
       "ability_ref": "ability.hero.1121.1",
-      "level": 40
+      "level": 40,
+      "summary": "炸弹数改为8。"
     },
     {
       "id": "milestone.hero.1121.100",
       "hero_ref": "hero.1121",
       "ability_ref": "ability.hero.1121.1",
-      "level": 100
+      "level": 100,
+      "summary": "投完炸弹后飞艇坠毁，所有敌人受物伤200+3.0×物攻。"
     },
     {
       "id": "milestone.hero.5631.10",
       "hero_ref": "hero.5631",
       "ability_ref": "ability.hero.5631.1",
       "level": 10,
-      "summary": "主杖150+2.5×法攻，子杖100+1.5×法攻。"
+      "summary": "主杖法伤改为150+2.5×法攻；子杖改为100+1.5×法攻。"
     },
     {
       "id": "milestone.hero.5631.40",
       "hero_ref": "hero.5631",
       "ability_ref": "ability.hero.5631.1",
       "level": 40,
-      "summary": "连续施法2次。"
+      "summary": "每次施法连续执行两次技能。"
     },
     {
       "id": "milestone.hero.5631.100",
       "hero_ref": "hero.5631",
       "ability_ref": "ability.hero.5631.1",
       "level": 100,
-      "summary": "子杖目标最多14名。"
+      "summary": "子杖的敌方目标上限改为14名。"
     },
     {
       "id": "milestone.hero.1461.10",
       "hero_ref": "hero.1461",
       "ability_ref": "ability.hero.1461.1",
-      "level": 10
+      "level": 10,
+      "summary": "路径法伤改为100+2.0×法攻。"
     },
     {
       "id": "milestone.hero.1461.40",
       "hero_ref": "hero.1461",
       "ability_ref": "ability.hero.1461.1",
-      "level": 40
+      "level": 40,
+      "summary": "每击败敌人回15法力。"
     },
     {
       "id": "milestone.hero.1461.100",
       "hero_ref": "hero.1461",
       "ability_ref": "ability.hero.1461.1",
-      "level": 100
+      "level": 100,
+      "summary": "一次技能连续突击两次。"
     },
     {
       "id": "milestone.hero.1761.10",
       "hero_ref": "hero.1761",
       "ability_ref": "ability.hero.1761.1",
-      "level": 10
+      "level": 10,
+      "summary": "每第3次施法同时激活两曲，且扩为全场相应友敌单位。"
     },
     {
       "id": "milestone.hero.1761.40",
       "hero_ref": "hero.1761",
       "ability_ref": "ability.hero.1761.1",
-      "level": 40
+      "level": 40,
+      "summary": "清平治疗改为150+1.25×法攻；破阵法伤改为100+1.25×法攻。"
     },
     {
       "id": "milestone.hero.1761.100",
       "hero_ref": "hero.1761",
       "ability_ref": "ability.hero.1761.1",
-      "level": 100
+      "level": 100,
+      "summary": "每次施法同时激活两曲，均扩为全场。"
     },
     {
       "id": "milestone.hero.1241.10",
       "hero_ref": "hero.1241",
       "ability_ref": "ability.hero.1241.1",
-      "level": 10
+      "level": 10,
+      "summary": "初始火焰伤害及自身治疗均改为100+1.2×法攻；焦土自疗改为0.2×法攻+2%最大生命。"
     },
     {
       "id": "milestone.hero.1241.40",
       "hero_ref": "hero.1241",
       "ability_ref": "ability.hero.1241.1",
-      "level": 40
+      "level": 40,
+      "summary": "施法对焦土内敌人追加风暴，法伤100+1.5×法攻并眩晕1.5秒。"
     },
     {
       "id": "milestone.hero.1241.100",
       "hero_ref": "hero.1241",
       "ability_ref": "ability.hero.1241.1",
-      "level": 100
+      "level": 100,
+      "summary": "开战即让整个战场成为焦土。"
+    },
+    {
+      "id": "milestone.unit.314009.1.10",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.314009.1",
+      "level": 10,
+      "summary": "技能物伤系数提高到物理攻击的58%。"
+    },
+    {
+      "id": "milestone.unit.314009.1.40",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.314009.1",
+      "level": 40,
+      "summary": "首次施法产生4个分身；本体每次施法，各分身对目标射出1道激光，造成物攻58%的物理伤害。"
+    },
+    {
+      "id": "milestone.unit.314009.1.100",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.314009.1",
+      "level": 100,
+      "summary": "以后每次施法再增加1个分身；场上同存分身上限6个。"
+    },
+    {
+      "id": "milestone.unit.1381.1.10",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.1381.1",
+      "level": 10,
+      "summary": "伤害改为100加法攻150%。"
+    },
+    {
+      "id": "milestone.unit.1381.1.40",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.1381.1",
+      "level": 40,
+      "summary": "最多分出2道水流追踪两侧2格内敌人；各支流造成与主水流相同的伤害及击飞。"
+    },
+    {
+      "id": "milestone.unit.1381.1.100",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.1381.1",
+      "level": 100,
+      "summary": "支流水流数量上限从2改为4。"
+    },
+    {
+      "id": "milestone.unit.31191.1.10",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.31191.1",
+      "level": 10,
+      "summary": "拍击物伤系数提高到自身最大生命30%。"
+    },
+    {
+      "id": "milestone.unit.31191.1.40",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.31191.1",
+      "level": 40,
+      "summary": "施法使自身获得35%减伤和50%攻速，作用5秒。"
+    },
+    {
+      "id": "milestone.unit.31191.1.100",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.31191.1",
+      "level": 100,
+      "summary": "每普攻5次，本回合最大生命、体型及技能范围各提高20%，到回合结束消除。"
+    },
+    {
+      "id": "milestone.unit.60110.1.10",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.60110.1",
+      "level": 10,
+      "summary": "技能对范围内敌人追加1秒击飞。"
+    },
+    {
+      "id": "milestone.unit.60110.1.40",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.60110.1",
+      "level": 40,
+      "summary": "所有猩红神兽之力造成伤害后，为猩红神兽回复该伤害50%的生命。"
+    },
+    {
+      "id": "milestone.unit.60110.1.100",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.60110.1",
+      "level": 100,
+      "summary": "技能范围扩大到2格。"
+    },
+    {
+      "id": "milestone.unit.60100.1.10",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.60100.1",
+      "level": 10,
+      "summary": "友军每消耗30法力，蔚蓝神兽获得1%的生命回复；百分比生命基数未明确。"
+    },
+    {
+      "id": "milestone.unit.60100.1.40",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.60100.1",
+      "level": 40,
+      "summary": "赋予等级最高的3名友方英雄蔚蓝神兽之力。"
+    },
+    {
+      "id": "milestone.unit.60100.1.100",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "ability_ref": "ability.unit.60100.1",
+      "level": 100,
+      "summary": "友军获得蔚蓝神兽之力后的前3秒可无限施法。"
     }
   ]
 }

@@ -1,216 +1,2086 @@
 {
-  "knowledge_version": "0.1.0",
+  "knowledge_version": "0.2.0",
   "scope_id": "scope.cn.wanxiang.undated",
   "entries": [
     {
-      "id": "slot.three-kingdom-entry.1",
+      "id": "lineup.three-kingdom-entry.slot.1",
+      "role": "后期输出",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1231",
+          "name": "吕布"
+        }
+      ],
+      "reason": "等级接收与吸血输出",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.three-kingdom-entry",
-      "role": "core",
-      "hero_ref": "hero.1231"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.three-kingdom-entry.2",
+      "id": "lineup.three-kingdom-entry.slot.2",
+      "role": "出牌成长",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1841",
+          "name": "蔡文姬"
+        }
+      ],
+      "reason": "购买并打出三分牌的主要回报",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.three-kingdom-entry",
-      "role": "engine",
-      "hero_ref": "hero.1841"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.three-kingdom-entry.3",
+      "id": "lineup.three-kingdom-entry.slot.3",
+      "role": "登场触发",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1281",
+          "name": "曹操"
+        }
+      ],
+      "reason": "回合整备产生额外登场事件",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.three-kingdom-entry",
-      "role": "support",
-      "hero_ref": "hero.1071"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.three-kingdom-entry.4",
+      "id": "lineup.three-kingdom-entry.slot.4",
+      "role": "登场成长",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1061",
+          "name": "小乔"
+        }
+      ],
+      "reason": "将事件转为团队永久等级",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.three-kingdom-entry",
-      "role": "support",
-      "hero_ref": "hero.1411"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.three-kingdom-entry.5",
+      "id": "lineup.three-kingdom-entry.slot.5",
+      "role": "前期输出",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1111",
+          "name": "孙尚香"
+        },
+        {
+          "hero_ref": "hero.1071",
+          "name": "赵云"
+        }
+      ],
+      "reason": "孙尚香补刷新，赵云可担任阶段战力",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
       "lineup_ref": "lineup.three-kingdom-entry",
-      "role": "engine",
-      "hero_ref": "hero.1061"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.three-kingdom-entry.6",
+      "id": "lineup.three-kingdom-entry.slot.6",
+      "role": "功能",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1411",
+          "name": "貂蝉"
+        },
+        {
+          "hero_ref": "hero.1241",
+          "name": "周瑜"
+        }
+      ],
+      "reason": "按容量补牌面联动与全队成长；不是两张同时开局必须",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.three-kingdom-entry",
-      "role": "support",
-      "hero_ref": "hero.1241"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.three-kingdom-entry.7",
-      "lineup_ref": "lineup.three-kingdom-entry",
-      "role": "engine",
-      "hero_ref": "hero.1281"
-    },
-    {
-      "id": "slot.sunset-ready.1",
+      "id": "lineup.sunset-ready.slot.1",
+      "role": "输出",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1421",
+          "name": "安琪拉"
+        },
+        {
+          "hero_ref": "hero.5631",
+          "name": "海诺"
+        }
+      ],
+      "reason": "以实际等级和装备选主输出",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "one_of",
       "lineup_ref": "lineup.sunset-ready",
-      "role": "core",
-      "hero_ref": "hero.1421"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.sunset-ready.2",
+      "id": "lineup.sunset-ready.slot.2",
+      "role": "整备放大",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1591",
+          "name": "朵莉亚"
+        }
+      ],
+      "reason": "把事件扩成团队成长",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.sunset-ready",
-      "role": "engine",
-      "hero_ref": "hero.1591"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.sunset-ready.3",
+      "id": "lineup.sunset-ready.slot.3",
+      "role": "低阶引擎",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5031",
+          "name": "狂铁"
+        },
+        {
+          "hero_ref": "hero.5141",
+          "name": "亚连"
+        },
+        {
+          "hero_ref": "hero.5041",
+          "name": "米莱狄"
+        }
+      ],
+      "reason": "数量随容量；亚连目标按装备件数筛选",
+      "min_count": 0,
+      "max_count": 3,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.sunset-ready",
-      "role": "support",
-      "hero_ref": "hero.5031"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.sunset-ready.4",
+      "id": "lineup.sunset-ready.slot.4",
+      "role": "开团整备",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1831",
+          "name": "雅典娜"
+        }
+      ],
+      "reason": "触发并承担前排",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.sunset-ready",
-      "role": "support",
-      "hero_ref": "hero.5141"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.sunset-ready.5",
+      "id": "lineup.sunset-ready.slot.5",
+      "role": "核心放大",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5631",
+          "name": "海诺"
+        }
+      ],
+      "reason": "高阶到位后补核心收益",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.sunset-ready",
-      "role": "support",
-      "hero_ref": "hero.5041"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.sunset-ready.6",
+      "id": "lineup.sunset-ready.slot.6",
+      "role": "登场整备",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1461",
+          "name": "露娜"
+        }
+      ],
+      "reason": "反复出牌时额外触发整备",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.sunset-ready",
-      "role": "engine",
-      "hero_ref": "hero.1831"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.sunset-ready.7",
-      "lineup_ref": "lineup.sunset-ready",
-      "role": "engine",
-      "hero_ref": "hero.5631"
-    },
-    {
-      "id": "slot.river-totems.1",
+      "id": "lineup.river-totems.slot.1",
+      "role": "后期输出",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5191",
+          "name": "敖隐"
+        }
+      ],
+      "reason": "每个存活图腾提供持续战斗成长",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.river-totems",
-      "role": "core",
-      "hero_ref": "hero.5191"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.river-totems.2",
+      "id": "lineup.river-totems.slot.2",
+      "role": "图腾来源",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1891",
+          "name": "鬼谷子"
+        },
+        {
+          "hero_ref": "hero.5771",
+          "name": "少司缘"
+        },
+        {
+          "hero_ref": "hero.5171",
+          "name": "大司命"
+        }
+      ],
+      "reason": "按容量形成多座图腾",
+      "min_count": 0,
+      "max_count": 3,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.river-totems",
-      "role": "engine",
-      "hero_ref": "hero.1741"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.river-totems.3",
+      "id": "lineup.river-totems.slot.3",
+      "role": "中期输出",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1741",
+          "name": "虞姬"
+        }
+      ],
+      "reason": "开团与图腾数量成长",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.river-totems",
-      "role": "engine",
-      "hero_ref": "hero.1561"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.river-totems.4",
+      "id": "lineup.river-totems.slot.4",
+      "role": "开团放大",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1561",
+          "name": "张良"
+        }
+      ],
+      "reason": "开团事件变永久等级",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.river-totems",
-      "role": "engine",
-      "hero_ref": "hero.5771"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.river-totems.5",
+      "id": "lineup.river-totems.slot.5",
+      "role": "图腾前排",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1871",
+          "name": "东皇太一"
+        }
+      ],
+      "reason": "保护图腾并承伤",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.river-totems",
-      "role": "engine",
-      "hero_ref": "hero.1891"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.river-totems.6",
-      "lineup_ref": "lineup.river-totems",
-      "role": "engine",
-      "hero_ref": "hero.5171"
-    },
-    {
-      "id": "slot.river-totems.7",
-      "lineup_ref": "lineup.river-totems",
-      "role": "support",
-      "hero_ref": "hero.1871"
-    },
-    {
-      "id": "slot.heluocoins.1",
+      "id": "lineup.heluocoins.slot.1",
+      "role": "主输出",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1951",
+          "name": "百里玄策"
+        }
+      ],
+      "reason": "低阶闪现击杀核心",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.heluocoins",
-      "role": "core",
-      "hero_ref": "hero.1951"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.heluocoins.2",
+      "id": "lineup.heluocoins.slot.2",
+      "role": "古币源",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1731",
+          "name": "李元芳"
+        },
+        {
+          "hero_ref": "hero.5091",
+          "name": "盾山"
+        },
+        {
+          "hero_ref": "hero.5131",
+          "name": "上官婉儿"
+        }
+      ],
+      "reason": "整备、牺牲等窗口提供古币",
+      "min_count": 0,
+      "max_count": 3,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.heluocoins",
-      "role": "engine",
-      "hero_ref": "hero.5131"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.heluocoins.3",
+      "id": "lineup.heluocoins.slot.3",
+      "role": "防线",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1441",
+          "name": "程咬金"
+        },
+        {
+          "hero_ref": "hero.1751",
+          "name": "钟馗"
+        }
+      ],
+      "reason": "前排与牺牲降级",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
       "lineup_ref": "lineup.heluocoins",
-      "role": "engine",
-      "hero_ref": "hero.5091"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.heluocoins.4",
+      "id": "lineup.heluocoins.slot.4",
+      "role": "保护",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        }
+      ],
+      "reason": "最近目标复生",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.heluocoins",
-      "role": "engine",
-      "hero_ref": "hero.1441"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.heluocoins.5",
+      "id": "lineup.heluocoins.slot.5",
+      "role": "古币增强",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1361",
+          "name": "武则天"
+        }
+      ],
+      "reason": "五阶增益，不要求开局必备",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.heluocoins",
-      "role": "support",
-      "hero_ref": "hero.1751"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.heluocoins.6",
-      "lineup_ref": "lineup.heluocoins",
-      "role": "support",
-      "hero_ref": "hero.1861"
-    },
-    {
-      "id": "slot.heluocoins.7",
-      "lineup_ref": "lineup.heluocoins",
-      "role": "engine",
-      "hero_ref": "hero.1731"
-    },
-    {
-      "id": "slot.zhulu-tactics.1",
+      "id": "lineup.zhulu-tactics.slot.1",
+      "role": "输出",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5241",
+          "name": "蒙犽"
+        }
+      ],
+      "reason": "装备最多的逐鹿核心",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.zhulu-tactics",
-      "role": "core",
-      "hero_ref": "hero.5241"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.zhulu-tactics.2",
+      "id": "lineup.zhulu-tactics.slot.2",
+      "role": "成长监听",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1211",
+          "name": "芈月"
+        }
+      ],
+      "reason": "效果牌转永久等级",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.zhulu-tactics",
-      "role": "engine",
-      "hero_ref": "hero.1211"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.zhulu-tactics.3",
+      "id": "lineup.zhulu-tactics.slot.3",
+      "role": "稳定战术",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5231",
+          "name": "西施"
+        }
+      ],
+      "reason": "每回合整备提供牌",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.zhulu-tactics",
-      "role": "engine",
-      "hero_ref": "hero.5231"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.zhulu-tactics.4",
+      "id": "lineup.zhulu-tactics.slot.4",
+      "role": "前排与护盾",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1201",
+          "name": "白起"
+        }
+      ],
+      "reason": "首次使用效果牌及承伤",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.zhulu-tactics",
-      "role": "engine",
-      "hero_ref": "hero.1201"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.zhulu-tactics.5",
+      "id": "lineup.zhulu-tactics.slot.5",
+      "role": "补牌",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1391",
+          "name": "老夫子"
+        },
+        {
+          "hero_ref": "hero.1131",
+          "name": "庄周"
+        },
+        {
+          "hero_ref": "hero.1121",
+          "name": "鲁班七号"
+        }
+      ],
+      "reason": "按容量和手牌结构补触发来源",
+      "min_count": 0,
+      "max_count": 3,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.zhulu-tactics",
-      "role": "engine",
-      "hero_ref": "hero.1391"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.zhulu-tactics.6",
+      "id": "lineup.zhulu-tactics.slot.6",
+      "role": "替代输出",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1101",
+          "name": "嬴政"
+        },
+        {
+          "hero_ref": "hero.5311",
+          "name": "镜"
+        }
+      ],
+      "reason": "嬴政战术成长或镜效果牌成长需另配装备与站位",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
       "lineup_ref": "lineup.zhulu-tactics",
-      "role": "engine",
-      "hero_ref": "hero.1131"
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     },
     {
-      "id": "slot.zhulu-tactics.7",
-      "lineup_ref": "lineup.zhulu-tactics",
-      "role": "engine",
-      "hero_ref": "hero.1121"
+      "id": "lineup.three-kingdom-loop.slot.1",
+      "role": "整备桥梁",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1281",
+          "name": "曹操"
+        }
+      ],
+      "reason": "把整备事件变登场",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.three-kingdom-loop",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.three-kingdom-loop.slot.2",
+      "role": "招募节点",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1271",
+          "name": "甄姬"
+        }
+      ],
+      "reason": "生成后续登场牌",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.three-kingdom-loop",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.three-kingdom-loop.slot.3",
+      "role": "登场整备",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1461",
+          "name": "露娜"
+        }
+      ],
+      "reason": "让牌重新接回整备窗口",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.three-kingdom-loop",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.three-kingdom-loop.slot.4",
+      "role": "等级兑现",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1061",
+          "name": "小乔"
+        }
+      ],
+      "reason": "每次登场转换为团队永久等级",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.three-kingdom-loop",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.three-kingdom-loop.slot.5",
+      "role": "团队增益",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1241",
+          "name": "周瑜"
+        }
+      ],
+      "reason": "高阶登场等级回报",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.three-kingdom-loop",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.three-kingdom-loop.slot.6",
+      "role": "战斗终点",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1161",
+          "name": "阿轲"
+        },
+        {
+          "hero_ref": "hero.1671",
+          "name": "孙悟空"
+        }
+      ],
+      "reason": "闪现输出；猴整备还给闪现成长",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.three-kingdom-loop",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.low-tier-pig.slot.1",
+      "role": "核心",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5111",
+          "name": "猪八戒"
+        }
+      ],
+      "reason": "同阶成长、夺取、生命成长与输出合一",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.low-tier-pig",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.low-tier-pig.slot.2",
+      "role": "施法临时",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1141",
+          "name": "刘禅"
+        }
+      ],
+      "reason": "猪多次施法时提供临时等级",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.low-tier-pig",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.low-tier-pig.slot.3",
+      "role": "永久转化",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5011",
+          "name": "明世隐"
+        }
+      ],
+      "reason": "连接猪保留有限临时等级",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.low-tier-pig",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.low-tier-pig.slot.4",
+      "role": "买卖补刷新",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5641",
+          "name": "姬小满"
+        }
+      ],
+      "reason": "出售场上英雄达到条件得临时刷新",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.low-tier-pig",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.low-tier-pig.slot.5",
+      "role": "附身保护",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5051",
+          "name": "瑶"
+        }
+      ],
+      "reason": "最近目标护盾及属性；高等级增强属性分享",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.low-tier-pig",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.low-tier-pig.slot.6",
+      "role": "复生",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        }
+      ],
+      "reason": "四阶保护会改变同品阶人数结构，权衡保护收益",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.low-tier-pig",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sacrifice-lixin.slot.1",
+      "role": "最终输出",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5071",
+          "name": "李信"
+        }
+      ],
+      "reason": "承接牺牲临时等级并打多段技能",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.sacrifice-lixin",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sacrifice-lixin.slot.2",
+      "role": "低阶牺牲",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1941",
+          "name": "苏烈"
+        },
+        {
+          "hero_ref": "hero.5091",
+          "name": "盾山"
+        }
+      ],
+      "reason": "已明确有牺牲效果且提供额外资源",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.sacrifice-lixin",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sacrifice-lixin.slot.3",
+      "role": "赋予牺牲",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1751",
+          "name": "钟馗"
+        }
+      ],
+      "reason": "为指定空间内队友提供牺牲事件",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.sacrifice-lixin",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sacrifice-lixin.slot.4",
+      "role": "保护",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        },
+        {
+          "hero_ref": "hero.5051",
+          "name": "瑶"
+        }
+      ],
+      "reason": "复生与附身对准李信",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.sacrifice-lixin",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sacrifice-lixin.slot.5",
+      "role": "永久保留",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5011",
+          "name": "明世隐"
+        }
+      ],
+      "reason": "有限临时等级转永久，需校准最近连接",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.sacrifice-lixin",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sacrifice-lixin.slot.6",
+      "role": "功能牺牲",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5211",
+          "name": "海月"
+        }
+      ],
+      "reason": "五阶针对高等级目标，不能作为起步必需",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.sacrifice-lixin",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.heleukong.slot.1",
+      "role": "输出",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5371",
+          "name": "司空震"
+        }
+      ],
+      "reason": "真实等级与临时等级同步核心",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.heleukong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.heleukong.slot.2",
+      "role": "临时来源",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5021",
+          "name": "裴擒虎"
+        }
+      ],
+      "reason": "整备复制其他英雄等级",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.heleukong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.heleukong.slot.3",
+      "role": "早期等级与防线",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1941",
+          "name": "苏烈"
+        }
+      ],
+      "reason": "低阶永久成长地基，承伤功能",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.heleukong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.heleukong.slot.4",
+      "role": "护盾牺牲",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5211",
+          "name": "海月"
+        }
+      ],
+      "reason": "护盾转生命与高等级目标功能",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.heleukong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.heleukong.slot.5",
+      "role": "保护",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        },
+        {
+          "hero_ref": "hero.5051",
+          "name": "瑶"
+        }
+      ],
+      "reason": "按容量和司空震生存补保护",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.heleukong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.heleukong.slot.6",
+      "role": "永久保留",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5011",
+          "name": "明世隐"
+        }
+      ],
+      "reason": "连接主C保留有限临时等级，不是必需无限循环",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.heleukong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.qiaoxi-sikong.slot.1",
+      "role": "核心",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5371",
+          "name": "司空震"
+        }
+      ],
+      "reason": "真实等级与装备必须一起成长",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.qiaoxi-sikong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.qiaoxi-sikong.slot.2",
+      "role": "永久转化",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5011",
+          "name": "明世隐"
+        }
+      ],
+      "reason": "保留有限临时等级，连接主C",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.qiaoxi-sikong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.qiaoxi-sikong.slot.3",
+      "role": "前排功能",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1751",
+          "name": "钟馗"
+        },
+        {
+          "hero_ref": "hero.1441",
+          "name": "程咬金"
+        }
+      ],
+      "reason": "保血与牺牲功能",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.qiaoxi-sikong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.qiaoxi-sikong.slot.4",
+      "role": "复生",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        }
+      ],
+      "reason": "对准主C",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.qiaoxi-sikong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.qiaoxi-sikong.slot.5",
+      "role": "永久资源",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1731",
+          "name": "李元芳"
+        },
+        {
+          "hero_ref": "hero.5091",
+          "name": "盾山"
+        },
+        {
+          "hero_ref": "hero.1361",
+          "name": "武则天"
+        }
+      ],
+      "reason": "古币来源与效率按容量补",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.qiaoxi-sikong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.qiaoxi-sikong.slot.6",
+      "role": "控制成长",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1061",
+          "name": "小乔"
+        },
+        {
+          "hero_ref": "hero.1481",
+          "name": "姜子牙"
+        }
+      ],
+      "reason": "只有实际登场/出牌来源时才加入其成长，不是固定挂件",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.qiaoxi-sikong",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.coin-mulan.slot.1",
+      "role": "主输出",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1541",
+          "name": "花木兰"
+        }
+      ],
+      "reason": "古币换复生与牺牲战斗成长",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.coin-mulan",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.coin-mulan.slot.2",
+      "role": "稳定古币",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1731",
+          "name": "李元芳"
+        }
+      ],
+      "reason": "整备最近河洛给古币",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.coin-mulan",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.coin-mulan.slot.3",
+      "role": "古币效率",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1361",
+          "name": "武则天"
+        }
+      ],
+      "reason": "等级效率及登场产币",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.coin-mulan",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.coin-mulan.slot.4",
+      "role": "额外古币",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5131",
+          "name": "上官婉儿"
+        },
+        {
+          "hero_ref": "hero.1441",
+          "name": "程咬金"
+        },
+        {
+          "hero_ref": "hero.5091",
+          "name": "盾山"
+        }
+      ],
+      "reason": "按各自触发条件补来源",
+      "min_count": 0,
+      "max_count": 3,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.coin-mulan",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.coin-mulan.slot.5",
+      "role": "复生保护",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        }
+      ],
+      "reason": "最近目标给复生",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.coin-mulan",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.coin-mulan.slot.6",
+      "role": "牺牲功能",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1751",
+          "name": "钟馗"
+        },
+        {
+          "hero_ref": "hero.1311",
+          "name": "李白"
+        }
+      ],
+      "reason": "钟馗降级；李白强化古币临时等级为另一用途",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.coin-mulan",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.summon-pool.slot.1",
+      "role": "续航引擎",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1591",
+          "name": "朵莉亚"
+        }
+      ],
+      "reason": "整备监听和水域",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.summon-pool",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.summon-pool.slot.2",
+      "role": "整备源",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5041",
+          "name": "米莱狄"
+        },
+        {
+          "hero_ref": "hero.5141",
+          "name": "亚连"
+        }
+      ],
+      "reason": "至少有实际整备来源",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.summon-pool",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.summon-pool.slot.3",
+      "role": "前排整备",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1831",
+          "name": "雅典娜"
+        }
+      ],
+      "reason": "开团触发日落海整备",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.summon-pool",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.summon-pool.slot.4",
+      "role": "图腾",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5771",
+          "name": "少司缘"
+        }
+      ],
+      "reason": "因缘普攻成长",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.summon-pool",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.summon-pool.slot.5",
+      "role": "召唤输出",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5251",
+          "name": "鲁班大师"
+        }
+      ],
+      "reason": "高阶机械傀儡",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.summon-pool",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.summon-pool.slot.6",
+      "role": "输出变体",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5631",
+          "name": "海诺"
+        },
+        {
+          "hero_ref": "hero.3551",
+          "name": "艾琳"
+        },
+        {
+          "hero_ref": "hero.1771",
+          "name": "苍"
+        },
+        {
+          "hero_ref": "hero.5171",
+          "name": "大司命"
+        }
+      ],
+      "reason": "海诺核心/艾琳射手/苍死亡爆炸/大司命吞召唤互为有成本分支",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.summon-pool",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.yuhuan-sunset.slot.1",
+      "role": "整备监听",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1591",
+          "name": "朵莉亚"
+        }
+      ],
+      "reason": "稳定成长基线",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.yuhuan-sunset",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.yuhuan-sunset.slot.2",
+      "role": "整备来源",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5141",
+          "name": "亚连"
+        },
+        {
+          "hero_ref": "hero.5041",
+          "name": "米莱狄"
+        }
+      ],
+      "reason": "按容量组合",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.yuhuan-sunset",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.yuhuan-sunset.slot.3",
+      "role": "输出",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1421",
+          "name": "安琪拉"
+        },
+        {
+          "hero_ref": "hero.3551",
+          "name": "艾琳"
+        },
+        {
+          "hero_ref": "hero.5631",
+          "name": "海诺"
+        }
+      ],
+      "reason": "需要已养等级和适配装备",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.yuhuan-sunset",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.yuhuan-sunset.slot.4",
+      "role": "重触整备",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1461",
+          "name": "露娜"
+        },
+        {
+          "hero_ref": "hero.1831",
+          "name": "雅典娜"
+        }
+      ],
+      "reason": "露娜在出牌期，雅典娜在开团期",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.yuhuan-sunset",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.yuhuan-sunset.slot.5",
+      "role": "跨阵营补益",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1481",
+          "name": "姜子牙"
+        }
+      ],
+      "reason": "只有持续打出满足阵营条件的英雄牌时有用",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.yuhuan-sunset",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.liubang-shield.slot.1",
+      "role": "核心",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1491",
+          "name": "刘邦"
+        }
+      ],
+      "reason": "毁图永久成长、近战护盾",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.liubang-shield",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.liubang-shield.slot.2",
+      "role": "图腾一",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5771",
+          "name": "少司缘"
+        }
+      ],
+      "reason": "每轮提供因缘图腾",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.liubang-shield",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.liubang-shield.slot.3",
+      "role": "图腾二",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1891",
+          "name": "鬼谷子"
+        }
+      ],
+      "reason": "每轮提供先知图腾",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.liubang-shield",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.liubang-shield.slot.4",
+      "role": "图腾三",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5171",
+          "name": "大司命"
+        }
+      ],
+      "reason": "补往生图腾；缺失会少一份加级而非整条链不存在",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.liubang-shield",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.liubang-shield.slot.5",
+      "role": "炸盾监听",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1191",
+          "name": "扁鹊"
+        }
+      ],
+      "reason": "将破盾兑现为范围法伤",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.liubang-shield",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.liubang-shield.slot.6",
+      "role": "护盾与复生",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5051",
+          "name": "瑶"
+        },
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        }
+      ],
+      "reason": "分别满足最近英雄的附身和复生目标条件",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.liubang-shield",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.haiyue-shield-sacrifice.slot.1",
+      "role": "牺牲核心",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5211",
+          "name": "海月"
+        }
+      ],
+      "reason": "盾转生命与高等级目标牺牲",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.haiyue-shield-sacrifice",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.haiyue-shield-sacrifice.slot.2",
+      "role": "护盾供给",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5051",
+          "name": "瑶"
+        },
+        {
+          "hero_ref": "hero.1491",
+          "name": "刘邦"
+        }
+      ],
+      "reason": "瑶最近附身；刘邦四十级需实际邻近",
+      "min_count": 0,
+      "max_count": 2,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.haiyue-shield-sacrifice",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.haiyue-shield-sacrifice.slot.3",
+      "role": "复生",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        }
+      ],
+      "reason": "延长作战与可能再次牺牲",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.haiyue-shield-sacrifice",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.haiyue-shield-sacrifice.slot.4",
+      "role": "牺牲功能",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1751",
+          "name": "钟馗"
+        }
+      ],
+      "reason": "降级或赋词条，单场限制要遵守",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.haiyue-shield-sacrifice",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.haiyue-shield-sacrifice.slot.5",
+      "role": "破盾副线",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1191",
+          "name": "扁鹊"
+        }
+      ],
+      "reason": "盾破法伤，不等于盾转换本身就触发",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.haiyue-shield-sacrifice",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.haiyue-shield-sacrifice.slot.6",
+      "role": "收尾输出",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5371",
+          "name": "司空震"
+        },
+        {
+          "hero_ref": "hero.5071",
+          "name": "李信"
+        }
+      ],
+      "reason": "需独立等级/输出来源，不能一组无成长辅助拖到终局",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.haiyue-shield-sacrifice",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.spell-permanent.slot.1",
+      "role": "成长监听",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1181",
+          "name": "孙膑"
+        }
+      ],
+      "reason": "永久施法成长，可作为输出",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.spell-permanent",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.spell-permanent.slot.2",
+      "role": "主施法者",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1181",
+          "name": "孙膑"
+        },
+        {
+          "hero_ref": "hero.1821",
+          "name": "干将莫邪"
+        },
+        {
+          "hero_ref": "hero.1901",
+          "name": "诸葛亮"
+        }
+      ],
+      "reason": "选已养成且装备适配的英雄，不要求全同时上",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.spell-permanent",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.spell-permanent.slot.3",
+      "role": "施法临时",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1141",
+          "name": "刘禅"
+        }
+      ],
+      "reason": "每次施法临时加级",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.spell-permanent",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.spell-permanent.slot.4",
+      "role": "永久转换",
+      "requirement": "optional",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5011",
+          "name": "明世隐"
+        }
+      ],
+      "reason": "配刘禅需连接主输出",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.spell-permanent",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.spell-permanent.slot.5",
+      "role": "续航",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1591",
+          "name": "朵莉亚"
+        },
+        {
+          "hero_ref": "hero.1761",
+          "name": "杨玉环"
+        }
+      ],
+      "reason": "水域范围或群体技能按版本与节点",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.spell-permanent",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.spell-permanent.slot.6",
+      "role": "防线保护",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1201",
+          "name": "白起"
+        },
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        }
+      ],
+      "reason": "前排或复生防止主C先死",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.spell-permanent",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.hanxin-events.slot.1",
+      "role": "核心",
+      "requirement": "required",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1501",
+          "name": "韩信"
+        }
+      ],
+      "reason": "整备/开团监听与闪现输出",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.hanxin-events",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.hanxin-events.slot.2",
+      "role": "稳定整备",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.5031",
+          "name": "狂铁"
+        },
+        {
+          "hero_ref": "hero.5141",
+          "name": "亚连"
+        },
+        {
+          "hero_ref": "hero.1281",
+          "name": "曹操"
+        }
+      ],
+      "reason": "选择已有引擎；曹操需有效三分登场目标才有额外牌面收益",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.hanxin-events",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.hanxin-events.slot.3",
+      "role": "开团",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1831",
+          "name": "雅典娜"
+        },
+        {
+          "hero_ref": "hero.1741",
+          "name": "虞姬"
+        },
+        {
+          "hero_ref": "hero.5051",
+          "name": "瑶"
+        }
+      ],
+      "reason": "按阵营和图腾/整备条件选择，不要求同时全上",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.hanxin-events",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.hanxin-events.slot.4",
+      "role": "闪现整备",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1671",
+          "name": "孙悟空"
+        }
+      ],
+      "reason": "为韩信等闪现额外成长",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.hanxin-events",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.hanxin-events.slot.5",
+      "role": "保护",
+      "requirement": "priority",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        }
+      ],
+      "reason": "最近韩信复生",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "choose_by_capacity_and_phase",
+      "lineup_ref": "lineup.hanxin-events",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.hanxin-events.slot.6",
+      "role": "事件放大",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1561",
+          "name": "张良"
+        },
+        {
+          "hero_ref": "hero.1591",
+          "name": "朵莉亚"
+        }
+      ],
+      "reason": "张良监听开团，朵莉亚监听整备，按所选来源配",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.hanxin-events",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sunxiaobin-replay.slot.1",
+      "role": "主线引擎",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1281",
+          "name": "曹操"
+        },
+        {
+          "hero_ref": "hero.1591",
+          "name": "朵莉亚"
+        },
+        {
+          "hero_ref": "hero.1731",
+          "name": "李元芳"
+        }
+      ],
+      "reason": "三分/整备/古币三选主线，不是三者任意混放即成型",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.sunxiaobin-replay",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sunxiaobin-replay.slot.2",
+      "role": "重放增益",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1061",
+          "name": "小乔"
+        },
+        {
+          "hero_ref": "hero.1241",
+          "name": "周瑜"
+        },
+        {
+          "hero_ref": "hero.1461",
+          "name": "露娜"
+        }
+      ],
+      "reason": "登场/整备出牌的有效收益",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.sunxiaobin-replay",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sunxiaobin-replay.slot.3",
+      "role": "资源放大",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1361",
+          "name": "武则天"
+        },
+        {
+          "hero_ref": "hero.1211",
+          "name": "芈月"
+        }
+      ],
+      "reason": "古币或效果牌主线需满足阵营/目标",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.sunxiaobin-replay",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sunxiaobin-replay.slot.4",
+      "role": "输出",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1231",
+          "name": "吕布"
+        },
+        {
+          "hero_ref": "hero.1421",
+          "name": "安琪拉"
+        },
+        {
+          "hero_ref": "hero.1541",
+          "name": "花木兰"
+        }
+      ],
+      "reason": "按选定主线、等级和装备选择",
+      "min_count": 1,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.sunxiaobin-replay",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
+    },
+    {
+      "id": "lineup.sunxiaobin-replay.slot.5",
+      "role": "保护",
+      "requirement": "alternatives",
+      "candidate_heroes": [
+        {
+          "hero_ref": "hero.1861",
+          "name": "太乙真人"
+        },
+        {
+          "hero_ref": "hero.5051",
+          "name": "瑶"
+        }
+      ],
+      "reason": "校准最近目标，提升重放后的战斗兑现",
+      "min_count": 0,
+      "max_count": 1,
+      "selection": "one_of",
+      "lineup_ref": "lineup.sunxiaobin-replay",
+      "claim_kind": "strategy_advice",
+      "scope_id": "scope.cn.wanxiang.undated"
     }
   ]
 }

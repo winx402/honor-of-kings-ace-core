@@ -1,5 +1,5 @@
 {
-  "definition_version": "0.4.0",
+  "definition_version": "0.5.0",
   "status": "relation_type_catalog",
   "polymorphic_types": {
     "ContentDefinition": [
@@ -8,7 +8,8 @@
       "CardDefinition",
       "EquipmentDefinition",
       "TalentDefinition",
-      "SpecialUnitDefinition"
+      "SpecialUnitDefinition",
+      "AbilityDefinition"
     ],
     "RuntimeInstance": [
       "CardInstance",
@@ -101,7 +102,7 @@
     },
     {
       "id": "has_skill_milestone",
-      "source_type": "HeroDefinition",
+      "source_type": "UnitDefinition",
       "target_type": "SkillMilestone",
       "layer": "identity",
       "meaning": "等级门槛引用技能强化",
@@ -546,6 +547,30 @@
       "layer": "semantic",
       "meaning": "天赋候选池引用抽样规则；池成员关系不等于概率",
       "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "has_related_content",
+      "source_type": "ContentDefinition",
+      "target_type": "ContentDefinition",
+      "layer": "identity",
+      "meaning": "内容定义关联另一内容；不直接断言可购性、获得方式或完整候选池",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "has_branch_candidate",
+      "source_type": "ContentDefinition",
+      "target_type": "ContentDefinition",
+      "layer": "semantic",
+      "meaning": "同一机制下的选择分支候选；未知选择池以未确认主张表示",
+      "allowed_shape": "many_to_many"
+    },
+    {
+      "id": "represents_unit",
+      "source_type": "CardDefinition",
+      "target_type": "SpecialUnitDefinition",
+      "layer": "identity",
+      "meaning": "特殊单位的卡牌展示载体指向其单位定义",
+      "allowed_shape": "many_to_one"
     }
   ],
   "transitions": [

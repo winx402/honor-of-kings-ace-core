@@ -1,0 +1,16 @@
+{
+  "knowledge_version": "0.2.0",
+  "entries": [
+    {
+      "id": "rule.mana.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "攻击和受击可恢复英雄法力；满法力后施法并清空法力。伤害完全被护盾抵消时不由受击恢复法力。",
+      "values": {
+        "attack_mana_gain": null,
+        "hurt_mana_formula": null
+      },
+      "current_applicability": "unspecified"
+    }
+  ]
+}

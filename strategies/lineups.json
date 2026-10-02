@@ -1,516 +1,4005 @@
 {
-  "knowledge_version": "0.1.0",
+  "knowledge_version": "0.2.0",
   "scope_id": "scope.cn.wanxiang.undated",
   "entries": [
     {
-      "name": "三分登场流",
-      "family": "登场联动",
-      "logic": "曹操的整备重触三分登场；蔡文姬响应三分英雄牌，小乔响应登场，形成等级成长。吕布接替前期输出。",
-      "route": [
-        "1—3回合：孙尚香开局，缺牌用弈星或牛魔；第2回合升2级，找蔡文姬、曹操、赵云。",
-        "4—7回合：补貂蝉，升3级；优先觉醒曹操、蔡文姬，备换帅后升4级找小乔。",
-        "8—11回合：升5级找吕布、周瑜；先让吕布靠近孙尚香上阵，以换帅交换等级，再卖孙尚香补周瑜。",
-        "12回合后：需要保护吕布时，赵云可换太乙真人。"
-      ],
-      "position": "以曹操承伤，吕布输出，小乔置后；周瑜可补防装与法源之杯。",
-      "replacement": "缺赵云、貂蝉、周瑜时，可暂用甄姬、阿轲等三分或登场英雄。换帅交换指定三分与最近三分的等级；遗志移除目标并把永久等级转给随机友军，应控制接收目标。",
-      "minimum_conditions": [
-        "对应阵营本局可用",
-        "上阵容量足够；未到容量先按运营阶段组装",
-        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
-        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
-      ],
       "id": "lineup.three-kingdom-entry",
-      "kind": "strategy_advice",
+      "name": "三分登场均养转吕布",
+      "archetype_ref": "archetype.entry-team",
+      "claim_kind": "strategy_advice",
       "game_version": null,
       "scope_id": "scope.cn.wanxiang.undated",
       "mode_ref": "mode.wanxiang_tournament",
-      "template_type": "progressive_route",
+      "template_type": "conditional_progressive_route",
       "power_rank": null,
-      "heroes": [
-        {
-          "hero_ref": "hero.1231",
-          "name": "吕布",
-          "role": "core"
-        },
-        {
-          "hero_ref": "hero.1841",
-          "name": "蔡文姬",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1071",
-          "name": "赵云",
-          "role": "support"
-        },
-        {
-          "hero_ref": "hero.1411",
-          "name": "貂蝉",
-          "role": "support"
-        },
-        {
-          "hero_ref": "hero.1061",
-          "name": "小乔",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1241",
-          "name": "周瑜",
-          "role": "support"
-        },
-        {
-          "hero_ref": "hero.1281",
-          "name": "曹操",
-          "role": "engine"
-        }
+      "logic": "用三分英雄牌和登场事件积累全队永久等级，再把前期输出的等级迁移到吕布；先保证成长和前排，再补后期输出。",
+      "win_condition": "吕布承接等级、提供吸血，团队治疗和控制维持输出时间，靠全队等级与持续伤害获胜。",
+      "mechanic_facts": [
+        "蔡文姬在使用三分英雄牌时，给其他等级最低的三名三分英雄加等级；觉醒提高单次增益。",
+        "曹操整备随机重触一名三分英雄登场，觉醒变为两名；小乔监听登场事件，觉醒将随机三名改为全体英雄。",
+        "周瑜登场提升全体等级；吕布开团为等级最高的三名三分英雄提供双吸血，自身获得时加倍，觉醒扩到六名。"
       ],
-      "chessplayer_refs": [
-        "player.33",
-        "player.32",
-        "player.24"
-      ],
-      "talent_refs": [
-        "talent.636304",
-        "talent.636316"
-      ],
-      "equipment_choices": [
+      "growth_engine": "英雄牌→合成与蔡文姬永久成长；曹操→登场→小乔/周瑜永久成长。两条链独立核算，重触登场不自动算一次使用英雄牌。",
+      "resource_budget": "前期买到能产生增益的三分牌，中期为小乔和五阶终点留升级能量。若每次刷新都只找吕布而引擎未齐，既无即时战力也无复利。",
+      "slots": [
         {
-          "hero_ref": "hero.1231",
-          "equipment_refs": [
-            "equipment.643803",
-            "equipment.643103",
-            "equipment.643704"
+          "id": "lineup.three-kingdom-entry.slot.1",
+          "role": "后期输出",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1231",
+              "name": "吕布"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "等级接收与吸血输出",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
         },
         {
-          "hero_ref": "hero.1281",
-          "equipment_refs": [
-            "equipment.643603",
-            "equipment.643805",
-            "equipment.643502"
+          "id": "lineup.three-kingdom-entry.slot.2",
+          "role": "出牌成长",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1841",
+              "name": "蔡文姬"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "购买并打出三分牌的主要回报",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.three-kingdom-entry.slot.3",
+          "role": "登场触发",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1281",
+              "name": "曹操"
+            }
+          ],
+          "reason": "回合整备产生额外登场事件",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.three-kingdom-entry.slot.4",
+          "role": "登场成长",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1061",
+              "name": "小乔"
+            }
+          ],
+          "reason": "将事件转为团队永久等级",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.three-kingdom-entry.slot.5",
+          "role": "前期输出",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1111",
+              "name": "孙尚香"
+            },
+            {
+              "hero_ref": "hero.1071",
+              "name": "赵云"
+            }
+          ],
+          "reason": "孙尚香补刷新，赵云可担任阶段战力",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.three-kingdom-entry.slot.6",
+          "role": "功能",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1411",
+              "name": "貂蝉"
+            },
+            {
+              "hero_ref": "hero.1241",
+              "name": "周瑜"
+            }
+          ],
+          "reason": "按容量补牌面联动与全队成长；不是两张同时开局必须",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
         }
       ],
-      "talent_conditions": [
+      "key_conditions": [
+        "蔡文姬奖励目标需属于三分且不是自身。",
+        "换帅交换指定三分与最近三分的等级；挂帅是令指定三分等级等同最近三分，不能混写两张牌。",
+        "吕布必须满足等级排名条件才能吃到自己的吸血效果。"
+      ],
+      "phases": [
         {
-          "talent_ref": "talent.636304",
-          "summary": "己方英雄触发登场时，随机两名三分英雄各增加2级。"
+          "phase": "前期：形成可用基础",
+          "decisions": "用孙尚香等过渡，优先找到曹操、蔡文姬；打牌前确认最低等级三分是谁。"
         },
         {
-          "talent_ref": "talent.636316",
-          "summary": "获得一张挂帅牌：令指定三分英雄的等级等同于最近一名三分英雄。"
+          "phase": "中期：接通成长引擎",
+          "decisions": "小乔进入后保留可产生登场的组件；有前排再升级找周瑜、吕布，不为一张觉醒耗尽全部能量。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "转交等级前把吕布与目标相邻并隔开其他三分，完成等级交换后再出售旧核心；决胜时评估功能位改保护。"
         }
-      ]
+      ],
+      "awakening_priorities": [
+        "先曹操、蔡文姬以增加成长次数或每次收益；小乔到位后优先改善团队覆盖。",
+        "吕布等级和保护到位后提高输出，周瑜觉醒增加每次团队增益；按缺口调整。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.three-kingdom-entry.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643103",
+              "name": "无尽巨剑"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            },
+            {
+              "equipment_ref": "equipment.643704",
+              "name": "红魔"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "暴击或免控按对手选择；红魔要求周围一格无友军，与近身围护冲突。"
+        },
+        {
+          "lineup_slot_ref": "lineup.three-kingdom-entry.slot.3",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            },
+            {
+              "equipment_ref": "equipment.643805",
+              "name": "御灵之纱"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "曹操承担前排时提高生存；群体光环要求附近有友军。"
+        }
+      ],
+      "position_plan": [
+        "曹操承担第一波伤害，小乔后置；吕布站能施法且享受治疗的位置。",
+        "需要红魔孤立增伤时移开近邻；需要蔡文姬治疗时优先保证治疗覆盖，不能同时默认两套条件成立。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.33",
+          "name": "白歌",
+          "condition_and_reason": "频繁合成推进即兴创作，复制牌可帮助核心觉醒；复制目标随机。"
+        },
+        {
+          "chessplayer_ref": "player.32",
+          "name": "马可",
+          "condition_and_reason": "大量三阶以下英雄牌可以产宝藏；买五阶牌不推进低阶宝藏计数。"
+        },
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "随机等级补团队下限；不把技能当指定英雄加级。"
+        }
+      ],
+      "completion_markers": [
+        "每轮能稳定产生英雄牌或额外登场事件。",
+        "前排承伤时间足以让吕布施法，吕布处于本队三分高等级组。"
+      ],
+      "transition_rules": [
+        "缺小乔时保留蔡文姬出牌均养；不先拆掉可工作的基础队。",
+        "只有在甄姬、露娜及触发条件接通时才转三分倒转；不是加入露娜便自动形成循环。"
+      ],
+      "failure_modes": [
+        "只追吕布而基础引擎空缺。",
+        "等级迁移选错最近目标；遗志随机接收者未受控制。"
+      ],
+      "conditional_responses": [
+        "遇集中控制：给输出免控装备并观察是否仍被压制。",
+        "遇后排突入：调整小乔/蔡文姬位置或补太乙真人；不要为保护牺牲全部成长位。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
     },
     {
-      "name": "日落海整备流",
-      "family": "整备联动",
-      "logic": "整备英雄提升阿科米亚核心，朵莉亚响应整备、海诺响应核心升级；雅典娜在开团时再触发整备。核心分配临时等级给日落海英雄。",
-      "route": [
-        "1—3回合：优先狂铁，第2回合升2级。",
-        "4—7回合：升3级，补米莱狄、亚连，找朵莉亚和安琪拉并觉醒。",
-        "8—11回合：升5级补雅典娜、海诺，继续觉醒整备组件。",
-        "12回合后：有空位时，可用露娜触发整备。"
-      ],
-      "position": "对手有闪现时，以友军围住安琪拉；雅典娜承担前排。",
-      "replacement": "决胜回合可只保留雅典娜和安琪拉或海诺，将核心分配集中；这是牺牲后续成长换取当前战力的选择。远洋宝藏可提供日落海装备。",
-      "minimum_conditions": [
-        "对应阵营本局可用",
-        "上阵容量足够；未到容量先按运营阶段组装",
-        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
-        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
-      ],
       "id": "lineup.sunset-ready",
-      "kind": "strategy_advice",
+      "name": "日落海整备核心均养",
+      "archetype_ref": "archetype.prep-core",
+      "claim_kind": "strategy_advice",
       "game_version": null,
       "scope_id": "scope.cn.wanxiang.undated",
       "mode_ref": "mode.wanxiang_tournament",
-      "template_type": "progressive_route",
+      "template_type": "conditional_progressive_route",
       "power_rank": null,
-      "heroes": [
-        {
-          "hero_ref": "hero.1421",
-          "name": "安琪拉",
-          "role": "core"
-        },
-        {
-          "hero_ref": "hero.1591",
-          "name": "朵莉亚",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.5031",
-          "name": "狂铁",
-          "role": "support"
-        },
-        {
-          "hero_ref": "hero.5141",
-          "name": "亚连",
-          "role": "support"
-        },
-        {
-          "hero_ref": "hero.5041",
-          "name": "米莱狄",
-          "role": "support"
-        },
-        {
-          "hero_ref": "hero.1831",
-          "name": "雅典娜",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.5631",
-          "name": "海诺",
-          "role": "engine"
-        }
+      "logic": "整备提升英雄和阿科米亚核心，朵莉亚将每次整备扩成全队成长；核心开团临时等级补足战斗面板。",
+      "win_condition": "前排拖住敌人，安琪拉或海诺持续施法；整备越早接通，后续永久和临时等级基础越厚。",
+      "mechanic_facts": [
+        "狂铁、安琪拉、亚连、米莱狄的整备分别为核心及英雄提供等级；觉醒可增加整备次数。",
+        "朵莉亚响应英雄整备，基础随机三名英雄及核心加级，觉醒覆盖全体英雄；海诺响应核心升级提供额外核心等级。",
+        "雅典娜开团随机触发两名日落海英雄整备，觉醒为四名。",
+        "核心开团把等级均分为日落海英雄临时等级，单个英雄不超过核心等级一半。"
       ],
-      "chessplayer_refs": [
-        "player.50",
-        "player.24",
-        "player.40"
-      ],
-      "talent_refs": [
-        "talent.636104",
-        "talent.636117"
-      ],
-      "equipment_choices": [
+      "growth_engine": "整备源→朵莉亚永久等级与核心成长→海诺额外核心成长→开团临时分配；雅典娜补战斗开始的一轮整备。不能据此宣称海诺自我递归无限。",
+      "resource_budget": "先买有效整备源，再补朵莉亚；为雅典娜、海诺和容量节点预留升级支出。留更多日落海获得分配覆盖，却会摊薄主输出的份额。",
+      "slots": [
         {
-          "hero_ref": "hero.1421",
-          "equipment_refs": [
-            "equipment.643402",
-            "equipment.643202",
-            "equipment.643803"
+          "id": "lineup.sunset-ready.slot.1",
+          "role": "输出",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1421",
+              "name": "安琪拉"
+            },
+            {
+              "hero_ref": "hero.5631",
+              "name": "海诺"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "以实际等级和装备选主输出",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "one_of"
         },
         {
-          "hero_ref": "hero.1831",
-          "equipment_refs": [
-            "equipment.643501",
-            "equipment.643603",
-            "equipment.643502"
+          "id": "lineup.sunset-ready.slot.2",
+          "role": "整备放大",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1591",
+              "name": "朵莉亚"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "把事件扩成团队成长",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sunset-ready.slot.3",
+          "role": "低阶引擎",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5031",
+              "name": "狂铁"
+            },
+            {
+              "hero_ref": "hero.5141",
+              "name": "亚连"
+            },
+            {
+              "hero_ref": "hero.5041",
+              "name": "米莱狄"
+            }
+          ],
+          "reason": "数量随容量；亚连目标按装备件数筛选",
+          "min_count": 0,
+          "max_count": 3,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sunset-ready.slot.4",
+          "role": "开团整备",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1831",
+              "name": "雅典娜"
+            }
+          ],
+          "reason": "触发并承担前排",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sunset-ready.slot.5",
+          "role": "核心放大",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5631",
+              "name": "海诺"
+            }
+          ],
+          "reason": "高阶到位后补核心收益",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sunset-ready.slot.6",
+          "role": "登场整备",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1461",
+              "name": "露娜"
+            }
+          ],
+          "reason": "反复出牌时额外触发整备",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
         }
       ],
-      "talent_conditions": [
+      "key_conditions": [
+        "亚连增益目标是装备最多的英雄，装备分散会改变接收者。",
+        "智能装甲需实际穿戴日落海专属装备，才能增加穿戴者整备次数。",
+        "能量改造、光棱塔会关闭核心分配，不能仍按普通均分模板估战力。"
+      ],
+      "phases": [
         {
-          "talent_ref": "talent.636104",
-          "summary": "出售上阵英雄时，把其等级提供给阿科米亚核心。"
+          "phase": "前期：形成可用基础",
+          "decisions": "狂铁形成核心基础；有安琪拉时可确定早期法术输出，缺牌用能承伤的过渡单位。"
         },
         {
-          "talent_ref": "talent.636117",
-          "summary": "随机获得一件日落海专属装备；英雄每穿戴一件该类装备，其整备额外触发一次。"
+          "phase": "中期：接通成长引擎",
+          "decisions": "朵莉亚入场后检查每轮有效整备次数，再逐步觉醒低阶引擎；升级寻找雅典娜和海诺。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "依据临时分配份额与敌方伤害选择保留多人口或收束；保留前排和输出，不为集中等级直接拆成不能作战的空壳。"
         }
-      ]
+      ],
+      "awakening_priorities": [
+        "朵莉亚觉醒改善随机覆盖；安琪拉和低阶整备源增加事件次数。",
+        "雅典娜觉醒增加开团重触；海诺提高核心额外增益；只在相关英雄和回合数足够时投资。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.sunset-ready.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            },
+            {
+              "equipment_ref": "equipment.643202",
+              "name": "虚无法杖"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "法源之杯提供施法频率，穿透针对法防；免控不抵消压制。"
+        },
+        {
+          "lineup_slot_ref": "lineup.sunset-ready.slot.4",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643501",
+              "name": "霸者重铠"
+            },
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "雅典娜需要撑到输出启动；霸者生命高于70%才有减伤。"
+        }
+      ],
+      "position_plan": [
+        "前排雅典娜，安琪拉后置；按敌方闪现镜像点布置护卫。",
+        "亚连目标和核心分配目标必须分别看装备和阵营，不能只把主C放后排就认为都对准。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.40",
+          "name": "闹闹",
+          "condition_and_reason": "必须已选日落海，技能才提供该阵营牌；随机两阵营选项不能强制指定。"
+        },
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "随机成长与团队均养相容。"
+        },
+        {
+          "chessplayer_ref": "player.50",
+          "name": "香香",
+          "condition_and_reason": "低阶英雄过十级与全队等级提高其武器收益，需保留足够合格低阶。"
+        }
+      ],
+      "completion_markers": [
+        "有朵莉亚与至少两个能实际触发的整备来源。",
+        "核心临时分配后输出越过有意义技能节点，前排能维持安琪拉完整引导。"
+      ],
+      "transition_rules": [
+        "决胜收束是用未来成长和群体控制换当前主C份额；若还有多轮，优先保留成长引擎。",
+        "转光棱塔或能量改造前重算输出来源，补足失去的临时等级。"
+      ],
+      "failure_modes": [
+        "整备源少、朵莉亚未覆盖核心单位。",
+        "误把临时分配视为永久升级；卖掉英雄后以为其临时等级仍保留。"
+      ],
+      "conditional_responses": [
+        "敌方快速切后排：调整护卫与输出位置，优先生存再追等级。",
+        "敌方法防高：选择穿透或物理副C，不能仅因等级更高便认定胜利。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
     },
     {
-      "name": "大河图腾流",
-      "family": "图腾联动",
-      "logic": "三名召唤者提供三种图腾；虞姬按图腾数成长，张良响应开团。敖隐随图腾持续增加攻速与临时等级，东皇太一改变图腾受击优先级。",
-      "route": [
-        "1—3回合：牛魔、干将莫邪过渡，第2回合升2级。",
-        "4—7回合：升3级找虞姬、鬼谷子、张良、少司缘；装备先给虞姬，组件各一张后升4级找大司命。",
-        "8—11回合：升5级补敖隐、东皇太一，输出装备移给敖隐。",
-        "12回合后：觉醒核心；有空位时补太乙真人或瑶。"
-      ],
-      "position": "以英雄和图腾围住敖隐，减少后排被切；东皇太一前排承伤。",
-      "replacement": "决赛可把张良换成太乙真人保护敖隐；瑶可携带控制装备补容错。",
-      "minimum_conditions": [
-        "对应阵营本局可用",
-        "上阵容量足够；未到容量先按运营阶段组装",
-        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
-        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
-      ],
       "id": "lineup.river-totems",
-      "kind": "strategy_advice",
+      "name": "大河图腾敖隐持续射",
+      "archetype_ref": "archetype.totem-carry",
+      "claim_kind": "strategy_advice",
       "game_version": null,
       "scope_id": "scope.cn.wanxiang.undated",
       "mode_ref": "mode.wanxiang_tournament",
-      "template_type": "progressive_route",
+      "template_type": "conditional_progressive_route",
       "power_rank": null,
-      "heroes": [
-        {
-          "hero_ref": "hero.5191",
-          "name": "敖隐",
-          "role": "core"
-        },
-        {
-          "hero_ref": "hero.1741",
-          "name": "虞姬",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1561",
-          "name": "张良",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.5771",
-          "name": "少司缘",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1891",
-          "name": "鬼谷子",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.5171",
-          "name": "大司命",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1871",
-          "name": "东皇太一",
-          "role": "support"
-        }
+      "logic": "图腾提供开团与持续成长，虞姬承接中期战力，敖隐到位后依靠存活图腾按时间叠攻速和临时等级。",
+      "win_condition": "保护图腾和敖隐，撑过多个四秒周期，以持续普攻输出收尾。",
+      "mechanic_facts": [
+        "鬼谷子、少司缘、大司命分别召唤图腾。",
+        "虞姬开团按图腾数量给自身及随机大河英雄加等级；张良响应单位开团事件提供永久等级。",
+        "敖隐每个图腾每四秒提供攻速和临时等级，觉醒提高收益；东皇太一减少图腾被优先集火并按图腾等级获得临时等级。",
+        "因缘图腾按己方单位累计普通攻击提供全队永久等级；先知图腾给最近两名大河英雄牺牲装备。"
       ],
-      "chessplayer_refs": [
-        "player.50",
-        "player.11",
-        "player.24"
-      ],
-      "talent_refs": [
-        "talent.623002",
-        "talent.635031"
-      ],
-      "equipment_choices": [
+      "growth_engine": "图腾数量→虞姬开团/张良永久均养；存活时间→敖隐临时战力；单位普攻→因缘图腾永久成长。三个量不同：图腾数量、图腾等级、图腾活了多久。",
+      "resource_budget": "先买能出现图腾的单位，少花能量在未成型前追五阶觉醒。装备可先给虞姬，敖隐到位后再按可移动条件转交。",
+      "slots": [
         {
-          "hero_ref": "hero.5191",
-          "equipment_refs": [
-            "equipment.643205",
-            "equipment.643302",
-            "equipment.643208"
+          "id": "lineup.river-totems.slot.1",
+          "role": "后期输出",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5191",
+              "name": "敖隐"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "每个存活图腾提供持续战斗成长",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
         },
         {
-          "hero_ref": "hero.1871",
-          "equipment_refs": [
-            "equipment.643501",
-            "equipment.643603",
-            "equipment.643502"
+          "id": "lineup.river-totems.slot.2",
+          "role": "图腾来源",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1891",
+              "name": "鬼谷子"
+            },
+            {
+              "hero_ref": "hero.5771",
+              "name": "少司缘"
+            },
+            {
+              "hero_ref": "hero.5171",
+              "name": "大司命"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "按容量形成多座图腾",
+          "min_count": 0,
+          "max_count": 3,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.river-totems.slot.3",
+          "role": "中期输出",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1741",
+              "name": "虞姬"
+            }
+          ],
+          "reason": "开团与图腾数量成长",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.river-totems.slot.4",
+          "role": "开团放大",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1561",
+              "name": "张良"
+            }
+          ],
+          "reason": "开团事件变永久等级",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.river-totems.slot.5",
+          "role": "图腾前排",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1871",
+              "name": "东皇太一"
+            }
+          ],
+          "reason": "保护图腾并承伤",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
         }
       ],
-      "talent_conditions": [
+      "key_conditions": [
+        "图腾被提前摧毁则敖隐后续周期收益减少。",
+        "刘邦会主动摧毁全部己方图腾，与持续保图输出的计划冲突。",
+        "召唤单位普攻可增加因缘图腾计数，但被往生图腾吞掉的低阶召唤物不能继续普攻。"
+      ],
+      "phases": [
         {
-          "talent_ref": "talent.623002",
-          "summary": "获得两张天赋牌复印机，可指定1—3阶英雄获得其英雄牌。"
+          "phase": "前期：形成可用基础",
+          "decisions": "以牛魔或干将过渡，留获取图腾的英雄；没有图腾时不要先按敖隐完整联动规划装备。"
         },
         {
-          "talent_ref": "talent.635031",
-          "summary": "获得2能量和随机一张2—3阶大河流域英雄牌。"
+          "phase": "中期：接通成长引擎",
+          "decisions": "组成虞姬、图腾来源、张良的中期队；优先保住前排，升级找大司命与五阶核心。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "敖隐接装后观察首次四秒收益和图腾存活；需要即时保命时可用太乙真人替换低收益成长位。"
         }
-      ]
+      ],
+      "awakening_priorities": [
+        "敖隐觉醒提升每周期收益；虞姬、张良改善团队成长覆盖。",
+        "召唤者觉醒强化图腾功能；东皇太一按图腾等级和承伤需求选择。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.river-totems.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643205",
+              "name": "寒霜侵袭"
+            },
+            {
+              "equipment_ref": "equipment.643302",
+              "name": "破晓"
+            },
+            {
+              "equipment_ref": "equipment.643208",
+              "name": "自然法杖"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "以普攻功能、物防处理或法术控制取舍；自然法杖需消耗法力，不能当无条件普攻控制。"
+        },
+        {
+          "lineup_slot_ref": "lineup.river-totems.slot.5",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643501",
+              "name": "霸者重铠"
+            },
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "前排存活为敖隐争取多个周期。"
+        }
+      ],
+      "position_plan": [
+        "敖隐后排，图腾和英雄提供路径阻挡；按闪现对位留保护位。",
+        "先知图腾最近的大河目标应能利用牺牲装备，不把距离随机当成已指定。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.50",
+          "name": "香香",
+          "condition_and_reason": "中期虞姬等低阶英雄达到十级提高武器基础攻击，团队等级增加专属收益。"
+        },
+        {
+          "chessplayer_ref": "player.11",
+          "name": "瑶妹",
+          "condition_and_reason": "小鹿可提供早期战力；小鹿不能自动视为大河英雄。"
+        },
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "均养可帮助前排和射手到节点，随机技能不能保证只命中敖隐。"
+        }
+      ],
+      "completion_markers": [
+        "至少多座有效图腾，敖隐能存活并完成若干成长周期。",
+        "不仅有敖隐英雄牌，还具有保护、前排和攻击装备。"
+      ],
+      "transition_rules": [
+        "无敖隐时保留虞姬主C，以中期成型打血线；不强行卖掉成熟射手。",
+        "改刘邦毁图须整体改为永久成长/炸盾，不保留同一持续图腾胜利假设。"
+      ],
+      "failure_modes": [
+        "图腾和射手在输出前被一起清除。",
+        "堆图腾等级却缺图腾数量或敖隐存活时间。"
+      ],
+      "conditional_responses": [
+        "敌方范围伤害集中：将射手与召唤者适当分散，保关键图腾，减少一次覆盖全队。",
+        "敌方单核吸血：优先增加控制或减疗功能，收益取决于控制能否实际命中。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
     },
     {
-      "name": "河洛古币流",
-      "family": "古币单核",
-      "logic": "古币产出集中养百里玄策，玄策整备根据上一回合闪现英雄击败数成长；钟馗削减击败者临时等级，太乙真人提供复生。",
-      "route": [
-        "1—3回合：李元芳或弈星开局，第2回合升2级找玄策；可拿盾山，古币给玄策。",
-        "4—7回合：升3级，优先觉醒玄策，补程咬金、钟馗。",
-        "8—11回合：升4级找上官婉儿、太乙真人，11回合前升5级；继续觉醒已有组件。",
-        "12回合后：补玄策装备与觉醒；战力不足可评估等级转移或五阶转型。遗志接收者随机；化铁为金随机变为未在场五阶，不能指定李信或花木兰。"
-      ],
-      "position": "李元芳、太乙真人靠近玄策，确保最近目标正确；按敌方主输出位置调整玄策。",
-      "replacement": "遗志不转移临时等级；化铁为金限1—3阶目标，转为随机未在场五阶英雄，觉醒并保留当前等级（包括临时等级）。李信为4阶，不能通过化铁为金获得。",
-      "minimum_conditions": [
-        "对应阵营本局可用",
-        "上阵容量足够；未到容量先按运营阶段组装",
-        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
-        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
-      ],
       "id": "lineup.heluocoins",
-      "kind": "strategy_advice",
+      "name": "姜导古币百里玄策",
+      "archetype_ref": "archetype.coin-kill",
+      "claim_kind": "strategy_advice",
       "game_version": null,
       "scope_id": "scope.cn.wanxiang.undated",
       "mode_ref": "mode.wanxiang_tournament",
-      "template_type": "progressive_route",
+      "template_type": "conditional_progressive_route",
       "power_rank": null,
-      "heroes": [
-        {
-          "hero_ref": "hero.1951",
-          "name": "百里玄策",
-          "role": "core"
-        },
-        {
-          "hero_ref": "hero.5131",
-          "name": "上官婉儿",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.5091",
-          "name": "盾山",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1441",
-          "name": "程咬金",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1751",
-          "name": "钟馗",
-          "role": "support"
-        },
-        {
-          "hero_ref": "hero.1861",
-          "name": "太乙真人",
-          "role": "support"
-        },
-        {
-          "hero_ref": "hero.1731",
-          "name": "李元芳",
-          "role": "engine"
-        }
+      "logic": "古币及棋手成长集中给玄策，争取闪现击杀；上一回合闪现英雄击杀再转成永久等级，形成战力与击杀的反馈。",
+      "win_condition": "玄策先切可击杀目标，进入连续击杀阶段；前排和复生让首轮攻击不致过早中断。",
+      "mechanic_facts": [
+        "古币仅能指定河洛英雄，加永久等级；李元芳整备给最近河洛用古币，盾山牺牲产古币。",
+        "玄策整备按上一回合闪现英雄击败敌方英雄数，给随机闪现英雄加永久等级；觉醒提高单次增益。",
+        "姜导指定主角后，打出每两张英雄或效果牌给主角加一级，每回合最多五级；己方英雄首次升到二十五级时获得封神一瞬牌，使用该牌可主动指定一名英雄。",
+        "太乙真人开团复生目标由最近英雄决定；钟馗赋予自身及左右一格牺牲降级，有单场次数限制。"
       ],
-      "chessplayer_refs": [
-        "player.41",
-        "player.24",
-        "player.40"
-      ],
-      "talent_refs": [
-        "talent.638008",
-        "talent.681021"
-      ],
-      "equipment_choices": [
+      "growth_engine": "古币/出牌→玄策真实等级→闪现击杀→下一轮随机闪现永久成长。胜利不等于玄策击杀，其他英雄收走击杀也会改变收益。",
+      "resource_budget": "买古币来源和玄策觉醒的收益通常比同轮随机添第五个输出位更直接；但需要升级找到太乙真人与足够保护。姜导当轮五次已满后继续刷牌只按其他收益估值。",
+      "slots": [
         {
-          "hero_ref": "hero.1951",
-          "equipment_refs": [
-            "equipment.643103",
-            "equipment.643803",
-            "equipment.643301"
+          "id": "lineup.heluocoins.slot.1",
+          "role": "主输出",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1951",
+              "name": "百里玄策"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "低阶闪现击杀核心",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
         },
         {
-          "hero_ref": "hero.1441",
-          "equipment_refs": [
-            "equipment.643404",
-            "equipment.643502",
-            "equipment.643601"
+          "id": "lineup.heluocoins.slot.2",
+          "role": "古币源",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1731",
+              "name": "李元芳"
+            },
+            {
+              "hero_ref": "hero.5091",
+              "name": "盾山"
+            },
+            {
+              "hero_ref": "hero.5131",
+              "name": "上官婉儿"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "整备、牺牲等窗口提供古币",
+          "min_count": 0,
+          "max_count": 3,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.heluocoins.slot.3",
+          "role": "防线",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1441",
+              "name": "程咬金"
+            },
+            {
+              "hero_ref": "hero.1751",
+              "name": "钟馗"
+            }
+          ],
+          "reason": "前排与牺牲降级",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.heluocoins.slot.4",
+          "role": "保护",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            }
+          ],
+          "reason": "最近目标复生",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.heluocoins.slot.5",
+          "role": "古币增强",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1361",
+              "name": "武则天"
+            }
+          ],
+          "reason": "五阶增益，不要求开局必备",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
         }
       ],
-      "talent_conditions": [
+      "key_conditions": [
+        "李元芳最近河洛和太乙最近英雄要分别对准玄策。",
+        "多名闪现英雄会分散玄策整备的随机接收者，不是无代价补人。",
+        "二十五级是获得封神一瞬牌的任务条件，不限制用牌目标；获得后主动指定玄策，不能把首次达标的辅助误当自动接收者。"
+      ],
+      "phases": [
         {
-          "talent_ref": "talent.638008",
-          "summary": "闪现英雄击败敌方单位时，立即闪现至最近敌人处，并无敌0.5秒。"
+          "phase": "前期：形成可用基础",
+          "decisions": "李元芳和盾山提供基础古币，玄策到位后集中资源；用合理前排保血而不是盲目空场升级。"
         },
         {
-          "talent_ref": "talent.681021",
-          "summary": "打出觉醒英雄牌时，该英雄增加22%暴击率和11%物理、法术吸血，每名英雄仅一次。"
+          "phase": "中期：接通成长引擎",
+          "decisions": "优先玄策觉醒并接通姜导封神；按敌方后排镜像位置寻找安全首杀，补钟馗、程咬金。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "有太乙后校准最近距离；判断是否需要高阶输出或功能，不因有金币/等级转移牌便随意转走成熟核心。"
         }
-      ]
+      ],
+      "awakening_priorities": [
+        "玄策优先，随后产币源与保护按实际缺口。",
+        "武则天觉醒提高古币效率，需足够后续古币数量才有回报。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.heluocoins.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643103",
+              "name": "无尽巨剑"
+            },
+            {
+              "equipment_ref": "equipment.643301",
+              "name": "影牙"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "暴击、攻速、免控三类取舍；首杀受控制时先提高生存。"
+        },
+        {
+          "lineup_slot_ref": "lineup.heluocoins.slot.3",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643404",
+              "name": "聚灵水晶"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "承伤回蓝与回复，视选择的前排技能而定。"
+        }
+      ],
+      "position_plan": [
+        "玄策闪现落点应避开敌方高伤集火；每轮看主要敌人的位置再调整。",
+        "李元芳和太乙围绕玄策校准距离，钟馗左右一格安排希望获得牺牲降级的英雄。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.41",
+          "name": "姜导",
+          "condition_and_reason": "主角与封神一瞬可集中永久成长；每回合上限需记清。"
+        },
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "缩小随机目标集合可更集中，但卖辅助会削弱防线。"
+        },
+        {
+          "chessplayer_ref": "player.40",
+          "name": "闹闹",
+          "condition_and_reason": "已选河洛才适配，提供来源不保证每次是玄策。"
+        }
+      ],
+      "completion_markers": [
+        "玄策永久等级与觉醒到位，能拿到首个击杀。",
+        "前排/复生不会选错目标，古币有持续来源。"
+      ],
+      "transition_rules": [
+        "需要花木兰复生或司空震时保留产币结构，把新核心等级和保护接通后再转；新五阶从一级起步不等价替换。",
+        "遗志永久等级随机转移；化铁为金随机未上场五阶，不是指定李信或花木兰的工具。"
+      ],
+      "failure_modes": [
+        "切入敌方最硬目标，无法获得首杀。",
+        "辅助装备或站位使太乙保护错误；过多闪现单位分散成长。"
+      ],
+      "conditional_responses": [
+        "敌方诱饵吸走玄策：更换镜像位，观察实际落点和锁定。",
+        "遇压制控制：炽热支配者及姜导免控均不解除压制，需改变对位或补控制。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
     },
     {
-      "name": "逐鹿战术牌流",
-      "family": "效果牌联动",
-      "logic": "各组件产出战术牌，使用效果牌时由芈月给装备最多的逐鹿英雄加等级。蒙犽必须保持该目标身份。",
-      "route": [
-        "1—3回合：弈星过渡，第2回合升2级找芈月。",
-        "4—7回合：升3级补西施、老夫子、白起，优先觉醒芈月后升4级；缺觉醒也应继续推进。",
-        "8—11回合：升5级补蒙犽、庄周、鲁班七号；觉醒优先芈月、西施、白起，再完善输出。",
-        "12回合后：继续找蒙犽、鲁班七号；空位补太乙真人或海月。"
-      ],
-      "position": "蒙犽后排、白起前排；确保蒙犽装备件数严格多于其他逐鹿英雄。",
-      "replacement": "无空位又需复生时，可用太乙真人替换老夫子。闹闹适配以开局选到逐鹿为条件。",
-      "minimum_conditions": [
-        "对应阵营本局可用",
-        "上阵容量足够；未到容量先按运营阶段组装",
-        "核心与触发组件到位；觉醒按阶段建议，并非全部开局必需",
-        "装备为推荐适配，按局内获得情况选择，不要求每件全部获取"
-      ],
       "id": "lineup.zhulu-tactics",
-      "kind": "strategy_advice",
+      "name": "小妲己逐鹿战术蒙犽",
+      "archetype_ref": "archetype.tactics",
+      "claim_kind": "strategy_advice",
       "game_version": null,
       "scope_id": "scope.cn.wanxiang.undated",
       "mode_ref": "mode.wanxiang_tournament",
-      "template_type": "progressive_route",
+      "template_type": "conditional_progressive_route",
       "power_rank": null,
-      "heroes": [
-        {
-          "hero_ref": "hero.5241",
-          "name": "蒙犽",
-          "role": "core"
-        },
-        {
-          "hero_ref": "hero.1211",
-          "name": "芈月",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.5231",
-          "name": "西施",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1201",
-          "name": "白起",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1391",
-          "name": "老夫子",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1131",
-          "name": "庄周",
-          "role": "engine"
-        },
-        {
-          "hero_ref": "hero.1121",
-          "name": "鲁班七号",
-          "role": "engine"
-        }
+      "logic": "逐鹿组件持续产战术牌，小妲己补效果牌；芈月把每次效果牌使用转成装备最多逐鹿英雄的永久等级。",
+      "win_condition": "把成长集中到蒙犽，利用战术调整施法、护盾和战力，让前排护住后排持续输出。",
+      "mechanic_facts": [
+        "芈月监听效果牌使用，目标为己方装备最多的一名逐鹿英雄。",
+        "西施整备产推演战术，白起每轮首次用效果牌产援护，老夫子每轮首次合成产招募；鲁班七号每三次英雄合成产战术。",
+        "小妲己每购买四张牌产一张随机效果牌，专属让每回合第一张打出的效果牌结算两次。",
+        "推演战术作用于指定逐鹿英雄本回合法力上限，援护战术为本回合护盾；临时效果不能当永久面板。"
       ],
-      "chessplayer_refs": [
-        "player.33",
-        "player.10",
-        "player.40"
-      ],
-      "talent_refs": [
-        "talent.636417",
-        "talent.636403"
-      ],
-      "equipment_choices": [
+      "growth_engine": "购买/合成→英雄与战术来源→使用效果牌→芈月永久等级。每轮首次、累计三次、购买四张分别计数；一张效果牌结算两次是否等同两次使用，不由此自动推断。",
+      "resource_budget": "除购买和刷新外要留出用有效效果牌的空间；先保证能产牌和使用牌，后找蒙犽。若没有效果牌来源，芈月觉醒本身不产生等级。",
+      "slots": [
         {
-          "hero_ref": "hero.5241",
-          "equipment_refs": [
-            "equipment.643103",
-            "equipment.643803",
-            "equipment.643402"
+          "id": "lineup.zhulu-tactics.slot.1",
+          "role": "输出",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5241",
+              "name": "蒙犽"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "装备最多的逐鹿核心",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
         },
         {
-          "hero_ref": "hero.1201",
-          "equipment_refs": [
-            "equipment.643501",
-            "equipment.643502",
-            "equipment.643601"
+          "id": "lineup.zhulu-tactics.slot.2",
+          "role": "成长监听",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1211",
+              "name": "芈月"
+            }
           ],
-          "requirement": "alternatives"
+          "reason": "效果牌转永久等级",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.zhulu-tactics.slot.3",
+          "role": "稳定战术",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5231",
+              "name": "西施"
+            }
+          ],
+          "reason": "每回合整备提供牌",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.zhulu-tactics.slot.4",
+          "role": "前排与护盾",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1201",
+              "name": "白起"
+            }
+          ],
+          "reason": "首次使用效果牌及承伤",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.zhulu-tactics.slot.5",
+          "role": "补牌",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1391",
+              "name": "老夫子"
+            },
+            {
+              "hero_ref": "hero.1131",
+              "name": "庄周"
+            },
+            {
+              "hero_ref": "hero.1121",
+              "name": "鲁班七号"
+            }
+          ],
+          "reason": "按容量和手牌结构补触发来源",
+          "min_count": 0,
+          "max_count": 3,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.zhulu-tactics.slot.6",
+          "role": "替代输出",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1101",
+              "name": "嬴政"
+            },
+            {
+              "hero_ref": "hero.5311",
+              "name": "镜"
+            }
+          ],
+          "reason": "嬴政战术成长或镜效果牌成长需另配装备与站位",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
         }
       ],
-      "talent_conditions": [
+      "key_conditions": [
+        "蒙犽装备件数应严格多于其他逐鹿，平手处理未给出。",
+        "白起和老夫子只在本轮首次事件产牌；多刷不能无限重复产出。",
+        "用推演战术要指定逐鹿，且本回合结束效果不应永久保留。"
+      ],
+      "phases": [
         {
-          "talent_ref": "talent.636417",
-          "summary": "回合开始获得一张上阵逐鹿英雄的同名牌；上一轮获胜时改为两张。"
+          "phase": "前期：形成可用基础",
+          "decisions": "弈星等过渡，芈月到位后用已有逐鹿当临时接收者，避免乱给其他逐鹿更多装备。"
         },
         {
-          "talent_ref": "talent.636403",
-          "summary": "获得一张战术牌，此后每个回合开始再获一张；棋手达到5级后必定为高阶战术。"
+          "phase": "中期：接通成长引擎",
+          "decisions": "形成西施/白起/老夫子最低产牌链，先让芈月觉醒，保留升级到蒙犽与高阶组件所需能量。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "蒙犽接装后先确认目标，再按战术条件出牌；最后补保护，必要时舍弃低效产牌位。"
         }
-      ]
+      ],
+      "awakening_priorities": [
+        "芈月优先提高每次成长，西施与白起觉醒改善战术质量。",
+        "蒙犽等级与装备达标后强化输出；鲁班七号须有足够合成量才值得投资。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.zhulu-tactics.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643103",
+              "name": "无尽巨剑"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            },
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "按技能和对手选暴击、免控、回蓝；装备件数同时决定芈月的目标。"
+        },
+        {
+          "lineup_slot_ref": "lineup.zhulu-tactics.slot.4",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643501",
+              "name": "霸者重铠"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "白起前排撑住主C；若为其加装备，须维持主C件数更多。"
+        }
+      ],
+      "position_plan": [
+        "白起前排，蒙犽后排；每次换装备后重看芈月目标。",
+        "保护位太乙要靠近蒙犽，别让白起意外成为最近目标。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.10",
+          "name": "小妲己",
+          "condition_and_reason": "购买出牌与效果牌供给相容；双结算增强第一张牌的效果，使用事件数未确认。"
+        },
+        {
+          "chessplayer_ref": "player.33",
+          "name": "白歌",
+          "condition_and_reason": "合成复制帮助战术产出及觉醒，但不是免费效果牌无穷。"
+        },
+        {
+          "chessplayer_ref": "player.40",
+          "name": "闹闹",
+          "condition_and_reason": "已选逐鹿后获得阵营英雄，能增加合成来源。"
+        }
+      ],
+      "completion_markers": [
+        "每轮至少有稳定可用战术源，芈月奖励实际落在主输出。",
+        "主输出能在防线存活期内完成施法。"
+      ],
+      "transition_rules": [
+        "缺蒙犽可用现有装备最多逐鹿继续成长；转嬴政或镜应重估物法装备。",
+        "缺前排时把效果牌预算先转为护盾或保护，不为额外一次成长放弃防线。"
+      ],
+      "failure_modes": [
+        "装备数平手导致接收者不确定。",
+        "把首次触发当无限触发，或把双结算当多次使用。"
+      ],
+      "conditional_responses": [
+        "敌方后排切入：补保护并换位；以援护盾延迟伤害需实际打出牌。",
+        "遇高法防或高物防：输出替代应连装备一起调整，不能只换名字。"
+      ],
+      "unknowns": [
+        "小妲己双结算是否重复触发芈月、镜等使用监听，尚未确定。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.three-kingdom-loop",
+      "name": "白歌三分登场招募倒转",
+      "archetype_ref": "archetype.entry-loop",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "用露娜登场触发曹操整备，曹操重触甄姬登场获得下一张登场牌；把可续接的牌打出，使小乔和周瑜将出牌链变为永久等级。",
+      "win_condition": "在备战时间内形成足够团队等级，再以闪现输出、控制和治疗解决战斗；循环次数取决于随机选牌、触发目标与实际时间。",
+      "mechanic_facts": [
+        "露娜登场增加核心等级并随机触发两名英雄整备，觉醒为四名。",
+        "曹操整备随机触发三分登场；甄姬登场给其他登场英雄牌，觉醒可从三张选一。",
+        "小乔响应登场给英雄永久成长；周瑜登场全队成长。",
+        "白歌每四次英雄合成给随机场上英雄复制，即兴创作用到六张触发灵感爆发；六级奇才指定英雄获取四张对应牌。"
+      ],
+      "growth_engine": "露娜牌→随机整备曹操→随机登场甄姬→可续接登场牌→再次使用；小乔/周瑜收取每次事件收益。链路含随机节点，是概率续接体系，不能保证一张露娜无限延续。",
+      "resource_budget": "必须有升级到四/五阶的预算，甄姬和露娜未接通前少花钱养无关单位。复制与招募牌的手牌/场上目标应尽量集中；别为净化随机池卖掉唯一前排而立即出局。",
+      "slots": [
+        {
+          "id": "lineup.three-kingdom-loop.slot.1",
+          "role": "整备桥梁",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1281",
+              "name": "曹操"
+            }
+          ],
+          "reason": "把整备事件变登场",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.three-kingdom-loop.slot.2",
+          "role": "招募节点",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1271",
+              "name": "甄姬"
+            }
+          ],
+          "reason": "生成后续登场牌",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.three-kingdom-loop.slot.3",
+          "role": "登场整备",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1461",
+              "name": "露娜"
+            }
+          ],
+          "reason": "让牌重新接回整备窗口",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.three-kingdom-loop.slot.4",
+          "role": "等级兑现",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1061",
+              "name": "小乔"
+            }
+          ],
+          "reason": "每次登场转换为团队永久等级",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.three-kingdom-loop.slot.5",
+          "role": "团队增益",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1241",
+              "name": "周瑜"
+            }
+          ],
+          "reason": "高阶登场等级回报",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.three-kingdom-loop.slot.6",
+          "role": "战斗终点",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1161",
+              "name": "阿轲"
+            },
+            {
+              "hero_ref": "hero.1671",
+              "name": "孙悟空"
+            }
+          ],
+          "reason": "闪现输出；猴整备还给闪现成长",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "one_of"
+        }
+      ],
+      "key_conditions": [
+        "甄姬候选须实际出现露娜等续接牌，随机抽到其他牌不保证延续。",
+        "曹操可触发的三分登场目标越多，越不能默认只触发甄姬；具体抽样优先级未知。",
+        "露娜随机整备对象和曹操随机登场对象都要有有效池。",
+        "觉醒牌和非觉醒英雄牌不同；白歌灵感爆发只作用随机手牌非觉醒英雄牌并产生转瞬复制。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "以可打的低阶牌保血并朝四阶关键件升级，先积累曹操；不用永久预定七人挤满战场。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "甄姬觉醒提高选牌选择，小乔把事件变成长；留复制能力给缺口，露娜到位后试接完整一轮。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "先整理手牌、有效触发池再连续出牌；达到足够战力或时间不足时停链，完成装备/站位，不因仍有牌而漏摆最终棋盘。"
+        }
+      ],
+      "awakening_priorities": [
+        "甄姬优先提高续接选择，曹操提高登场触发数量，露娜提高整备触发数量。",
+        "小乔觉醒提升团队覆盖；周瑜和战斗终点按当轮成长与伤害缺口安排。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.three-kingdom-loop.slot.3",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "露娜战斗需要施法与免控；不是循环触发必须装备。"
+        },
+        {
+          "lineup_slot_ref": "lineup.three-kingdom-loop.slot.6",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643103",
+              "name": "无尽巨剑"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "闪现输出依据技能与控制选择；不能强行给所有候选相同三件。"
+        }
+      ],
+      "position_plan": [
+        "备战先控制孙悟空夺取的相邻英雄，避免取走不能损失等级的成长核心。",
+        "开战前把小乔/甄姬后置，闪现输出按敌方镜像位置调整；红魔孤立需单独满足。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.33",
+          "name": "白歌",
+          "condition_and_reason": "合成收益和指定四张帮助关键英雄觉醒；随机复制需控制场上候选。"
+        },
+        {
+          "chessplayer_ref": "player.21",
+          "name": "镜",
+          "condition_and_reason": "复制目标牌可补核心，主动技能费用成长；镜花影购买复制不推进秘技。"
+        },
+        {
+          "chessplayer_ref": "player.38",
+          "name": "孙小宾",
+          "condition_and_reason": "可记录有效英雄/效果牌，重放的随机性和容量见独立变体，不能直接保证循环。"
+        }
+      ],
+      "completion_markers": [
+        "完整露娜→整备→甄姬招募链至少实际接通过一次。",
+        "小乔在场可兑现登场收益，具有真正能杀敌的输出位和生存保护。"
+      ],
+      "transition_rules": [
+        "链条断时用手中可用登场牌继续团队成长；可以保留稳定三分吕布路线，不为倒转名字硬搜。",
+        "成型后可用保护替换低收益功能，但不能拆掉下一回合仍需的核心桥梁。"
+      ],
+      "failure_modes": [
+        "只有曹操或露娜单张就声称倒转成型。",
+        "招募没选到续接牌、随机对象过多、备战超时或卖掉唯一前排。"
+      ],
+      "conditional_responses": [
+        "敌方单点切小乔：调整后排和护卫，不只把等级堆到刺客。",
+        "敌方等级相近：转看控制时序、输出类型与保护，不靠宣传999推胜负。"
+      ],
+      "unknowns": [
+        "随机对象抽样、同窗口优先顺序、备战操作速度不由卡面给出。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.low-tier-pig",
+      "name": "马可三阶合成养猪",
+      "archetype_ref": "archetype.low-tier-merge",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "猪八戒让三阶合成惠及同阶队友，再以夺取集中邻近英雄等级；刘禅提供施法临时等级、明世隐保留其中一部分，马可把低阶出牌换成宝藏。",
+      "win_condition": "猪八戒承伤积累永久生命，用最大生命相关的范围技能输出；瑶、回复与复生维持其承伤和施法时间。",
+      "mechanic_facts": [
+        "猪八戒监听三阶以下英雄合成，同阶英雄加一级，觉醒为两级；带夺取。",
+        "夺取取周围一格随机己方英雄最多十级，排除临时等级。",
+        "猪八戒按累计承受伤害增加永久最大生命，技能按自身最大生命造成伤害；节点改变上限与范围。",
+        "刘禅监听己方英雄施法给该英雄临时等级；明世隐连接最近英雄，将有限临时等级转为永久等级。",
+        "马可每打出四张三阶以下英雄牌得到随机宝藏；冰曜宝石镜随机复制手牌非觉醒英雄牌。"
+      ],
+      "growth_engine": "三阶英雄牌→合成→同阶永久均养；猪牌→随机邻近夺取→等级集中；施法→刘禅临时→明世隐有限转永久；低阶出牌→宝藏→可能复制下一张猪牌。不是每张宝藏都复制猪。",
+      "resource_budget": "中期以三阶合成密度为目标，不把五阶齐全当成成型门槛。买卖过渡牌有净能量成本；姬小满刷新能降低搜牌负担，但出售场上英雄与出售手牌不同。",
+      "slots": [
+        {
+          "id": "lineup.low-tier-pig.slot.1",
+          "role": "核心",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5111",
+              "name": "猪八戒"
+            }
+          ],
+          "reason": "同阶成长、夺取、生命成长与输出合一",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.low-tier-pig.slot.2",
+          "role": "施法临时",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1141",
+              "name": "刘禅"
+            }
+          ],
+          "reason": "猪多次施法时提供临时等级",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.low-tier-pig.slot.3",
+          "role": "永久转化",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5011",
+              "name": "明世隐"
+            }
+          ],
+          "reason": "连接猪保留有限临时等级",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.low-tier-pig.slot.4",
+          "role": "买卖补刷新",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5641",
+              "name": "姬小满"
+            }
+          ],
+          "reason": "出售场上英雄达到条件得临时刷新",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.low-tier-pig.slot.5",
+          "role": "附身保护",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5051",
+              "name": "瑶"
+            }
+          ],
+          "reason": "最近目标护盾及属性；高等级增强属性分享",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.low-tier-pig.slot.6",
+          "role": "复生",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            }
+          ],
+          "reason": "四阶保护会改变同品阶人数结构，权衡保护收益",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        }
+      ],
+      "key_conditions": [
+        "核心五人以三阶为主，使三阶合成多人获益；加入四阶辅助不再吃三阶同阶增益。",
+        "猪八戒夺取对象随机：只让计划喂级的英雄进入一格，瑶若需保有高等级应移开。",
+        "冰曜宝石镜使用前把无关非觉醒英雄牌移出候选；只留猪牌时复制才能集中。",
+        "明世隐可转化额度不是无限；其登场增加额度，不是每次施法自动永久化全部临时等级。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "先用有牌面资源回报的单位过渡，逐步升到能稳定找三阶的阶段；不为连败主动空掉防线。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "猪、刘禅、明世隐到位后整理三阶队伍，优先猪觉醒；把每张三阶合成按全队收益估值，宝藏根据真实效果处理。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "补瑶和太乙保护，猪达到关键节点后考虑六级专属；重点照顾需人数最多同品阶覆盖猪，人数平手规则未明。"
+        }
+      ],
+      "awakening_priorities": [
+        "猪八戒优先翻倍同阶成长，刘禅与明世隐改善临时到永久路径。",
+        "姬小满觉醒降低刷新所需出售次数；保护不足先补瑶/太乙，不必等全员觉醒。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.low-tier-pig.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            },
+            {
+              "equipment_ref": "equipment.643804",
+              "name": "生命魔典"
+            },
+            {
+              "equipment_ref": "equipment.643404",
+              "name": "聚灵水晶"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "按最大生命、回复护盾、受击回蓝选择；猪既要承伤叠生命也不能在首次技能前死亡。"
+        },
+        {
+          "lineup_slot_ref": "lineup.low-tier-pig.slot.5",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "瑶首件普通装备能分享，需检查首件顺序；光环不默认多件叠加。"
+        }
+      ],
+      "position_plan": [
+        "备战让刘禅/明世隐作为可接受的夺取供体，瑶与保护位在出牌时移出随机一格；完成出牌后校准明世隐和瑶最近目标。",
+        "猪前排但避免同时承受全部爆发，功能位分散保护；保护与夺取站位分别服务不同阶段。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.32",
+          "name": "马可",
+          "condition_and_reason": "低阶出牌供宝藏，重点照顾适合同阶集中；不同品阶混编可改选阳光普照。"
+        },
+        {
+          "chessplayer_ref": "player.21",
+          "name": "镜",
+          "condition_and_reason": "可复制猪牌但技能费用递增，需要预算。"
+        },
+        {
+          "chessplayer_ref": "player.33",
+          "name": "白歌",
+          "condition_and_reason": "合成密度供即兴创作，但场上随机目标多时不保证猪复制。"
+        }
+      ],
+      "completion_markers": [
+        "猪觉醒且三阶合成能让多名有用单位成长。",
+        "猪能连续承伤施法，明世隐和瑶实际连接猪，留有回复或复生。"
+      ],
+      "transition_rules": [
+        "缺明世隐时仍可玩合成和承伤主线，不能计入临时等级永久保留。",
+        "缺猪或被压到来不及成长时，先保有战力的三阶队；高阶转型需处理等级迁移和装备适配。"
+      ],
+      "failure_modes": [
+        "误把夺取当全队合成无损加级，供体等级流失而防线变脆。",
+        "复制镜打在混杂手牌中，未复制核心；五阶辅助过多使重点照顾不覆盖猪。"
+      ],
+      "conditional_responses": [
+        "遇减疗或持续控制：增加免控/复生并调整前排承伤，收益依实际技能节奏。",
+        "敌方百分比生命伤害能削弱高血优势，应补防护和控制；不宣称此类英雄必胜。"
+      ],
+      "unknowns": [
+        "明世隐的具体转换结算时点需按客户端规则确认，不假设每次技能触发即时转换。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.sacrifice-lixin",
+      "name": "瑶妹李信牺牲收束",
+      "archetype_ref": "archetype.sacrifice-carry",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "为队友提供真正的牺牲效果，让其阵亡为李信增加临时等级；李信活到技能节点并获得复生保护，承担最后的战斗。",
+      "win_condition": "牺牲阶段积累李信战斗面板，后续多段剑气与百级复生完成收尾；控制死亡顺序比堆无关人数更重要。",
+      "mechanic_facts": [
+        "李信监听有牺牲效果的己方英雄阵亡，基础临时加七，觉醒十四；百级技能节点阵亡后狂暴形态完美复生。",
+        "苏烈自身牺牲永久成长，盾山牺牲产古币，钟馗可给自己及左右一格英雄赋予牺牲降级。",
+        "太乙真人开团使最近英雄获得复生；瑶的附身目标也取最近英雄。",
+        "瑶妹小鹿不是自动带牺牲；神奇小鹿·奉献的阵亡等级分配为额外分支，不能等同于李信必定监听的一次英雄牺牲。"
+      ],
+      "growth_engine": "队友带牺牲→阵亡→李信临时成长；苏烈/古币源保留跨回合成长。复生允许相关单位再次参战，但钟馗赋予的特定牺牲降级有单场次数限，不按复生无上限倍增。",
+      "resource_budget": "先买牺牲源和必要前排，再升级到四阶李信。不要将全部资源投入即将作为供体死亡的挂件；李信永久基础仍要足够承受成长前的攻击。",
+      "slots": [
+        {
+          "id": "lineup.sacrifice-lixin.slot.1",
+          "role": "最终输出",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5071",
+              "name": "李信"
+            }
+          ],
+          "reason": "承接牺牲临时等级并打多段技能",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sacrifice-lixin.slot.2",
+          "role": "低阶牺牲",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1941",
+              "name": "苏烈"
+            },
+            {
+              "hero_ref": "hero.5091",
+              "name": "盾山"
+            }
+          ],
+          "reason": "已明确有牺牲效果且提供额外资源",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sacrifice-lixin.slot.3",
+          "role": "赋予牺牲",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1751",
+              "name": "钟馗"
+            }
+          ],
+          "reason": "为指定空间内队友提供牺牲事件",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sacrifice-lixin.slot.4",
+          "role": "保护",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            },
+            {
+              "hero_ref": "hero.5051",
+              "name": "瑶"
+            }
+          ],
+          "reason": "复生与附身对准李信",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sacrifice-lixin.slot.5",
+          "role": "永久保留",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5011",
+              "name": "明世隐"
+            }
+          ],
+          "reason": "有限临时等级转永久，需校准最近连接",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.sacrifice-lixin.slot.6",
+          "role": "功能牺牲",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5211",
+              "name": "海月"
+            }
+          ],
+          "reason": "五阶针对高等级目标，不能作为起步必需",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        }
+      ],
+      "key_conditions": [
+        "普通阵亡不等于牺牲事件，缺牺牲词条的挂件死亡不能默认给李信加级。",
+        "李信应在牺牲链后仍存活；如果先被击杀，队友后续死亡的收益无法照计划兑现。",
+        "献祭之赐只有李信觉醒后才扩到敌方英雄牺牲；不把敌方全体阵亡视为触发。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "苏烈及盾山承伤和产币，获得钟馗后按左右一格布置牺牲；小鹿提供基础战力。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "找到李信后集中永久成长、觉醒与保护，检查他是否能活到队友牺牲之后。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "用太乙和瑶锁定李信，调整死亡顺序；决胜可减少无用成长位，但保留能触发牺牲的前排。"
+        }
+      ],
+      "awakening_priorities": [
+        "李信优先，钟馗加强降级效果；苏烈或产币源按永久成长/古币需求选择。",
+        "太乙强化保护、瑶改善附身；若李信在前期就死，先解决站位和生存再追更多觉醒。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.sacrifice-lixin.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643103",
+              "name": "无尽巨剑"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "暴击/免控/护盾回复按对手取舍；技能免控不等于全场免压制。"
+        },
+        {
+          "lineup_slot_ref": "lineup.sacrifice-lixin.slot.5",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "瑶分享首件普通装备；最近附身需李信而非苏烈。"
+        }
+      ],
+      "position_plan": [
+        "牺牲前排在首接战位置，李信稍后接战；钟馗左右一格覆盖需要的英雄。",
+        "让太乙/瑶最近的是李信；不要用普遍围护令李信变成最早承伤者。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.11",
+          "name": "瑶妹",
+          "condition_and_reason": "小鹿保前期并按奖励提供战斗分支，奉献需实际抽到。"
+        },
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "集中养李信永久基础，小队能缩小随机池但牺牲密度下降。"
+        },
+        {
+          "chessplayer_ref": "player.39",
+          "name": "明先生",
+          "condition_and_reason": "卦象用于买关键四阶与补保护，能力不自动制造牺牲。"
+        }
+      ],
+      "completion_markers": [
+        "有李信、有效牺牲来源与保护，死亡顺序能让李信吃到成长。",
+        "李信在本场到关键技能节点而且存活到输出时段。"
+      ],
+      "transition_rules": [
+        "缺李信时保留古币或苏烈前排成长，转玄策等已可工作的路线。",
+        "转海月需重新检查最大生命、护盾与死亡目标，不只把李信换成另一个牺牲英雄。"
+      ],
+      "failure_modes": [
+        "没有牺牲词条却以人数估算李信收益。",
+        "李信先死、最近保护给错人、过度削弱永久基础。"
+      ],
+      "conditional_responses": [
+        "敌方切入李信：改变对位并补复生；钟馗降级必须由目标实际击败牺牲单位才发生。",
+        "敌方依赖等级最高单核：海月可作为有条件针对组件，但要确实触发牺牲并击中最高等级英雄。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.heleukong",
+      "name": "常小娥海陆空临时复制",
+      "archetype_ref": "archetype.temporary-copy",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "以少量英雄集中永久等级，裴擒虎整备随机复制队友等级为临时等级，司空震同步队友临时成长；海月补护盾与牺牲功能。",
+      "win_condition": "提高司空震真实等级以放宽临时同步上限，达到百级雷霆之王节点，靠全场法术伤害和链式普攻输出。",
+      "mechanic_facts": [
+        "常小娥小菟助力随机英雄，初始加二，累计使用令以后等级增益提高。",
+        "裴擒虎整备随机取得其他英雄等级一半的临时等级，觉醒取全部，不可叠加。",
+        "司空震复制其他英雄临时等级的半数，基础不超过自身真实等级一倍；觉醒复制全部，上限为真实等级两倍。",
+        "海月获得护盾可将部分转为最大生命；其牺牲目标为敌方最高等级英雄。"
+      ],
+      "growth_engine": "随机棋手永久成长→队友等级池→裴擒虎临时复制→司空震受上限约束的同步；护盾→海月生命→牺牲伤害是另一条路径。没有永久等级转移把全队“全部喂给”司空震。",
+      "resource_budget": "前期少量高性价比单位缩小随机目标池；代价是防线人数少。保留升级到五阶找司空震的资源，不为降低随机性把己方唯一前排卖掉。",
+      "slots": [
+        {
+          "id": "lineup.heleukong.slot.1",
+          "role": "输出",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5371",
+              "name": "司空震"
+            }
+          ],
+          "reason": "真实等级与临时等级同步核心",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.heleukong.slot.2",
+          "role": "临时来源",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5021",
+              "name": "裴擒虎"
+            }
+          ],
+          "reason": "整备复制其他英雄等级",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.heleukong.slot.3",
+          "role": "早期等级与防线",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1941",
+              "name": "苏烈"
+            }
+          ],
+          "reason": "低阶永久成长地基，承伤功能",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.heleukong.slot.4",
+          "role": "护盾牺牲",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5211",
+              "name": "海月"
+            }
+          ],
+          "reason": "护盾转生命与高等级目标功能",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.heleukong.slot.5",
+          "role": "保护",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            },
+            {
+              "hero_ref": "hero.5051",
+              "name": "瑶"
+            }
+          ],
+          "reason": "按容量和司空震生存补保护",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.heleukong.slot.6",
+          "role": "永久保留",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5011",
+              "name": "明世隐"
+            }
+          ],
+          "reason": "连接主C保留有限临时等级，不是必需无限循环",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        }
+      ],
+      "key_conditions": [
+        "裴擒虎随机取其他英雄，并不指定苏烈；加入低等级挂件可能稀释复制质量。",
+        "司空震真实等级不足时，额外临时来源超过倍率上限的部分不能按无限收益估值。",
+        "海月不是复制发动机；没有她也需单独评估临时链和防线，不因名称“海陆空”强行集齐。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "用苏烈等稳定前排积累等级，控制场上随机池但仍保证战力；按生命余量决定升级速度。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "裴擒虎觉醒后观察其随机复制对象；找到司空震后优先增加真实等级和保护。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "司空震达到节点后按临时上限重新分配资源；海月护盾和复生作为补强，必要时增加功能位而非永远四人。"
+        }
+      ],
+      "awakening_priorities": [
+        "裴擒虎觉醒提高复制量，司空震觉醒提高同步比例和上限。",
+        "海月按护盾/牺牲用途决定，前排若无法承伤先补生存。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.heleukong.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643207",
+              "name": "金色圣剑"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            },
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "圣剑把法攻转普攻与攻速，免控防技能中断，回蓝利于百级前施法。"
+        },
+        {
+          "lineup_slot_ref": "lineup.heleukong.slot.4",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            },
+            {
+              "equipment_ref": "equipment.643805",
+              "name": "御灵之纱"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "护盾收益可支持海月生命转换，仍要确认实际盾与牺牲时机。"
+        }
+      ],
+      "position_plan": [
+        "司空震置受保护的输出位，苏烈优先接战；裴擒虎按闪现镜像调整。",
+        "若加明世隐或瑶，校准最近目标为司空震；不同阶段的供体与保护不要混淆。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "累计技能永久增益适合小队集中；随机目标无法直接指定苏烈。"
+        },
+        {
+          "chessplayer_ref": "player.22",
+          "name": "乔汐",
+          "condition_and_reason": "六级召来高临时英雄是独立变体，要等专属并确认同步窗口。"
+        }
+      ],
+      "completion_markers": [
+        "裴擒虎提供实际临时等级，司空震真实基础足够支持同步。",
+        "司空震可以安全进入主要输出节点，海月与前排不是同时被清空。"
+      ],
+      "transition_rules": [
+        "没司空震时以已养前排或裴擒虎战力保血，评估到五阶的生命预算。",
+        "临时已触上限时改买真实等级、保护或控制，别继续堆无效临时来源。"
+      ],
+      "failure_modes": [
+        "把常小娥随机技能写成指定加级，把裴擒虎随机写成固定复制苏烈。",
+        "高临时面板掩盖司空震真实等级不足，保护不足导致开局被杀。"
+      ],
+      "conditional_responses": [
+        "敌方钟馗钩最远：改变最远目标和核心位置，不能仅以围住司空震保证安全。",
+        "高法防目标：增加穿透或控制；等级优势仍需转成真实伤害输出。"
+      ],
+      "unknowns": [
+        "裴擒虎整备与司空震监听的具体顺序、上限是单次还是累计限制应以客户端最新规则确认；本稿按卡面保守不超算。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.qiaoxi-sikong",
+      "name": "乔汐六级传送司空震",
+      "archetype_ref": "archetype.temporary-summon",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "乔汐六级专属带来高临时等级战场英雄，司空震借助其他英雄的临时等级收益提高自身战力；同时用古币或其他永久来源养其真实基础。",
+      "win_condition": "活到专属和司空震齐备，形成法术普攻与全场爆发；六级前的保血、六级后的真实上限都是核心决策。",
+      "mechanic_facts": [
+        "乔汐主动随机获取二至五阶转瞬英雄牌；秘技每四回合获得一张潮汐的交响，使用该牌后才随机给五名场上英雄各加八等级。",
+        "潮起潮落开战传送一个临时百级英雄，每回合加四十，无卡牌效果。",
+        "司空震同步其他英雄临时等级受真实等级倍率限制。",
+        "无卡牌效果的传送英雄仍提供战斗体，但不能假定带来原英雄登场、整备或牺牲卡牌能力。"
+      ],
+      "growth_engine": "升级到六级→专属传送临时英雄→司空震临时同步；古币/棋手奖励→司空震真实基础。此链的开战事件顺序与同步结果尚未确定，不能靠英雄名单保证必定吃满。",
+      "resource_budget": "升级费用、抽到司空震的购买支出与保血投入同时预算。为速六放弃全部英雄会承担真实淘汰风险；当生命不足时应先购买能减伤的过渡战力。",
+      "slots": [
+        {
+          "id": "lineup.qiaoxi-sikong.slot.1",
+          "role": "核心",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5371",
+              "name": "司空震"
+            }
+          ],
+          "reason": "真实等级与装备必须一起成长",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.qiaoxi-sikong.slot.2",
+          "role": "永久转化",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5011",
+              "name": "明世隐"
+            }
+          ],
+          "reason": "保留有限临时等级，连接主C",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.qiaoxi-sikong.slot.3",
+          "role": "前排功能",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1751",
+              "name": "钟馗"
+            },
+            {
+              "hero_ref": "hero.1441",
+              "name": "程咬金"
+            }
+          ],
+          "reason": "保血与牺牲功能",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.qiaoxi-sikong.slot.4",
+          "role": "复生",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            }
+          ],
+          "reason": "对准主C",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.qiaoxi-sikong.slot.5",
+          "role": "永久资源",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1731",
+              "name": "李元芳"
+            },
+            {
+              "hero_ref": "hero.5091",
+              "name": "盾山"
+            },
+            {
+              "hero_ref": "hero.1361",
+              "name": "武则天"
+            }
+          ],
+          "reason": "古币来源与效率按容量补",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.qiaoxi-sikong.slot.6",
+          "role": "控制成长",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1061",
+              "name": "小乔"
+            },
+            {
+              "hero_ref": "hero.1481",
+              "name": "姜子牙"
+            }
+          ],
+          "reason": "只有实际登场/出牌来源时才加入其成长，不是固定挂件",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        }
+      ],
+      "key_conditions": [
+        "需要乔汐六级专属和已在场司空震；未六级不能把传送英雄计入战力。",
+        "临时英雄不含卡牌效果，不可自动激活对应阵营引擎。",
+        "司空震真实基础仍是同步上限，不能从传送等级推当前必然满级。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "用过渡前排和有效经济牌减损耗，按生命预算升级；乔汐随机技能得牌后评估实际可用性。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "找到司空震先养真实等级与装备，补明世隐、太乙；为六级专属留支出。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "开战观察传送与司空震临时等级变化，若未获得预期同步按真实战力调整；专属出现后不再盲目只搜临时来源。"
+        }
+      ],
+      "awakening_priorities": [
+        "司空震觉醒提高同步比率与上限，明世隐扩大有限保留额度。",
+        "前排和太乙按生存缺口，不能为主C觉醒忽略保血。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.qiaoxi-sikong.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643207",
+              "name": "金色圣剑"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            },
+            {
+              "equipment_ref": "equipment.643202",
+              "name": "虚无法杖"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "法攻普攻、免控与穿透按对手；不同装备服务不同伤害瓶颈。"
+        },
+        {
+          "lineup_slot_ref": "lineup.qiaoxi-sikong.slot.3",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            },
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "过渡防线只投入能保护主C的必要装备。"
+        }
+      ],
+      "position_plan": [
+        "太乙和明世隐最近连接司空震；钟馗在前侧钩人，按敌方最远目标调整。",
+        "传送落点与随机英雄不可由固定七人坐标保证，最终棋盘留保护容错。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.22",
+          "name": "乔汐",
+          "condition_and_reason": "该变体必须使用并取得六级专属；其它棋手不能继承传送机制。"
+        }
+      ],
+      "completion_markers": [
+        "六级专属到位，司空震真实基础与装备足够。",
+        "实际开战获得预期临时同步；未观察到时按未接通处理。"
+      ],
+      "transition_rules": [
+        "无法速六时转河洛古币主C或已有高等级英雄保血，不以“前期不买牌”为硬规则。",
+        "未抽到司空震时利用传送本身的战斗体搭配现有输出，停止为名册耗尽能量。"
+      ],
+      "failure_modes": [
+        "空场速六先淘汰；把随机传送当固定有牌面效果的五阶英雄。",
+        "同步上限或开战顺序不符预期，仍用理论百级额外值当实际战力。"
+      ],
+      "conditional_responses": [
+        "遇早期压血阵容：降低升级速度、补防线，专属尚未来不能为未来战力硬扛。",
+        "遇控制主C：保护与站位优先，不把随机增援当确定解除控制。"
+      ],
+      "unknowns": [
+        "传送生成单位时司空震临时监听是否在同窗口接收、具体累积上限尚未确定。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.coin-mulan",
+      "name": "庄小鱼河洛古币复生花木兰",
+      "archetype_ref": "archetype.coin-resurrection",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "河洛组件产古币，古币一面增加永久等级，一面按当回合张数换花木兰复生；复生后继续牺牲临时成长与技能输出。",
+      "win_condition": "把多条生命和牺牲临时等级兑现为持续近战输出；不会因名字“无限复活”无条件不死。",
+      "mechanic_facts": [
+        "花木兰本回合每使用五张古币得一次复生，牺牲增加十临时等级，觉醒二十；卡面当前总次数是动态状态。",
+        "普通复生基础有单英雄单回合十次限制，完美复生不能直接套用普通规则。",
+        "李元芳整备指定最近河洛用古币，武则天提高古币等级并登场给精致古币，盾山等提供牺牲产币。",
+        "庄小鱼五、六级如梦似幻基于场上英雄和至少三名阵营生成手牌，梦幻引擎按场上阵容替换商店，完整生成规则未明。"
+      ],
+      "growth_engine": "古币源→当回合用牌计数/永久等级→花木兰复生次数→牺牲临时等级→续战。需区分手上古币牌、自动使用古币、当回合计数，跨回合不能把五张凑数。",
+      "resource_budget": "花木兰五阶前先建立能打的古币主线；保留升级与买五阶能量。后期优先把当轮古币凑成完整五张阈值，再评估额外永久成长，而不是永久囤着转瞬古币。",
+      "slots": [
+        {
+          "id": "lineup.coin-mulan.slot.1",
+          "role": "主输出",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1541",
+              "name": "花木兰"
+            }
+          ],
+          "reason": "古币换复生与牺牲战斗成长",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.coin-mulan.slot.2",
+          "role": "稳定古币",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1731",
+              "name": "李元芳"
+            }
+          ],
+          "reason": "整备最近河洛给古币",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.coin-mulan.slot.3",
+          "role": "古币效率",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1361",
+              "name": "武则天"
+            }
+          ],
+          "reason": "等级效率及登场产币",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.coin-mulan.slot.4",
+          "role": "额外古币",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5131",
+              "name": "上官婉儿"
+            },
+            {
+              "hero_ref": "hero.1441",
+              "name": "程咬金"
+            },
+            {
+              "hero_ref": "hero.5091",
+              "name": "盾山"
+            }
+          ],
+          "reason": "按各自触发条件补来源",
+          "min_count": 0,
+          "max_count": 3,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.coin-mulan.slot.5",
+          "role": "复生保护",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            }
+          ],
+          "reason": "最近目标给复生",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.coin-mulan.slot.6",
+          "role": "牺牲功能",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1751",
+              "name": "钟馗"
+            },
+            {
+              "hero_ref": "hero.1311",
+              "name": "李白"
+            }
+          ],
+          "reason": "钟馗降级；李白强化古币临时等级为另一用途",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        }
+      ],
+      "key_conditions": [
+        "必须本回合使用古币达阈值，背包有五张和上回合用过五张都不等价。",
+        "李元芳和太乙最近目标需花木兰；有武则天时花木兰并非自动最近。",
+        "庄小鱼梦幻手牌需要场上阵营条件，不保证生成指定古币数量或指定英雄。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "先用玄策或其他河洛承接古币，形成产币队；别在五阶前为花木兰名字丢掉战力。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "逐步升级找花木兰、武则天、太乙；确认每回合能使用几张古币，选择够阈值的保护方案。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "当轮古币先对准花木兰并记录总数；站位锁复生目标，输出装备跟随等级转养，最后留足防线。"
+        }
+      ],
+      "awakening_priorities": [
+        "花木兰觉醒提高每次牺牲临时收益，古币来源觉醒提高牌质量或数量。",
+        "武则天觉醒提高产币与等级效率；太乙按保护缺口。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.coin-mulan.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643103",
+              "name": "无尽巨剑"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "暴击、复生后护盾回复、免控按当前形态与对手取舍。"
+        },
+        {
+          "lineup_slot_ref": "lineup.coin-mulan.slot.5",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "太乙作功能位时回蓝服务其技能，但开团复生不靠先施法。"
+        }
+      ],
+      "position_plan": [
+        "花木兰需要接战，但不让其在保护未生效时被集中秒杀；最近复生目标固定。",
+        "钟馗牺牲范围、李元芳给币范围与花木兰输出位置分别校准。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.31",
+          "name": "庄小鱼",
+          "condition_and_reason": "五/六级手牌和梦幻商店补阵营资源，具体生成不能保证；至少三名河洛条件先满足。"
+        },
+        {
+          "chessplayer_ref": "player.43",
+          "name": "嬴律",
+          "condition_and_reason": "全局决策另改资源条件，不能当古币发动机。"
+        },
+        {
+          "chessplayer_ref": "player.38",
+          "name": "孙小宾",
+          "condition_and_reason": "可记录古币/英雄效果牌重放，需按记录容量和顺序处理。"
+        }
+      ],
+      "completion_markers": [
+        "每回合能达至少一档古币五张阈值，花木兰等级足够输出。",
+        "复生目标正确且复生后有时间施法，产币源能继续工作。"
+      ],
+      "transition_rules": [
+        "古币量不足时先用一条成熟古币主C维持战力，花木兰不必强行当单核。",
+        "转李白等临时增益路线时，复生用途和古币用途重分配，不混算同一张牌收益。"
+      ],
+      "failure_modes": [
+        "误记跨回合古币累计；复生次数上限外继续按无限估值。",
+        "花木兰未成型先拆已成熟玄策，或保护被武则天抢走。"
+      ],
+      "conditional_responses": [
+        "敌方持续控场：免控保护让复生后有输出窗口，压制例外仍需避开。",
+        "敌方高等级单核：牺牲降级与海月可能有作用，但得满足击败者和最高等级目标条件。"
+      ],
+      "unknowns": [
+        "自动使用古币是否计入全部使用次数监听应按实际客户端确认；普通与完美复生的组合优先级未明。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.summon-pool",
+      "name": "明先生整备召唤泳池派对",
+      "archetype_ref": "archetype.prep-summon",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "朵莉亚把整备扩成永久成长，在水域内提供治疗和回蓝；米莱狄与鲁班大师制造战斗单位，因缘图腾把普攻次数换成全队成长。",
+      "win_condition": "靠不断召唤和续航维持场面，因缘图腾、主C与召唤单位完成持续输出；苍爆炸或大司命吞召唤是替代分支。",
+      "mechanic_facts": [
+        "朵莉亚响应整备成长，技能水域范围治疗和法力恢复，高等级节点改变持续时间与回蓝。",
+        "米莱狄整备提高召唤临时等级并养核心，鲁班大师在场召唤同等级机关傀儡。",
+        "少司缘提供因缘图腾，己方单位累计二十五次普攻可使全体英雄永久加级。",
+        "苍使己方召唤单位阵亡产生范围物理伤害；往生图腾会吸收特定一至三阶召唤物，变为图腾等级和法力。"
+      ],
+      "growth_engine": "整备→朵莉亚团队等级/水域续航→召唤单位输出→因缘图腾普攻永久成长。苍路线以死亡爆发兑现；往生图腾路线以吞召唤换成长，和保留召唤物普攻不是同一份收益。",
+      "resource_budget": "优先稳定朵莉亚与整备源，升级买鲁班大师前保住可作战的米莱狄体系。明先生卦象丰降低本回合能量收入，刷新多不代表有钱买牌；卦象节刷新更贵，应少无目的刷牌。",
+      "slots": [
+        {
+          "id": "lineup.summon-pool.slot.1",
+          "role": "续航引擎",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1591",
+              "name": "朵莉亚"
+            }
+          ],
+          "reason": "整备监听和水域",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.summon-pool.slot.2",
+          "role": "整备源",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5041",
+              "name": "米莱狄"
+            },
+            {
+              "hero_ref": "hero.5141",
+              "name": "亚连"
+            }
+          ],
+          "reason": "至少有实际整备来源",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.summon-pool.slot.3",
+          "role": "前排整备",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1831",
+              "name": "雅典娜"
+            }
+          ],
+          "reason": "开团触发日落海整备",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.summon-pool.slot.4",
+          "role": "图腾",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5771",
+              "name": "少司缘"
+            }
+          ],
+          "reason": "因缘普攻成长",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.summon-pool.slot.5",
+          "role": "召唤输出",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5251",
+              "name": "鲁班大师"
+            }
+          ],
+          "reason": "高阶机械傀儡",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.summon-pool.slot.6",
+          "role": "输出变体",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5631",
+              "name": "海诺"
+            },
+            {
+              "hero_ref": "hero.3551",
+              "name": "艾琳"
+            },
+            {
+              "hero_ref": "hero.1771",
+              "name": "苍"
+            },
+            {
+              "hero_ref": "hero.5171",
+              "name": "大司命"
+            }
+          ],
+          "reason": "海诺核心/艾琳射手/苍死亡爆炸/大司命吞召唤互为有成本分支",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        }
+      ],
+      "key_conditions": [
+        "水域治疗、回蓝要看英雄实际位置和等级节点，不能默认全屏永久回复。",
+        "苍伤害按召唤及死亡条件，具体每次召唤增加量未给出时不计算总爆炸。",
+        "往生图腾吸收低阶召唤会减少场面普攻单位；不把被吞的仆从继续算进因缘计数。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "用低阶整备和防线保血，卦象按买牌或刷新需求选择。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "朵莉亚觉醒后补少司缘与米莱狄，朝鲁班大师的五阶节点推进；不要求所有高阶开局在场。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "选择主分支后配装：海诺/艾琳走输出，苍走召唤死亡，大司命走吞召唤；每轮观察水域覆盖与场面留存。"
+        }
+      ],
+      "awakening_priorities": [
+        "朵莉亚优先覆盖全队，整备源随后增加事件；米莱狄提高召唤增益。",
+        "鲁班大师强化机械傀儡，苍/大司命等按实际分支选择；不是所有分支全觉醒才成型。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.summon-pool.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            },
+            {
+              "equipment_ref": "equipment.643207",
+              "name": "金色圣剑"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "回蓝维持水域，圣剑补普攻节奏；治疗护盾强化是否贡献足够依站位和战斗时间。"
+        },
+        {
+          "lineup_slot_ref": "lineup.summon-pool.slot.3",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643501",
+              "name": "霸者重铠"
+            },
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "雅典娜防线保护水域和召唤核心。"
+        }
+      ],
+      "position_plan": [
+        "核心围绕水域形成合理覆盖，避免密集到被一次范围伤害全清；前排与后排分工。",
+        "机关傀儡和仆从的实际位置不可仅从英雄七人坐标推定，观察召唤路径调整。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.39",
+          "name": "明先生",
+          "condition_and_reason": "丰换刷新、节换能量，选择取决于购买预算和关键件缺口；命运馈赠按实际备选。"
+        },
+        {
+          "chessplayer_ref": "player.40",
+          "name": "闹闹",
+          "condition_and_reason": "日落海选择可补部分引擎，但鲁班大师/少司缘跨阵营不会由该技能保证。"
+        }
+      ],
+      "completion_markers": [
+        "朵莉亚和整备来源到位，水域能覆盖有用战斗单位。",
+        "召唤来源与所选输出分支实际接通，有前排与持续伤害。"
+      ],
+      "transition_rules": [
+        "没有鲁班大师可继续米莱狄加现有主C，别为名册强搜到淘汰。",
+        "转大司命需接受低阶召唤被吞、普攻成长变少；转苍需确认单位能在有价值位置阵亡。"
+      ],
+      "failure_modes": [
+        "混合多个召唤变体却未接通任何一条兑现链。",
+        "水域没覆盖核心或图腾被清，仍按全队无限回血估算。"
+      ],
+      "conditional_responses": [
+        "敌方范围爆发：分散输出和召唤源，先保证第二批单位有机会出现。",
+        "敌方长控核心：给回蓝/召唤源保护，少司缘图腾只有存活并累计普攻才继续成长。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.yuhuan-sunset",
+      "name": "玉环日落海出牌循环变体",
+      "archetype_ref": "archetype.music-card-cycle",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "日落海整备承担稳定成长，玉环按三张非觉醒英雄牌的组合补等级或英雄牌；露娜把新增出牌接回整备。是有条件续接的出牌体系，非保证永动。",
+      "win_condition": "先形成可靠日落海战力，再用匹配的指法和整备重复提高永久基础及核心等级；安琪拉/艾琳/海诺按实际装备承担输出。",
+      "mechanic_facts": [
+        "玉环每打三张非觉醒英雄牌触发指法；三张相同、同品阶、同阵营分别关联轮指、扫拂、吟揉。",
+        "轮指使下个指法触发两次，扫拂为场上最低两名英雄增加等于棋手等级的等级，吟揉给随机转瞬英雄牌。",
+        "累计六次弹奏获惊鸿调，重奏已记录前六次指法；秘技及专属演奏次数有限。",
+        "露娜登场随机重触整备，朵莉亚将整备变为英雄与核心成长；姜子牙只监听当前不在场阵营及无阵营英雄牌。"
+      ],
+      "growth_engine": "三张合格出牌→指法→等级或随机转瞬牌→更多出牌；露娜牌→整备链。用轮指安排下一次指法收益，但同一组合同时相同/同阶/同阵营时的优先级未知，不据此算确定产牌率。",
+      "resource_budget": "先为稳定整备引擎和升级留能量，再买能完成有效三张组的牌；不是任何三张都会补牌。惊鸿调记录前六次，早期随意混出会影响后期重放价值。",
+      "slots": [
+        {
+          "id": "lineup.yuhuan-sunset.slot.1",
+          "role": "整备监听",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1591",
+              "name": "朵莉亚"
+            }
+          ],
+          "reason": "稳定成长基线",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.yuhuan-sunset.slot.2",
+          "role": "整备来源",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5141",
+              "name": "亚连"
+            },
+            {
+              "hero_ref": "hero.5041",
+              "name": "米莱狄"
+            }
+          ],
+          "reason": "按容量组合",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.yuhuan-sunset.slot.3",
+          "role": "输出",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1421",
+              "name": "安琪拉"
+            },
+            {
+              "hero_ref": "hero.3551",
+              "name": "艾琳"
+            },
+            {
+              "hero_ref": "hero.5631",
+              "name": "海诺"
+            }
+          ],
+          "reason": "需要已养等级和适配装备",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.yuhuan-sunset.slot.4",
+          "role": "重触整备",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1461",
+              "name": "露娜"
+            },
+            {
+              "hero_ref": "hero.1831",
+              "name": "雅典娜"
+            }
+          ],
+          "reason": "露娜在出牌期，雅典娜在开团期",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.yuhuan-sunset.slot.5",
+          "role": "跨阵营补益",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1481",
+              "name": "姜子牙"
+            }
+          ],
+          "reason": "只有持续打出满足阵营条件的英雄牌时有用",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        }
+      ],
+      "key_conditions": [
+        "仅非觉醒英雄牌推进三张指法；打出觉醒牌不能自动计入。",
+        "吟揉奖励随机转瞬牌，没有指定露娜保证。",
+        "姜子牙需当前未上场阵营或无阵营英雄牌；日落海已在场时，继续日落海出牌不能当它必定触发。",
+        "惊鸿调重奏指法不是重放过去所有英雄卡的牌面效果。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "先保战力并学习当前指法计数，组出有用三张而不强凑损害防线的牌。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "朵莉亚和有效整备到位后规划指法记录；同阶补最低等级、同阵营补随机牌的价值按具体缺口估算。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "露娜或雅典娜接通整备；惊鸿调用于已有有效记录的爆发，最后按输出与保护收束，不能把有限演奏当无限资源。"
+        }
+      ],
+      "awakening_priorities": [
+        "朵莉亚和整备源优先保证基线；露娜提高重触数量。",
+        "主C及雅典娜按即时战力，姜子牙只在触发密度高时投资。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.yuhuan-sunset.slot.3",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            },
+            {
+              "equipment_ref": "equipment.643207",
+              "name": "金色圣剑"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "根据安琪拉/海诺施法或艾琳普攻选择，不能三者照抄同一优先级。"
+        },
+        {
+          "lineup_slot_ref": "lineup.yuhuan-sunset.slot.4",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            },
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "若雅典娜作前排则防护；露娜作输出则重新选择攻击装备。"
+        }
+      ],
+      "position_plan": [
+        "整备阶段亚连目标按装备件数；开战主C按敌方切入保护。",
+        "前排、朵莉亚水域覆盖、后排输出三者都需存在，不能只为随机池净化成一人。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.25",
+          "name": "玉环",
+          "condition_and_reason": "必须实际得到对应指法与秘技；按已拥有的分支构筑该出牌变体。"
+        }
+      ],
+      "completion_markers": [
+        "稳定日落海引擎可独立工作，玉环出牌有可兑现收益。",
+        "至少能通过有效组合补到牌或关键等级，随机奖励没出现时仍有可战棋盘。"
+      ],
+      "transition_rules": [
+        "指法续接不足时退回日落海稳定整备，不追加无限搜牌损耗。",
+        "若转三分招募倒转需补曹操、甄姬、小乔；玉环本身不能替代这三张桥梁。"
+      ],
+      "failure_modes": [
+        "把吟揉当指定露娜，把轮指当重新打英雄牌。",
+        "惊鸿调记录混乱、有限奖励耗尽后仍预测源源不断产牌。"
+      ],
+      "conditional_responses": [
+        "敌方抢节奏：先保持稳定整备和前排，停止为指法强买无战力牌。",
+        "敌方控制主C：按已选输出加保护，不能以指法数量代替伤害。"
+      ],
+      "unknowns": [
+        "多条件指法优先级与轮指连续重奏的消耗关系未指定；循环率未确定。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.liubang-shield",
+      "name": "明先生毁图炸盾刘邦",
+      "archetype_ref": "archetype.destroy-totem-shield",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "每轮刘邦开团摧毁己方图腾换永久等级，瑶和刘邦提供护盾；扁鹊让护盾被击破时转成周边法术伤害。",
+      "win_condition": "刘邦以持续永久成长、护盾和近身炸盾输出赢战斗；太乙复生延长实际输出时间。",
+      "mechanic_facts": [
+        "刘邦开团摧毁所有己方图腾，每个图腾永久加五级，觉醒十级；基础收益按数量而非图腾等级。",
+        "刘邦技能不断提供自身护盾，四十级节点给周围一格友军护盾，百级节点追加破盾伤害。",
+        "扁鹊监听友方单位护盾被击破，按该英雄最大生命的比例对周围造成法术伤害，冷却一秒；觉醒提高比例。",
+        "瑶附身最近英雄提供护盾，太乙最近目标复生；灵祭升华使图腾被毁时最高等级大河得图腾一半等级的临时等级。"
+      ],
+      "growth_engine": "图腾数量→刘邦每轮永久成长→最大生命/技能节点→盾被击破→扁鹊范围伤害；灵祭升华才另引入图腾等级收益。基础打法不是“图腾等级越高刘邦基础加级越多”。",
+      "resource_budget": "升级找到四阶刘邦越早，留给重复毁图的回合越多；找齐必要功能后不必每轮为图腾等级耗尽刷新。若拿灵祭升华才提高图腾等级投资的优先级。",
+      "slots": [
+        {
+          "id": "lineup.liubang-shield.slot.1",
+          "role": "核心",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1491",
+              "name": "刘邦"
+            }
+          ],
+          "reason": "毁图永久成长、近战护盾",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.liubang-shield.slot.2",
+          "role": "图腾一",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5771",
+              "name": "少司缘"
+            }
+          ],
+          "reason": "每轮提供因缘图腾",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.liubang-shield.slot.3",
+          "role": "图腾二",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1891",
+              "name": "鬼谷子"
+            }
+          ],
+          "reason": "每轮提供先知图腾",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.liubang-shield.slot.4",
+          "role": "图腾三",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5171",
+              "name": "大司命"
+            }
+          ],
+          "reason": "补往生图腾；缺失会少一份加级而非整条链不存在",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.liubang-shield.slot.5",
+          "role": "炸盾监听",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1191",
+              "name": "扁鹊"
+            }
+          ],
+          "reason": "将破盾兑现为范围法伤",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.liubang-shield.slot.6",
+          "role": "护盾与复生",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5051",
+              "name": "瑶"
+            },
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            }
+          ],
+          "reason": "分别满足最近英雄的附身和复生目标条件",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        }
+      ],
+      "key_conditions": [
+        "己方图腾主动被刘邦摧毁，不能同时依赖存活图腾给敖隐持续成长。",
+        "扁鹊需要护盾实际被击破并有敌人在周边；敌方一直不打刘邦不等于自动炸全场。",
+        "灵祭升华接收者是等级最高大河；需保持刘邦满足，不是看到该天赋就默认落在刘邦。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "用弈星、干将等有即时价值单位过渡；明先生卦象节供能量，升级同时保有防线。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "找到刘邦接通至少有效图腾与瑶，刘邦优先觉醒；补扁鹊和太乙，卦象丰用于关键件刷新时仍要留购买能量。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "核心七人齐后按生命和装备强化刘邦/瑶，图腾基础等级不是无条件必投项；灵祭升华到手再切成长资源分配。"
+        }
+      ],
+      "awakening_priorities": [
+        "刘邦觉醒翻倍每图永久加级，扁鹊觉醒提高破盾伤害比例。",
+        "瑶、太乙按保护需求；图腾来源只有功能或灵祭升华收益需要时优先觉醒。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.liubang-shield.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643802",
+              "name": "贤者之书"
+            },
+            {
+              "equipment_ref": "equipment.643105",
+              "name": "纯净苍穹"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "提高法术输出与生存；纯净苍穹清负面并随时间加法攻。"
+        },
+        {
+          "lineup_slot_ref": "lineup.liubang-shield.slot.6",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "瑶首件分享与护盾回复收益；装备给瑶或太乙前先确认目标及用途。"
+        }
+      ],
+      "position_plan": [
+        "刘邦接战，瑶和太乙最近均对准刘邦；扁鹊在后侧避免早死。",
+        "刘邦四十级周围一格友军护盾要实际覆盖需要的英雄；遇远程对手需解决近身炸盾的命中。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.39",
+          "name": "明先生",
+          "condition_and_reason": "前期节支持升级购买，中后期丰帮助找关键牌；命运馈赠的等级选项可补团队。"
+        },
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "随机永久成长可补刘邦基础，但不能代替图腾与扁鹊。"
+        }
+      ],
+      "completion_markers": [
+        "刘邦觉醒、有效图腾数量稳定，破盾监听与保护接通。",
+        "能接近敌人并在护盾消耗时造成实际周边伤害。"
+      ],
+      "transition_rules": [
+        "缺扁鹊时仍有毁图永久成长，按普通近战主C保血；不要把未有的炸盾算战力。",
+        "转保图敖隐必须去掉刘邦或停止以毁图作发动机，重新建设图腾存活保护。"
+      ],
+      "failure_modes": [
+        "以图腾等级替代图腾数量估基础成长。",
+        "瑶/太乙保护错目标；盾一直未破或破盾周边无敌人导致伤害无法兑现。"
+      ],
+      "conditional_responses": [
+        "敌方远程风筝：调整刘邦与对手对位，有闪现装备时才考虑突脸，不能凭空赋予闪现。",
+        "敌方控制或减疗：免控、复生和护盾可提供条件性缓解，仍需看压制与实际技能时序。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.haiyue-shield-sacrifice",
+      "name": "海月护盾转生命牺牲爆发",
+      "archetype_ref": "archetype.shield-sacrifice",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "给海月提供护盾，让其将部分护盾转为最大生命，利用牺牲锁定敌方最高等级英雄；复生和护盾来源形成多次作战的机会。",
+      "win_condition": "让海月有足够生命基础并在有价值时阵亡，针对最高等级目标产生控制与爆发，其余队友完成收尾。",
+      "mechanic_facts": [
+        "海月生命恢复效果降低，获得护盾可将四分之一护盾值转为最大生命；不是治疗量直接变生命。",
+        "海月牺牲锁敌方最高等级英雄控制四秒，公开卡面以海月生命相关比例计算伤害；觉醒提高比例。",
+        "海月四十级施法能获得可叠加护盾，百级首技能制造水月幻境，定期给友军盾和法力。",
+        "瑶附身给护盾、刘邦四十级向周围一格给盾、太乙开团给最近英雄复生均有目标/等级条件。"
+      ],
+      "growth_engine": "真实等级与护盾→海月生命规模→牺牲爆发→复生续战。护盾供给、阵亡时点和后续收尾输出缺一不可；只堆生命但始终不阵亡也不兑现牺牲主线。",
+      "resource_budget": "这是高阶有条件转型，前期用已有队保血并养主C基础；获得海月与有效护盾前不卖掉成熟输出。不要拿强回复装备时把其效果当无衰减治疗。",
+      "slots": [
+        {
+          "id": "lineup.haiyue-shield-sacrifice.slot.1",
+          "role": "牺牲核心",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5211",
+              "name": "海月"
+            }
+          ],
+          "reason": "盾转生命与高等级目标牺牲",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.haiyue-shield-sacrifice.slot.2",
+          "role": "护盾供给",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5051",
+              "name": "瑶"
+            },
+            {
+              "hero_ref": "hero.1491",
+              "name": "刘邦"
+            }
+          ],
+          "reason": "瑶最近附身；刘邦四十级需实际邻近",
+          "min_count": 0,
+          "max_count": 2,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.haiyue-shield-sacrifice.slot.3",
+          "role": "复生",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            }
+          ],
+          "reason": "延长作战与可能再次牺牲",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.haiyue-shield-sacrifice.slot.4",
+          "role": "牺牲功能",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1751",
+              "name": "钟馗"
+            }
+          ],
+          "reason": "降级或赋词条，单场限制要遵守",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.haiyue-shield-sacrifice.slot.5",
+          "role": "破盾副线",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1191",
+              "name": "扁鹊"
+            }
+          ],
+          "reason": "盾破法伤，不等于盾转换本身就触发",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.haiyue-shield-sacrifice.slot.6",
+          "role": "收尾输出",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5371",
+              "name": "司空震"
+            },
+            {
+              "hero_ref": "hero.5071",
+              "name": "李信"
+            }
+          ],
+          "reason": "需独立等级/输出来源，不能一组无成长辅助拖到终局",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        }
+      ],
+      "key_conditions": [
+        "海月目标是敌方等级最高英雄，不能指定后排或生命最少目标；并列处理未知。",
+        "刘邦护盾团队覆盖要达到四十级并在一格内；瑶最近附身必须海月。",
+        "海月伤害类型可能随版本变化：本模板不以无视防御作为当前保证，需依适用卡面重新选装备。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "保留可工作主线，先积累足够英雄等级与保护资源。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "拿海月后搭配实际能提供盾的单位，优先达到自身护盾节点；观察是不是过早死亡。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "校准海月的接战、复生与护盾范围，让其牺牲影响目标；保留一个真实能收尾的输出或控制位。"
+        }
+      ],
+      "awakening_priorities": [
+        "海月觉醒提高牺牲收益，护盾源按目标/节点加强。",
+        "太乙或瑶若保护不成立先处理距离和能力，觉醒不能修正选错目标。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.haiyue-shield-sacrifice.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            },
+            {
+              "equipment_ref": "equipment.643805",
+              "name": "御灵之纱"
+            },
+            {
+              "equipment_ref": "equipment.643404",
+              "name": "聚灵水晶"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "护盾强化/开战盾/受击回蓝分别支持转换与施法；回复收益受海月自身恢复限制。"
+        },
+        {
+          "lineup_slot_ref": "lineup.haiyue-shield-sacrifice.slot.2",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "瑶普通首件分享按规则处理，最近附身优先。"
+        }
+      ],
+      "position_plan": [
+        "海月应能承受第一波并获得盾，但不能永久不接战；靠近刘邦得到团队盾。",
+        "保留后侧收尾输出，别让海月阵亡同时全队崩溃。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.11",
+          "name": "瑶妹",
+          "condition_and_reason": "小鹿提供独立战力，奉献分支需实际获得；不保证小鹿死亡算海月牺牲。"
+        },
+        {
+          "chessplayer_ref": "player.39",
+          "name": "明先生",
+          "condition_and_reason": "能量/刷新在高阶转型中有帮助，非护盾自动来源。"
+        }
+      ],
+      "completion_markers": [
+        "护盾实际进入海月并改变生命，牺牲可影响需要处理的最高等级目标。",
+        "还有收尾单位，复生与护盾目标正确。"
+      ],
+      "transition_rules": [
+        "敌方最高等级只是无威胁诱饵时，将海月视为功能而非单核胜负保证。",
+        "伤害类型更新后按新卡面重估法防和穿透，不能保留旧版“真伤自爆必杀”结论。"
+      ],
+      "failure_modes": [
+        "忽视海月治疗限制，盾/回血混算；前排太少导致拿盾前阵亡。",
+        "最高等级目标不是主C，牺牲后没人收尾；版本变更仍套旧伤害类型。"
+      ],
+      "conditional_responses": [
+        "敌方主动堆非核心等级诱导：调整核心策略，不把最高等级自动等同最危险目标。",
+        "敌方远程回避：需要保证海月接战/牺牲时机和后排收尾，不能仅靠理论最大生命推胜利。"
+      ],
+      "unknowns": [
+        "海月相关更新预告与实装需区分；最高等级平手处理、盾转生命有效期、复生后生命继承均未指定。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.spell-permanent",
+      "name": "孙膑施法永久成长小队",
+      "archetype_ref": "archetype.spell-growth",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "孙膑使各英雄累计施法次数转换为该施法英雄自身的永久等级，以回蓝、低法力上限与续航争取更多施法；可用刘禅和明世隐做另一条临时保留副线。",
+      "win_condition": "撑住战斗并让主输出连续施法，逐回合积累永久成长，靠技能节点、范围伤害与控制收尾。",
+      "mechanic_facts": [
+        "孙膑监听己方英雄施法，每名英雄累计三次技能使该英雄永久加一级，觉醒两级。",
+        "刘禅按每次施法给施法者临时等级；明世隐连接最近英雄有限转换，和孙膑的三次永久奖励不是同一效果。",
+        "干将莫邪的专属双剑·雄由在场效果提供，穿戴者为干将时降低法力上限；不能拿它给任意英雄套同等低蓝。",
+        "法源之杯每秒回法力，聚灵水晶受击回法力；自然法杖按消耗法力控制而非按技能次数。"
+      ],
+      "growth_engine": "回蓝/生存→每名英雄自身累计施法次数→该施法英雄自身永久等级→技能节点与生存输出提高。刘禅临时→明世隐有限永久是额外路径，必须各自计条件。",
+      "resource_budget": "英雄牌只追一个输出会丢掉孙膑、回蓝和前排条件；先买能让当场多放技能的资源，再计长期成长。战斗过短时，纯长期施法投资可能赶不上当前损耗。",
+      "slots": [
+        {
+          "id": "lineup.spell-permanent.slot.1",
+          "role": "成长监听",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1181",
+              "name": "孙膑"
+            }
+          ],
+          "reason": "永久施法成长，可作为输出",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.spell-permanent.slot.2",
+          "role": "主施法者",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1181",
+              "name": "孙膑"
+            },
+            {
+              "hero_ref": "hero.1821",
+              "name": "干将莫邪"
+            },
+            {
+              "hero_ref": "hero.1901",
+              "name": "诸葛亮"
+            }
+          ],
+          "reason": "选已养成且装备适配的英雄，不要求全同时上",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.spell-permanent.slot.3",
+          "role": "施法临时",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1141",
+              "name": "刘禅"
+            }
+          ],
+          "reason": "每次施法临时加级",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.spell-permanent.slot.4",
+          "role": "永久转换",
+          "requirement": "optional",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5011",
+              "name": "明世隐"
+            }
+          ],
+          "reason": "配刘禅需连接主输出",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.spell-permanent.slot.5",
+          "role": "续航",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1591",
+              "name": "朵莉亚"
+            },
+            {
+              "hero_ref": "hero.1761",
+              "name": "杨玉环"
+            }
+          ],
+          "reason": "水域范围或群体技能按版本与节点",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.spell-permanent.slot.6",
+          "role": "防线保护",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1201",
+              "name": "白起"
+            },
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            }
+          ],
+          "reason": "前排或复生防止主C先死",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        }
+      ],
+      "key_conditions": [
+        "孙膑奖励给具体施法者，不是全队每三次合计给主C。",
+        "必须真实施法，不把技能动画段数/伤害次数当施法次数。",
+        "双剑·雄降低法力上限只对干将，水域回蓝需实际范围与节点。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "孙膑低阶起步，有前排再配回蓝，尽量让己方能完成多次技能。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "确定主输出，优先孙膑觉醒；根据装备补刘禅临时、明世隐保留或朵莉亚续航。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "达到输出关键节点后补免控和减疗/穿透，前排能撑但输出不足时提高伤害而非只加回蓝。"
+        }
+      ],
+      "awakening_priorities": [
+        "孙膑优先翻倍永久增益；主输出技能节点与觉醒按实际效果。",
+        "刘禅、明世隐只有副线接通时才投资，不能为完整名单强买。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.spell-permanent.slot.2",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            },
+            {
+              "equipment_ref": "equipment.643208",
+              "name": "自然法杖"
+            },
+            {
+              "equipment_ref": "equipment.643202",
+              "name": "虚无法杖"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "回蓝增加技能机会，控制按法力消耗，穿透改善实际法伤。"
+        },
+        {
+          "lineup_slot_ref": "lineup.spell-permanent.slot.6",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643404",
+              "name": "聚灵水晶"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "前排受击回蓝与续航，按所选英雄需要。"
+        }
+      ],
+      "position_plan": [
+        "前排接战、主输出后置，回蓝范围和明世隐连接由实际距离确定。",
+        "需要朵莉亚水域时确保输出在覆盖内，遇范围伤害分散不可把全队强挤一格。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "永久等级补单核基础；随机助力仍不可指定。"
+        },
+        {
+          "chessplayer_ref": "player.20",
+          "name": "阿离",
+          "condition_and_reason": "指定输出传送与护盾可提供生存，但转移后是否仍覆盖水域需观察。"
+        }
+      ],
+      "completion_markers": [
+        "主输出在战斗中能多次施法，实际获得永久等级。",
+        "技能节点和防线都工作，不只在备战显示高等级。"
+      ],
+      "transition_rules": [
+        "战斗短到无法累计技能时，先转即时伤害/生存。",
+        "缺副线不拆孙膑主线；缺主输出可用已有法术英雄继续养。"
+      ],
+      "failure_modes": [
+        "每次伤害算技能次数，错误夸大成长。",
+        "输出被控至战斗结束，理论回蓝没有兑现。"
+      ],
+      "conditional_responses": [
+        "敌方沉默/压制：免控是否有效按具体控制判断，靠站位与保护减少中断。",
+        "高法防：回蓝再高也需要穿透或其它伤害类型，不能以施法次数推必胜。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.hanxin-events",
+      "name": "韩信整备开团永久养成",
+      "archetype_ref": "archetype.event-single-carry",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "韩信直接监听整备和开团获得永久等级，以低成本事件组件持续养成；将临时图腾或核心收益作为副线，而不是必须凑纯大河。",
+      "win_condition": "韩信达到技能节点后利用闪现、击飞和击杀攻速继续输出，前排与保护给其创造首轮攻击时间。",
+      "mechanic_facts": [
+        "韩信每当己方英雄触发整备或开团，永久加两级，觉醒四级，带闪现。",
+        "狂铁等低阶整备每轮发生，雅典娜开团能重触日落海整备，孙悟空整备还为闪现英雄加级。",
+        "瑶、虞姬等英雄开团能触发韩信监听；图腾开团属于特殊单位事件，韩信卡面指定英雄，不能无条件同算。",
+        "韩信击败敌军增加基础攻速，技能节点改善控制和连续突进。"
+      ],
+      "growth_engine": "有效英雄整备/开团次数→韩信永久等级→技能/击杀战斗反馈。纯阵营人数不是发动机，多阵营事件英雄可以组合，但占容量与防线资源。",
+      "resource_budget": "先建立能打的低阶过渡，升级四阶找韩信；中期买一个能每轮触发的事件英雄要比无联动挂件更有长期价值，仍需保有前排。",
+      "slots": [
+        {
+          "id": "lineup.hanxin-events.slot.1",
+          "role": "核心",
+          "requirement": "required",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1501",
+              "name": "韩信"
+            }
+          ],
+          "reason": "整备/开团监听与闪现输出",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.hanxin-events.slot.2",
+          "role": "稳定整备",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.5031",
+              "name": "狂铁"
+            },
+            {
+              "hero_ref": "hero.5141",
+              "name": "亚连"
+            },
+            {
+              "hero_ref": "hero.1281",
+              "name": "曹操"
+            }
+          ],
+          "reason": "选择已有引擎；曹操需有效三分登场目标才有额外牌面收益",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.hanxin-events.slot.3",
+          "role": "开团",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1831",
+              "name": "雅典娜"
+            },
+            {
+              "hero_ref": "hero.1741",
+              "name": "虞姬"
+            },
+            {
+              "hero_ref": "hero.5051",
+              "name": "瑶"
+            }
+          ],
+          "reason": "按阵营和图腾/整备条件选择，不要求同时全上",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.hanxin-events.slot.4",
+          "role": "闪现整备",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1671",
+              "name": "孙悟空"
+            }
+          ],
+          "reason": "为韩信等闪现额外成长",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.hanxin-events.slot.5",
+          "role": "保护",
+          "requirement": "priority",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            }
+          ],
+          "reason": "最近韩信复生",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "choose_by_capacity_and_phase"
+        },
+        {
+          "id": "lineup.hanxin-events.slot.6",
+          "role": "事件放大",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1561",
+              "name": "张良"
+            },
+            {
+              "hero_ref": "hero.1591",
+              "name": "朵莉亚"
+            }
+          ],
+          "reason": "张良监听开团，朵莉亚监听整备，按所选来源配",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        }
+      ],
+      "key_conditions": [
+        "韩信监听“英雄”与张良监听“单位”语义不同，不把所有图腾开团直接算韩信增长。",
+        "雅典娜随机重触日落海整备，要在场有可用日落海整备目标。",
+        "孙悟空夺取需控制邻近供体，加入他并非无代价。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "先保低阶稳定队，收集整备/开团来源；按血线升级，不空等四阶。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "韩信到位后觉醒，接通至少稳定事件源，补孙悟空或保护；不追名册全员才开始工作。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "按敌方镜像给韩信找安全首杀；事件增益已够时增加复生与控制，降低被开局秒掉风险。"
+        }
+      ],
+      "awakening_priorities": [
+        "韩信优先提高每次永久成长；有效事件源觉醒增加次数或功能。",
+        "保护缺失先太乙，不为了第四个增益挂件拆防线。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.hanxin-events.slot.1",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643103",
+              "name": "无尽巨剑"
+            },
+            {
+              "equipment_ref": "equipment.643301",
+              "name": "影牙"
+            },
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "攻击、攻速或免控按首杀瓶颈选择。"
+        },
+        {
+          "lineup_slot_ref": "lineup.hanxin-events.slot.5",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "保护位自身位置需接近有效目标，光环不默认全队。"
+        }
+      ],
+      "position_plan": [
+        "韩信按镜像位置切入；太乙最近目标需韩信，不被孙悟空抢走。",
+        "孙悟空出牌时单独摆可接受供体，最终开战站位再围绕前排与切入。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.24",
+          "name": "常小娥",
+          "condition_and_reason": "小队随机永久增益支持韩信基础，需要有效事件源仍在。"
+        },
+        {
+          "chessplayer_ref": "player.40",
+          "name": "闹闹",
+          "condition_and_reason": "选择大河时能补韩信等来源，跨阵营事件源需另外取得。"
+        }
+      ],
+      "completion_markers": [
+        "每轮有多个有效英雄整备/开团事件，韩信能实际成长。",
+        "韩信进入战斗能完成首杀或控制，不只等级高。"
+      ],
+      "transition_rules": [
+        "只有图腾组件时转敖隐保图队可能更合适；没有韩信不强拆成熟虞姬。",
+        "多名闪现抢资源时按首杀与保护决定留谁，不假设人人同步无损。"
+      ],
+      "failure_modes": [
+        "事件类型或对象错误，按图腾数量虚增韩信收益。",
+        "韩信切最硬前排被控，永久等级未转成有效输出。"
+      ],
+      "conditional_responses": [
+        "遇诱饵后排：根据实际镜像位与锁定调整。",
+        "遇压制：炽热支配者不免疫，改变对位并补控制。"
+      ],
+      "unknowns": [],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
+    },
+    {
+      "id": "lineup.sunxiaobin-replay",
+      "name": "孙小宾英雄效果重放循环",
+      "archetype_ref": "archetype.card-replay",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "mode_ref": "mode.wanxiang_tournament",
+      "template_type": "conditional_progressive_route",
+      "power_rank": null,
+      "logic": "把有价值的英雄牌和效果牌安排进记录窗口，下回合重放其效果，用一次资源投资产生后续增益；可围绕三分登场、日落海整备或河洛古币，具体模板必须选定一条主线。",
+      "win_condition": "将重放收益及时换成等级、保护和输出，利用下一轮资源爆发维持战力；不是把全部历史卡牌无上限重演。",
+      "mechanic_facts": [
+        "孙小宾技能随机重放上回合使用过的一张非觉醒英雄牌或效果牌。",
+        "首次单回合打出八张英雄/效果牌奖励时之回环；使用后记录后续非觉醒英雄牌与效果牌，最多八张，下回合开始再触发。",
+        "六级专属提供可记录十二张的永恒时之回环。",
+        "觉醒英雄牌不在对应非觉醒记录范围；重触登场与重新使用英雄牌语义不同。"
+      ],
+      "growth_engine": "有效出牌→任务与记录→下一轮随机重放/有限序列重触→主线等级或资源。记录张数、触发时点和随机目标限制收益，不能把八张记录当全手牌永久复制。",
+      "resource_budget": "先凑能自然打八张的主线，避免为任务花钱买八张无效牌。记录牌必须在有用牌之前使用，留足备战操作时间；回合结束前检查转瞬牌及剩余容量。",
+      "slots": [
+        {
+          "id": "lineup.sunxiaobin-replay.slot.1",
+          "role": "主线引擎",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1281",
+              "name": "曹操"
+            },
+            {
+              "hero_ref": "hero.1591",
+              "name": "朵莉亚"
+            },
+            {
+              "hero_ref": "hero.1731",
+              "name": "李元芳"
+            }
+          ],
+          "reason": "三分/整备/古币三选主线，不是三者任意混放即成型",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.sunxiaobin-replay.slot.2",
+          "role": "重放增益",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1061",
+              "name": "小乔"
+            },
+            {
+              "hero_ref": "hero.1241",
+              "name": "周瑜"
+            },
+            {
+              "hero_ref": "hero.1461",
+              "name": "露娜"
+            }
+          ],
+          "reason": "登场/整备出牌的有效收益",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.sunxiaobin-replay.slot.3",
+          "role": "资源放大",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1361",
+              "name": "武则天"
+            },
+            {
+              "hero_ref": "hero.1211",
+              "name": "芈月"
+            }
+          ],
+          "reason": "古币或效果牌主线需满足阵营/目标",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.sunxiaobin-replay.slot.4",
+          "role": "输出",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1231",
+              "name": "吕布"
+            },
+            {
+              "hero_ref": "hero.1421",
+              "name": "安琪拉"
+            },
+            {
+              "hero_ref": "hero.1541",
+              "name": "花木兰"
+            }
+          ],
+          "reason": "按选定主线、等级和装备选择",
+          "min_count": 1,
+          "max_count": 1,
+          "selection": "one_of"
+        },
+        {
+          "id": "lineup.sunxiaobin-replay.slot.5",
+          "role": "保护",
+          "requirement": "alternatives",
+          "candidate_heroes": [
+            {
+              "hero_ref": "hero.1861",
+              "name": "太乙真人"
+            },
+            {
+              "hero_ref": "hero.5051",
+              "name": "瑶"
+            }
+          ],
+          "reason": "校准最近目标，提升重放后的战斗兑现",
+          "min_count": 0,
+          "max_count": 1,
+          "selection": "one_of"
+        }
+      ],
+      "key_conditions": [
+        "先使用时之回环，再打希望被记录的牌；此前用过的牌不自动进其后续记录。",
+        "随机上回合牌重放不能当指定关键牌；减少无效候选会提高目标集中程度，但具体抽样概率未知。",
+        "重放能否推进合成、使用次数等监听需确认，不把触发牌面自动算全套出牌事件。"
+      ],
+      "phases": [
+        {
+          "phase": "前期：形成可用基础",
+          "decisions": "用一条能成型的基础队保血，留有价值英雄/效果牌为任务累计。"
+        },
+        {
+          "phase": "中期：接通成长引擎",
+          "decisions": "任务可自然达八张时取得时之回环，按目标整理记录：先放记录牌、再放核心牌，避免浪费条目。"
+        },
+        {
+          "phase": "后期：转为获胜棋盘",
+          "decisions": "下一轮收益到账后查实际等级、手牌和监听，填补即时战力；专属十二张按实际能用的数量安排。"
+        }
+      ],
+      "awakening_priorities": [
+        "按所选主线先觉醒核心监听/产牌，不追统一觉醒名单。",
+        "孙小宾记录对象排除觉醒英雄牌，觉醒牌应优先在合适时间正常使用。"
+      ],
+      "equipment_plan": [
+        {
+          "lineup_slot_ref": "lineup.sunxiaobin-replay.slot.4",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643803",
+              "name": "炽热支配者"
+            },
+            {
+              "equipment_ref": "equipment.643502",
+              "name": "不死鸟之眼"
+            },
+            {
+              "equipment_ref": "equipment.643402",
+              "name": "法源之杯"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "主C是吕布/安琪拉/花木兰时用途不同，按类型选，不把记录数量当装备收益。"
+        },
+        {
+          "lineup_slot_ref": "lineup.sunxiaobin-replay.slot.5",
+          "equipment_choices": [
+            {
+              "equipment_ref": "equipment.643603",
+              "name": "近卫荣耀"
+            }
+          ],
+          "requirement": "alternatives",
+          "condition_and_reason": "功能位保护需要实际邻近，不随卡牌重放自动全场覆盖。"
+        }
+      ],
+      "position_plan": [
+        "记录相关牌含最近目标时，应保证下轮触发前的目标条件仍正确；不能只在记录时摆一次。",
+        "最终按所选主线摆前排、输出和保护，不为手牌循环忽略开战站位。"
+      ],
+      "chessplayer_choices": [
+        {
+          "chessplayer_ref": "player.38",
+          "name": "孙小宾",
+          "condition_and_reason": "该变体必须是孙小宾；棋手随机重放与有限记录两种机制分别处理。"
+        }
+      ],
+      "completion_markers": [
+        "有可独立获胜的主线及有价值记录序列，下一轮能实际兑现。",
+        "记录已生效且未超容量，不把待触发序列当当前战力。"
+      ],
+      "transition_rules": [
+        "无法自然达任务时继续基础队，不强凑八张。",
+        "重放的具体监听未确认时只按已可见牌面收益估值，不依赖未知事件套利。"
+      ],
+      "failure_modes": [
+        "记录牌打晚、容量被无效牌填满、把觉醒牌计入序列。",
+        "上轮随机牌池太杂，期望关键牌必重放；未到下回合就已淘汰。"
+      ],
+      "conditional_responses": [
+        "敌方当前回合强压：保血优先，未来重放不能挽回本轮淘汰。",
+        "敌方针对主线输出：记录保护牌需仍满足目标条件，否则改当轮装备和站位。"
+      ],
+      "unknowns": [
+        "重放与各类购买/合成/效果牌使用监听的关系、重复重放的记录继承规则尚未确定，不发布无限重放结论。"
+      ],
+      "minimum_conditions": [
+        "本局模式与阵营池允许取得核心英雄。",
+        "上阵容量与实际卡面满足所选阶段，不把全部候选英雄当同时必上。",
+        "核心资源链、输出与必要保护到位，随机或平手条件按条目处理。",
+        "装备为可替代方向，天赋只有实际取得后才计入，不要求推荐件全部拥有。"
+      ],
+      "slot_semantics": "槽位表示功能，不是互斥实体；同一英雄可承担多个功能但只占一个上阵名额。候选集合按阶段选择，全部名字之和不是固定容量。"
     }
   ]
 }

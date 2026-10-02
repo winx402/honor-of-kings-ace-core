@@ -1,0 +1,67 @@
+{
+  "knowledge_version": "0.2.0",
+  "entries": [
+    {
+      "id": "rule.overtime_draw.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "准备倒计时结束自动开战；双方提前准备完毕可提前开战。常规战斗超时进入加时，加时未决则平局，双方受到伤害。",
+      "values": {
+        "preparation_seconds": null,
+        "combat_seconds": null,
+        "overtime_seconds": null
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.initial_capacity.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "未受其他效果修改时，初始上阵人数为五。",
+      "values": {
+        "initial_capacity": 5
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.defeat_damage.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "败方棋手扣血为随轮次增加的固定伤害，加上存活英雄数乘二，并有每轮伤害上限。",
+      "values": {
+        "survivor_damage_per_hero": 2,
+        "base_damage_by_round": null,
+        "counted_special_units": null,
+        "damage_cap_rule": null
+      },
+      "current_applicability": "unspecified",
+      "unknowns": [
+        "伤害上限具体数值以及是否随轮次改变。"
+      ]
+    },
+    {
+      "id": "rule.capacity_growth.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "棋手升至三级及五级，各增加一个上阵名额。",
+      "values": {
+        "additional_capacity_levels": [
+          3,
+          5
+        ],
+        "unmodified_capacity_by_level": [
+          5,
+          5,
+          6,
+          6,
+          7,
+          7
+        ]
+      },
+      "current_applicability": "unspecified",
+      "value_derivations": {
+        "unmodified_capacity_by_level": "由初始5与棋手3级/5级各增加1推导；未含其他容量修正。"
+      }
+    }
+  ]
+}

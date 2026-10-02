@@ -1,0 +1,34 @@
+{
+  "game_version": null,
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "rule.player.50.secret_cumulative_thresholds",
+      "owner_ref": "player.50",
+      "card_ref": "card.derived.665001",
+      "summary": "枪炮艺术按累计造成的棋手伤害判定，累计达到10、15、20、30时分别奖励1张武器改造。",
+      "unknowns": [
+        "未给出额外超过30后的奖励；不能把各档数值当作重新计数的阶段增量。"
+      ]
+    },
+    {
+      "id": "rule.player.51.secret_cumulative_thresholds",
+      "owner_ref": "player.51",
+      "card_ref": "card.derived.665101",
+      "summary": "驱鬼!加大力度!按累计获得的神秘力量判定，累计达到5、10、20、35时分别奖励1张灵异探测大改装。",
+      "unknowns": [
+        "累计获得不等于当前尚存神秘力量；没有额外超过35后的奖励说明。"
+      ]
+    },
+    {
+      "id": "rule.unit.deer_equipment_base",
+      "owner_ref": "unit.yaomei-deer",
+      "equipment_ref": "equipment.641008",
+      "summary": "小鹿的庇护使穿戴者承受伤害的30%转给小鹿；巨型玩偶给小鹿30等级并取得该装备。",
+      "unknowns": [
+        "此关联不提供小鹿独立面板、初始等级、人口或放置位置；不能用装备卡图当作小鹿单位面板。"
+      ]
+    }
+  ],
+  "knowledge_version": "0.2.0"
+}

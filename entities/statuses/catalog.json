@@ -1,6 +1,13 @@
 {
-  "knowledge_version": "0.1.0",
+  "game_version": null,
   "scope_id": "scope.cn.wanxiang.undated",
+  "global_boundaries": [
+    "状态同名不证明同类伤害、免疫、叠加、净化或结算规则完全相同。",
+    "各状态没有从单个来源推定的统一时长；数值、目标、触发上限和持续期仍由对应能力负责。",
+    "冻结战斗控制与昭君冻结待转化分别建模。",
+    "印记按各施加来源分辨，不能共用叠层计数。"
+  ],
+  "数量": 25,
   "entries": [
     {
       "id": "status.temporary_level",
@@ -12,35 +19,571 @@
     {
       "id": "status.shield",
       "name": "护盾",
-      "definition": "由具体技能或装备提供的防护量；数值、伤害类型限制与持续时间按对应能力。",
-      "examples": [
-        "ability.hero.5221.1"
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "按施加能力得到一份防护量；护盾的存在与被击破可作为其他能力的触发条件。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "刘禅自身获100护盾，持续4秒。",
+          "content_ref": "ability.hero.1141.1"
+        },
+        {
+          "local_rule": "友军触发强化弹簧获最大生命50%的磁力护盾；盾存续时伤害增加50%。",
+          "content_ref": "card.derived.93506"
+        },
+        {
+          "local_rule": "援护战术提供本回合护盾，量随战术牌累计使用数变化。",
+          "content_ref": "effect.313001"
+        }
       ],
       "unknowns": [
-        "不同护盾间的优先级和叠加规则"
+        "伤害类型适用范围、护盾消耗顺序、多盾叠加与跨战斗保留规则未统一给出。"
       ]
     },
     {
       "id": "status.stun",
       "name": "眩晕",
-      "definition": "战斗控制状态；具体范围、目标和时长按施加能力。",
-      "examples": [
-        "ability.hero.1941.1"
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "由能力施加的行动控制状态；目标、范围与控制时长按施加能力。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "刘禅攻击目标眩晕1秒。",
+          "content_ref": "ability.hero.1141.1"
+        },
+        {
+          "local_rule": "荆棘牢笼每5秒给最远敌人2秒眩晕。",
+          "content_ref": "talent.636516"
+        },
+        {
+          "local_rule": "枫叶舞转移后眩晕附近敌人2秒。",
+          "content_ref": "card.derived.92016"
+        }
       ],
       "unknowns": [
-        "免疫、净化、重叠与计时通用规则"
+        "普攻、施法、移动的完整动作限制，以及净化、免疫、重复计时和已开始动作如何交互，未统一说明。"
       ]
     },
     {
       "id": "status.silence",
       "name": "沉默",
-      "definition": "限制技能使用的战斗控制状态；目标与持续条件按具体能力。",
-      "examples": [
-        "ability.hero.1181.1"
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "用于限制技能使用的控制词条；每个能力自行规定施加对象和期限。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "孙膑炸弹仍附着时沉默承载目标。",
+          "content_ref": "milestone.hero.1181.100"
+        },
+        {
+          "local_rule": "干扰弹命中者沉默5秒。",
+          "content_ref": "card.derived.95030"
+        },
+        {
+          "local_rule": "飞行器自爆命中敌人沉默8秒。",
+          "content_ref": "card.derived.95157"
+        }
       ],
       "unknowns": [
-        "免疫、净化及与施法中动作交互的通用规则"
+        "被动技能、正在施法的动作、法力恢复及净化/免疫交互未给统一规则。"
+      ]
+    },
+    {
+      "id": "status.invulnerable",
+      "name": "无敌",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "由具体能力赋予的伤害防护状态，常被用于致命伤害保护；其状态与不可选中可同时存在，不能仅有其中一个时补出另一个。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "名刀·司命首次致命伤害给1.5秒无敌与不可选中。",
+          "content_ref": "equipment.643703"
+        },
+        {
+          "local_rule": "瞬影连斩触发闪现后无敌0.5秒。",
+          "content_ref": "talent.638008"
+        },
+        {
+          "local_rule": "山鬼失活期间无敌且不可选中，法力满后恢复生命重回战斗。",
+          "content_ref": "ability.unit.31280.1"
+        }
+      ],
+      "unknowns": [
+        "无敌是否一律阻断伤害、控制与持续效果，以及无敌期间仍能否攻击/施法，未给统一说明。"
+      ]
+    },
+    {
+      "id": "status.untargetable",
+      "name": "不可选中",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "单位在能力规定的条件下不能被选作目标；具体技能可只给不可选中，也可同时给无敌。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "露娜突击期间不能被选中。",
+          "content_ref": "ability.hero.1461.1"
+        },
+        {
+          "local_rule": "名刀同时给无敌与不可选中。",
+          "content_ref": "equipment.643703"
+        }
+      ],
+      "unknowns": [
+        "已在途攻击、范围伤害、锁定技能与持续效果是否继续生效，未统一说明。"
+      ]
+    },
+    {
+      "id": "status.knockup",
+      "name": "击飞",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "能力造成的击飞控制；部分能力明确将击飞与眩晕并列，二者不默认共享所有判定。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "大乔波浪明确击飞并眩晕1秒。",
+          "content_ref": "ability.hero.1911.1"
+        },
+        {
+          "local_rule": "韩信每第3次普攻击飞1秒。",
+          "content_ref": "ability.hero.1501.1"
+        },
+        {
+          "local_rule": "猩红神兽10级技能追加1秒击飞。",
+          "content_ref": "milestone.unit.60110.1.10"
+        }
+      ],
+      "unknowns": [
+        "免控、净化、位移距离与击飞中动作规则未统一说明。"
+      ]
+    },
+    {
+      "id": "status.taunt",
+      "name": "嘲讽",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "使周围敌人受到以施加者为中心的嘲讽控制；目标范围与期限取各能力。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "白起嘲讽周围1格敌人1秒。",
+          "content_ref": "ability.hero.1201.1"
+        },
+        {
+          "local_rule": "小鹿每3秒嘲讽周围1格敌人1次，正文未给每次持续时长。",
+          "content_ref": "card.derived.91110"
+        },
+        {
+          "local_rule": "分身生成时嘲讽周围敌人2秒。",
+          "content_ref": "card.derived.92023"
+        }
+      ],
+      "unknowns": [
+        "是否强制普攻施加者、限制哪些动作、目标死亡后何时解除，以及免疫/净化交互未统一给出。"
+      ]
+    },
+    {
+      "id": "status.suppression",
+      "name": "压制",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "由技能明确施加的控制词条；部分免控能力明确把压制列为例外。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "张良压制1名敌人1.5秒，同时按自己的节奏造成法伤。",
+          "content_ref": "ability.hero.1561.1"
+        },
+        {
+          "local_rule": "东皇契约压制目标5秒；距离过远提前断开是该技能特有规则。",
+          "content_ref": "ability.hero.1871.1"
+        },
+        {
+          "local_rule": "完美演出前15秒免控，压制除外。",
+          "content_ref": "card.derived.664108"
+        }
+      ],
+      "unknowns": [
+        "不可根据单个免控例外推定所有免控都无法抵抗压制；动作限制与解除方式未有统一规则。"
+      ]
+    },
+    {
+      "id": "status.root",
+      "name": "禁锢",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "凝滞弹头明确施加的独立控制词条，与缴械同时存在。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "狙击弹命中目标被禁锢4秒。",
+          "content_ref": "card.derived.95033"
+        }
+      ],
+      "unknowns": [
+        "禁锢具体阻断移动、位移或施法的范围，以及免疫/净化规则，未有统一说明。"
+      ]
+    },
+    {
+      "id": "status.disarm",
+      "name": "缴械",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "凝滞弹头明确施加的独立控制词条，与禁锢同时存在。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "狙击弹命中目标被缴械4秒。",
+          "content_ref": "card.derived.95033"
+        }
+      ],
+      "unknowns": [
+        "缴械的普通攻击限制、强化普攻与技能攻击边界，以及免疫/净化规则，未有统一说明。"
+      ]
+    },
+    {
+      "id": "status.control_immunity",
+      "name": "控制免疫",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "能力规定期间免疫控制，适用控制种类及明确例外按该能力。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "炽热支配者在首次受控后免控15秒，压制除外。",
+          "content_ref": "equipment.643803"
+        },
+        {
+          "local_rule": "星源装甲施法后免控2秒。",
+          "content_ref": "card.derived.41124"
+        },
+        {
+          "local_rule": "枫影无拘转移后免控5秒。",
+          "content_ref": "card.derived.92012"
+        }
+      ],
+      "unknowns": [
+        "各能力未列举的控制种类是否均在免疫范围、既有控制是否立即清除，未有统一说明。"
+      ]
+    },
+    {
+      "id": "status.slow",
+      "name": "移动速度降低",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "施加能力降低目标移动速度，幅度、时间和层数按其正文。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "飞行器命中单位移速降低50%，持续3秒。",
+          "content_ref": "card.derived.95146"
+        },
+        {
+          "local_rule": "猪八戒每层永久成长同时移速降低1%；这是自身成长代价。",
+          "content_ref": "ability.hero.5111.1"
+        }
+      ],
+      "unknowns": [
+        "最低移动速度、加减速叠加顺序与哪些效果归属控制未统一说明。"
+      ]
+    },
+    {
+      "id": "status.attack_speed_reduction",
+      "name": "攻击速度降低",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "按具体能力减少目标攻击速度；不是移动减速的同一属性。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "极寒风暴令普攻者攻速降低20%，持续2秒。",
+          "content_ref": "equipment.643602"
+        },
+        {
+          "local_rule": "飞行器命中时偷取目标总攻速30%，持续3秒；接收者未明确。",
+          "content_ref": "card.derived.95146"
+        }
+      ],
+      "unknowns": [
+        "攻速上下限、不同减攻速叠加与免疫规则未统一说明。"
+      ]
+    },
+    {
+      "id": "status.healing_reduction",
+      "name": "治疗效果降低",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "受影响单位的治疗效果按施加能力减弱，比例与期限按对应正文。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "吕布技能令命中敌人治疗降低70%，持续5秒。",
+          "content_ref": "ability.hero.1231.1"
+        },
+        {
+          "local_rule": "干扰弹命中后5秒治疗效果降低70%。",
+          "content_ref": "card.derived.95030"
+        },
+        {
+          "local_rule": "飞行器命中后3秒治疗效果降低50%。",
+          "content_ref": "card.derived.95144"
+        }
+      ],
+      "unknowns": [
+        "是否包含所有回复、生命上限变化与复生，以及多个减疗的合并规则未统一说明。"
+      ]
+    },
+    {
+      "id": "status.lifesteal_reduction",
+      "name": "吸血效果降低",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "明确针对吸血的削弱词条；不能由只写治疗效果降低的能力推定也会削弱吸血。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "红莲炎甲命中敌人后治疗与吸血分别降低50%，持续3秒。",
+          "content_ref": "equipment.643504"
+        }
+      ],
+      "unknowns": [
+        "物理/法术吸血与汲取是否共享定义，多来源叠加与最低效果未统一说明。"
+      ]
+    },
+    {
+      "id": "status.vulnerability",
+      "name": "受到伤害增加",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "施加于受击者，使其承受的指定伤害提高；伤害类型、比例和期限随能力。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "姬小满40级印记维持5秒，姬小满及友军对该目标的伤害增加40%。",
+          "content_ref": "milestone.hero.5641.40"
+        },
+        {
+          "local_rule": "飞行器命中使目标本回合受到技能伤害增加50%，明确不可叠加。",
+          "content_ref": "card.derived.95159"
+        }
+      ],
+      "unknowns": [
+        "全伤与技能伤害如何分类、各来源同类增伤叠加及计算顺序未统一给出。"
+      ]
+    },
+    {
+      "id": "status.damage_amplification",
+      "name": "造成伤害增加",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "施加于伤害发出者，提高其造成伤害；与攻击力增加、目标受到伤害增加分别记录。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "全体英雄开战伤害提升百分数为已打出宝藏数乘1%。",
+          "content_ref": "card.derived.663207"
+        },
+        {
+          "local_rule": "持有磁力护盾期间造成伤害增加50%。",
+          "content_ref": "card.derived.93506"
+        }
+      ],
+      "unknowns": [
+        "多个造成伤害增加的叠加算法、对真实伤害和棋手伤害的适用范围未统一说明。"
+      ]
+    },
+    {
+      "id": "status.damage_reduction",
+      "name": "受到伤害减少",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "削减受击者承受的伤害；可为固定数值或百分比，不能混为同一公式。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "铠每次伤害减少15点且最低5点，这是该技能规则。",
+          "content_ref": "ability.hero.1931.1"
+        },
+        {
+          "local_rule": "星源合金盾承受伤害减少20%。",
+          "content_ref": "card.derived.41127"
+        },
+        {
+          "local_rule": "绝对压制使指定英雄本局对战减伤30%，与变猪3秒同时开始。",
+          "content_ref": "card.derived.94361"
+        }
+      ],
+      "unknowns": [
+        "百分比减伤、固定减伤和最低伤害的共同结算次序未统一说明。"
+      ]
+    },
+    {
+      "id": "status.mark",
+      "name": "标记与印记",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "给特定单位登记能力专属状态；叠层、消耗、死亡触发与持续期各由该能力定义，不能把全部印记视为同一状态。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "李元芳技能伤害叠印记，3层引爆。",
+          "content_ref": "ability.hero.1731.1"
+        },
+        {
+          "local_rule": "露娜标记被消耗时追加目标最大生命15%的法伤。",
+          "content_ref": "ability.hero.1461.1"
+        },
+        {
+          "local_rule": "梦魇印记5秒，目标死亡时对附近1格敌人造成穿戴者2倍法攻法伤。",
+          "content_ref": "equipment.643206"
+        },
+        {
+          "local_rule": "马可波罗100级子弹永久标记命中敌人；友军攻击此目标时得50%攻速。",
+          "content_ref": "milestone.hero.1321.100"
+        }
+      ],
+      "unknowns": [
+        "不同标记者能否重叠、标记是否算负面效果及净化行为没有统一规则。"
+      ]
+    },
+    {
+      "id": "status.transform_pig",
+      "name": "变猪",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "将目标临时改变为猪猪形态的变形效果，持续时间由施加能力规定。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "猪猪天赋开战令随机2名敌方英雄变猪3秒。",
+          "content_ref": "talent.681009"
+        },
+        {
+          "local_rule": "自然法杖耗蓝达到阈值后令随机敌人变猪2秒。",
+          "content_ref": "equipment.643208"
+        },
+        {
+          "local_rule": "最高等级英雄变猪3秒，同时本战享30%减伤。",
+          "content_ref": "card.derived.94361"
+        }
+      ],
+      "unknowns": [
+        "变猪期间能否移动、普攻、施法，基础属性是否改变，以及解除方式未统一说明。"
+      ]
+    },
+    {
+      "id": "status.freeze_combat",
+      "name": "战斗冻结",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "战斗技能或装备施加的冻结控制；施加条件和冻结期限取各来源。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "甄姬水流累计命中条件满足时冻结1秒。",
+          "content_ref": "ability.hero.1271.1"
+        },
+        {
+          "local_rule": "极寒风暴令累计攻击满足条件的远程攻击者冻结1秒、近战0.5秒。",
+          "content_ref": "equipment.643602"
+        },
+        {
+          "local_rule": "永冻霜羽对每目标首次法伤造成2秒冻结。",
+          "content_ref": "card.derived.6365175"
+        }
+      ],
+      "unknowns": [
+        "冻结的完整动作限制、与眩晕关系、免疫/净化规则未统一说明。"
+      ]
+    },
+    {
+      "id": "status.freeze_chessplayer",
+      "name": "棋手冻结待转化",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "昭君冰之心对指定英雄施加冻结，战斗结束后解冻并变换英雄，保持原等级；强化分支可以改变转化。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "冰之心解冻时默认随机变为高1阶英雄并继承等级。",
+          "content_ref": "card.derived.93499"
+        },
+        {
+          "local_rule": "寒冰觉醒保留英雄身份、增加2觉醒进度。",
+          "content_ref": "card.derived.93419"
+        }
+      ],
+      "unknowns": [
+        "冻结期间参战、目标可选性、生命/装备处理，以及多强化同时存在优先级未完整说明。"
+      ]
+    },
+    {
+      "id": "status.inactive_shangui",
+      "name": "山鬼失活",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "山鬼形态受到致命伤害后进入无敌且不可选中的失活；失活中法力充满后回复满生命并重新加入战斗。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "自然之主明确说明失活与重新参战流程。",
+          "content_ref": "ability.unit.31280.1"
+        }
+      ],
+      "unknowns": [
+        "失活期间恢复法力的渠道、是否继续计入在场单位/人口及其它触发计数未完整说明。"
+      ]
+    },
+    {
+      "id": "status.forced_displacement",
+      "name": "强制位移",
+      "kind": "combat_status_or_effect",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "definition": "技能或机关把目标移动到指定位置、方向或区域；是否同时眩晕、击飞等按该能力。",
+      "common_duration": null,
+      "applications": [
+        {
+          "local_rule": "百里玄策钩中后甩到身后，落地附带1秒眩晕。",
+          "content_ref": "ability.hero.1951.1"
+        },
+        {
+          "local_rule": "电磁弹簧把踩中的敌人弹到敌方后排。",
+          "content_ref": "card.derived.93502"
+        }
+      ],
+      "unknowns": [
+        "目标位置占用、碰撞、无法位移时的处理及控制免疫如何影响位移未统一说明。"
       ]
     }
-  ]
+  ],
+  "knowledge_version": "0.2.0"
 }

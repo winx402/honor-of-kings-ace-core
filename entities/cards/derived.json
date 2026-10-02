@@ -1,0 +1,7375 @@
+{
+  "范围": {
+    "game_version": null,
+    "knowledge_version": "0.2.0",
+    "scope_id": "scope.cn.wanxiang.undated"
+  },
+  "kind_definitions": {
+    "conditional_combat_skill": "条件附加战斗技能：由明确天赋赋予的额外技能，不宣称为可手动打出的普通行动牌。",
+    "special_hero_card": "特殊英雄卡：有独立战斗面板与技能的衍生英雄；不表示商店可购。",
+    "special_unit_card": "特殊单位卡：指向召唤物、建筑、图腾或特殊战场单位。",
+    "special_equipment_card": "特殊装备卡：存在明确穿戴效果与装备字段的关联装备。",
+    "chessplayer_ability": "棋手基础技能：位于该棋手技能栏，可能主动或被动，不能作为普通手牌一概使用。",
+    "chessplayer_secret_task": "棋手秘技任务：定义任务触发条件及秘技奖励。",
+    "chessplayer_exclusive_talent": "棋手专属天赋：该棋手专属栏给出的能力或选择。",
+    "secret_reward_card": "秘技奖励牌：秘技任务直接关联的可获得奖励。",
+    "chessplayer_module": "棋手装置模块：修改飞行器等棋手机制。",
+    "chessplayer_branch_card": "棋手关联分支：指法、机关、宝藏、决策及其他选择分支；具体使用条件随条目。",
+    "derived_action_card": "衍生行动牌：主目录外、被天赋或效果等明确关联的行动或效果；不表示独立商店池。"
+  },
+  "数量": 326,
+  "条目": [
+    {
+      "id": "card.derived.42102",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "双剑·雄",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴：攻速增加30%；干将莫邪的法力上限改为10。",
+      "effects": [
+        {
+          "触发与条件": "穿戴",
+          "目标": "装备持有英雄；附加条款限干将莫邪",
+          "结算": "攻速增加30%；干将莫邪的法力上限改为10"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "普通装备",
+        "唯一限制": false,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.31080",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "先知图腾",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "战斗开团：各取得1件玄微之种。",
+      "effects": [
+        {
+          "触发与条件": "战斗开团",
+          "目标": "距图腾最近的2名己方大河流域英雄",
+          "结算": "各取得1件玄微之种"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "先知图腾觉醒强化的具体增幅、生成等级与生成位置。"
+      ],
+      "unit_ref": "unit.31080"
+    },
+    {
+      "id": "card.derived.42101",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "玄微之种",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴者牺牲：恢复200点加最大生命20%的生命；最大生命计算归属尚待确认。",
+      "effects": [
+        {
+          "触发与条件": "穿戴者牺牲",
+          "目标": "己方生命百分比最低的英雄",
+          "结算": "恢复200点加最大生命20%的生命；最大生命计算归属尚待确认"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "额外治疗的20%最大生命以穿戴者还是受治疗者为基数。"
+      ],
+      "装备语义": {
+        "装备层级": "普通装备",
+        "唯一限制": false,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.314010",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "玄雍士兵",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "战斗普攻：以物理普攻参与战斗；卡面格言不构成额外机制。",
+      "effects": [
+        {
+          "触发与条件": "战斗普攻",
+          "目标": "士兵当前攻击目标",
+          "结算": "以物理普攻参与战斗；卡面格言不构成额外机制"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "unit_ref": "unit.314010"
+    },
+    {
+      "id": "card.derived.31081",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "因缘图腾",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "己方单位累计普攻每满25次：真实等级各永久增加1。",
+      "effects": [
+        {
+          "触发与条件": "己方单位累计普攻每满25次",
+          "目标": "己方全部英雄",
+          "结算": "真实等级各永久增加1"
+        }
+      ],
+      "有效期": "等级增长永久",
+      "触发上限": null,
+      "未知项": [
+        "少司缘觉醒强化图腾的具体增幅；英雄在场生成图腾的等级与位置。"
+      ],
+      "unit_ref": "unit.31081"
+    },
+    {
+      "id": "card.derived.31082",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "往生图腾",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "己方1至3阶召唤物入场，排除大司命灵体：吸收该召唤物；图腾永久增加1级并补充15法力。",
+      "effects": [
+        {
+          "触发与条件": "己方1至3阶召唤物入场，排除大司命灵体",
+          "目标": "入场召唤物与往生图腾",
+          "结算": "吸收该召唤物；图腾永久增加1级并补充15法力"
+        }
+      ],
+      "有效期": "吸收所得等级永久",
+      "触发上限": null,
+      "未知项": [
+        "山鬼变身是否保留图腾当前生命百分比；初始召唤等级及吸收与牺牲结算优先级。"
+      ],
+      "unit_ref": "unit.31082"
+    },
+    {
+      "id": "card.derived.31280",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "往生图腾（山鬼形态）",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "己方1至3阶召唤物入场，排除大司命灵体：吸收该召唤物；往生图腾永久增加1级并补充15法力；变体仍保留此吸收规则。",
+      "effects": [
+        {
+          "触发与条件": "己方1至3阶召唤物入场，排除大司命灵体",
+          "目标": "入场召唤物与山鬼形态图腾",
+          "结算": "吸收该召唤物；往生图腾永久增加1级并补充15法力；变体仍保留此吸收规则"
+        }
+      ],
+      "有效期": "吸收所得等级永久",
+      "触发上限": null,
+      "未知项": [
+        "生命成长公式；失活与法力恢复的具体结算顺序。"
+      ],
+      "unit_ref": "unit.31280"
+    },
+    {
+      "id": "card.derived.314009",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "机关傀儡",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "单位获得效果时：按场上逐鹿英雄或召唤物的最高等级计算，获得其一半的临时等级。",
+      "effects": [
+        {
+          "触发与条件": "单位获得效果时",
+          "目标": "机关傀儡",
+          "结算": "按场上逐鹿英雄或召唤物的最高等级计算，获得其一半的临时等级"
+        }
+      ],
+      "有效期": "临时等级，战斗结束清除",
+      "触发上限": null,
+      "未知项": [
+        "基础技能每发激光伤害系数和每发/每次施法治疗量；等级继承取整。"
+      ],
+      "unit_ref": "unit.314009"
+    },
+    {
+      "id": "card.derived.41124",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "星源装甲",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴；持有者施法后：双吸血各增加20%；技能释放后获得2秒控制免疫；被动唯一。",
+      "effects": [
+        {
+          "触发与条件": "穿戴；持有者施法后",
+          "目标": "日落海装备持有英雄",
+          "结算": "双吸血各增加20%；技能释放后获得2秒控制免疫；被动唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "特殊装备",
+        "唯一限制": true,
+        "阵营限制": "日落海"
+      }
+    },
+    {
+      "id": "card.derived.41125",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "星源狩枪",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴；技能命中低血敌人：双攻击增加20%；法力上限减少20；技能可直接击败低血敌人；被动唯一。",
+      "effects": [
+        {
+          "触发与条件": "穿戴；技能命中低血敌人",
+          "目标": "日落海装备持有英雄及生命百分比在10%以下的敌人",
+          "结算": "双攻击增加20%；法力上限减少20；技能可直接击败低血敌人；被动唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "法力上限减少后的最低值；低血处决判定在技能伤害前还是后。"
+      ],
+      "装备语义": {
+        "装备层级": "特殊装备",
+        "唯一限制": true,
+        "阵营限制": "日落海"
+      }
+    },
+    {
+      "id": "card.derived.41126",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "星源星徽",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "阿科米亚核心分配等级时：将持有者排除出核心等级分配；被动唯一。",
+      "effects": [
+        {
+          "触发与条件": "阿科米亚核心分配等级时",
+          "目标": "日落海装备持有英雄",
+          "结算": "将持有者排除出核心等级分配；被动唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "特殊装备",
+        "唯一限制": true,
+        "阵营限制": "日落海"
+      }
+    },
+    {
+      "id": "card.derived.41127",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "星源合金盾",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴及承受伤害：双防御各加20，承受伤害减少20%；被动唯一。",
+      "effects": [
+        {
+          "触发与条件": "穿戴及承受伤害",
+          "目标": "日落海装备持有英雄",
+          "结算": "双防御各加20，承受伤害减少20%；被动唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "特殊装备",
+        "唯一限制": true,
+        "阵营限制": "日落海"
+      }
+    },
+    {
+      "id": "card.derived.41128",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "月影之力",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴；露娜完成2次施法：生命上限提高15%；露娜再释放1次月下无限连，每场战斗最多1次；被动唯一。",
+      "effects": [
+        {
+          "触发与条件": "穿戴；露娜完成2次施法",
+          "目标": "持有者；连招条款限露娜",
+          "结算": "生命上限提高15%；露娜再释放1次月下无限连，每场战斗最多1次；被动唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "每场战斗1次",
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "特殊装备",
+        "唯一限制": true,
+        "阵营限制": "日落海"
+      }
+    },
+    {
+      "id": "card.derived.641016",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "贤者的庇护",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "首次被击败后2秒：复生并恢复30%生命；只明确首次死亡触发。",
+      "effects": [
+        {
+          "触发与条件": "首次被击败后2秒",
+          "目标": "穿戴此装备的河洛英雄",
+          "结算": "复生并恢复30%生命；只明确首次死亡触发"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "首次被击败触发",
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "特殊装备",
+        "唯一限制": false,
+        "阵营限制": "河洛"
+      }
+    },
+    {
+      "id": "card.derived.32301",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "故障机器人",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "战斗中：没有攻击敌人的能力，可作为召唤单位存在。",
+      "effects": [
+        {
+          "触发与条件": "战斗中",
+          "目标": "故障机器人",
+          "结算": "没有攻击敌人的能力，可作为召唤单位存在"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "unit_ref": "unit.32301"
+    },
+    {
+      "id": "card.derived.7542",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "机关匣",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "战斗开始：召唤2个故障机器人，每个等级取己方最高等级英雄的一半。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "穿戴此唯一装备的逐鹿英雄",
+          "结算": "召唤2个故障机器人，每个等级取己方最高等级英雄的一半"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "唯一装备",
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "特殊装备",
+        "唯一限制": true,
+        "阵营限制": "逐鹿"
+      }
+    },
+    {
+      "id": "card.derived.661106",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "巨型玩偶",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.11"
+      ],
+      "效果概括": "专属天赋生效：增加30级，同时取得1件小鹿的庇护。",
+      "effects": [
+        {
+          "触发与条件": "专属天赋生效",
+          "目标": "瑶妹的小鹿",
+          "结算": "增加30级，同时取得1件小鹿的庇护"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710102",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "二象坍缩",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定英雄：随机生效一种取得英雄牌的效果：得到3张同品阶英雄牌，或得到2张同阵营当前最高品阶英雄牌；不是玩家自选。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "指定英雄对应的品阶或阵营卡池",
+          "结算": "随机生效一种取得英雄牌的效果：得到3张同品阶英雄牌，或得到2张同阵营当前最高品阶英雄牌；不是玩家自选"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "局内当前计数"
+      }
+    },
+    {
+      "id": "card.derived.6710122",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "胜利预言",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用后下一场战斗获胜：胜利预测兑现为2张3阶英雄兑换券。",
+      "effects": [
+        {
+          "触发与条件": "使用后下一场战斗获胜",
+          "目标": "棋手手牌",
+          "结算": "胜利预测兑现为2张3阶英雄兑换券"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710123",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "失败预言",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用后下一场战斗失败：失败预测兑现为4能量。",
+      "effects": [
+        {
+          "触发与条件": "使用后下一场战斗失败",
+          "目标": "棋手能量",
+          "结算": "失败预测兑现为4能量"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6810024",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "体面离场",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "指定移除英雄：按目标觉醒进度0、1、2、3，移除后分别返还3、5、7、9能量。",
+      "effects": [
+        {
+          "触发与条件": "指定移除英雄",
+          "目标": "指定英雄及棋手能量",
+          "结算": "按目标觉醒进度0、1、2、3，移除后分别返还3、5、7、9能量"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6810023",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "契约瓶",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "战斗结果累积；打出牌兑现：每胜存入3张，失败损失已有数量的一半；打出时把剩余库存交到手牌；当前0张只是展示初值。",
+      "effects": [
+        {
+          "触发与条件": "战斗结果累积；打出牌兑现",
+          "目标": "瓶内储存的随机英雄牌",
+          "结算": "每胜存入3张，失败损失已有数量的一半；打出时把剩余库存交到手牌；当前0张只是展示初值"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "失败损失半数时奇数张的取整。"
+      ],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "瓶内英雄牌存量"
+      }
+    },
+    {
+      "id": "card.derived.652006",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "加速成长",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定英雄：增加5级。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "1名英雄",
+          "结算": "增加5级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.681019",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "2级电磁弹簧",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定位置：构筑1个已经处于2级的电磁弹簧。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定位置",
+          "目标": "指定阵位",
+          "结算": "构筑1个已经处于2级的电磁弹簧"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.652001",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "五福临门",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：随机加入5张英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "棋手手牌",
+          "结算": "随机加入5张英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.651007",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "复印机",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定低阶英雄：取得1张该英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定低阶英雄",
+          "目标": "1至3阶的1名英雄",
+          "结算": "取得1张该英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710172",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "听天由命",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：消除这些英雄；每消除1名分别获得3能量、同阶兑换券1张和简易协作1张。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "场上等级最低的4名英雄",
+          "结算": "消除这些英雄；每消除1名分别获得3能量、同阶兑换券1张和简易协作1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.651008",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "终极复印机",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定英雄：取得1张目标英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "1名英雄，品阶未受此牌限制",
+          "结算": "取得1张目标英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.651004",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "人才搜寻",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：展示3张供选择，取得其中1张。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "当前商店可购买的最高品阶英雄池",
+          "结算": "展示3张供选择，取得其中1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.652002",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "限制性进化",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并移除低阶英雄：改得1张比原英雄高2阶的随机英雄牌；新英雄上阵等级为原目标等级加10。",
+      "effects": [
+        {
+          "触发与条件": "使用并移除低阶英雄",
+          "目标": "1或2阶英雄",
+          "结算": "改得1张比原英雄高2阶的随机英雄牌；新英雄上阵等级为原目标等级加10"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.652003",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "援军",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定英雄：从该阵营随机获得4张英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "目标所属阵营",
+          "结算": "从该阵营随机获得4张英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.652005",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "自适应武装",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定英雄：随机取得2张适配普通装备牌。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "目标英雄的适配普通装备池",
+          "结算": "随机取得2张适配普通装备牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6810022",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神秘英雄",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "手动刷新；每回合销毁判定：刷新时随机变成品阶不低于当前棋手等级对应品阶的英雄牌；每回合另有15%概率自毁并补偿3能量。",
+      "effects": [
+        {
+          "触发与条件": "手动刷新；每回合销毁判定",
+          "目标": "手中的神秘英雄牌",
+          "结算": "刷新时随机变成品阶不低于当前棋手等级对应品阶的英雄牌；每回合另有15%概率自毁并补偿3能量"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "形态替换后是否继续保留神秘英雄的下一次刷新变形/自毁规则。"
+      ],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "局内当前计数"
+      }
+    },
+    {
+      "id": "card.derived.33001",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "猛虎擂台",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "范围光环；范围内敌人被击败：基础双攻击各加30；范围内每死1个敌人，擂台给予的双攻击永久再加10。",
+      "effects": [
+        {
+          "触发与条件": "范围光环；范围内敌人被击败",
+          "目标": "擂台覆盖的三分英雄",
+          "结算": "基础双攻击各加30；范围内每死1个敌人，擂台给予的双攻击永久再加10"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "擂台覆盖几何范围与初始放置位置。"
+      ],
+      "unit_ref": "unit.33001"
+    },
+    {
+      "id": "card.derived.6710162",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "拍卖重现：一",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：最多展示5张，从中取1张。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "第一轮拍卖自己未取得的牌",
+          "结算": "最多展示5张，从中取1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710163",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "拍卖重现：二",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：最多展示5张，从中取1张。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "第二轮拍卖自己未取得的牌",
+          "结算": "最多展示5张，从中取1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710164",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "拍卖重现：三",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "支付4能量使用：最多展示5张，从中取1张。",
+      "effects": [
+        {
+          "触发与条件": "支付4能量使用",
+          "目标": "第三轮拍卖自己未取得的牌",
+          "结算": "最多展示5张，从中取1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.652008",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "超速成长",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定英雄：增加15级。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "1名英雄",
+          "结算": "增加15级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710112",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "碰碰运气",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "支付0能量使用：随机增加5至20级。",
+      "effects": [
+        {
+          "触发与条件": "支付0能量使用",
+          "目标": "指定英雄",
+          "结算": "随机增加5至20级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710092",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "一刀穷一刀富",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：获得基础装备牌1张和险中求富1张；同时启动胜场记录。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "棋手手牌及后续胜场计数",
+          "结算": "获得基础装备牌1张和险中求富1张；同时启动胜场记录"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710093",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "险中求富",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "主动兑现；战败：主动取得已累积基础装备；若战败则毁牌并返还2能量；当前0件并非固定产量。",
+      "effects": [
+        {
+          "触发与条件": "主动兑现；战败",
+          "目标": "险中求富牌存储的装备奖励",
+          "结算": "主动取得已累积基础装备；若战败则毁牌并返还2能量；当前0件并非固定产量"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "胜场如何转换为装备奖励数量。"
+      ],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "可兑现基础装备数量"
+      }
+    },
+    {
+      "id": "card.derived.635022",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "前浪的荣光",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定英雄：随机得到1张比目标高1至2阶的同阵营英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "目标英雄同阵营卡池",
+          "结算": "随机得到1张比目标高1至2阶的同阵营英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.635025",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "全军列阵",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并指定英雄：直接召唤直到阵容人数上限；可召唤品阶受当前商店可购品阶限制。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "目标同阵营的英雄",
+          "结算": "直接召唤直到阵容人数上限；可召唤品阶受当前商店可购品阶限制"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6710012",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "等价交换",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用并清空能量：少于2时得2英雄牌；2至4时得1基础装备牌；至少5时得1张5阶兑换券及2效果锦囊牌。",
+      "effects": [
+        {
+          "触发与条件": "使用并清空能量",
+          "目标": "清空前的棋手能量",
+          "结算": "少于2时得2英雄牌；2至4时得1基础装备牌；至少5时得1张5阶兑换券及2效果锦囊牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6380032",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "胜之不武",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "下一场战斗：己方英雄增加20临时等级；该战斗造成的棋手伤害减少10。",
+      "effects": [
+        {
+          "触发与条件": "下一场战斗",
+          "目标": "己方英雄与对敌棋手伤害",
+          "结算": "己方英雄增加20临时等级；该战斗造成的棋手伤害减少10"
+        }
+      ],
+      "有效期": "下一场战斗；临时等级战斗结束清除",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.3110023",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "破损古币",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "对河洛英雄使用：具有转瞬期限但不给等级；不能据名称推断古币等级收益。",
+      "effects": [
+        {
+          "触发与条件": "对河洛英雄使用",
+          "目标": "1名河洛英雄",
+          "结算": "具有转瞬期限但不给等级；不能据名称推断古币等级收益"
+        }
+      ],
+      "有效期": "转瞬牌期限，回合结束未使用即销毁",
+      "触发上限": null,
+      "未知项": [],
+      "牌期限": "转瞬：回合结束未使用即销毁"
+    },
+    {
+      "id": "card.derived.1381",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "王维",
+      "kind": "special_hero_card",
+      "棋手关联": [],
+      "效果概括": "战斗开团：各获得1张空山人语和水穷云起；王维战斗技能另列。",
+      "effects": [
+        {
+          "触发与条件": "战斗开团",
+          "目标": "棋手手牌",
+          "结算": "各获得1张空山人语和水穷云起；王维战斗技能另列"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "unit_ref": "unit.1381"
+    },
+    {
+      "id": "card.derived.6363061",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "惊雷之龙",
+      "kind": "conditional_combat_skill",
+      "棋手关联": [],
+      "效果概括": "战斗技能触发：冲锋造成物攻150%的物理伤害；赵云获得50%物理吸血，持续2秒。",
+      "effects": [
+        {
+          "触发与条件": "战斗技能触发",
+          "目标": "赵云及冲锋命中的敌人",
+          "结算": "冲锋造成物攻150%的物理伤害；赵云获得50%物理吸血，持续2秒"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6363141",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "锦囊",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用后本回合打出登场英雄：本回合各多结算1次登场效果。",
+      "effects": [
+        {
+          "触发与条件": "使用后本回合打出登场英雄",
+          "目标": "带登场效果的英雄牌",
+          "结算": "本回合各多结算1次登场效果"
+        }
+      ],
+      "有效期": "使用后的本回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.636502",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "望梅止渴",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "指定使用；战斗开始；胜利结算：先加3临时等级；开战再按装备件数每件加1；获胜则把本牌所给等级转为永久等级。",
+      "effects": [
+        {
+          "触发与条件": "指定使用；战斗开始；胜利结算",
+          "目标": "1名英雄",
+          "结算": "先加3临时等级；开战再按装备件数每件加1；获胜则把本牌所给等级转为永久等级"
+        }
+      ],
+      "有效期": "先临时；获胜转永久",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.31191",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "始祖熊灵",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "己方单位触发开团：每次获得20%攻速提升；单位战斗技能另列。",
+      "effects": [
+        {
+          "触发与条件": "己方单位触发开团",
+          "目标": "始祖熊灵",
+          "结算": "每次获得20%攻速提升；单位战斗技能另列"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "unit_ref": "unit.31191"
+    },
+    {
+      "id": "card.derived.636116",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "盗火",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "转瞬牌指定使用：从核心偷取等级给英雄，最多20级；不足20时实际量待确定。",
+      "effects": [
+        {
+          "触发与条件": "转瞬牌指定使用",
+          "目标": "1名英雄及阿科米亚核心",
+          "结算": "从核心偷取等级给英雄，最多20级；不足20时实际量待确定"
+        }
+      ],
+      "有效期": "转瞬牌期限，回合结束未使用即销毁",
+      "触发上限": null,
+      "未知项": [],
+      "牌期限": "转瞬：回合结束未使用即销毁"
+    },
+    {
+      "id": "card.derived.6365172",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "流云之刺",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴；对同一目标普攻每满3次：攻速加30%；唤出云中君灵体造成目标最大生命4%的物理伤害，并削减5护甲；唯一。",
+      "effects": [
+        {
+          "触发与条件": "穿戴；对同一目标普攻每满3次",
+          "目标": "持有者及该攻击目标",
+          "结算": "攻速加30%；唤出云中君灵体造成目标最大生命4%的物理伤害，并削减5护甲；唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "唯一装备",
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "天赋装备",
+        "唯一限制": true,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.6365173",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "翼苍穹盾",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴；敌方单位死亡：双防初始各加10，敌人每死1个再各加10，上限100；上限是否含初始加成未明确；唯一。",
+      "effects": [
+        {
+          "触发与条件": "穿戴；敌方单位死亡",
+          "目标": "持有者",
+          "结算": "双防初始各加10，敌人每死1个再各加10，上限100；上限是否含初始加成未明确；唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "唯一装备；双防提升上限100点",
+      "未知项": [
+        "100点上限是否包括初始的10点。"
+      ],
+      "装备语义": {
+        "装备层级": "天赋装备",
+        "唯一限制": true,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.6365174",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "掠魂爪",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴及普攻：双吸血各加50%；普攻另附目标当前生命8%的物理伤害；唯一。",
+      "effects": [
+        {
+          "触发与条件": "穿戴及普攻",
+          "目标": "持有者及普攻目标",
+          "结算": "双吸血各加50%；普攻另附目标当前生命8%的物理伤害；唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "唯一装备",
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "天赋装备",
+        "唯一限制": true,
+        "阵营限制": null
+      },
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "局内当前计数"
+      }
+    },
+    {
+      "id": "card.derived.6365175",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "永冻霜羽",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "穿戴；对各目标首次造成法术伤害：穿戴即提供100法攻；每个目标首次遭受持有者法伤时被冻结2秒；唯一。",
+      "effects": [
+        {
+          "触发与条件": "穿戴",
+          "目标": "持有者",
+          "结算": "常驻法术攻击增加100；唯一装备"
+        },
+        {
+          "触发与条件": "对每个目标首次造成法术伤害",
+          "目标": "该法伤目标",
+          "结算": "冻结目标2秒；不是造成首次伤害后才增加法攻"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "唯一装备；每个目标首次法伤触发",
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "天赋装备",
+        "唯一限制": true,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.6365176",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "苍穹王权",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "持有者受到致命伤害：免疫该次致命伤害并持续1秒；全体敌人受到100加其已损失生命30%的法术伤害；唯一。",
+      "effects": [
+        {
+          "触发与条件": "持有者受到致命伤害",
+          "目标": "持有者及全体敌人",
+          "结算": "免疫该次致命伤害并持续1秒；全体敌人受到100加其已损失生命30%的法术伤害；唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "唯一装备；致死触发次数未明",
+      "未知项": [
+        "免疫致死的每战触发上限。"
+      ],
+      "装备语义": {
+        "装备层级": "天赋装备",
+        "唯一限制": true,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.6365177",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "唤鹰骨笛",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "开战后每隔8秒：召出等级取持有者一半的云中君；由该云中君快速冲向最远敌人。",
+      "effects": [
+        {
+          "触发与条件": "开战后每隔8秒",
+          "目标": "召出的云中君及最远敌人",
+          "结算": "召出等级取持有者一半的云中君；由该云中君快速冲向最远敌人"
+        }
+      ],
+      "有效期": "战斗内每8秒",
+      "触发上限": null,
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "天赋装备",
+        "唯一限制": false,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.60110",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "猩红神兽",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "己方召唤物在战斗入场：赋予猩红神兽之力；该状态的基础效果正文缺失，不能推出伤害数值。",
+      "effects": [
+        {
+          "触发与条件": "己方召唤物在战斗入场",
+          "目标": "该己方召唤物",
+          "结算": "赋予猩红神兽之力；该状态的基础效果正文缺失，不能推出伤害数值"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "猩红之怒基础主动效果、基础伤害/范围；猩红神兽之力的基础效果和持续期。"
+      ],
+      "unit_ref": "unit.60110"
+    },
+    {
+      "id": "card.derived.60100",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "蔚蓝神兽",
+      "kind": "special_unit_card",
+      "棋手关联": [],
+      "效果概括": "己方单位在战斗入场：永久增加5生命；基础技能及蔚蓝神兽之力详述仍缺失。",
+      "effects": [
+        {
+          "触发与条件": "己方单位在战斗入场",
+          "目标": "蔚蓝神兽",
+          "结算": "永久增加5生命；基础技能及蔚蓝神兽之力详述仍缺失"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "蔚蓝之赐基础主动效果；蔚蓝神兽之力的基础效果和持续期。"
+      ],
+      "unit_ref": "unit.60100"
+    },
+    {
+      "id": "card.derived.635023",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "点兵点将",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：每名场上英雄各提供1张对应英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "场上各英雄对应的手牌",
+          "结算": "每名场上英雄各提供1张对应英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.644108",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "根源之力",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "每隔4秒：造成持有者法攻600%的法术伤害；唯一。",
+      "effects": [
+        {
+          "触发与条件": "每隔4秒",
+          "目标": "敌方当前生命最低的单位",
+          "结算": "造成持有者法攻600%的法术伤害；唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "唯一装备",
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "天赋装备",
+        "唯一限制": true,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.644112",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "强敌克星",
+      "kind": "special_equipment_card",
+      "棋手关联": [],
+      "效果概括": "持有者造成伤害；同目标普攻每满4次：15%的所造成伤害改为真实伤害；每4次普攻使该目标眩晕1秒；唯一。",
+      "effects": [
+        {
+          "触发与条件": "持有者造成伤害；同目标普攻每满4次",
+          "目标": "伤害目标",
+          "结算": "15%的所造成伤害改为真实伤害；每4次普攻使该目标眩晕1秒；唯一"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "唯一装备",
+      "未知项": [],
+      "装备语义": {
+        "装备层级": "天赋装备",
+        "唯一限制": true,
+        "阵营限制": null
+      }
+    },
+    {
+      "id": "card.derived.6810025",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "留级证明",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "每回合且棋手仍为1级：每回合增加1能量；升离1级后不再满足。",
+      "effects": [
+        {
+          "触发与条件": "每回合且棋手仍为1级",
+          "目标": "棋手能量",
+          "结算": "每回合增加1能量；升离1级后不再满足"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.6810012",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "站这别动",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "指定阵位后每经过2回合：取得1张该格英雄的牌；空格结算未说明。",
+      "effects": [
+        {
+          "触发与条件": "指定阵位后每经过2回合",
+          "目标": "指定格上的英雄",
+          "结算": "取得1张该格英雄的牌；空格结算未说明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "指定格为空时是否累计或跳过奖励。"
+      ]
+    },
+    {
+      "id": "card.derived.652004",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "延迟满足",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "指定使用；再经过3回合：先增加10级，延时3回合再加25级。",
+      "effects": [
+        {
+          "触发与条件": "指定使用；再经过3回合",
+          "目标": "1名英雄",
+          "结算": "先增加10级，延时3回合再加25级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.681017",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "混沌裂隙",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "构筑；开战前；战斗开始：先吞噬格上英雄并永久积累其双倍等级；开战召唤品阶至少为商店等级的英雄，赋予裂隙等级与适配装备；召唤无卡牌效果。",
+      "effects": [
+        {
+          "触发与条件": "构筑；开战前；战斗开始",
+          "目标": "指定格英雄、裂隙及新召唤英雄",
+          "结算": "先吞噬格上英雄并永久积累其双倍等级；开战召唤品阶至少为商店等级的英雄，赋予裂隙等级与适配装备；召唤无卡牌效果"
+        }
+      ],
+      "有效期": "裂隙积累的等级永久；召唤仅参与战斗",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.8205",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "双人同行·2阶",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：随机取一个英雄并得到2张相同的2阶英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "2阶英雄池",
+          "结算": "随机取一个英雄并得到2张相同的2阶英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.8206",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "双人同行·3阶",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：随机取一个英雄并得到2张相同的3阶英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "3阶英雄池",
+          "结算": "随机取一个英雄并得到2张相同的3阶英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.651003",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大明星",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用；其后每隔2回合：直接上阵，等级为棋手等级乘7，初始觉醒进度1；之后每2回合觉醒进度再加1。",
+      "effects": [
+        {
+          "触发与条件": "使用；其后每隔2回合",
+          "目标": "未在己方场上的随机5阶英雄",
+          "结算": "直接上阵，等级为棋手等级乘7，初始觉醒进度1；之后每2回合觉醒进度再加1"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.651002",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "资深猎头",
+      "kind": "derived_action_card",
+      "棋手关联": [],
+      "效果概括": "使用：2选1后把选中牌分成4份；份数确定，分拆后的效果细节未给出。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "两张4阶候选牌",
+          "结算": "2选1后把选中牌分成4份；份数确定，分拆后的效果细节未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "一分为四后的卡牌效果比例和转瞬属性。"
+      ]
+    },
+    {
+      "id": "card.derived.91099",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "怦然心动",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.10"
+      ],
+      "效果概括": "购买卡牌累计每满4张：随机补入1张效果牌。",
+      "effects": [
+        {
+          "触发与条件": "购买卡牌累计每满4张",
+          "目标": "小妲己手牌",
+          "结算": "随机补入1张效果牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.661001",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "心动节拍",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.10"
+      ],
+      "效果概括": "怦然心动触发达到任务阶段：阶段触发数为5、4、3，各取得1张心之引力；是否阶段重新计数未明确。",
+      "effects": [
+        {
+          "触发与条件": "怦然心动触发达到任务阶段",
+          "目标": "小妲己手牌",
+          "结算": "阶段触发数为5、4、3，各取得1张心之引力；是否阶段重新计数未明确"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "任务5/4/3是各阶段重新计数还是其他口径。"
+      ]
+    },
+    {
+      "id": "card.derived.91010",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "心之引力",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.10"
+      ],
+      "效果概括": "使用：增加4次临时刷新；这4次刷新对应商店的购买能量费用各减1。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "小妲己刷新次数及对应商店",
+          "结算": "增加4次临时刷新；这4次刷新对应商店的购买能量费用各减1"
+        }
+      ],
+      "有效期": "获得4次临时刷新，按临时刷新规则",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.661009",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "魅力无限",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.10"
+      ],
+      "效果概括": "每回合打出首张效果牌：总共结算2次效果。",
+      "effects": [
+        {
+          "触发与条件": "每回合打出首张效果牌",
+          "目标": "小妲己首张效果牌",
+          "结算": "总共结算2次效果"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.91199",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "可爱小鹿",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.11"
+      ],
+      "效果概括": "比赛开局；每回合成长：开局召唤小鹿；每回合加2级，若上一场获胜则另加4级。",
+      "effects": [
+        {
+          "触发与条件": "比赛开局；每回合成长",
+          "目标": "瑶妹的小鹿",
+          "结算": "开局召唤小鹿；每回合加2级，若上一场获胜则另加4级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.661101",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "超绝可爱小鹿",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.11"
+      ],
+      "效果概括": "每经过3回合：获得1张神奇小鹿秘技牌。",
+      "effects": [
+        {
+          "触发与条件": "每经过3回合",
+          "目标": "瑶妹手牌",
+          "结算": "获得1张神奇小鹿秘技牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.91110",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神奇小鹿·嘲讽",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.11"
+      ],
+      "效果概括": "使用；开战；开战后每3秒：使用时小鹿增加8级；开战后小鹿在敌人间无视碰撞移动；每3秒嘲讽周围1格敌人1次，周期事件不重复加等级。",
+      "effects": [
+        {
+          "触发与条件": "使用此牌",
+          "目标": "小鹿",
+          "结算": "增加8级，仅本次使用的等级奖励"
+        },
+        {
+          "触发与条件": "战斗开始后",
+          "目标": "小鹿",
+          "结算": "在敌人之间移动时忽略碰撞"
+        },
+        {
+          "触发与条件": "开战后每3秒",
+          "目标": "小鹿周围1格敌人",
+          "结算": "嘲讽周边敌人1次；不重复给予8级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.91111",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神奇小鹿·重装",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.11"
+      ],
+      "效果概括": "使用：加10级，开放普通装备穿戴，并立即装备1件极寒风暴。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "小鹿",
+          "结算": "加10级，开放普通装备穿戴，并立即装备1件极寒风暴"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.91112",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神奇小鹿·双生",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.11"
+      ],
+      "效果概括": "战斗开始；本局累计胜利至少5次：在附近生成自身复制体；满足5胜条件另加12级；卡面当前0胜不是阈值。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始；本局累计胜利至少5次",
+          "目标": "小鹿",
+          "结算": "在附近生成自身复制体；满足5胜条件另加12级；卡面当前0胜不是阈值"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "整局已胜场数"
+      }
+    },
+    {
+      "id": "card.derived.91113",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神奇小鹿·共鸣",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.11"
+      ],
+      "效果概括": "使用：等级改为原值的2倍。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "小鹿等级",
+          "结算": "等级改为原值的2倍"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.91115",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神奇小鹿·奉献",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.11"
+      ],
+      "效果概括": "小鹿死亡：将小鹿等级均分给己方英雄，所得为战斗结束清除的临时等级。",
+      "effects": [
+        {
+          "触发与条件": "小鹿死亡",
+          "目标": "己方英雄",
+          "结算": "将小鹿等级均分给己方英雄，所得为战斗结束清除的临时等级"
+        }
+      ],
+      "有效期": "临时等级，战斗结束清除",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92099",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "枫叶舞",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "主动指定；指定英雄承受最大生命20%的伤害：获得护盾并移动到纸伞所在位置；受伤是单次还是累计判定未明确。",
+      "effects": [
+        {
+          "触发与条件": "主动指定；指定英雄承受最大生命20%的伤害",
+          "目标": "枫叶舞绑定的1名英雄",
+          "结算": "获得护盾并移动到纸伞所在位置；受伤是单次还是累计判定未明确"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "20%受伤为单次还是累积；护盾基础数值、持续期、纸伞初始位置及转移次数。"
+      ],
+      "使用方式": "主动",
+      "初始技能能量费用": 0
+    },
+    {
+      "id": "card.derived.662001",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "惊鸿游龙",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "绑定英雄击败敌方英雄达到3、7、11、15：各奖励翩跹舞步1张，并各解锁1项枫叶舞特性，总计4项。",
+      "effects": [
+        {
+          "触发与条件": "绑定英雄击败敌方英雄达到3、7、11、15",
+          "目标": "枫叶舞与阿离手牌",
+          "结算": "各奖励翩跹舞步1张，并各解锁1项枫叶舞特性，总计4项"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "共4项特性",
+      "未知项": [
+        "任务3/7/11/15的阶段累计口径。"
+      ]
+    },
+    {
+      "id": "card.derived.92001",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "翩跹舞步·新生",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "使用；每回合；转移后：选择1项强化；每回合加2级；转移后回复最大生命10%。",
+      "effects": [
+        {
+          "触发与条件": "使用；每回合；转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "选择1项强化；每回合加2级；转移后回复最大生命10%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92002",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "翩跹舞步·蓄势",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "使用；绑定英雄击败敌方英雄：选择1项强化；每击败1敌方英雄永久加1级。",
+      "effects": [
+        {
+          "触发与条件": "使用；绑定英雄击败敌方英雄",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "选择1项强化；每击败1敌方英雄永久加1级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92003",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "翩跹舞步·流动",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "使用；转移后击败敌方英雄累计每满3名：选择1项强化；再获得1次转移机会。",
+      "effects": [
+        {
+          "触发与条件": "使用；转移后击败敌方英雄累计每满3名",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "选择1项强化；再获得1次转移机会"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92004",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "翩跹舞步·进化",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "使用及本局英雄击败计数变化：选择1项强化；双攻击各增加本局击败敌方英雄数量乘4点。",
+      "effects": [
+        {
+          "触发与条件": "使用及本局英雄击败计数变化",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "选择1项强化；双攻击各增加本局击败敌方英雄数量乘4点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92010",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "翩跹舞步·余韵",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "使用：选择1张强化牌；无额外数值效果。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "枫叶舞强化候选",
+          "结算": "选择1张强化牌；无额外数值效果"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.610010",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "即刻起舞",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "专属天赋使用：从3项中选择1项。",
+      "effects": [
+        {
+          "触发与条件": "专属天赋使用",
+          "目标": "3项枫叶舞强化候选",
+          "结算": "从3项中选择1项"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92061",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "落英汲取",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "枫叶舞转移后：每名周边敌人受绑定英雄最大生命20%的法伤；绑定英雄回复最大生命的3%乘周边敌人数。",
+      "effects": [
+        {
+          "触发与条件": "枫叶舞转移后",
+          "目标": "绑定英雄与周围1格敌人",
+          "结算": "每名周边敌人受绑定英雄最大生命20%的法伤；绑定英雄回复最大生命的3%乘周边敌人数"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92062",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "枫之洪流",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "绑定英雄首次转移后：在转移后的3秒中可无限施放技能。",
+      "effects": [
+        {
+          "触发与条件": "绑定英雄首次转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "在转移后的3秒中可无限施放技能"
+        }
+      ],
+      "有效期": "首次转移后3秒",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92063",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "翩跹馈赠",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后普通攻击累计满15次：补充1次转移机会。",
+      "effects": [
+        {
+          "触发与条件": "转移后普通攻击累计满15次",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "补充1次转移机会"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92014",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "枫灵涌动",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后：连续4秒每秒恢复15法力。",
+      "effects": [
+        {
+          "触发与条件": "转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "连续4秒每秒恢复15法力"
+        }
+      ],
+      "有效期": "转移后4秒",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92019",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "红叶染锋",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "绑定英雄离场：继承前任真实等级的一半，只允许继承1次。",
+      "effects": [
+        {
+          "触发与条件": "绑定英雄离场",
+          "目标": "下一名枫叶舞绑定英雄",
+          "结算": "继承前任真实等级的一半，只允许继承1次"
+        }
+      ],
+      "有效期": "跨绑定英雄继承1次",
+      "触发上限": "继承一次",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92018",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "有叶新生",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后：恢复最大生命20%。",
+      "effects": [
+        {
+          "触发与条件": "转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "恢复最大生命20%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92017",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "枫佑永驻",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "强化后：护盾数值增大且不再受持续时间限制；具体增幅缺失。",
+      "effects": [
+        {
+          "触发与条件": "强化后",
+          "目标": "枫叶舞产生的护盾",
+          "结算": "护盾数值增大且不再受持续时间限制；具体增幅缺失"
+        }
+      ],
+      "有效期": "护盾持续时间无限；不能据此推定跨战斗保留",
+      "触发上限": null,
+      "未知项": [
+        "护盾量增加多少。"
+      ]
+    },
+    {
+      "id": "card.derived.92016",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "拈花一指",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后：造成2秒眩晕；附近范围未给格数。",
+      "effects": [
+        {
+          "触发与条件": "转移后",
+          "目标": "转移位置附近敌人",
+          "结算": "造成2秒眩晕；附近范围未给格数"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "附近的范围格数。"
+      ]
+    },
+    {
+      "id": "card.derived.92015",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "红枫疾舞",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后：接下来的4次普攻以最大攻速完成；最大值未给出。",
+      "effects": [
+        {
+          "触发与条件": "转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "接下来的4次普攻以最大攻速完成；最大值未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "最大攻速的数值。"
+      ]
+    },
+    {
+      "id": "card.derived.92013",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "枫华之刃",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后：造成伤害提升25%；结束时间未给出。",
+      "effects": [
+        {
+          "触发与条件": "转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "造成伤害提升25%；结束时间未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "25%伤害提升的持续时间。"
+      ]
+    },
+    {
+      "id": "card.derived.92012",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "枫影无拘",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后：获得5秒控制免疫。",
+      "effects": [
+        {
+          "触发与条件": "转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "获得5秒控制免疫"
+        }
+      ],
+      "有效期": "转移后5秒",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92011",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "枫舞扶摇",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "每回合第一次转移：得到5加本局英雄击败数的临时等级；每个击败再贡献1级。",
+      "effects": [
+        {
+          "触发与条件": "每回合第一次转移",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "得到5加本局英雄击败数的临时等级；每个击败再贡献1级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "每回合第一次转移",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92026",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "斗转星移",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后：先承受自身当前生命40%的伤害，获得双吸血各15%；该自伤类型未明。",
+      "effects": [
+        {
+          "触发与条件": "转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "先承受自身当前生命40%的伤害，获得双吸血各15%；该自伤类型未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "局内当前计数"
+      }
+    },
+    {
+      "id": "card.derived.92025",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "青叶绽蕊",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "拥有护盾且击败英雄：每次击败回复最大生命10%。",
+      "effects": [
+        {
+          "触发与条件": "拥有护盾且击败英雄",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "每次击败回复最大生命10%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92024",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "层林遮影",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移后：7秒内不被敌人优先选作攻击对象。",
+      "effects": [
+        {
+          "触发与条件": "转移后",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "7秒内不被敌人优先选作攻击对象"
+        }
+      ],
+      "有效期": "转移后7秒",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92023",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "一叶双生",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "转移发生：留下最大生命为本体30%的不可攻击分身；生成时嘲讽周围敌人2秒，死亡时再眩晕周围敌人。",
+      "effects": [
+        {
+          "触发与条件": "转移发生",
+          "目标": "原位置生成的分身与周围敌人",
+          "结算": "留下最大生命为本体30%的不可攻击分身；生成时嘲讽周围敌人2秒，死亡时再眩晕周围敌人"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "分身阵亡眩晕持续时间及周围范围。"
+      ]
+    },
+    {
+      "id": "card.derived.92022",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "瞬步无影",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "战斗开始：补充1次转移机会。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "枫叶舞绑定英雄",
+          "结算": "补充1次转移机会"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92021",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "踏叶摘星",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.20"
+      ],
+      "效果概括": "强化后：再次转移所需的击败英雄数减少1。",
+      "effects": [
+        {
+          "触发与条件": "强化后",
+          "目标": "枫叶舞转移计数规则",
+          "结算": "再次转移所需的击败英雄数减少1"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92199",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "无穷镜像",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.21"
+      ],
+      "效果概括": "主动使用累计每满4次：每次获得镜像1张；每4次后技能能量费用增加1；初始费用未给出。",
+      "effects": [
+        {
+          "触发与条件": "主动使用累计每满4次",
+          "目标": "镜的技能与手牌",
+          "结算": "每次获得镜像1张；每4次后技能能量费用增加1；初始费用未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "主动",
+      "初始技能能量费用": 2,
+      "技能费用变化": "本场每累计使用4次，后续技能费用加1；初始2能量"
+    },
+    {
+      "id": "card.derived.92100",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "镜像",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.21"
+      ],
+      "效果概括": "其他英雄牌打出后：自动变成最近打出的英雄牌；由另一张镜像打出的牌不被复制。",
+      "effects": [
+        {
+          "触发与条件": "其他英雄牌打出后",
+          "目标": "镜像手牌",
+          "结算": "自动变成最近打出的英雄牌；由另一张镜像打出的牌不被复制"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.662101",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "镜像之力",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.21"
+      ],
+      "效果概括": "使用镜像累计满4张：奖励秘技牌万镜1张。",
+      "effects": [
+        {
+          "触发与条件": "使用镜像累计满4张",
+          "目标": "镜手牌",
+          "结算": "奖励秘技牌万镜1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92110",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "万镜",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.21"
+      ],
+      "效果概括": "使用：随机选取并复制4种不同的场上英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "场上4种不同英雄的牌",
+          "结算": "随机选取并复制4种不同的场上英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.662107",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "镜花影",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.21"
+      ],
+      "效果概括": "购买商店英雄牌后：留下1个购买英雄的镜像复制；该复制不推进秘技任务。",
+      "effects": [
+        {
+          "触发与条件": "购买商店英雄牌后",
+          "目标": "商店剩余镜像",
+          "结算": "留下1个购买英雄的镜像复制；该复制不推进秘技任务"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92299",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "温柔呼唤",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.22"
+      ],
+      "效果概括": "主动使用：随机获得2至5阶转瞬英雄牌1张。",
+      "effects": [
+        {
+          "触发与条件": "主动使用",
+          "目标": "乔汐手牌",
+          "结算": "随机获得2至5阶转瞬英雄牌1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "牌期限": "转瞬：回合结束未使用即销毁",
+      "使用方式": "主动",
+      "初始技能能量费用": 1
+    },
+    {
+      "id": "card.derived.662201",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "海的拥抱",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.22"
+      ],
+      "效果概括": "每经过4回合：奖励潮汐的交响1张。",
+      "effects": [
+        {
+          "触发与条件": "每经过4回合",
+          "目标": "乔汐手牌",
+          "结算": "奖励潮汐的交响1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92210",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "潮汐的交响",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.22"
+      ],
+      "效果概括": "使用：各增加8级。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "场上随机5名英雄",
+          "结算": "各增加8级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.662206",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "潮起潮落",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.22"
+      ],
+      "效果概括": "战斗开始；每回合数值增长：基础为100临时等级，此等级每回合加40；传送英雄没有卡牌效果。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始；每回合数值增长",
+          "目标": "随机传送到战场的英雄",
+          "结算": "基础为100临时等级，此等级每回合加40；传送英雄没有卡牌效果"
+        }
+      ],
+      "有效期": "传送英雄获得临时等级，战斗结束清除",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92499",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "小菟助力",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.24"
+      ],
+      "效果概括": "主动使用及累计助力计数：首次等级收益为2；本局每完成1次助力，后续助力的等级收益再加1。",
+      "effects": [
+        {
+          "触发与条件": "主动使用及累计助力计数",
+          "目标": "随机1名英雄",
+          "结算": "首次等级收益为2；本局每完成1次助力，后续助力的等级收益再加1"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "主动",
+      "初始技能能量费用": 1
+    },
+    {
+      "id": "card.derived.662401",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "兔飞猛进",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.24"
+      ],
+      "效果概括": "己方英雄等级总和达到50、150、375：各奖励1张小菟送福。",
+      "effects": [
+        {
+          "触发与条件": "己方英雄等级总和达到50、150、375",
+          "目标": "常小娥手牌",
+          "结算": "各奖励1张小菟送福"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92410",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "小菟送福",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.24"
+      ],
+      "效果概括": "使用：各调用1次小菟助力；卡面基础收益2级，是否调用成长后的数值需要确认。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "场上随机4名英雄",
+          "结算": "各调用1次小菟助力；卡面基础收益2级，是否调用成长后的数值需要确认"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "小菟送福是否调用小菟助力的累计成长数值。"
+      ]
+    },
+    {
+      "id": "card.derived.662407",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "月之特调",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.24"
+      ],
+      "效果概括": "小菟累计给予等级：每提供5级额外随机给攻速15%、双吸血2%或双防2点之一；通过助力累计提供65级再得小菟送福。",
+      "effects": [
+        {
+          "触发与条件": "小菟累计给予等级",
+          "目标": "受助力英雄与常小娥手牌",
+          "结算": "每提供5级额外随机给攻速15%、双吸血2%或双防2点之一；通过助力累计提供65级再得小菟送福"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "每5级的随机属性收益作用于当次目标还是跨次计数；65级计数是否重置。"
+      ]
+    },
+    {
+      "id": "card.derived.92599",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "霓裳曲",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "每打出3张非觉醒英雄牌：按这3张牌的相同性、品阶、阵营关系选指法并结算1次；多条件同时满足的优先级未明。",
+      "effects": [
+        {
+          "触发与条件": "每打出3张非觉醒英雄牌",
+          "目标": "玉环指法效果",
+          "结算": "按这3张牌的相同性、品阶、阵营关系选指法并结算1次；多条件同时满足的优先级未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "三张同时同名、同阶、同阵营时各指法判定优先级；绞弦的组合条件。"
+      ],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.92594",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "轮指",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "3张相同非觉醒英雄牌形成组合：触发轮指，令下一次指法结算2次；这是组合判定版本。",
+      "effects": [
+        {
+          "触发与条件": "3张相同非觉醒英雄牌形成组合",
+          "目标": "下一次玉环指法",
+          "结算": "触发轮指，令下一次指法结算2次；这是组合判定版本"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92597",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "扫拂",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "3张同品阶非觉醒英雄牌形成组合：触发扫拂，各增加等于棋手等级的英雄等级；这是组合判定版本。",
+      "effects": [
+        {
+          "触发与条件": "3张同品阶非觉醒英雄牌形成组合",
+          "目标": "场上等级最低的2名英雄",
+          "结算": "触发扫拂，各增加等于棋手等级的英雄等级；这是组合判定版本"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92596",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "吟揉",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "3张同阵营非觉醒英雄牌形成组合：触发吟揉，随机得1张转瞬英雄牌；这是组合判定版本。",
+      "effects": [
+        {
+          "触发与条件": "3张同阵营非觉醒英雄牌形成组合",
+          "目标": "玉环手牌",
+          "结算": "触发吟揉，随机得1张转瞬英雄牌；这是组合判定版本"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "牌期限": "转瞬：回合结束未使用即销毁"
+    },
+    {
+      "id": "card.derived.662501",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "自成曲调",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "累计完成6次琵琶弹奏：获得惊鸿调1张，总奖励上限2张。",
+      "effects": [
+        {
+          "触发与条件": "累计完成6次琵琶弹奏",
+          "目标": "玉环手牌",
+          "结算": "获得惊鸿调1张，总奖励上限2张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "至多2张惊鸿调",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92510",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "惊鸿调",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "使用：按记录重放前6次指法并结算对应效果；剩余可得2张是状态值。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "记录的前6次玉环指法",
+          "结算": "按记录重放前6次指法并结算对应效果；剩余可得2张是状态值"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "剩余可获取奖励牌数"
+      }
+    },
+    {
+      "id": "card.derived.662502",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "余音绕梁",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "专属生效：新增3次惊鸿调演奏机会。",
+      "effects": [
+        {
+          "触发与条件": "专属生效",
+          "目标": "玉环的惊鸿调弹奏计数",
+          "结算": "新增3次惊鸿调演奏机会"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92501",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "轮指",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "轮指结算：下一次指法重复结算，共2次；这是独立效果版本而非三牌判定。",
+      "effects": [
+        {
+          "触发与条件": "轮指结算",
+          "目标": "下一次指法",
+          "结算": "下一次指法重复结算，共2次；这是独立效果版本而非三牌判定"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92502",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "扫拂",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "扫拂结算：分别增加棋手当前等级数的英雄等级；这是独立效果版本。",
+      "effects": [
+        {
+          "触发与条件": "扫拂结算",
+          "目标": "场上等级最低的2名英雄",
+          "结算": "分别增加棋手当前等级数的英雄等级；这是独立效果版本"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.92503",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "吟揉",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "吟揉结算：随机得到1张转瞬英雄牌；这是独立效果版本。",
+      "effects": [
+        {
+          "触发与条件": "吟揉结算",
+          "目标": "玉环手牌",
+          "结算": "随机得到1张转瞬英雄牌；这是独立效果版本"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "牌期限": "转瞬：回合结束未使用即销毁"
+    },
+    {
+      "id": "card.derived.92504",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "绞弦",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.25"
+      ],
+      "效果概括": "绞弦结算：增加1级；组合触发条件未在此独立效果中列出。",
+      "effects": [
+        {
+          "触发与条件": "绞弦结算",
+          "目标": "场上随机英雄",
+          "结算": "增加1级；组合触发条件未在此独立效果中列出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93199",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "梦境游戏",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.31"
+      ],
+      "效果概括": "庄小鱼棋手升级：随机取得效果牌1张。",
+      "effects": [
+        {
+          "触发与条件": "庄小鱼棋手升级",
+          "目标": "庄小鱼手牌",
+          "结算": "随机取得效果牌1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.663101",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "美梦成真",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.31"
+      ],
+      "效果概括": "庄小鱼升至5级、6级：分别获得如梦似幻1张。",
+      "effects": [
+        {
+          "触发与条件": "庄小鱼升至5级、6级",
+          "目标": "庄小鱼手牌",
+          "结算": "分别获得如梦似幻1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93110",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "如梦似幻",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.31"
+      ],
+      "效果概括": "使用：按现有阵容生成一套梦幻手牌；张数、候选池和生成算法未给出。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "己方场上英雄及人数至少3的阵营",
+          "结算": "按现有阵容生成一套梦幻手牌；张数、候选池和生成算法未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "梦幻手牌张数、完整候选池、阵容转换公式。"
+      ]
+    },
+    {
+      "id": "card.derived.663108",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "引擎升级",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.31"
+      ],
+      "效果概括": "专属生效；生命不高于30时战败：先得梦幻引擎1张；生命条件满足且战败可再次取得引擎。",
+      "effects": [
+        {
+          "触发与条件": "专属生效；生命不高于30时战败",
+          "目标": "庄小鱼手牌",
+          "结算": "先得梦幻引擎1张；生命条件满足且战败可再次取得引擎"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663109",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "梦幻引擎",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.31"
+      ],
+      "效果概括": "使用：根据场上阵容把原商店替换为梦幻商店；具体库存生成和替换期限未列出。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "庄小鱼商店",
+          "结算": "根据场上阵容把原商店替换为梦幻商店；具体库存生成和替换期限未列出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "梦幻商店完整库存规则、刷新规则、持续回合。"
+      ]
+    },
+    {
+      "id": "card.derived.93299",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "寻宝之旅",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "累计打出4张不高于3阶的英雄牌：随机获得宝藏牌1张。",
+      "effects": [
+        {
+          "触发与条件": "累计打出4张不高于3阶的英雄牌",
+          "目标": "马可手牌",
+          "结算": "随机获得宝藏牌1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.663201",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "终极宝藏",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "累计使用7张宝藏牌：获得终极宝藏秘技牌1张。",
+      "effects": [
+        {
+          "触发与条件": "累计使用7张宝藏牌",
+          "目标": "马可手牌",
+          "结算": "获得终极宝藏秘技牌1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93210",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "终极宝藏正是在下",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：从随机3选项中选1个；不是从完整6种固定展示。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "随机给出的3种终极宝藏",
+          "结算": "从随机3选项中选1个；不是从完整6种固定展示"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.610013",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "瓜分宝藏",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "专属选择：二选一：全体收益或人数最多的同品阶群体收益。",
+      "effects": [
+        {
+          "触发与条件": "专属选择",
+          "目标": "两类英雄伤害强化",
+          "结算": "二选一：全体收益或人数最多的同品阶群体收益"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663207",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "阳光普照",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "战斗开始：伤害提升百分数等于已打出宝藏牌数量乘1%。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "己方全体英雄",
+          "结算": "伤害提升百分数等于已打出宝藏牌数量乘1%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663208",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "重点照顾",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "战斗开始：伤害提升百分数等于已打出宝藏牌数量乘1.5%；并列最多的处理未明。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "己方人数最多的同品阶英雄群体",
+          "结算": "伤害提升百分数等于已打出宝藏牌数量乘1.5%；并列最多的处理未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "品阶群体人数并列时选取口径。"
+      ]
+    },
+    {
+      "id": "card.derived.93200",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "红笺锦鲤符",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用并指定英雄：加4级；基础宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "1名英雄",
+          "结算": "加4级；基础宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93201",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "狼牙部落的图腾雕像",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：抽取1张英雄牌；基础宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "不高于3阶的英雄池",
+          "结算": "抽取1张英雄牌；基础宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93202",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "沙海甘泉",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：加1能量；基础宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "马可能量",
+          "结算": "加1能量；基础宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93203",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "人鱼之泪",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：随机加入效果牌1张；基础宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "马可手牌",
+          "结算": "随机加入效果牌1张；基础宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93204",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神树彩陶",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：各加2级；基础宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "场上随机4名英雄",
+          "结算": "各加2级；基础宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93205",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "冰曜宝石镜",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：取得1张该牌复制；基础宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "手中随机1张非觉醒英雄牌",
+          "结算": "取得1张该牌复制；基础宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93216",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "马可的随身信物",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：随机获得效果牌4张；终极宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "马可手牌",
+          "结算": "随机获得效果牌4张；终极宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93215",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "马可的时差信笺",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：随机获得宝藏牌2张；终极宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "马可手牌",
+          "结算": "随机获得宝藏牌2张；终极宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93214",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "马可的魅力飞吻",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：各增加10级；终极宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "己方全体英雄",
+          "结算": "各增加10级；终极宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93213",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "马可的限量亲签",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：获得4能量及1张装备牌，未限定装备类别；终极宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "马可能量和手牌",
+          "结算": "获得4能量及1张装备牌，未限定装备类别；终极宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93212",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "马可的吸睛自拍",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：随机获得各自英雄牌，共3张；终极宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "场上3种不同英雄",
+          "结算": "随机获得各自英雄牌，共3张；终极宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93211",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "马可的招牌微笑",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.32"
+      ],
+      "效果概括": "使用：永久增强该种宝藏，并立即取得1张；增强数值未提供；终极宝藏分支。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "随机一种宝藏牌",
+          "结算": "永久增强该种宝藏，并立即取得1张；增强数值未提供；终极宝藏分支"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "每一种被强化基础宝藏的增强数值。"
+      ]
+    },
+    {
+      "id": "card.derived.93399",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神来之笔",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.33"
+      ],
+      "效果概括": "英雄合成累计每满4次：获得即兴创作1张。",
+      "effects": [
+        {
+          "触发与条件": "英雄合成累计每满4次",
+          "目标": "白歌手牌",
+          "结算": "获得即兴创作1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.93300",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "即兴创作",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.33"
+      ],
+      "效果概括": "使用：取得1张该英雄牌复制。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "场上随机1名英雄",
+          "结算": "取得1张该英雄牌复制"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663301",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "天生我才",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.33"
+      ],
+      "效果概括": "累计使用6张即兴创作：奖励灵感爆发1张。",
+      "effects": [
+        {
+          "触发与条件": "累计使用6张即兴创作",
+          "目标": "白歌手牌",
+          "结算": "奖励灵感爆发1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93310",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "灵感爆发",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.33"
+      ],
+      "效果概括": "使用：每张分裂成2张具有转瞬期限的复制，共至多6张；原牌被分拆。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "手牌随机3张非觉醒英雄牌",
+          "结算": "每张分裂成2张具有转瞬期限的复制，共至多6张；原牌被分拆"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "牌期限": "转瞬：回合结束未使用即销毁"
+    },
+    {
+      "id": "card.derived.663307",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "惊才绝艳",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.33"
+      ],
+      "效果概括": "专属生效：取得奇才1张，奇才提供定向4张英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "专属生效",
+          "目标": "白歌手牌",
+          "结算": "取得奇才1张，奇才提供定向4张英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663308",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇才",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.33"
+      ],
+      "效果概括": "使用并指定英雄：一次取得4张该英雄牌。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定英雄",
+          "目标": "1名英雄",
+          "结算": "一次取得4张该英雄牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93499",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "冰之心",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "主动冻结；战斗结束解冻：冻结目标；解冻后随机替换为高1阶英雄并继承等级；冻结期间行为未详述。",
+      "effects": [
+        {
+          "触发与条件": "主动冻结；战斗结束解冻",
+          "目标": "指定1名英雄",
+          "结算": "冻结目标；解冻后随机替换为高1阶英雄并继承等级；冻结期间行为未详述"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "技能单回合默认使用次数；冻结中的可攻击/被选中状态及达到5阶后的变换。"
+      ],
+      "使用方式": "主动",
+      "初始技能能量费用": 0
+    },
+    {
+      "id": "card.derived.663401",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "极寒冰冻",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "比赛第5和第8回合：分别取得深度冻结1张。",
+      "effects": [
+        {
+          "触发与条件": "比赛第5和第8回合",
+          "目标": "昭君手牌",
+          "结算": "分别取得深度冻结1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93410",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "深度冻结",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "使用：选择其中1个；完整候选分支另列。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "随机3个冰冻强化候选",
+          "结算": "选择其中1个；完整候选分支另列"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663405",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "冰雪秘藏",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "专属选择：选择其中1个，三项对应寒潮之势、不朽坚冰、雪暴时刻。",
+      "effects": [
+        {
+          "触发与条件": "专属选择",
+          "目标": "3个冰雪增益候选",
+          "结算": "选择其中1个，三项对应寒潮之势、不朽坚冰、雪暴时刻"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663402",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "寒潮之势",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "战斗开始：增加1200生命，双攻击各加120。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "己方等级最高的英雄",
+          "结算": "增加1200生命，双攻击各加120"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663403",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "不朽坚冰",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "战斗开始：生命上限各加500，双攻击各加60。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "己方全体英雄",
+          "结算": "生命上限各加500，双攻击各加60"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663404",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "雪暴时刻",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "被冻结英雄解冻：永久增加20级。",
+      "effects": [
+        {
+          "触发与条件": "被冻结英雄解冻",
+          "目标": "该英雄",
+          "结算": "永久增加20级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93414",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "寒冰王座",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "英雄解冻：变为随机5阶英雄，替代默认高1阶变换。",
+      "effects": [
+        {
+          "触发与条件": "英雄解冻",
+          "目标": "被冻结英雄",
+          "结算": "变为随机5阶英雄，替代默认高1阶变换"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93415",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "冰封结晶",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "英雄解冻：额外取得1张与解冻英雄品阶相同的兑换券。",
+      "effects": [
+        {
+          "触发与条件": "英雄解冻",
+          "目标": "昭君手牌",
+          "结算": "额外取得1张与解冻英雄品阶相同的兑换券"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93416",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "冰心领域",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "每回合开始：各得到场上品阶总数乘35%的等级；品阶总数口径及取整未给出。",
+      "effects": [
+        {
+          "触发与条件": "每回合开始",
+          "目标": "场上友方英雄",
+          "结算": "各得到场上品阶总数乘35%的等级；品阶总数口径及取整未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "场上品阶总数的定义和35%取整。"
+      ]
+    },
+    {
+      "id": "card.derived.93417",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "寒雨凝结",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "每回合开始：各得到等于主要阵营人数的等级；主要阵营并列判定未给出。",
+      "effects": [
+        {
+          "触发与条件": "每回合开始",
+          "目标": "场上友方英雄",
+          "结算": "各得到等于主要阵营人数的等级；主要阵营并列判定未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "主要阵营的定义和并列处理。"
+      ]
+    },
+    {
+      "id": "card.derived.93418",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "寒潮共振",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "每回合开始：各得到已觉醒英雄数量乘1.5的等级；取整未给出。",
+      "effects": [
+        {
+          "触发与条件": "每回合开始",
+          "目标": "场上友方英雄",
+          "结算": "各得到已觉醒英雄数量乘1.5的等级；取整未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "1.5倍等级增长的取整。"
+      ]
+    },
+    {
+      "id": "card.derived.93419",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "寒冰觉醒",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "英雄解冻：保留英雄身份，觉醒进度额外加2，覆盖默认换英雄规则。",
+      "effects": [
+        {
+          "触发与条件": "英雄解冻",
+          "目标": "被冻结英雄",
+          "结算": "保留英雄身份，觉醒进度额外加2，覆盖默认换英雄规则"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93412",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "霜寒进化",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "英雄解冻：替换为同阵营、较原先高1阶的随机英雄。",
+      "effects": [
+        {
+          "触发与条件": "英雄解冻",
+          "目标": "被冻结英雄",
+          "结算": "替换为同阵营、较原先高1阶的随机英雄"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93411",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "升华",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "英雄解冻：换为高1阶英雄并额外加2觉醒进度。",
+      "effects": [
+        {
+          "触发与条件": "英雄解冻",
+          "目标": "被冻结英雄",
+          "结算": "换为高1阶英雄并额外加2觉醒进度"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93413",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "破冰裂变",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.34"
+      ],
+      "效果概括": "英雄解冻；下一回合起：换为高2阶英雄；从下回合开始技能每回合可以使用2次。",
+      "effects": [
+        {
+          "触发与条件": "英雄解冻；下一回合起",
+          "目标": "被冻结英雄与冰之心技能",
+          "结算": "换为高2阶英雄；从下回合开始技能每回合可以使用2次"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93599",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神匠",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "比赛开局；棋手升至2、3、4、5级：开局取得便携式机关1张；各升级节点从三类机关牌随机取得1张。",
+      "effects": [
+        {
+          "触发与条件": "比赛开局；棋手升至2、3、4、5级",
+          "目标": "班叔手牌",
+          "结算": "开局取得便携式机关1张；各升级节点从三类机关牌随机取得1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.93508",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "便携式机关",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "使用：从三类机关中自选1类。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "热能陷阱、电磁弹簧、等离子屏障",
+          "结算": "从三类机关中自选1类"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93501",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "热能陷阱",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "放置；敌方踩中：构筑热能陷阱，触发时造成真实伤害和眩晕；基础数值未给出。",
+      "effects": [
+        {
+          "触发与条件": "放置；敌方踩中",
+          "目标": "陷阱位置与踩中的敌人",
+          "结算": "构筑热能陷阱，触发时造成真实伤害和眩晕；基础数值未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "各等级陷阱的伤害、眩晕时长、冷却和范围。"
+      ]
+    },
+    {
+      "id": "card.derived.93502",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "电磁弹簧",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "放置；敌方踩中：将敌人弹向敌方后排；一枚弹簧触发2次后消失。",
+      "effects": [
+        {
+          "触发与条件": "放置；敌方踩中",
+          "目标": "弹簧位置与踩中的敌人",
+          "结算": "将敌人弹向敌方后排；一枚弹簧触发2次后消失"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "触发2次消失",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93503",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "等离子屏障",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "放置：构筑等离子屏障，横向阻挡敌方行动；长度与基础生命未给出。",
+      "effects": [
+        {
+          "触发与条件": "放置",
+          "目标": "横向展开的屏障所在位置",
+          "结算": "构筑等离子屏障，横向阻挡敌方行动；长度与基础生命未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "各等级屏障的生命、长度、持续与碰撞细节。"
+      ]
+    },
+    {
+      "id": "card.derived.663501",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "机关跃迁",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "陷阱触发、弹簧触发、屏障被毁：对应事件分别增加3、2、5螺丝；收集后取得构筑升级，整局至多10张；每张所需螺丝门槛未给出。",
+      "effects": [
+        {
+          "触发与条件": "陷阱触发、弹簧触发、屏障被毁",
+          "目标": "班叔螺丝计数和秘技手牌",
+          "结算": "对应事件分别增加3、2、5螺丝；收集后取得构筑升级，整局至多10张；每张所需螺丝门槛未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "至多10张构筑升级",
+      "未知项": [
+        "各张构筑升级所需螺丝门槛及超出10张后的螺丝用途。"
+      ]
+    },
+    {
+      "id": "card.derived.93504",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "构筑升级",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "使用并指定机关：提高该机关等级及相应效果；升级后的基础级别数值未完整给出。",
+      "effects": [
+        {
+          "触发与条件": "使用并指定机关",
+          "目标": "己方场上1个机关",
+          "结算": "提高该机关等级及相应效果；升级后的基础级别数值未完整给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "三类机关的各等级完整效果。"
+      ]
+    },
+    {
+      "id": "card.derived.663502",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "成品方案",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "专属选择：从热能陷阱强化、电磁弹簧强化、等离子屏障强化中选1。",
+      "effects": [
+        {
+          "触发与条件": "专属选择",
+          "目标": "三类机关强化方案",
+          "结算": "从热能陷阱强化、电磁弹簧强化、等离子屏障强化中选1"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93505",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "热能陷阱强化",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "强化陷阱触发：延后2秒爆炸，爆炸范围扩大1格；3级陷阱冷却缩短为4秒。",
+      "effects": [
+        {
+          "触发与条件": "强化陷阱触发",
+          "目标": "热能陷阱",
+          "结算": "延后2秒爆炸，爆炸范围扩大1格；3级陷阱冷却缩短为4秒"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93506",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "电磁弹簧强化",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "强化弹簧被己方触发：获得最大生命50%的磁力护盾；盾在时造成伤害增加50%。",
+      "effects": [
+        {
+          "触发与条件": "强化弹簧被己方触发",
+          "目标": "踩中的己方单位",
+          "结算": "获得最大生命50%的磁力护盾；盾在时造成伤害增加50%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93507",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "等离子屏障强化",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.35"
+      ],
+      "效果概括": "强化屏障；3级屏障开战：屏障生命提高100%；3级屏障战斗开始给左右1格友军复生效果。",
+      "effects": [
+        {
+          "触发与条件": "强化屏障；3级屏障开战",
+          "目标": "屏障及其左右1格友军",
+          "结算": "屏障生命提高100%；3级屏障战斗开始给左右1格友军复生效果"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93699",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "棋道万象",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.36"
+      ],
+      "效果概括": "本回合战斗开始：复制该敌人；复制单位加入己方战场的细节以基础技能规则为准。",
+      "effects": [
+        {
+          "触发与条件": "本回合战斗开始",
+          "目标": "随机1名敌方英雄",
+          "结算": "复制该敌人；复制单位加入己方战场的细节以基础技能规则为准"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.663601",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "谋而后定",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.36"
+      ],
+      "效果概括": "比赛第4、8、12回合：分别获得驭势1张。",
+      "effects": [
+        {
+          "触发与条件": "比赛第4、8、12回合",
+          "目标": "弈星手牌",
+          "结算": "分别获得驭势1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93610",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "驭势",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.36"
+      ],
+      "效果概括": "使用后战斗开始：复制这些英雄对应的牌到自己手牌。",
+      "effects": [
+        {
+          "触发与条件": "使用后战斗开始",
+          "目标": "敌方全场英雄",
+          "结算": "复制这些英雄对应的牌到自己手牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663607",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "神之一手",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.36"
+      ],
+      "效果概括": "战斗开始：复制为己方临时参战英雄。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "敌方等级最高的英雄",
+          "结算": "复制为己方临时参战英雄"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93899",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "时光倒流",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.38"
+      ],
+      "效果概括": "主动使用：随机选择其中1张再触发效果；不是复制全部上一回合手牌。",
+      "effects": [
+        {
+          "触发与条件": "主动使用",
+          "目标": "上一回合使用的非觉醒英雄牌和效果牌",
+          "结算": "随机选择其中1张再触发效果；不是复制全部上一回合手牌"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "主动",
+      "初始技能能量费用": 1
+    },
+    {
+      "id": "card.derived.663801",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "时间魔法",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.38"
+      ],
+      "效果概括": "首次单回合打出8张英雄或效果牌：奖励时之回环1张；首次条件限制奖励触发。",
+      "effects": [
+        {
+          "触发与条件": "首次单回合打出8张英雄或效果牌",
+          "目标": "孙小宾手牌",
+          "结算": "奖励时之回环1张；首次条件限制奖励触发"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "首次单回合满足任务",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93810",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "时之回环",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.38"
+      ],
+      "效果概括": "使用后继续出牌；下回合开始：记录使用后的至多8张符合条件的牌，下回合开始重复结算。",
+      "effects": [
+        {
+          "触发与条件": "使用后继续出牌；下回合开始",
+          "目标": "后续非觉醒英雄牌及效果牌",
+          "结算": "记录使用后的至多8张符合条件的牌，下回合开始重复结算"
+        }
+      ],
+      "有效期": "记录后于下回合开始重放",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663805",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "时光宝藏",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.38"
+      ],
+      "效果概括": "专属生效：获得永恒时之回环1张；记录容量提高到12张。",
+      "effects": [
+        {
+          "触发与条件": "专属生效",
+          "目标": "孙小宾手牌",
+          "结算": "获得永恒时之回环1张；记录容量提高到12张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93811",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "永恒时之回环",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.38"
+      ],
+      "效果概括": "使用后继续出牌；下回合开始：记录使用后的至多12张符合条件牌，下回合开始重复结算。",
+      "effects": [
+        {
+          "触发与条件": "使用后继续出牌；下回合开始",
+          "目标": "后续非觉醒英雄牌及效果牌",
+          "结算": "记录使用后的至多12张符合条件牌，下回合开始重复结算"
+        }
+      ],
+      "有效期": "记录后于下回合开始重放",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93999",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "先知卦象",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.39"
+      ],
+      "效果概括": "主动使用：丰和节二选一，选中的卦象持续3回合。",
+      "effects": [
+        {
+          "触发与条件": "主动使用",
+          "目标": "两类卦象效果",
+          "结算": "丰和节二选一，选中的卦象持续3回合"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "主动",
+      "初始技能能量费用": 0
+    },
+    {
+      "id": "card.derived.93998",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "卦象·丰",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.39"
+      ],
+      "效果概括": "每回合卦象生效：获得4次临时刷新并减少2能量，作用3回合。",
+      "effects": [
+        {
+          "触发与条件": "每回合卦象生效",
+          "目标": "明先生刷新和能量",
+          "结算": "获得4次临时刷新并减少2能量，作用3回合"
+        }
+      ],
+      "有效期": "3回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93997",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "卦象·节",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.39"
+      ],
+      "效果概括": "卦象生效；每回合：刷新价格增加1，回合能量增加2，作用3回合。",
+      "effects": [
+        {
+          "触发与条件": "卦象生效；每回合",
+          "目标": "明先生刷新价格和能量",
+          "结算": "刷新价格增加1，回合能量增加2，作用3回合"
+        }
+      ],
+      "有效期": "3回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.663901",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "天降鸿运",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.39"
+      ],
+      "效果概括": "比赛第6、第10回合：各取得命运馈赠1张。",
+      "effects": [
+        {
+          "触发与条件": "比赛第6、第10回合",
+          "目标": "明先生手牌",
+          "结算": "各取得命运馈赠1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93910",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "命运馈赠",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.39"
+      ],
+      "效果概括": "使用：从两类中选1；使用次数增加会增强效果，但增强曲线未给出。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "阴阳两类馈赠",
+          "结算": "从两类中选1；使用次数增加会增强效果，但增强曲线未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "馈赠各次使用的完整增强曲线。"
+      ]
+    },
+    {
+      "id": "card.derived.663905",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "飞龙在天",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.39"
+      ],
+      "效果概括": "专属强化卦象：节每回合额外获得4能量；丰每回合取得8次临时刷新；与基础数值替换或叠加的关系未明。",
+      "effects": [
+        {
+          "触发与条件": "专属强化卦象",
+          "目标": "明先生的节、丰",
+          "结算": "节每回合额外获得4能量；丰每回合取得8次临时刷新；与基础数值替换或叠加的关系未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "专属强化是替换基础量还是叠加量。"
+      ]
+    },
+    {
+      "id": "card.derived.93911",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "命运馈赠·阴",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.39"
+      ],
+      "效果概括": "回合开始：连续3回合各额外获得3能量；阴类馈赠。",
+      "effects": [
+        {
+          "触发与条件": "回合开始",
+          "目标": "明先生能量",
+          "结算": "连续3回合各额外获得3能量；阴类馈赠"
+        }
+      ],
+      "有效期": "3回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.93912",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "命运馈赠·阳",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.39"
+      ],
+      "效果概括": "回合开始：连续3回合各增加5级；阳类馈赠。",
+      "effects": [
+        {
+          "触发与条件": "回合开始",
+          "目标": "己方全部英雄",
+          "结算": "连续3回合各增加5级；阳类馈赠"
+        }
+      ],
+      "有效期": "3回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94099",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "派对泡泡",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.40"
+      ],
+      "效果概括": "第一次技能选择；之后使用替换技能：先选择1个阵营；后续技能每次花1能量取该阵营英雄牌1张。",
+      "effects": [
+        {
+          "触发与条件": "第一次技能选择；之后使用替换技能",
+          "目标": "随机2个阵营及选定阵营的英雄池",
+          "结算": "先选择1个阵营；后续技能每次花1能量取该阵营英雄牌1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "主动",
+      "初始技能能量费用": 0,
+      "替换后技能能量费用": 1
+    },
+    {
+      "id": "card.derived.664001",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "快乐集结",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.40"
+      ],
+      "效果概括": "上阵6名选定阵营英雄：奖励朋友多多1张。",
+      "effects": [
+        {
+          "触发与条件": "上阵6名选定阵营英雄",
+          "目标": "闹闹手牌",
+          "结算": "奖励朋友多多1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94010",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "朋友多多",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.40"
+      ],
+      "效果概括": "使用：随机抽取该阵营英雄牌4张。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "派对泡泡所选阵营英雄池",
+          "结算": "随机抽取该阵营英雄牌4张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.664005",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "狂欢时刻",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.40"
+      ],
+      "效果概括": "专属生效：获得打成一片1张。",
+      "effects": [
+        {
+          "触发与条件": "专属生效",
+          "目标": "闹闹手牌",
+          "结算": "获得打成一片1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.664009",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "打成一片",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.40"
+      ],
+      "效果概括": "使用：展示3个相关天赋，选择1个。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "技能选定阵营相关天赋池",
+          "结算": "展示3个相关天赋，选择1个"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94199",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "钦定主角",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.41"
+      ],
+      "效果概括": "指定主角；每打出2张英雄或效果牌：主角加1级，每回合通过此机制至多加5级。",
+      "effects": [
+        {
+          "触发与条件": "指定主角；每打出2张英雄或效果牌",
+          "目标": "被指定的主角英雄",
+          "结算": "主角加1级，每回合通过此机制至多加5级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "每回合最多加5级",
+      "未知项": [],
+      "使用方式": "主动",
+      "初始技能能量费用": 0
+    },
+    {
+      "id": "card.derived.664101",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "封神时刻",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.41"
+      ],
+      "效果概括": "己方英雄首次达到25级：奖励封神一瞬1张。",
+      "effects": [
+        {
+          "触发与条件": "己方英雄首次达到25级",
+          "目标": "姜导手牌",
+          "结算": "奖励封神一瞬1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94110",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "封神一瞬",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.41"
+      ],
+      "效果概括": "指定使用；后续永久升级：先增加目标品阶乘5的等级；此后每次永久增加等级，再多加1级。",
+      "effects": [
+        {
+          "触发与条件": "指定使用；后续永久升级",
+          "目标": "1名英雄",
+          "结算": "先增加目标品阶乘5的等级；此后每次永久增加等级，再多加1级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.664108",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "完美演出",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.41"
+      ],
+      "效果概括": "战斗开始：双吸血各增加30%；前15秒免疫控制，但压制不被免疫。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "封神一瞬指定英雄",
+          "结算": "双吸血各增加30%；前15秒免疫控制，但压制不被免疫"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94399",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "最高决策者",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "比赛开局；第一次颁布至高决策：开局获得战略决策1张；使用后第一次发布至高决策时可再得1张。",
+      "effects": [
+        {
+          "触发与条件": "比赛开局；第一次颁布至高决策",
+          "目标": "嬴律手牌",
+          "结算": "开局获得战略决策1张；使用后第一次发布至高决策时可再得1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.94300",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战略决策",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "使用并选择：选择一个战略决策并使其整局生效。",
+      "effects": [
+        {
+          "触发与条件": "使用并选择",
+          "目标": "嬴律本场比赛",
+          "结算": "选择一个战略决策并使其整局生效"
+        }
+      ],
+      "有效期": "本场比赛",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.664301",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "至高之主",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "每经过4回合：取得至高决策1张。",
+      "effects": [
+        {
+          "触发与条件": "每经过4回合",
+          "目标": "嬴律手牌",
+          "结算": "取得至高决策1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94309",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "至高决策",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "使用并颁布：从4种至高决策中选1种，全体生效3回合。",
+      "effects": [
+        {
+          "触发与条件": "使用并颁布",
+          "目标": "全场所有棋手",
+          "结算": "从4种至高决策中选1种，全体生效3回合"
+        }
+      ],
+      "有效期": "3回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.610006",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "特权决策",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "专属选择并颁布：选择1种特权决策；全体受到基础效果，颁布者另享特权；持续期未在此牌明确。",
+      "effects": [
+        {
+          "触发与条件": "专属选择并颁布",
+          "目标": "全场所有棋手及颁布者",
+          "结算": "选择1种特权决策；全体受到基础效果，颁布者另享特权；持续期未在此牌明确"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94361",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "绝对压制",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗开始：同时获得变猪3秒与本局对战30%减伤；颁布者的该英雄另有20%伤害提高，减伤不等待变猪结束。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "各棋手最高等级英雄",
+          "结算": "同时获得变猪3秒与本局对战30%减伤；颁布者的该英雄另有20%伤害提高，减伤不等待变猪结束"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94362",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "贷款协议",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "能量支付；负能量回合开始：可透支至负15；负能量时当回合能量收入减2；颁布者可到负20且不受收入惩罚。",
+      "effects": [
+        {
+          "触发与条件": "能量支付；负能量回合开始",
+          "目标": "全场棋手能量",
+          "结算": "可透支至负15；负能量时当回合能量收入减2；颁布者可到负20且不受收入惩罚"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94363",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "资源再分配",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "有棋手淘汰：得到5能量和1基础装备牌；颁布者改得特殊装备牌并额外恢复5棋手生命。",
+      "effects": [
+        {
+          "触发与条件": "有棋手淘汰",
+          "目标": "全场适用棋手",
+          "结算": "得到5能量和1基础装备牌；颁布者改得特殊装备牌并额外恢复5棋手生命"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94302",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "投资增值",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "棋手升级；满级后的每回合：升级获得2能量；满级后每回合改得2次临时刷新。",
+      "effects": [
+        {
+          "触发与条件": "棋手升级；满级后的每回合",
+          "目标": "棋手能量与刷新",
+          "结算": "升级获得2能量；满级后每回合改得2次临时刷新"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94303",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "风险对冲",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗失败；回合开始：失败额外取得2次刷新，回合开始恢复1棋手生命。",
+      "effects": [
+        {
+          "触发与条件": "战斗失败；回合开始",
+          "目标": "棋手刷新与生命",
+          "结算": "失败额外取得2次刷新，回合开始恢复1棋手生命"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94304",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "固定收益",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "每回合：额外获得1能量及1次临时刷新。",
+      "effects": [
+        {
+          "触发与条件": "每回合",
+          "目标": "棋手能量与临时刷新",
+          "结算": "额外获得1能量及1次临时刷新"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94305",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "乘胜追击",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "回合开始且上次战斗获胜：获得2能量及1次临时刷新。",
+      "effects": [
+        {
+          "触发与条件": "回合开始且上次战斗获胜",
+          "目标": "棋手能量与临时刷新",
+          "结算": "获得2能量及1次临时刷新"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94306",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "基层提拔",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "打出1至3阶英雄牌：增加3级。",
+      "effects": [
+        {
+          "触发与条件": "打出1至3阶英雄牌",
+          "目标": "该低阶英雄",
+          "结算": "增加3级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94307",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "空降人才",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "整局前2张打出的4至5阶英雄：各增加2觉醒进度，仅前2张满足。",
+      "effects": [
+        {
+          "触发与条件": "整局前2张打出的4至5阶英雄",
+          "目标": "对应英雄",
+          "结算": "各增加2觉醒进度，仅前2张满足"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "本场前2张符合条件牌",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94351",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "沉淀收益",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "回合开始：基数0；当前棋手等级每停留1回合，收入加1，最高4能量。",
+      "effects": [
+        {
+          "触发与条件": "回合开始",
+          "目标": "棋手能量",
+          "结算": "基数0；当前棋手等级每停留1回合，收入加1，最高4能量"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "最多4能量",
+      "未知项": [],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "局内当前计数"
+      }
+    },
+    {
+      "id": "card.derived.94352",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "并购红利",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "英雄合成：每次获得1能量，每回合至多3次。",
+      "effects": [
+        {
+          "触发与条件": "英雄合成",
+          "目标": "棋手能量",
+          "结算": "每次获得1能量，每回合至多3次"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "每回合3次",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94353",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "低压运营",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "回合开始：每15点棋手生命贡献1级；不足15的零头如何结算未明。",
+      "effects": [
+        {
+          "触发与条件": "回合开始",
+          "目标": "场上己方全部英雄",
+          "结算": "每15点棋手生命贡献1级；不足15的零头如何结算未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94311",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "资本杠杆",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "回合结束：每保留7能量再获1能量；取整口径待确认。",
+      "effects": [
+        {
+          "触发与条件": "回合结束",
+          "目标": "棋手能量",
+          "结算": "每保留7能量再获1能量；取整口径待确认"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94312",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "资产清算",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "累计出售10名场上1至3阶英雄：取得10能量；完成后能否再次累计未列明。",
+      "effects": [
+        {
+          "触发与条件": "累计出售10名场上1至3阶英雄",
+          "目标": "棋手能量",
+          "结算": "取得10能量；完成后能否再次累计未列明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "出售10名的计数是否重置、是否可重复领取。"
+      ]
+    },
+    {
+      "id": "card.derived.94313",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "胜场激励",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "累计战斗胜利2次：取得10能量；重复领取规则未列明。",
+      "effects": [
+        {
+          "触发与条件": "累计战斗胜利2次",
+          "目标": "棋手能量",
+          "结算": "取得10能量；重复领取规则未列明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "2胜奖励能否重复领取。"
+      ]
+    },
+    {
+      "id": "card.derived.94314",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "分红",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗结束：每存活1名英雄获得1能量。",
+      "effects": [
+        {
+          "触发与条件": "战斗结束",
+          "目标": "存活己方英雄与能量",
+          "结算": "每存活1名英雄获得1能量"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94315",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "人才储备",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "回合开始且棋手等级大于3：取得人才搜寻1张。",
+      "effects": [
+        {
+          "触发与条件": "回合开始且棋手等级大于3",
+          "目标": "棋手手牌",
+          "结算": "取得人才搜寻1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94316",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "投资回报",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗开始且本回合打出英雄及效果牌合计至少8张：从符合本回合记录的牌随机取回2张。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始且本回合打出英雄及效果牌合计至少8张",
+          "目标": "本回合已用牌池",
+          "结算": "从符合本回合记录的牌随机取回2张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94317",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "首购激励",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "每回合第一次购牌：额外取得该牌复制1张。",
+      "effects": [
+        {
+          "触发与条件": "每回合第一次购牌",
+          "目标": "所购卡牌",
+          "结算": "额外取得该牌复制1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "每回合第1张购买牌",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94318",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "管理进修",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "获得此效果；棋手升级：先获3经验，每次棋手升级再获3经验。",
+      "effects": [
+        {
+          "触发与条件": "获得此效果；棋手升级",
+          "目标": "棋手经验",
+          "结算": "先获3经验，每次棋手升级再获3经验"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94319",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战略性收缩",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗失败达到2次：取得9经验；重复完成规则未明。",
+      "effects": [
+        {
+          "触发与条件": "战斗失败达到2次",
+          "目标": "棋手经验",
+          "结算": "取得9经验；重复完成规则未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "2败奖励能否重复领取。"
+      ]
+    },
+    {
+      "id": "card.derived.94321",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "短期企划",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗开始和结束：开战得到10临时等级；结算时仍存活的英雄保留其中5级。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始和结束",
+          "目标": "己方英雄",
+          "结算": "开战得到10临时等级；结算时仍存活的英雄保留其中5级"
+        }
+      ],
+      "有效期": "临时10级，存活者保留5级",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94322",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "股权激励",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "回合开始：第1名获得特殊装备1件，第2名得普通装备1件；排名依据与并列处理未明。",
+      "effects": [
+        {
+          "触发与条件": "回合开始",
+          "目标": "排名第1及第2的玩家",
+          "结算": "第1名获得特殊装备1件，第2名得普通装备1件；排名依据与并列处理未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "排名依据和并列处理。"
+      ]
+    },
+    {
+      "id": "card.derived.94323",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "精英计划",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗开始：最大法力减少20。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "己方场上最高等级英雄",
+          "结算": "最大法力减少20"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94324",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "协同增效",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "英雄合成：在普通合成等级增长之外额外增加4级。",
+      "effects": [
+        {
+          "触发与条件": "英雄合成",
+          "目标": "合成后的英雄",
+          "结算": "在普通合成等级增长之外额外增加4级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94325",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "猎头挖角",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗开始：复制该英雄并使其加入己方当次战斗。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "敌方最高等级英雄",
+          "结算": "复制该英雄并使其加入己方当次战斗"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.94326",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "基层强化",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.43"
+      ],
+      "效果概括": "战斗开始：造成伤害提高50%。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "己方1至3阶英雄",
+          "结算": "造成伤害提高50%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95099",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "究极弩炮",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "战斗开始；己方低阶达10级人数变化：攻击敌人；基础攻击20，每拥有1名至少10级的1至3阶英雄再加20攻击。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始；己方低阶达10级人数变化",
+          "目标": "香香的武器",
+          "结算": "攻击敌人；基础攻击20，每拥有1名至少10级的1至3阶英雄再加20攻击"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.665001",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "枪炮艺术",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "累计对棋手造成伤害达到10、15、20、30：累计造成棋手伤害达到10、15、20、30时，各获得武器改造1张。",
+      "effects": [
+        {
+          "触发与条件": "累计对棋手造成伤害达到10、15、20、30",
+          "目标": "香香手牌",
+          "结算": "累计造成棋手伤害达到10、15、20、30时，各获得武器改造1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95010",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "武器改造",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "使用：攻击力增加20%，再选择1次武器改造方案。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "香香武器",
+          "结算": "攻击力增加20%，再选择1次武器改造方案"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.665005",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "火力全开",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "专属生效：攻击提高百分数为己方英雄等级总和乘0.5。",
+      "effects": [
+        {
+          "触发与条件": "专属生效",
+          "目标": "香香武器",
+          "结算": "攻击提高百分数为己方英雄等级总和乘0.5"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95029",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "补给弹匣",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "机枪子弹击败敌方英雄：立即补充10发子弹。",
+      "effects": [
+        {
+          "触发与条件": "机枪子弹击败敌方英雄",
+          "目标": "香香弹药",
+          "结算": "立即补充10发子弹"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95011",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "炮击模式",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "选择炮击模式：每人发射1枚范围物理伤害炮弹，连续炮弹的爆炸范围逐次扩大。",
+      "effects": [
+        {
+          "触发与条件": "选择炮击模式",
+          "目标": "随机3名敌方英雄",
+          "结算": "每人发射1枚范围物理伤害炮弹，连续炮弹的爆炸范围逐次扩大"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95012",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "机枪模式",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "选择机枪模式：快速射击总共30发物理伤害子弹。",
+      "effects": [
+        {
+          "触发与条件": "选择机枪模式",
+          "目标": "敌方前排随机英雄",
+          "结算": "快速射击总共30发物理伤害子弹"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95013",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "狙击模式",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "选择狙击模式：依次发射2枚物理伤害狙击弹；造成致命伤害后还能补弹，额外补弹总数至多2枚。",
+      "effects": [
+        {
+          "触发与条件": "选择狙击模式",
+          "目标": "敌方生命百分比最高英雄",
+          "结算": "依次发射2枚物理伤害狙击弹；造成致命伤害后还能补弹，额外补弹总数至多2枚"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "默认额外补弹至多2枚",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95014",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "激光模式",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "选择激光模式：发射持续10秒的物理伤害激光；目标死亡后随机换目标。",
+      "effects": [
+        {
+          "触发与条件": "选择激光模式",
+          "目标": "随机敌方英雄",
+          "结算": "发射持续10秒的物理伤害激光；目标死亡后随机换目标"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95015",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·歼灭",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "香香战斗中曾击败敌人；下回合开始：每名英雄增加4级。",
+      "effects": [
+        {
+          "触发与条件": "香香战斗中曾击败敌人；下回合开始",
+          "目标": "己方全部英雄",
+          "结算": "每名英雄增加4级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95016",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·砺刃",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "香香战斗伤害每累计500；下回合开始：每个500伤害结算增加3级。",
+      "effects": [
+        {
+          "触发与条件": "香香战斗伤害每累计500；下回合开始",
+          "目标": "随机1名己方英雄",
+          "结算": "每个500伤害结算增加3级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95017",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·暴击",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "香香攻击时：获得暴击判定：概率50%，暴击总伤害为原来的200%。",
+      "effects": [
+        {
+          "触发与条件": "香香攻击时",
+          "目标": "武器伤害",
+          "结算": "获得暴击判定：概率50%，暴击总伤害为原来的200%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95018",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·追击",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "香香每次攻击：另外承受香香攻击20%的物理伤害。",
+      "effects": [
+        {
+          "触发与条件": "香香每次攻击",
+          "目标": "被攻击敌人",
+          "结算": "另外承受香香攻击20%的物理伤害"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95019",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·蓄势",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "战斗开始后每秒：每过1秒额外增加10%。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始后每秒",
+          "目标": "香香攻击力",
+          "结算": "每过1秒额外增加10%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95020",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·王牌",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "己方最高英雄等级变化：每1级贡献1%的攻击提升。",
+      "effects": [
+        {
+          "触发与条件": "己方最高英雄等级变化",
+          "目标": "香香攻击力",
+          "结算": "每1级贡献1%的攻击提升"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95021",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·列阵",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "己方至少30级英雄数变化：每名满足30级门槛的英雄贡献20%攻击提升。",
+      "effects": [
+        {
+          "触发与条件": "己方至少30级英雄数变化",
+          "目标": "香香攻击力",
+          "结算": "每名满足30级门槛的英雄贡献20%攻击提升"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95022",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·痛击",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "香香造成棋手生命伤害：该伤害额外加3，不受棋手伤害上限限制。",
+      "effects": [
+        {
+          "触发与条件": "香香造成棋手生命伤害",
+          "目标": "敌方棋手",
+          "结算": "该伤害额外加3，不受棋手伤害上限限制"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95023",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "额外弹匣",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "炮击模式发射：炮弹枚数增加2。",
+      "effects": [
+        {
+          "触发与条件": "炮击模式发射",
+          "目标": "香香炮弹数量",
+          "结算": "炮弹枚数增加2"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95024",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "破甲弹头",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "炮弹命中：物理防御减少20，可由多次命中叠加。",
+      "effects": [
+        {
+          "触发与条件": "炮弹命中",
+          "目标": "被命中的敌人",
+          "结算": "物理防御减少20，可由多次命中叠加"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95025",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "燃烧弹头",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "炮弹命中及后续每秒：产生持续10秒的燃烧区，每秒造成物理伤害；伤害数值与范围未给出。",
+      "effects": [
+        {
+          "触发与条件": "炮弹命中及后续每秒",
+          "目标": "命中地点的燃烧区域内敌人",
+          "结算": "产生持续10秒的燃烧区，每秒造成物理伤害；伤害数值与范围未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "燃烧区域范围与每秒物伤数值。"
+      ]
+    },
+    {
+      "id": "card.derived.95026",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "制导弹头",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "炮击模式发射：所有炮弹锁定同一目标，首枚即采用最大爆炸范围。",
+      "effects": [
+        {
+          "触发与条件": "炮击模式发射",
+          "目标": "炮弹目标及爆炸范围",
+          "结算": "所有炮弹锁定同一目标，首枚即采用最大爆炸范围"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95027",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "裂伤弹",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "子弹命中：另附目标当前生命5%的物理伤害。",
+      "effects": [
+        {
+          "触发与条件": "子弹命中",
+          "目标": "被命中的敌人",
+          "结算": "另附目标当前生命5%的物理伤害"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "局内当前计数"
+      }
+    },
+    {
+      "id": "card.derived.95028",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "连锁跳弹",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "子弹命中：弹射1次；代价为香香总体伤害降低20%。",
+      "effects": [
+        {
+          "触发与条件": "子弹命中",
+          "目标": "距离原目标最近的敌人",
+          "结算": "弹射1次；代价为香香总体伤害降低20%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95030",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "干扰弹",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "子弹命中：沉默5秒，且5秒内治疗效果降低70%。",
+      "effects": [
+        {
+          "触发与条件": "子弹命中",
+          "目标": "被命中的敌人",
+          "结算": "沉默5秒，且5秒内治疗效果降低70%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95031",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "贯穿弹头",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "狙击弹穿透目标：移除穿透引起的伤害递减。",
+      "effects": [
+        {
+          "触发与条件": "狙击弹穿透目标",
+          "目标": "穿透后的目标",
+          "结算": "移除穿透引起的伤害递减"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95032",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "大号弹头",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "狙击弹命中：额外造成其最大生命60%的物理伤害，代价为不能再穿透。",
+      "effects": [
+        {
+          "触发与条件": "狙击弹命中",
+          "目标": "被命中目标",
+          "结算": "额外造成其最大生命60%的物理伤害，代价为不能再穿透"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95033",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "凝滞弹头",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "狙击选目标及命中：改变优先目标；命中后禁锢和缴械各持续4秒。",
+      "effects": [
+        {
+          "触发与条件": "狙击选目标及命中",
+          "目标": "等级最高3名敌方英雄中的随机1名",
+          "结算": "改变优先目标；命中后禁锢和缴械各持续4秒"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95034",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "歼灭补给",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "致命伤害触发狙击补弹：去掉额外装填最多2枚的限制。",
+      "effects": [
+        {
+          "触发与条件": "致命伤害触发狙击补弹",
+          "目标": "香香狙击弹药",
+          "结算": "去掉额外装填最多2枚的限制"
+        }
+      ],
+      "有效期": null,
+      "触发上限": "解除默认额外补弹数量限制",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95035",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "超级电池",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "激光模式发射：额外延长5秒。",
+      "effects": [
+        {
+          "触发与条件": "激光模式发射",
+          "目标": "激光持续时间",
+          "结算": "额外延长5秒"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95036",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "聚焦光束",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "连续对同一目标照射超过2秒：伤害提高80%。",
+      "effects": [
+        {
+          "触发与条件": "连续对同一目标照射超过2秒",
+          "目标": "该目标承受的激光伤害",
+          "结算": "伤害提高80%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95037",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "殉爆模式",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "曾被激光命中的目标死亡：产生物理伤害爆炸并眩晕1秒；范围和伤害系数未给出。",
+      "effects": [
+        {
+          "触发与条件": "曾被激光命中的目标死亡",
+          "目标": "死亡目标周围敌人",
+          "结算": "产生物理伤害爆炸并眩晕1秒；范围和伤害系数未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "殉爆范围与物伤数值。"
+      ]
+    },
+    {
+      "id": "card.derived.95038",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "高能激发",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "激光模式：激光伤害提高100%；生命低于20%的目标不会被攻击。",
+      "effects": [
+        {
+          "触发与条件": "激光模式",
+          "目标": "生命百分比至少20%的目标",
+          "结算": "激光伤害提高100%；生命低于20%的目标不会被攻击"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95040",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·淬刃",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "香香战斗中每击败1名英雄：本回合额外提高20%。",
+      "effects": [
+        {
+          "触发与条件": "香香战斗中每击败1名英雄",
+          "目标": "香香攻击力",
+          "结算": "本回合额外提高20%"
+        }
+      ],
+      "有效期": "本回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95041",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·借势",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "己方10级以上高阶英雄数变化：每名至少10级的4至5阶英雄贡献30点攻击。",
+      "effects": [
+        {
+          "触发与条件": "己方10级以上高阶英雄数变化",
+          "目标": "香香攻击力",
+          "结算": "每名至少10级的4至5阶英雄贡献30点攻击"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95042",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "战术·百战",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.50"
+      ],
+      "效果概括": "香香取得胜利；战败：每获胜1次加30%攻击；败战清空这项累计加成。",
+      "effects": [
+        {
+          "触发与条件": "香香取得胜利；战败",
+          "目标": "香香攻击力",
+          "结算": "每获胜1次加30%攻击；败战清空这项累计加成"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95199",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "特制灵异追踪器",
+      "kind": "chessplayer_ability",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "技能获得；棋手达到3级：获得飞行器；达到3级再得顿悟时刻1张。",
+      "effects": [
+        {
+          "触发与条件": "技能获得；棋手达到3级",
+          "目标": "安琪拉飞行器与手牌",
+          "结算": "获得飞行器；达到3级再得顿悟时刻1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "飞行器基础面板、攻击行为、初始位置和连接规则；神秘力量基础转化公式。"
+      ],
+      "使用方式": "被动",
+      "初始技能能量费用": null
+    },
+    {
+      "id": "card.derived.665104",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "顿悟时刻",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "使用：选择1个提供神秘力量的天赋。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "神秘力量积累天赋",
+          "结算": "选择1个提供神秘力量的天赋"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.665101",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "驱鬼!加大力度!",
+      "kind": "chessplayer_secret_task",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "累计神秘力量达到5、10、20、35：累计获得神秘力量达到5、10、20、35时，各奖励灵异探测大改装1张。",
+      "effects": [
+        {
+          "触发与条件": "累计神秘力量达到5、10、20、35",
+          "目标": "安琪拉手牌",
+          "结算": "累计获得神秘力量达到5、10、20、35时，各奖励灵异探测大改装1张"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95136",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "灵异探测大改装",
+      "kind": "secret_reward_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "使用：选择1个模块改造飞行器。",
+      "effects": [
+        {
+          "触发与条件": "使用",
+          "目标": "飞行器特性候选",
+          "结算": "选择1个模块改造飞行器"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.665105",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "超级连接",
+      "kind": "chessplayer_exclusive_talent",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "专属生效；战斗开始：先得灵异探测大改装1张；每次开战连接英雄再获得自身等级10%至30%的随机临时等级。",
+      "effects": [
+        {
+          "触发与条件": "专属生效；战斗开始",
+          "目标": "安琪拉手牌及连接英雄",
+          "结算": "先得灵异探测大改装1张；每次开战连接英雄再获得自身等级10%至30%的随机临时等级"
+        }
+      ],
+      "有效期": "开战随机增加的部分为临时等级",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95119",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·效果牌",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "手牌使用效果牌累计每满3张：增加1点。",
+      "effects": [
+        {
+          "触发与条件": "手牌使用效果牌累计每满3张",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加1点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95120",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·英雄牌",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "手牌使用英雄牌累计每满3张：增加1点；觉醒牌是否计入未说明。",
+      "effects": [
+        {
+          "触发与条件": "手牌使用英雄牌累计每满3张",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加1点；觉醒牌是否计入未说明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95121",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·低阶牌",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每回合且拥有至少4名1至3阶英雄：增加2点。",
+      "effects": [
+        {
+          "触发与条件": "每回合且拥有至少4名1至3阶英雄",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加2点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95122",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·高阶牌",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每回合且拥有至少2名5阶英雄：增加5点。",
+      "effects": [
+        {
+          "触发与条件": "每回合且拥有至少2名5阶英雄",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加5点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95123",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·联合",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每回合且英雄来自至少4个阵营：增加4点。",
+      "effects": [
+        {
+          "触发与条件": "每回合且英雄来自至少4个阵营",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加4点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95124",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·阵营",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每回合且同一阵营至少4名英雄：增加2点。",
+      "effects": [
+        {
+          "触发与条件": "每回合且同一阵营至少4名英雄",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加2点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95125",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·进化",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每名英雄升级达到10、40、100级：每位英雄的各阈值分别奖励2点。",
+      "effects": [
+        {
+          "触发与条件": "每名英雄升级达到10、40、100级",
+          "目标": "安琪拉神秘力量",
+          "结算": "每位英雄的各阈值分别奖励2点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95126",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·胜利",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每次战斗胜利：增加3点。",
+      "effects": [
+        {
+          "触发与条件": "每次战斗胜利",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加3点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95127",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·补给",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "棋手生命低于50、25：两个阈值分别奖励10及20点；是严格小于而不是不高于。",
+      "effects": [
+        {
+          "触发与条件": "棋手生命低于50、25",
+          "目标": "安琪拉神秘力量",
+          "结算": "两个阈值分别奖励10及20点；是严格小于而不是不高于"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95128",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·奖励",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每消耗6能量：增加1点。",
+      "effects": [
+        {
+          "触发与条件": "每消耗6能量",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加1点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95129",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“二号机”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "改造生效：增加1个飞行器，同时神秘力量转为临时等级的效果值减少15%；百分比叠加口径未明。",
+      "effects": [
+        {
+          "触发与条件": "改造生效",
+          "目标": "飞行器数量及等级转化",
+          "结算": "增加1个飞行器，同时神秘力量转为临时等级的效果值减少15%；百分比叠加口径未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "临时等级转化减少15%是百分比值变化还是乘法缩减。"
+      ]
+    },
+    {
+      "id": "card.derived.95130",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“都别跑”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器攻击命中：改为优先攻击敌人密集区域；命中造成飞行器法攻80%的范围法伤。",
+      "effects": [
+        {
+          "触发与条件": "飞行器攻击命中",
+          "目标": "目标及其周围1格单位",
+          "结算": "改为优先攻击敌人密集区域；命中造成飞行器法攻80%的范围法伤"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95131",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“定向毁灭”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每场战斗自爆；下回合开始：自爆对友军不会致命；自爆伤害每累计1000，下回合所有英雄各增加1级。",
+      "effects": [
+        {
+          "触发与条件": "每场战斗自爆；下回合开始",
+          "目标": "飞行器命中友军及全体己方英雄",
+          "结算": "自爆对友军不会致命；自爆伤害每累计1000，下回合所有英雄各增加1级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95132",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“耍赖皮”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每场战斗自爆；神秘力量计数：自爆对连接英雄没有伤害；攻击蹭蹭涨每点神秘力量的法攻收益改成8点。",
+      "effects": [
+        {
+          "触发与条件": "每场战斗自爆；神秘力量计数",
+          "目标": "飞行器和连接英雄",
+          "结算": "自爆对连接英雄没有伤害；攻击蹭蹭涨每点神秘力量的法攻收益改成8点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95133",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“壮胆”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "战斗开始：双防御各增加15点。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "飞行器连接英雄",
+          "结算": "双防御各增加15点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95134",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“紧急救命”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "战斗开始装备应急装置；受到致命伤害：触发1.5秒无敌且不可选中；触发次数未明。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始装备应急装置；受到致命伤害",
+          "目标": "飞行器连接英雄",
+          "结算": "触发1.5秒无敌且不可选中；触发次数未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95138",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“保送升级”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "战斗开始：加当前回合数乘0.8级，最低增加1级；取整及持续期未明。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "飞行器连接英雄",
+          "结算": "加当前回合数乘0.8级，最低增加1级；取整及持续期未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [],
+      "动态展示": {
+        "性质": "随局内状态变化，截图初始值不当成固定数值",
+        "含义": "局内当前计数"
+      }
+    },
+    {
+      "id": "card.derived.95139",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“杠上了”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器连续攻击同一目标：伤害逐步升高到原伤害250%；每次增长幅度未给出。",
+      "effects": [
+        {
+          "触发与条件": "飞行器连续攻击同一目标",
+          "目标": "飞行器伤害",
+          "结算": "伤害逐步升高到原伤害250%；每次增长幅度未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "连续伤害增长步长和更换目标后的重置规则。"
+      ]
+    },
+    {
+      "id": "card.derived.95140",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“秒变脆皮”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器命中：命中单位法防减少15，持续3秒；飞行器攻击速度提升为0.9，持续期未明确。",
+      "effects": [
+        {
+          "触发与条件": "飞行器命中",
+          "目标": "命中单位与飞行器",
+          "结算": "命中单位法防减少15，持续3秒；飞行器攻击速度提升为0.9，持续期未明确"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "攻速0.9的持续期。"
+      ]
+    },
+    {
+      "id": "card.derived.95142",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“热情扩散”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器自爆：范围扩大1，造成伤害提高25%；扩大单位未明。",
+      "effects": [
+        {
+          "触发与条件": "飞行器自爆",
+          "目标": "自爆范围与伤害",
+          "结算": "范围扩大1，造成伤害提高25%；扩大单位未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "自爆范围+1的单位和基础自爆范围。"
+      ]
+    },
+    {
+      "id": "card.derived.95143",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“贴膜”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器自爆命中友方单位：得到飞行器法攻300%的护盾及双汲取各20%；持续期未明。",
+      "effects": [
+        {
+          "触发与条件": "飞行器自爆命中友方单位",
+          "目标": "被命中的友军",
+          "结算": "得到飞行器法攻300%的护盾及双汲取各20%；持续期未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "护盾与汲取的持续期。"
+      ]
+    },
+    {
+      "id": "card.derived.95144",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“使绊子”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器命中：3秒内生命上限降低30%，治疗效果降低50%。",
+      "effects": [
+        {
+          "触发与条件": "飞行器命中",
+          "目标": "被命中的单位",
+          "结算": "3秒内生命上限降低30%，治疗效果降低50%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95145",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“让你嘚瑟”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器攻击选择及命中：优先从这3个中选目标；命中偷走目标5法力交给连接英雄。",
+      "effects": [
+        {
+          "触发与条件": "飞行器攻击选择及命中",
+          "目标": "敌方等级最高3个单位中的随机1个；连接英雄",
+          "结算": "优先从这3个中选目标；命中偷走目标5法力交给连接英雄"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95146",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“站好了”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器命中：偷取目标总攻速30%，目标移动速度降低50%，持续3秒；偷取后的接收者未明确。",
+      "effects": [
+        {
+          "触发与条件": "飞行器命中",
+          "目标": "命中单位及攻击速度转移",
+          "结算": "偷取目标总攻速30%，目标移动速度降低50%，持续3秒；偷取后的接收者未明确"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "偷取攻速的接收者及恢复方式。"
+      ]
+    },
+    {
+      "id": "card.derived.95147",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·灵活",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每回合且场上至少4名无阵营英雄：增加4点。",
+      "effects": [
+        {
+          "触发与条件": "每回合且场上至少4名无阵营英雄",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加4点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95148",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "奇想·精锐",
+      "kind": "chessplayer_branch_card",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "每回合且场上英雄少于5名：增加4点，5名时不满足。",
+      "effects": [
+        {
+          "触发与条件": "每回合且场上英雄少于5名",
+          "目标": "安琪拉神秘力量",
+          "结算": "增加4点，5名时不满足"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95149",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“变胖”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "战斗开始：生命上限提高25%。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "飞行器连接英雄",
+          "结算": "生命上限提高25%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95150",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“低调”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "战斗开始后的前15秒：不会被敌人优先选为攻击目标。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始后的前15秒",
+          "目标": "飞行器连接英雄",
+          "结算": "不会被敌人优先选为攻击目标"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95151",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“重拳”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "战斗开始：普攻伤害提高30%。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "飞行器连接英雄",
+          "结算": "普攻伤害提高30%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95152",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“节能”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "战斗开始：法力上限减少15。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始",
+          "目标": "飞行器连接英雄",
+          "结算": "法力上限减少15"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95153",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“攻速加持”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器继承属性：获得连接英雄攻击速度的25%。",
+      "effects": [
+        {
+          "触发与条件": "飞行器继承属性",
+          "目标": "飞行器与连接英雄",
+          "结算": "获得连接英雄攻击速度的25%"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95154",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“技能加持”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "连接英雄每次施法：本回合法术攻击提高20%。",
+      "effects": [
+        {
+          "触发与条件": "连接英雄每次施法",
+          "目标": "飞行器",
+          "结算": "本回合法术攻击提高20%"
+        }
+      ],
+      "有效期": "本回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95155",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“复仇者”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "己方单位每次死亡：本回合法术攻击提高15%。",
+      "effects": [
+        {
+          "触发与条件": "己方单位每次死亡",
+          "目标": "飞行器",
+          "结算": "本回合法术攻击提高15%"
+        }
+      ],
+      "有效期": "本回合",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95156",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“开团秒跟”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器自爆命中友军：增加等于飞行器法术攻击40%的法攻；持续期未明。",
+      "effects": [
+        {
+          "触发与条件": "飞行器自爆命中友军",
+          "目标": "被命中的友方单位",
+          "结算": "增加等于飞行器法术攻击40%的法攻；持续期未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "给予友军法攻的持续期。"
+      ]
+    },
+    {
+      "id": "card.derived.95157",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“泄气皮球”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器自爆命中敌人：敌人沉默8秒；连接英雄得到这些敌人等级总和10%的临时等级。",
+      "effects": [
+        {
+          "触发与条件": "飞行器自爆命中敌人",
+          "目标": "命中敌人及连接英雄",
+          "结算": "敌人沉默8秒；连接英雄得到这些敌人等级总和10%的临时等级"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95158",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“拿来吧你”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器每次命中：把该单位等级的1.5%以临时等级交给连接英雄，单次最低1级；是否减少原单位等级未明。",
+      "effects": [
+        {
+          "触发与条件": "飞行器每次命中",
+          "目标": "连接英雄及命中单位",
+          "结算": "把该单位等级的1.5%以临时等级交给连接英雄，单次最低1级；是否减少原单位等级未明"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "继承等级是否同时削减原目标等级，以及1.5%的取整。"
+      ]
+    },
+    {
+      "id": "card.derived.95159",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“蓄力痛击”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "飞行器命中：本回合受到技能伤害提高50%，该效果不能叠加。",
+      "effects": [
+        {
+          "触发与条件": "飞行器命中",
+          "目标": "被命中的单位",
+          "结算": "本回合受到技能伤害提高50%，该效果不能叠加"
+        }
+      ],
+      "有效期": "本回合",
+      "触发上限": "不可叠加",
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95162",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“上强度”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "模块生效：攻击蹭蹭涨每点神秘力量的法攻收益改为8点。",
+      "effects": [
+        {
+          "触发与条件": "模块生效",
+          "目标": "飞行器神秘力量转法攻机制",
+          "结算": "攻击蹭蹭涨每点神秘力量的法攻收益改为8点"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95163",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“打扫战场”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "战斗开始后的15秒：继承连接英雄全部法术攻击，即100%。",
+      "effects": [
+        {
+          "触发与条件": "战斗开始后的15秒",
+          "目标": "飞行器",
+          "结算": "继承连接英雄全部法术攻击，即100%"
+        }
+      ],
+      "有效期": "开战后的前15秒",
+      "触发上限": null,
+      "未知项": []
+    },
+    {
+      "id": "card.derived.95164",
+      "game_version": null,
+      "knowledge_version": "0.2.0",
+      "scope_id": "scope.cn.wanxiang.undated",
+      "名称": "“坐火箭”模块",
+      "kind": "chessplayer_module",
+      "棋手关联": [
+        "player.51"
+      ],
+      "效果概括": "模块生效：等级蹭蹭涨的效果值增加60%；转化基础系数未给出。",
+      "effects": [
+        {
+          "触发与条件": "模块生效",
+          "目标": "飞行器神秘力量转临时等级机制",
+          "结算": "等级蹭蹭涨的效果值增加60%；转化基础系数未给出"
+        }
+      ],
+      "有效期": null,
+      "触发上限": null,
+      "未知项": [
+        "神秘力量转临时等级的基础系数与+60%叠加口径。"
+      ]
+    }
+  ]
+}

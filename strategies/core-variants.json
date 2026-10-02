@@ -1,0 +1,78 @@
+{
+  "knowledge_version": "0.2.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "variant.core.event-conversion",
+      "name": "能量改造：核心换额外事件",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "talent_ref": "talent.636101",
+      "rule_facts": [
+        "核心不再分配临时等级；每拥有三十级，回合开始随机重触一次场上英雄整备或登场，单回合至多一百次。"
+      ],
+      "strategic_inference": "适合已有高价值整备/登场监听且能接受失去战斗临时分配的队；核心等级成为事件次数预算，输出必须由永久成长或独立战力补上。",
+      "incompatibilities": [
+        "不能同时按普通核心均分给主C计算临时等级。",
+        "随机事件和目标未指定，不假设总是重触露娜/甄姬。"
+      ],
+      "completion_test": "失去核心分配后仍能作战，额外事件有真实等级或卡牌接收者。"
+    },
+    {
+      "id": "variant.core.light-prism",
+      "name": "光棱塔：核心换直接法伤",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "talent_ref": "talent.636103",
+      "rule_facts": [
+        "核心停止分配等级，按自身等级对随机敌方单位进行周期法术伤害。"
+      ],
+      "strategic_inference": "需继续提高核心并有防线让伤害累计；英雄自身技能节点不能继续以未分配的临时等级作为基础。",
+      "incompatibilities": [
+        "与普通分配输出假设互斥。",
+        "伤害目标随机，不能当指定斩杀对方主C。"
+      ],
+      "completion_test": "前排能为核心伤害争取时间，实际伤害类型与目标防御条件合理。"
+    },
+    {
+      "id": "variant.core.focus-transfer",
+      "name": "定向传输与星徽：调整等级接收",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "talent_ref": "talent.636102",
+      "rule_facts": [
+        "定向传输优先给装备最多的日落海英雄分配核心等级，卡面分配上限二百。",
+        "星源星徽使穿戴者不参与核心等级分配，阿科米亚之子可让穿戴者参与核心分配。"
+      ],
+      "strategic_inference": "可以控制辅助是否分走份额、让所选主C更集中；要重新检查装备件数、候选阵营和特殊装备目标。",
+      "incompatibilities": [
+        "装备平手、普通分配半核心限制与定向上限的具体覆盖关系未给出，不叠成无限分配。",
+        "退出分配的辅助会降低本场生存/功能面板。"
+      ],
+      "completion_test": "主C实际接收到预期份额，保护功能没有因辅助等级不足而失效。"
+    },
+    {
+      "id": "variant.core.energy-budget",
+      "name": "能源置换与核心裂痕：换取购买或永久资源",
+      "claim_kind": "strategy_advice",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "talent_refs": [
+        "talent.636113",
+        "talent.636114"
+      ],
+      "rule_facts": [
+        "能源置换每回合最多一次，用核心等级换能量。",
+        "核心裂痕提供转瞬盗火，可指定英雄从核心取有限等级。"
+      ],
+      "strategic_inference": "将核心存量换成买牌、升级或英雄等级时，应同步扣除未来核心分配或塔伤；收益要看新资源能否补关键断点。",
+      "incompatibilities": [
+        "不能同一份核心等级同时当已花能量、被盗火英雄等级与剩余分配预算。"
+      ],
+      "completion_test": "扣除核心之后本场仍有足够战力，新能量或等级确实补到必要组件。"
+    }
+  ]
+}

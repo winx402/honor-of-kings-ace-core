@@ -1,0 +1,441 @@
+{
+  "knowledge_version": "0.2.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "resource-cycle.three-kingdom-entry",
+      "name": "三分登场均养转吕布资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.entry-team",
+      "template_refs": [
+        "lineup.three-kingdom-entry"
+      ],
+      "logic": "英雄牌→合成与蔡文姬永久成长；曹操→登场→小乔/周瑜永久成长。两条链独立核算，重触登场不自动算一次使用英雄牌。",
+      "resource_budget": "前期买到能产生增益的三分牌，中期为小乔和五阶终点留升级能量。若每次刷新都只找吕布而引擎未齐，既无即时战力也无复利。",
+      "limiting_conditions": [
+        "蔡文姬奖励目标需属于三分且不是自身。",
+        "换帅交换指定三分与最近三分的等级；挂帅是令指定三分等级等同最近三分，不能混写两张牌。",
+        "吕布必须满足等级排名条件才能吃到自己的吸血效果。"
+      ],
+      "failure_modes": [
+        "只追吕布而基础引擎空缺。",
+        "等级迁移选错最近目标；遗志随机接收者未受控制。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.sunset-ready",
+      "name": "日落海整备核心均养资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.prep-core",
+      "template_refs": [
+        "lineup.sunset-ready"
+      ],
+      "logic": "整备源→朵莉亚永久等级与核心成长→海诺额外核心成长→开团临时分配；雅典娜补战斗开始的一轮整备。不能据此宣称海诺自我递归无限。",
+      "resource_budget": "先买有效整备源，再补朵莉亚；为雅典娜、海诺和容量节点预留升级支出。留更多日落海获得分配覆盖，却会摊薄主输出的份额。",
+      "limiting_conditions": [
+        "亚连增益目标是装备最多的英雄，装备分散会改变接收者。",
+        "智能装甲需实际穿戴日落海专属装备，才能增加穿戴者整备次数。",
+        "能量改造、光棱塔会关闭核心分配，不能仍按普通均分模板估战力。"
+      ],
+      "failure_modes": [
+        "整备源少、朵莉亚未覆盖核心单位。",
+        "误把临时分配视为永久升级；卖掉英雄后以为其临时等级仍保留。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.river-totems",
+      "name": "大河图腾敖隐持续射资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.totem-carry",
+      "template_refs": [
+        "lineup.river-totems"
+      ],
+      "logic": "图腾数量→虞姬开团/张良永久均养；存活时间→敖隐临时战力；单位普攻→因缘图腾永久成长。三个量不同：图腾数量、图腾等级、图腾活了多久。",
+      "resource_budget": "先买能出现图腾的单位，少花能量在未成型前追五阶觉醒。装备可先给虞姬，敖隐到位后再按可移动条件转交。",
+      "limiting_conditions": [
+        "图腾被提前摧毁则敖隐后续周期收益减少。",
+        "刘邦会主动摧毁全部己方图腾，与持续保图输出的计划冲突。",
+        "召唤单位普攻可增加因缘图腾计数，但被往生图腾吞掉的低阶召唤物不能继续普攻。"
+      ],
+      "failure_modes": [
+        "图腾和射手在输出前被一起清除。",
+        "堆图腾等级却缺图腾数量或敖隐存活时间。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.heluocoins",
+      "name": "姜导古币百里玄策资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.coin-kill",
+      "template_refs": [
+        "lineup.heluocoins"
+      ],
+      "logic": "古币/出牌→玄策真实等级→闪现击杀→下一轮随机闪现永久成长。胜利不等于玄策击杀，其他英雄收走击杀也会改变收益。",
+      "resource_budget": "买古币来源和玄策觉醒的收益通常比同轮随机添第五个输出位更直接；但需要升级找到太乙真人与足够保护。姜导当轮五次已满后继续刷牌只按其他收益估值。",
+      "limiting_conditions": [
+        "李元芳最近河洛和太乙最近英雄要分别对准玄策。",
+        "多名闪现英雄会分散玄策整备的随机接收者，不是无代价补人。",
+        "二十五级是获得封神一瞬牌的任务条件，不限制用牌目标；获得后主动指定玄策，不能把首次达标的辅助误当自动接收者。"
+      ],
+      "failure_modes": [
+        "切入敌方最硬目标，无法获得首杀。",
+        "辅助装备或站位使太乙保护错误；过多闪现单位分散成长。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.zhulu-tactics",
+      "name": "小妲己逐鹿战术蒙犽资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.tactics",
+      "template_refs": [
+        "lineup.zhulu-tactics"
+      ],
+      "logic": "购买/合成→英雄与战术来源→使用效果牌→芈月永久等级。每轮首次、累计三次、购买四张分别计数；一张效果牌结算两次是否等同两次使用，不由此自动推断。",
+      "resource_budget": "除购买和刷新外要留出用有效效果牌的空间；先保证能产牌和使用牌，后找蒙犽。若没有效果牌来源，芈月觉醒本身不产生等级。",
+      "limiting_conditions": [
+        "蒙犽装备件数应严格多于其他逐鹿，平手处理未给出。",
+        "白起和老夫子只在本轮首次事件产牌；多刷不能无限重复产出。",
+        "用推演战术要指定逐鹿，且本回合结束效果不应永久保留。"
+      ],
+      "failure_modes": [
+        "装备数平手导致接收者不确定。",
+        "把首次触发当无限触发，或把双结算当多次使用。"
+      ],
+      "unknowns": [
+        "小妲己双结算是否重复触发芈月、镜等使用监听，尚未确定。"
+      ]
+    },
+    {
+      "id": "resource-cycle.three-kingdom-loop",
+      "name": "白歌三分登场招募倒转资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.entry-loop",
+      "template_refs": [
+        "lineup.three-kingdom-loop"
+      ],
+      "logic": "露娜牌→随机整备曹操→随机登场甄姬→可续接登场牌→再次使用；小乔/周瑜收取每次事件收益。链路含随机节点，是概率续接体系，不能保证一张露娜无限延续。",
+      "resource_budget": "必须有升级到四/五阶的预算，甄姬和露娜未接通前少花钱养无关单位。复制与招募牌的手牌/场上目标应尽量集中；别为净化随机池卖掉唯一前排而立即出局。",
+      "limiting_conditions": [
+        "甄姬候选须实际出现露娜等续接牌，随机抽到其他牌不保证延续。",
+        "曹操可触发的三分登场目标越多，越不能默认只触发甄姬；具体抽样优先级未知。",
+        "露娜随机整备对象和曹操随机登场对象都要有有效池。",
+        "觉醒牌和非觉醒英雄牌不同；白歌灵感爆发只作用随机手牌非觉醒英雄牌并产生转瞬复制。"
+      ],
+      "failure_modes": [
+        "只有曹操或露娜单张就声称倒转成型。",
+        "招募没选到续接牌、随机对象过多、备战超时或卖掉唯一前排。"
+      ],
+      "unknowns": [
+        "随机对象抽样、同窗口优先顺序、备战操作速度不由卡面给出。"
+      ]
+    },
+    {
+      "id": "resource-cycle.low-tier-pig",
+      "name": "马可三阶合成养猪资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.low-tier-merge",
+      "template_refs": [
+        "lineup.low-tier-pig"
+      ],
+      "logic": "三阶英雄牌→合成→同阶永久均养；猪牌→随机邻近夺取→等级集中；施法→刘禅临时→明世隐有限转永久；低阶出牌→宝藏→可能复制下一张猪牌。不是每张宝藏都复制猪。",
+      "resource_budget": "中期以三阶合成密度为目标，不把五阶齐全当成成型门槛。买卖过渡牌有净能量成本；姬小满刷新能降低搜牌负担，但出售场上英雄与出售手牌不同。",
+      "limiting_conditions": [
+        "核心五人以三阶为主，使三阶合成多人获益；加入四阶辅助不再吃三阶同阶增益。",
+        "猪八戒夺取对象随机：只让计划喂级的英雄进入一格，瑶若需保有高等级应移开。",
+        "冰曜宝石镜使用前把无关非觉醒英雄牌移出候选；只留猪牌时复制才能集中。",
+        "明世隐可转化额度不是无限；其登场增加额度，不是每次施法自动永久化全部临时等级。"
+      ],
+      "failure_modes": [
+        "误把夺取当全队合成无损加级，供体等级流失而防线变脆。",
+        "复制镜打在混杂手牌中，未复制核心；五阶辅助过多使重点照顾不覆盖猪。"
+      ],
+      "unknowns": [
+        "明世隐的具体转换结算时点需按客户端规则确认，不假设每次技能触发即时转换。"
+      ]
+    },
+    {
+      "id": "resource-cycle.sacrifice-lixin",
+      "name": "瑶妹李信牺牲收束资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.sacrifice-carry",
+      "template_refs": [
+        "lineup.sacrifice-lixin"
+      ],
+      "logic": "队友带牺牲→阵亡→李信临时成长；苏烈/古币源保留跨回合成长。复生允许相关单位再次参战，但钟馗赋予的特定牺牲降级有单场次数限，不按复生无上限倍增。",
+      "resource_budget": "先买牺牲源和必要前排，再升级到四阶李信。不要将全部资源投入即将作为供体死亡的挂件；李信永久基础仍要足够承受成长前的攻击。",
+      "limiting_conditions": [
+        "普通阵亡不等于牺牲事件，缺牺牲词条的挂件死亡不能默认给李信加级。",
+        "李信应在牺牲链后仍存活；如果先被击杀，队友后续死亡的收益无法照计划兑现。",
+        "献祭之赐只有李信觉醒后才扩到敌方英雄牺牲；不把敌方全体阵亡视为触发。"
+      ],
+      "failure_modes": [
+        "没有牺牲词条却以人数估算李信收益。",
+        "李信先死、最近保护给错人、过度削弱永久基础。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.heleukong",
+      "name": "常小娥海陆空临时复制资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.temporary-copy",
+      "template_refs": [
+        "lineup.heleukong"
+      ],
+      "logic": "随机棋手永久成长→队友等级池→裴擒虎临时复制→司空震受上限约束的同步；护盾→海月生命→牺牲伤害是另一条路径。没有永久等级转移把全队“全部喂给”司空震。",
+      "resource_budget": "前期少量高性价比单位缩小随机目标池；代价是防线人数少。保留升级到五阶找司空震的资源，不为降低随机性把己方唯一前排卖掉。",
+      "limiting_conditions": [
+        "裴擒虎随机取其他英雄，并不指定苏烈；加入低等级挂件可能稀释复制质量。",
+        "司空震真实等级不足时，额外临时来源超过倍率上限的部分不能按无限收益估值。",
+        "海月不是复制发动机；没有她也需单独评估临时链和防线，不因名称“海陆空”强行集齐。"
+      ],
+      "failure_modes": [
+        "把常小娥随机技能写成指定加级，把裴擒虎随机写成固定复制苏烈。",
+        "高临时面板掩盖司空震真实等级不足，保护不足导致开局被杀。"
+      ],
+      "unknowns": [
+        "裴擒虎整备与司空震监听的具体顺序、上限是单次还是累计限制应以客户端最新规则确认；本稿按卡面保守不超算。"
+      ]
+    },
+    {
+      "id": "resource-cycle.qiaoxi-sikong",
+      "name": "乔汐六级传送司空震资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.temporary-summon",
+      "template_refs": [
+        "lineup.qiaoxi-sikong"
+      ],
+      "logic": "升级到六级→专属传送临时英雄→司空震临时同步；古币/棋手奖励→司空震真实基础。此链的开战事件顺序与同步结果尚未确定，不能靠英雄名单保证必定吃满。",
+      "resource_budget": "升级费用、抽到司空震的购买支出与保血投入同时预算。为速六放弃全部英雄会承担真实淘汰风险；当生命不足时应先购买能减伤的过渡战力。",
+      "limiting_conditions": [
+        "需要乔汐六级专属和已在场司空震；未六级不能把传送英雄计入战力。",
+        "临时英雄不含卡牌效果，不可自动激活对应阵营引擎。",
+        "司空震真实基础仍是同步上限，不能从传送等级推当前必然满级。"
+      ],
+      "failure_modes": [
+        "空场速六先淘汰；把随机传送当固定有牌面效果的五阶英雄。",
+        "同步上限或开战顺序不符预期，仍用理论百级额外值当实际战力。"
+      ],
+      "unknowns": [
+        "传送生成单位时司空震临时监听是否在同窗口接收、具体累积上限尚未确定。"
+      ]
+    },
+    {
+      "id": "resource-cycle.coin-mulan",
+      "name": "庄小鱼河洛古币复生花木兰资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.coin-resurrection",
+      "template_refs": [
+        "lineup.coin-mulan"
+      ],
+      "logic": "古币源→当回合用牌计数/永久等级→花木兰复生次数→牺牲临时等级→续战。需区分手上古币牌、自动使用古币、当回合计数，跨回合不能把五张凑数。",
+      "resource_budget": "花木兰五阶前先建立能打的古币主线；保留升级与买五阶能量。后期优先把当轮古币凑成完整五张阈值，再评估额外永久成长，而不是永久囤着转瞬古币。",
+      "limiting_conditions": [
+        "必须本回合使用古币达阈值，背包有五张和上回合用过五张都不等价。",
+        "李元芳和太乙最近目标需花木兰；有武则天时花木兰并非自动最近。",
+        "庄小鱼梦幻手牌需要场上阵营条件，不保证生成指定古币数量或指定英雄。"
+      ],
+      "failure_modes": [
+        "误记跨回合古币累计；复生次数上限外继续按无限估值。",
+        "花木兰未成型先拆已成熟玄策，或保护被武则天抢走。"
+      ],
+      "unknowns": [
+        "自动使用古币是否计入全部使用次数监听应按实际客户端确认；普通与完美复生的组合优先级未明。"
+      ]
+    },
+    {
+      "id": "resource-cycle.summon-pool",
+      "name": "明先生整备召唤泳池派对资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.prep-summon",
+      "template_refs": [
+        "lineup.summon-pool"
+      ],
+      "logic": "整备→朵莉亚团队等级/水域续航→召唤单位输出→因缘图腾普攻永久成长。苍路线以死亡爆发兑现；往生图腾路线以吞召唤换成长，和保留召唤物普攻不是同一份收益。",
+      "resource_budget": "优先稳定朵莉亚与整备源，升级买鲁班大师前保住可作战的米莱狄体系。明先生卦象丰降低本回合能量收入，刷新多不代表有钱买牌；卦象节刷新更贵，应少无目的刷牌。",
+      "limiting_conditions": [
+        "水域治疗、回蓝要看英雄实际位置和等级节点，不能默认全屏永久回复。",
+        "苍伤害按召唤及死亡条件，具体每次召唤增加量未给出时不计算总爆炸。",
+        "往生图腾吸收低阶召唤会减少场面普攻单位；不把被吞的仆从继续算进因缘计数。"
+      ],
+      "failure_modes": [
+        "混合多个召唤变体却未接通任何一条兑现链。",
+        "水域没覆盖核心或图腾被清，仍按全队无限回血估算。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.yuhuan-sunset",
+      "name": "玉环日落海出牌循环变体资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.music-card-cycle",
+      "template_refs": [
+        "lineup.yuhuan-sunset"
+      ],
+      "logic": "三张合格出牌→指法→等级或随机转瞬牌→更多出牌；露娜牌→整备链。用轮指安排下一次指法收益，但同一组合同时相同/同阶/同阵营时的优先级未知，不据此算确定产牌率。",
+      "resource_budget": "先为稳定整备引擎和升级留能量，再买能完成有效三张组的牌；不是任何三张都会补牌。惊鸿调记录前六次，早期随意混出会影响后期重放价值。",
+      "limiting_conditions": [
+        "仅非觉醒英雄牌推进三张指法；打出觉醒牌不能自动计入。",
+        "吟揉奖励随机转瞬牌，没有指定露娜保证。",
+        "姜子牙需当前未上场阵营或无阵营英雄牌；日落海已在场时，继续日落海出牌不能当它必定触发。",
+        "惊鸿调重奏指法不是重放过去所有英雄卡的牌面效果。"
+      ],
+      "failure_modes": [
+        "把吟揉当指定露娜，把轮指当重新打英雄牌。",
+        "惊鸿调记录混乱、有限奖励耗尽后仍预测源源不断产牌。"
+      ],
+      "unknowns": [
+        "多条件指法优先级与轮指连续重奏的消耗关系未指定；循环率未确定。"
+      ]
+    },
+    {
+      "id": "resource-cycle.liubang-shield",
+      "name": "明先生毁图炸盾刘邦资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.destroy-totem-shield",
+      "template_refs": [
+        "lineup.liubang-shield"
+      ],
+      "logic": "图腾数量→刘邦每轮永久成长→最大生命/技能节点→盾被击破→扁鹊范围伤害；灵祭升华才另引入图腾等级收益。基础打法不是“图腾等级越高刘邦基础加级越多”。",
+      "resource_budget": "升级找到四阶刘邦越早，留给重复毁图的回合越多；找齐必要功能后不必每轮为图腾等级耗尽刷新。若拿灵祭升华才提高图腾等级投资的优先级。",
+      "limiting_conditions": [
+        "己方图腾主动被刘邦摧毁，不能同时依赖存活图腾给敖隐持续成长。",
+        "扁鹊需要护盾实际被击破并有敌人在周边；敌方一直不打刘邦不等于自动炸全场。",
+        "灵祭升华接收者是等级最高大河；需保持刘邦满足，不是看到该天赋就默认落在刘邦。"
+      ],
+      "failure_modes": [
+        "以图腾等级替代图腾数量估基础成长。",
+        "瑶/太乙保护错目标；盾一直未破或破盾周边无敌人导致伤害无法兑现。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.haiyue-shield-sacrifice",
+      "name": "海月护盾转生命牺牲爆发资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.shield-sacrifice",
+      "template_refs": [
+        "lineup.haiyue-shield-sacrifice"
+      ],
+      "logic": "真实等级与护盾→海月生命规模→牺牲爆发→复生续战。护盾供给、阵亡时点和后续收尾输出缺一不可；只堆生命但始终不阵亡也不兑现牺牲主线。",
+      "resource_budget": "这是高阶有条件转型，前期用已有队保血并养主C基础；获得海月与有效护盾前不卖掉成熟输出。不要拿强回复装备时把其效果当无衰减治疗。",
+      "limiting_conditions": [
+        "海月目标是敌方等级最高英雄，不能指定后排或生命最少目标；并列处理未知。",
+        "刘邦护盾团队覆盖要达到四十级并在一格内；瑶最近附身必须海月。",
+        "海月伤害类型可能随版本变化：本模板不以无视防御作为当前保证，需依适用卡面重新选装备。"
+      ],
+      "failure_modes": [
+        "忽视海月治疗限制，盾/回血混算；前排太少导致拿盾前阵亡。",
+        "最高等级目标不是主C，牺牲后没人收尾；版本变更仍套旧伤害类型。"
+      ],
+      "unknowns": [
+        "海月相关更新预告与实装需区分；最高等级平手处理、盾转生命有效期、复生后生命继承均未指定。"
+      ]
+    },
+    {
+      "id": "resource-cycle.spell-permanent",
+      "name": "孙膑施法永久成长小队资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.spell-growth",
+      "template_refs": [
+        "lineup.spell-permanent"
+      ],
+      "logic": "回蓝/生存→每名英雄自身累计施法次数→该施法英雄自身永久等级→技能节点与生存输出提高。刘禅临时→明世隐有限永久是额外路径，必须各自计条件。",
+      "resource_budget": "英雄牌只追一个输出会丢掉孙膑、回蓝和前排条件；先买能让当场多放技能的资源，再计长期成长。战斗过短时，纯长期施法投资可能赶不上当前损耗。",
+      "limiting_conditions": [
+        "孙膑奖励给具体施法者，不是全队每三次合计给主C。",
+        "必须真实施法，不把技能动画段数/伤害次数当施法次数。",
+        "双剑·雄降低法力上限只对干将，水域回蓝需实际范围与节点。"
+      ],
+      "failure_modes": [
+        "每次伤害算技能次数，错误夸大成长。",
+        "输出被控至战斗结束，理论回蓝没有兑现。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.hanxin-events",
+      "name": "韩信整备开团永久养成资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.event-single-carry",
+      "template_refs": [
+        "lineup.hanxin-events"
+      ],
+      "logic": "有效英雄整备/开团次数→韩信永久等级→技能/击杀战斗反馈。纯阵营人数不是发动机，多阵营事件英雄可以组合，但占容量与防线资源。",
+      "resource_budget": "先建立能打的低阶过渡，升级四阶找韩信；中期买一个能每轮触发的事件英雄要比无联动挂件更有长期价值，仍需保有前排。",
+      "limiting_conditions": [
+        "韩信监听“英雄”与张良监听“单位”语义不同，不把所有图腾开团直接算韩信增长。",
+        "雅典娜随机重触日落海整备，要在场有可用日落海整备目标。",
+        "孙悟空夺取需控制邻近供体，加入他并非无代价。"
+      ],
+      "failure_modes": [
+        "事件类型或对象错误，按图腾数量虚增韩信收益。",
+        "韩信切最硬前排被控，永久等级未转成有效输出。"
+      ],
+      "unknowns": []
+    },
+    {
+      "id": "resource-cycle.sunxiaobin-replay",
+      "name": "孙小宾英雄效果重放循环资源循环",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "archetype_ref": "archetype.card-replay",
+      "template_refs": [
+        "lineup.sunxiaobin-replay"
+      ],
+      "logic": "有效出牌→任务与记录→下一轮随机重放/有限序列重触→主线等级或资源。记录张数、触发时点和随机目标限制收益，不能把八张记录当全手牌永久复制。",
+      "resource_budget": "先凑能自然打八张的主线，避免为任务花钱买八张无效牌。记录牌必须在有用牌之前使用，留足备战操作时间；回合结束前检查转瞬牌及剩余容量。",
+      "limiting_conditions": [
+        "先使用时之回环，再打希望被记录的牌；此前用过的牌不自动进其后续记录。",
+        "随机上回合牌重放不能当指定关键牌；减少无效候选会提高目标集中程度，但具体抽样概率未知。",
+        "重放能否推进合成、使用次数等监听需确认，不把触发牌面自动算全套出牌事件。"
+      ],
+      "failure_modes": [
+        "记录牌打晚、容量被无效牌填满、把觉醒牌计入序列。",
+        "上轮随机牌池太杂，期望关键牌必重放；未到下回合就已淘汰。"
+      ],
+      "unknowns": [
+        "重放与各类购买/合成/效果牌使用监听的关系、重复重放的记录继承规则尚未确定，不发布无限重放结论。"
+      ]
+    }
+  ]
+}

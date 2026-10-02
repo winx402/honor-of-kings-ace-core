@@ -1,0 +1,235 @@
+{
+  "knowledge_version": "0.2.0",
+  "entries": [
+    {
+      "id": "rule.diamond.initial_choice.demonstration",
+      "scope_id": "scope.cn.diamond.demonstration.undated",
+      "summary": "开局系统随机提供3套初始阵容，从中选一套并获得配套英雄、天赋和效果牌。",
+      "values": {
+        "offered_sets": 3,
+        "selected_sets": 1
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.diamond.chessplayer_disabled.demonstration",
+      "scope_id": "scope.cn.diamond.demonstration.undated",
+      "summary": "棋手仅为形象展示，不叠加技能、秘技或专属天赋。",
+      "values": {
+        "skill": false,
+        "secret": false,
+        "exclusive_talent": false
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.diamond.hero_level_limit.demonstration",
+      "scope_id": "scope.cn.diamond.demonstration.undated",
+      "summary": "钻石狂潮研发规则允许英雄超过999级；绝对上限未指定。",
+      "values": {
+        "can_exceed_999": true,
+        "absolute_maximum": null
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.diamond.auction.demonstration",
+      "scope_id": "scope.cn.diamond.demonstration.undated",
+      "summary": "没有常规商店，前8个战斗回合结束后固定拍卖，以带入钻石支付；没有流拍免费赠送。",
+      "values": {
+        "shop": false,
+        "after_combat_rounds": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "currency": "diamond",
+        "free_unsold_lot": false
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.diamond.settlement.demonstration",
+      "scope_id": "scope.cn.diamond.demonstration.undated",
+      "summary": "已花费钻石进入本局奖池，最终前三按比例分配；玩家可撤离并带走未消费钻石。比例、最早退出回合和并列处理未指定。",
+      "values": {
+        "paid_places": [
+          1,
+          2,
+          3
+        ],
+        "unused_diamonds_returned": true,
+        "payout_ratios": null
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.diamond.rooms.demonstration",
+      "scope_id": "scope.cn.diamond.demonstration.undated",
+      "summary": "钻石狂潮研发规则包含三档房间及对应带入范围。",
+      "values": {
+        "standard": [
+          100,
+          500
+        ],
+        "elite": [
+          1000,
+          5000
+        ],
+        "master": [
+          4000,
+          20000
+        ]
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.ace.player_dividend.4",
+      "scope_id": "scope.cn.ace.v1.4.1",
+      "summary": "第一至第三名选手获得对应比例钻石分红并有各自上限；这不是钻石狂潮本局奖池前三瓜分比例。",
+      "values": {
+        "places": [
+          {
+            "place": 1,
+            "ratio": 0.003,
+            "cap_diamond": 200000
+          },
+          {
+            "place": 2,
+            "ratio": 0.002,
+            "cap_diamond": 100000
+          },
+          {
+            "place": 3,
+            "ratio": 0.001,
+            "cap_diamond": 50000
+          }
+        ]
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.diamond.attribute_caps.experience",
+      "scope_id": "scope.cn.diamond.experience.20260929",
+      "summary": "该体验服规则对双攻、暴击效果和双吸血设定上限；正式服是否采用未指定。",
+      "values": {
+        "physical_attack": 9999,
+        "magical_attack": 9999,
+        "critical_effect_percent": 200,
+        "physical_lifesteal_percent": 100,
+        "magical_lifesteal_percent": 100
+      },
+      "claim_kind": "rule_fact"
+    },
+    {
+      "id": "rule.diamond.prize_pool.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石狂潮：购买初始阵容、竞拍及返场花费均汇入本局奖池。",
+      "values": {},
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.diamond.paid_places.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石狂潮通常由前三名按不同占比分配奖池，名次越高占比越高。",
+      "values": {
+        "paid_places": [
+          1,
+          2,
+          3
+        ],
+        "payout_ratios": null
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.diamond.chessplayer.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石狂潮中棋手仅展示形象，技能、秘技和专属天赋不生效。",
+      "values": {
+        "abilities_enabled": false
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.diamond.rooms.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石狂潮设标准、精英、大师三档场次，带入钻石范围不同。",
+      "values": {
+        "room_types": [
+          "standard",
+          "elite",
+          "master"
+        ],
+        "current_entry_ranges": null
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.diamond.return.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石狂潮淘汰后返场需支付当前总奖池25%的钻石，每局最多返场两次。",
+      "values": {
+        "cost_pool_fraction": 0.25,
+        "maximum_returns": 2
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.diamond.event.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石狂潮每场可能出现一个改变局内机制的特殊事件。",
+      "values": {
+        "possible_event_count": 1,
+        "event_probability": null,
+        "complete_event_pool": null
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.diamond.bid.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石竞拍由最高价取得；同价时先出价者得。落拍者不扣钻石，也不自动获得剩余拍品。",
+      "values": {
+        "equal_bid_priority": "earlier_bid",
+        "unsuccessful_bid_charged": false,
+        "automatic_unsold_assignment": false
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.diamond.resources.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石狂潮取消普通商店、能量及升级选天赋；资源以钻石支付，主要通过竞拍获得。",
+      "values": {
+        "shop_enabled": false,
+        "energy_enabled": false,
+        "levelup_talent_enabled": false
+      },
+      "current_applicability": "unspecified"
+    },
+    {
+      "id": "rule.diamond.initial_purchase.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "claim_kind": "rule_fact",
+      "summary": "钻石狂潮开局可购买一套初始阵容；初始阵容价格依大盘表现动态变化。",
+      "values": {
+        "dynamic_price_formula": null
+      },
+      "current_applicability": "unspecified"
+    }
+  ]
+}

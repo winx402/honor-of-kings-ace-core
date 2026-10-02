@@ -1,5 +1,5 @@
 {
-  "knowledge_version": "0.1.0",
+  "knowledge_version": "0.2.0",
   "scope_id": "scope.cn.wanxiang.undated",
   "entries": [
     {
@@ -22,6 +22,42 @@
       "unknowns": [
         "精确扣血公式、平局和超时结算",
         "完整上阵容量表、商店概率与拍卖序列"
+      ],
+      "rule_variants": [
+        {
+          "scope_ref": "scope.cn.wanxiang.demonstration.undated",
+          "rule_refs": [
+            "rule.economy.round_income.demonstration",
+            "rule.economy.bid_schedule.demonstration",
+            "rule.economy.bid_switching.demonstration"
+          ]
+        },
+        {
+          "scope_ref": "scope.cn.wanxiang.display.undated",
+          "rule_refs": [
+            "rule.economy.shop_level3.display"
+          ]
+        },
+        {
+          "scope_ref": "scope.cn.client.pack774472",
+          "rule_refs": [
+            "rule.bag_gain.pack774472",
+            "rule.pool_counts.pack774472",
+            "rule.pool_occupation.pack774472",
+            "rule.shop_tier.pack774472",
+            "rule.pool_awakening.pack774472",
+            "rule.pool_generated.pack774472",
+            "rule.shop_slots.pack774472",
+            "rule.bag_tier.pack774472",
+            "rule.shop_refresh.pack774472",
+            "rule.talent_choice.pack774472",
+            "rule.overtime_draw.pack774472",
+            "rule.initial_capacity.pack774472",
+            "rule.defeat_damage.pack774472",
+            "rule.capacity_growth.pack774472",
+            "rule.mana.pack774472"
+          ]
+        }
       ]
     },
     {
@@ -49,7 +85,7 @@
       "entry_group": "王牌对决",
       "game_version": null,
       "current_availability": "unknown",
-      "definition": null,
+      "definition": "以钻石竞拍和初始阵容构筑为主要资源获取方式的对局变体。",
       "facts": [
         "房间入场涉及钻石门槛。"
       ],
@@ -58,6 +94,39 @@
         "参赛费、筹码、竞拍、分红和结算完整公式",
         "棋手能力、普通商店与初始卡组规则",
         "特殊事件、专属内容和与万象大赛的规则差异"
+      ],
+      "rule_variants": [
+        {
+          "scope_ref": "scope.cn.diamond.demonstration.undated",
+          "rule_refs": [
+            "rule.diamond.initial_choice.demonstration",
+            "rule.diamond.chessplayer_disabled.demonstration",
+            "rule.diamond.hero_level_limit.demonstration",
+            "rule.diamond.auction.demonstration",
+            "rule.diamond.settlement.demonstration",
+            "rule.diamond.rooms.demonstration"
+          ]
+        },
+        {
+          "scope_ref": "scope.cn.client.pack774472",
+          "rule_refs": [
+            "rule.diamond.prize_pool.pack774472",
+            "rule.diamond.paid_places.pack774472",
+            "rule.diamond.chessplayer.pack774472",
+            "rule.diamond.rooms.pack774472",
+            "rule.diamond.return.pack774472",
+            "rule.diamond.event.pack774472",
+            "rule.diamond.bid.pack774472",
+            "rule.diamond.resources.pack774472",
+            "rule.diamond.initial_purchase.pack774472"
+          ]
+        },
+        {
+          "scope_ref": "scope.cn.diamond.experience.20260929",
+          "rule_refs": [
+            "rule.diamond.attribute_caps.experience"
+          ]
+        }
       ]
     },
     {
@@ -73,6 +142,21 @@
       "unknowns": [
         "参与条件、完整对局规则、得分及结算",
         "与万象大赛和钻石狂潮的规则差异"
+      ]
+    },
+    {
+      "id": "format.ace_duel",
+      "name": "王牌对决",
+      "classification": "competition_format",
+      "game_version": null,
+      "current_availability": "unknown",
+      "definition": "与钻石狂潮有关联的赛事入口及选手支持收益机制；不是普通排位队列。",
+      "rule_refs": [
+        "rule.ace.player_dividend.4"
+      ],
+      "unknowns": [
+        "当期赛事日程、选手资格、支持收益基数及税费",
+        "与钻石狂潮房间、即时匹配及排位的完整对应关系"
       ]
     }
   ]

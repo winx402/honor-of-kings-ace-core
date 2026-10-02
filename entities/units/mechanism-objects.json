@@ -1,5 +1,5 @@
 {
-  "knowledge_version": "0.1.0",
+  "knowledge_version": "0.2.0",
   "scope_id": "scope.cn.wanxiang.undated",
   "entries": [
     {
@@ -14,7 +14,7 @@
         },
         {
           "关联": "阿科米亚之子",
-          "概括": "装备者参与核心等级分配；穿戴者及周围1格单位每秒回4法力与2%最大生命，经过的队友获得此效果8秒。"
+          "概括": "装备者参与核心等级分配；穿戴者及周围1格单位每秒回4法力与2%最大生命，经过的友军获得此效果8秒。静态邻域的阵营限定未明确。"
         },
         {
           "关联": "定向传输",
@@ -29,7 +29,7 @@
         "核心是否作为可攻击战场单位存在、基础等级、完整分配次序和公式、独立面板及全部模式适用范围。"
       ],
       "game_version": null,
-      "knowledge_version": "0.1.0",
+      "knowledge_version": "0.2.0",
       "scope_id": "scope.cn.wanxiang.undated"
     }
   ]

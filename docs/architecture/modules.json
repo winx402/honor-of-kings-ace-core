@@ -1,5 +1,5 @@
 {
-  "definition_version": "0.4.0",
+  "definition_version": "0.5.0",
   "status": "content_model",
   "dependency_semantics": "A.depends_on 包含 B 表示 A 的内容定义使用 B 的契约；非数据流或触发顺序。",
   "modules": [

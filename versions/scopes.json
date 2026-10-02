@@ -1,5 +1,5 @@
 {
-  "knowledge_version": "0.1.0",
+  "knowledge_version": "0.2.0",
   "entries": [
     {
       "id": "scope.cn.wanxiang.undated",
@@ -12,6 +12,59 @@
         "每项数值的客户端和平衡版本",
         "模式间的对象可用池与覆盖规则"
       ]
+    },
+    {
+      "id": "scope.cn.wanxiang.demonstration.undated",
+      "name": "万象大赛演示规则",
+      "game_version": null,
+      "mode_ref": "mode.wanxiang_tournament",
+      "environment": "development_demonstration",
+      "interpretation": "演示规则参数；不自动适用于当前正式对局。"
+    },
+    {
+      "id": "scope.cn.wanxiang.display.undated",
+      "name": "万象大赛显示规则，版本未指定",
+      "game_version": null,
+      "mode_ref": "mode.wanxiang_tournament",
+      "environment": "unspecified",
+      "interpretation": "单项显示参数，不构成完整商店概率表或当前结算保证。"
+    },
+    {
+      "id": "scope.cn.diamond.demonstration.undated",
+      "name": "钻石狂潮研发演示规则",
+      "game_version": null,
+      "mode_ref": "mode.diamond_frenzy",
+      "environment": "development_demonstration",
+      "interpretation": "研发演示规则参数；不自动适用于当前正式对局。"
+    },
+    {
+      "id": "scope.cn.ace.v1.4.1",
+      "name": "王牌对决正式服1.4.1",
+      "game_version": "1.4.1",
+      "mode_ref": "format.ace_duel",
+      "environment": "production"
+    },
+    {
+      "id": "scope.cn.diamond.experience.20260929",
+      "name": "钻石狂潮体验服2026-09-29规则",
+      "game_version": null,
+      "mode_ref": "mode.diamond_frenzy",
+      "environment": "experience_server",
+      "effective_date": "2026-09-29",
+      "interpretation": "体验服规则，不推定已同步正式服。"
+    },
+    {
+      "id": "scope.cn.client.pack774472",
+      "name": "客户端规则集774472",
+      "game_version": null,
+      "mode_ref": null,
+      "environment": "packaged_client",
+      "client_version": {
+        "android_version_name": "1.1.1",
+        "embedded_config_version": "1.1.0.1",
+        "revision": 774472
+      },
+      "interpretation": "包内规则集包含不同历史规则；本范围只描述对应规则集，当前生效状态未指定。"
     }
   ]
 }

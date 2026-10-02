@@ -1,6 +1,6 @@
 {
-  "knowledge_version": "0.1.0",
-  "definition_version": "0.4.0",
+  "knowledge_version": "0.2.0",
+  "definition_version": "0.5.0",
   "game_version": null,
   "scope_ref": "scope.cn.wanxiang.undated",
   "catalogs": {
@@ -8,10 +8,13 @@
       "record_count": 1
     },
     "entities/abilities/catalog.json": {
-      "record_count": 145
+      "record_count": 167
     },
     "entities/abilities/milestones.json": {
-      "record_count": 255
+      "record_count": 270
+    },
+    "entities/cards/derived.json": {
+      "record_count": 326
     },
     "entities/cards/effects.json": {
       "record_count": 98
@@ -38,7 +41,7 @@
       "record_count": 14
     },
     "entities/statuses/catalog.json": {
-      "record_count": 4
+      "record_count": 25
     },
     "entities/talents/catalog.json": {
       "record_count": 258
@@ -56,16 +59,28 @@
       "record_count": 1
     },
     "relations/knowledge.json": {
-      "record_count": 872
+      "record_count": 1708
     },
     "rules/combat/basic.json": {
       "record_count": 8
     },
+    "rules/combat/scoped.json": {
+      "record_count": 1
+    },
     "rules/economy/basic.json": {
       "record_count": 12
     },
+    "rules/economy/scoped.json": {
+      "record_count": 14
+    },
     "rules/match/basic.json": {
       "record_count": 7
+    },
+    "rules/match/scoped.json": {
+      "record_count": 4
+    },
+    "rules/mechanics/chessplayers.json": {
+      "record_count": 3
     },
     "rules/mechanics/events.json": {
       "record_count": 9
@@ -74,32 +89,54 @@
       "record_count": 7
     },
     "rules/modes/catalog.json": {
-      "record_count": 4
-    },
-    "strategies/lineups.json": {
       "record_count": 5
     },
+    "rules/modes/scoped.json": {
+      "record_count": 17
+    },
+    "strategies/archetypes.json": {
+      "record_count": 18
+    },
+    "strategies/core-variants.json": {
+      "record_count": 4
+    },
+    "strategies/insights.json": {
+      "record_count": 13
+    },
+    "strategies/lineups.json": {
+      "record_count": 18
+    },
+    "strategies/resource-cycles.json": {
+      "record_count": 18
+    },
     "strategies/slots.json": {
-      "record_count": 35
+      "record_count": 104
     },
     "versions/scopes.json": {
-      "record_count": 1
+      "record_count": 7
     }
   },
   "coverage": {
-    "hero_cards_with_effect_summary": 16,
-    "hero_combat_skills_with_summary": 17,
-    "hero_skill_milestones_with_summary": 51,
-    "equipment_with_effect_summary": 40,
-    "talents_with_effect_summary": 48,
-    "effect_cards_with_effect_summary": 32,
+    "hero_cards_with_effect_summary": 85,
+    "hero_combat_skills_with_summary": 85,
+    "hero_skill_milestones_with_summary": 255,
+    "equipment_with_effect_summary": 73,
+    "talents_with_effect_summary": 258,
+    "effect_cards_with_effect_summary": 98,
     "chessplayers_with_ability_summary": 20,
-    "secret_reward_cards_with_summary": 28
+    "derived_content_definitions": 326,
+    "special_units_with_detailed_records": 12,
+    "special_unit_skill_milestones": 15,
+    "lineup_templates": 18,
+    "resource_cycles": 18,
+    "strategy_insights": 13,
+    "core_strategy_variants": 4
   },
   "limitations": [
-    "378张主目录卡牌尚未详述效果",
-    "具体游戏版本、各模式可用池和实际结算优先级未指定",
-    "钻石狂潮和巅峰试炼完整规则未详述",
-    "暂无胜率、热门度和版本强度评价"
+    "具体平衡版本、各模式可用池与实际结算优先级未统一指定",
+    "当前全等级商店与锦囊概率、升级经验/费用及完整扣血表未确定",
+    "融合技能部分公式、棋手部分永久强化/分阶段计数及特殊单位成长仍未确定",
+    "钻石当前房间门槛、奖池比例、排位计分及巅峰试炼当前完整规则未确定",
+    "暂无胜率、热门度与版本强度统计"
   ]
 }

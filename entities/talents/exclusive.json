@@ -1,5 +1,5 @@
 {
-  "knowledge_version": "0.1.0",
+  "knowledge_version": "0.2.0",
   "scope_id": "scope.cn.wanxiang.undated",
   "entries": [
     {
@@ -8,7 +8,8 @@
       "player_ref": "player.10",
       "ability_ref": "ability.player.10.3",
       "unlock_level": 6,
-      "summary": "每回合第1张打出的效果牌结算2次。"
+      "summary": "每回合打出首张效果牌：总共结算2次效果。",
+      "definition_ref": "card.derived.661009"
     },
     {
       "id": "talent.exclusive.player.11",
@@ -16,7 +17,8 @@
       "player_ref": "player.11",
       "ability_ref": "ability.player.11.3",
       "unlock_level": 6,
-      "summary": "小鹿等级加30并获得小鹿的庇护。"
+      "summary": "专属天赋生效：增加30级，同时取得1件小鹿的庇护。",
+      "definition_ref": "card.derived.661106"
     },
     {
       "id": "talent.exclusive.player.20",
@@ -24,7 +26,8 @@
       "player_ref": "player.20",
       "ability_ref": "ability.player.20.3",
       "unlock_level": 6,
-      "summary": "从3种枫叶舞强化中选1。"
+      "summary": "专属天赋使用：从3项中选择1项。",
+      "definition_ref": "card.derived.610010"
     },
     {
       "id": "talent.exclusive.player.21",
@@ -32,7 +35,8 @@
       "player_ref": "player.21",
       "ability_ref": "ability.player.21.3",
       "unlock_level": 6,
-      "summary": "购买商店英雄留下镜像复制，不推进秘技任务。"
+      "summary": "购买商店英雄牌后：留下1个购买英雄的镜像复制；该复制不推进秘技任务。",
+      "definition_ref": "card.derived.662107"
     },
     {
       "id": "talent.exclusive.player.22",
@@ -40,7 +44,8 @@
       "player_ref": "player.22",
       "ability_ref": "ability.player.22.3",
       "unlock_level": 6,
-      "summary": "开战随机传送临时等级100的英雄，无卡牌效果；此等级每回合加40。"
+      "summary": "战斗开始；每回合数值增长：基础为100临时等级，此等级每回合加40；传送英雄没有卡牌效果。",
+      "definition_ref": "card.derived.662206"
     },
     {
       "id": "talent.exclusive.player.24",
@@ -48,7 +53,8 @@
       "player_ref": "player.24",
       "ability_ref": "ability.player.24.3",
       "unlock_level": 6,
-      "summary": "小菟每提供5级增益追加随机属性：攻速15%/双吸血2%/双抗2；累计每提供65级再获小菟送福。"
+      "summary": "小菟累计给予等级：每提供5级额外随机给攻速15%、双吸血2%或双防2点之一；通过助力累计提供65级再得小菟送福。",
+      "definition_ref": "card.derived.662407"
     },
     {
       "id": "talent.exclusive.player.25",
@@ -56,7 +62,8 @@
       "player_ref": "player.25",
       "ability_ref": "ability.player.25.3",
       "unlock_level": 6,
-      "summary": "惊鸿调可演奏次数增加3。"
+      "summary": "专属生效：新增3次惊鸿调演奏机会。",
+      "definition_ref": "card.derived.662502"
     },
     {
       "id": "talent.exclusive.player.31",
@@ -64,7 +71,8 @@
       "player_ref": "player.31",
       "ability_ref": "ability.player.31.3",
       "unlock_level": 6,
-      "summary": "获得梦幻引擎替换商店；棋手生命≤30且战斗败北可再次获得。"
+      "summary": "专属生效；生命不高于30时战败：先得梦幻引擎1张；生命条件满足且战败可再次取得引擎。",
+      "definition_ref": "card.derived.663108"
     },
     {
       "id": "talent.exclusive.player.32",
@@ -72,7 +80,8 @@
       "player_ref": "player.32",
       "ability_ref": "ability.player.32.3",
       "unlock_level": 6,
-      "summary": "从两种英雄强化选1。"
+      "summary": "专属选择：二选一：全体收益或人数最多的同品阶群体收益。",
+      "definition_ref": "card.derived.610013"
     },
     {
       "id": "talent.exclusive.player.33",
@@ -80,7 +89,8 @@
       "player_ref": "player.33",
       "ability_ref": "ability.player.33.3",
       "unlock_level": 6,
-      "summary": "得到奇才1张，可指定英雄并获其对应牌4张。"
+      "summary": "专属生效：取得奇才1张，奇才提供定向4张英雄牌。",
+      "definition_ref": "card.derived.663307"
     },
     {
       "id": "talent.exclusive.player.34",
@@ -88,7 +98,8 @@
       "player_ref": "player.34",
       "ability_ref": "ability.player.34.3",
       "unlock_level": 6,
-      "summary": "从3种增益中选1。"
+      "summary": "专属选择：选择其中1个，三项对应寒潮之势、不朽坚冰、雪暴时刻。",
+      "definition_ref": "card.derived.663405"
     },
     {
       "id": "talent.exclusive.player.35",
@@ -96,7 +107,8 @@
       "player_ref": "player.35",
       "ability_ref": "ability.player.35.3",
       "unlock_level": 6,
-      "summary": "选1种机关强化方案，共3候选。"
+      "summary": "专属选择：从热能陷阱强化、电磁弹簧强化、等离子屏障强化中选1。",
+      "definition_ref": "card.derived.663502"
     },
     {
       "id": "talent.exclusive.player.36",
@@ -104,7 +116,8 @@
       "player_ref": "player.36",
       "ability_ref": "ability.player.36.3",
       "unlock_level": 6,
-      "summary": "开战复制敌方最高等级英雄，临时加入己方战场。"
+      "summary": "战斗开始：复制为己方临时参战英雄。",
+      "definition_ref": "card.derived.663607"
     },
     {
       "id": "talent.exclusive.player.38",
@@ -112,7 +125,8 @@
       "player_ref": "player.38",
       "ability_ref": "ability.player.38.3",
       "unlock_level": 6,
-      "summary": "获得更强的永恒时之回环，可记录12张英雄或效果牌。"
+      "summary": "专属生效：获得永恒时之回环1张；记录容量提高到12张。",
+      "definition_ref": "card.derived.663805"
     },
     {
       "id": "talent.exclusive.player.39",
@@ -120,7 +134,8 @@
       "player_ref": "player.39",
       "ability_ref": "ability.player.39.3",
       "unlock_level": 6,
-      "summary": "强化卦象：节每回合额外能量4；丰每回合临时刷新8次。"
+      "summary": "专属强化卦象：节每回合额外获得4能量；丰每回合取得8次临时刷新；与基础数值替换或叠加的关系未明。",
+      "definition_ref": "card.derived.663905"
     },
     {
       "id": "talent.exclusive.player.40",
@@ -128,7 +143,8 @@
       "player_ref": "player.40",
       "ability_ref": "ability.player.40.3",
       "unlock_level": 6,
-      "summary": "获打成一片1张。"
+      "summary": "专属生效：获得打成一片1张。",
+      "definition_ref": "card.derived.664005"
     },
     {
       "id": "talent.exclusive.player.41",
@@ -136,7 +152,8 @@
       "player_ref": "player.41",
       "ability_ref": "ability.player.41.3",
       "unlock_level": 6,
-      "summary": "封神一瞬目标开战获得双吸血30%和15秒免控，仍可被压制。"
+      "summary": "战斗开始：双吸血各增加30%；前15秒免疫控制，但压制不被免疫。",
+      "definition_ref": "card.derived.664108"
     },
     {
       "id": "talent.exclusive.player.43",
@@ -144,7 +161,8 @@
       "player_ref": "player.43",
       "ability_ref": "ability.player.43.3",
       "unlock_level": 6,
-      "summary": "颁布1个全员生效决策，自己另获特权增益。"
+      "summary": "专属选择并颁布：选择1种特权决策；全体受到基础效果，颁布者另享特权；持续期未在此牌明确。",
+      "definition_ref": "card.derived.610006"
     },
     {
       "id": "talent.exclusive.player.50",
@@ -152,7 +170,8 @@
       "player_ref": "player.50",
       "ability_ref": "ability.player.50.3",
       "unlock_level": 6,
-      "summary": "攻击力提升比例为己方英雄等级总和×0.5%。"
+      "summary": "专属生效：攻击提高百分数为己方英雄等级总和乘0.5。",
+      "definition_ref": "card.derived.665005"
     },
     {
       "id": "talent.exclusive.player.51",
@@ -160,7 +179,8 @@
       "player_ref": "player.51",
       "ability_ref": "ability.player.51.3",
       "unlock_level": 6,
-      "summary": "直接获大改装1张；开战飞行器连接英雄随机增加自身等级10%至30%的临时等级。"
+      "summary": "专属生效；战斗开始：先得灵异探测大改装1张；每次开战连接英雄再获得自身等级10%至30%的随机临时等级。",
+      "definition_ref": "card.derived.665105"
     }
   ]
 }

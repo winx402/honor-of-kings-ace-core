@@ -1,0 +1,258 @@
+{
+  "knowledge_version": "0.2.0",
+  "scope_id": "scope.cn.wanxiang.undated",
+  "entries": [
+    {
+      "id": "archetype.entry-team",
+      "name": "登场与出牌永久均养",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "英雄牌/登场事件",
+      "primary_resources": "永久等级",
+      "distribution_pattern": "团队成长后转移输出核心",
+      "template_refs": [
+        "lineup.three-kingdom-entry"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.prep-core",
+      "name": "整备核心均养",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "整备/核心升级",
+      "primary_resources": "永久等级与战斗临时等级",
+      "distribution_pattern": "多人口覆盖或终局收束",
+      "template_refs": [
+        "lineup.sunset-ready"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.totem-carry",
+      "name": "保图腾持续输出",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "图腾数量/存活/普攻",
+      "primary_resources": "永久等级与战斗临时等级",
+      "distribution_pattern": "保护图腾直到持续射手接管",
+      "template_refs": [
+        "lineup.river-totems"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.coin-kill",
+      "name": "古币闪现击杀反馈",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "古币/闪现击杀",
+      "primary_resources": "永久等级",
+      "distribution_pattern": "首杀带来后续成长",
+      "template_refs": [
+        "lineup.heluocoins"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.tactics",
+      "name": "效果牌与战术成长",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "购买/合成/使用效果牌",
+      "primary_resources": "永久等级与本回合护盾/法力条件",
+      "distribution_pattern": "按装备最多目标集中输出",
+      "template_refs": [
+        "lineup.zhulu-tactics"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.entry-loop",
+      "name": "登场招募概率倒转",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "登场→整备→招募下一张牌",
+      "primary_resources": "英雄牌与永久等级",
+      "distribution_pattern": "随机续接，循环有概率和时间约束",
+      "template_refs": [
+        "lineup.three-kingdom-loop"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.low-tier-merge",
+      "name": "低阶同品阶合成与夺取",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "三阶合成/邻近夺取/受伤",
+      "primary_resources": "永久等级与永久生命",
+      "distribution_pattern": "同阶均养再向承伤核心集中",
+      "template_refs": [
+        "lineup.low-tier-pig"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.sacrifice-carry",
+      "name": "牺牲临时等级单核",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "带牺牲英雄阵亡",
+      "primary_resources": "战斗临时等级",
+      "distribution_pattern": "牺牲顺序→单核输出",
+      "template_refs": [
+        "lineup.sacrifice-lixin"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.temporary-copy",
+      "name": "小队等级复制",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "随机永久成长/整备复制",
+      "primary_resources": "临时等级同步",
+      "distribution_pattern": "真实等级限制临时放大",
+      "template_refs": [
+        "lineup.heleukong"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.temporary-summon",
+      "name": "专属临时增援同步",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "六级专属开团增援",
+      "primary_resources": "临时战斗体与同步",
+      "distribution_pattern": "升级门槛与真实等级双条件",
+      "template_refs": [
+        "lineup.qiaoxi-sikong"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.coin-resurrection",
+      "name": "古币计数复生",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "本回合古币使用/牺牲",
+      "primary_resources": "复生次数与临时等级",
+      "distribution_pattern": "逐轮过阈值，不是永久无限复生",
+      "template_refs": [
+        "lineup.coin-mulan"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.prep-summon",
+      "name": "整备召唤续航",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "整备/水域/召唤/普攻",
+      "primary_resources": "永久成长与场面单位",
+      "distribution_pattern": "存活召唤、死亡爆发、吞召唤分支有冲突",
+      "template_refs": [
+        "lineup.summon-pool"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.music-card-cycle",
+      "name": "指法与出牌续接",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "三张合格牌/有限重奏",
+      "primary_resources": "等级或随机英雄牌",
+      "distribution_pattern": "组合条件与记录顺序决定收益",
+      "template_refs": [
+        "lineup.yuhuan-sunset"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.destroy-totem-shield",
+      "name": "毁图永久成长与破盾伤害",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "每轮毁图/护盾被击破",
+      "primary_resources": "永久等级与近身法伤",
+      "distribution_pattern": "主动放弃图腾存活换核心成长",
+      "template_refs": [
+        "lineup.liubang-shield"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.shield-sacrifice",
+      "name": "护盾转生命与牺牲爆发",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "获盾/阵亡/复生",
+      "primary_resources": "最大生命与针对性伤害",
+      "distribution_pattern": "牺牲时点和最高等级目标约束",
+      "template_refs": [
+        "lineup.haiyue-shield-sacrifice"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.spell-growth",
+      "name": "多次施法永久成长",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "每名英雄累计施法",
+      "primary_resources": "永久等级",
+      "distribution_pattern": "战斗时间与回蓝先成立",
+      "template_refs": [
+        "lineup.spell-permanent"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.event-single-carry",
+      "name": "整备开团永久单养",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "己方英雄事件",
+      "primary_resources": "永久等级",
+      "distribution_pattern": "跨阵营按事件组装",
+      "template_refs": [
+        "lineup.hanxin-events"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    },
+    {
+      "id": "archetype.card-replay",
+      "name": "有限记录与随机重放",
+      "claim_kind": "strategic_inference",
+      "game_version": null,
+      "scope_id": "scope.cn.wanxiang.undated",
+      "trigger_basis": "本轮记录/下一轮重触",
+      "primary_resources": "卡牌效果与资源",
+      "distribution_pattern": "记录容量、顺序、监听语义约束",
+      "template_refs": [
+        "lineup.sunxiaobin-replay"
+      ],
+      "classification_note": "机制资源循环分类，不代表官方阵容命名、当前强度或固定七人。"
+    }
+  ]
+}
