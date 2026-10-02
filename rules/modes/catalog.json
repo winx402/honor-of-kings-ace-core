@@ -73,9 +73,26 @@
         "白银段位阶段开放每场一次天赋刷新；具体边界见规则条目。"
       ],
       "unknowns": [
-        "完整段位梯度、分数门槛和名次得分公式",
-        "组队分数分配规则",
-        "当期赛季的阵营禁用与队列限制"
+        "当前完整段位梯度、分数门槛与名次基础分",
+        "当前采用的组队计分、加成组合及段位保护边界",
+        "当期赛季阵营禁用、棋手选择与队列限制"
+      ],
+      "rule_variants": [
+        {
+          "scope_ref": "scope.cn.client.pack774472",
+          "rule_refs": [
+            "rule.ranked.season.pack774472",
+            "rule.ranked.score_components.pack774472",
+            "rule.ranked.protection.pack774472",
+            "rule.ranked.chessplayer_selection.pack774472",
+            "rule.ranked.starlight_invitation.pack774472",
+            "rule.ranked.shared_score.pack774472",
+            "rule.ranked.shared_eligibility.pack774472",
+            "rule.ranked.room_scoring_choice.pack774472",
+            "rule.ranked.season_badge.pack774472",
+            "rule.ranked.champion_lineup.pack774472"
+          ]
+        }
       ]
     },
     {
@@ -118,7 +135,9 @@
             "rule.diamond.event.pack774472",
             "rule.diamond.bid.pack774472",
             "rule.diamond.resources.pack774472",
-            "rule.diamond.initial_purchase.pack774472"
+            "rule.diamond.initial_purchase.pack774472",
+            "rule.diamond.profit_progression.pack774472",
+            "rule.diamond.weekly_ranking.pack774472"
           ]
         },
         {

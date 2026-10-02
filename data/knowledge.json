@@ -114,6 +114,9 @@
     },
     "versions/scopes.json": {
       "record_count": 7
+    },
+    "rules/modes/ranked-and-season.json": {
+      "record_count": 12
     }
   },
   "coverage": {

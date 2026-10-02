@@ -1,0 +1,268 @@
+{
+  "knowledge_version": "0.2.0",
+  "entries": [
+    {
+      "id": "rule.ranked.season.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "排位赛季",
+      "summary": "每个赛季开启新的排位周期，赛季结束结算；新赛季对既有段位进行折算继承。",
+      "values": {
+        "inheritance_formula": null
+      },
+      "unknowns": [
+        "赛季起止、段位折算完整表和当前启用规则。"
+      ]
+    },
+    {
+      "id": "rule.ranked.score_components.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "排位计分组成",
+      "summary": "排位总分由名次对应的基础得分与各类加成得分组成。",
+      "values": {
+        "components": [
+          "placement_base_score",
+          "bonus_score"
+        ],
+        "base_score_by_place": null,
+        "bonus_combination_formula": null
+      },
+      "unknowns": [
+        "完整名次基础分表、加成的组合顺序与取整。"
+      ]
+    },
+    {
+      "id": "rule.ranked.protection.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "段位保护",
+      "summary": "该规则集设置大段保护，并在最强王者1000、2000、3000分开启掉段保护；同时规定最强王者3000分以上不再享受掉段保护。两项规则的覆盖关系未指定。",
+      "values": {
+        "king_protection_activation_scores": [
+          1000,
+          2000,
+          3000
+        ]
+      },
+      "unknowns": [
+        "大段保护在最强王者边界的完整范围",
+        "恰好3000分的适用边界、超过3000后是否保留既有保护",
+        "掉段保护具体影响积分还是段位、各小段晋升门槛"
+      ]
+    },
+    {
+      "id": "rule.ranked.chessplayer_selection.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "棋手选择",
+      "summary": "棋手选择分自由选择和特邀棋手。自由选择使用可用棋手；特邀模式为各玩家随机提供三名棋手。选择特邀或随机棋手参赛时，开局额外取得特邀天赋；使用特邀棋手取得前三时另有特邀奖励。",
+      "values": {
+        "invited_candidates_per_player": 3,
+        "invited_extra_talent": true,
+        "invited_reward_places": [
+          1,
+          2,
+          3
+        ]
+      },
+      "unknowns": [
+        "各段位使用哪种选择模式、随机棋手是否同享普通特邀结算奖励、候选抽样规则。"
+      ]
+    },
+    {
+      "id": "rule.ranked.starlight_invitation.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "星彩特邀",
+      "summary": "特邀模式可能出现星彩特邀，特邀天赋替换为星彩特邀天赋；选特邀或随机棋手并取得前三时，额外奖励为星彩秘宝。该变体在钻石段位开放，出现概率随段位提升。",
+      "values": {
+        "unlock_rank": "永恒钻石",
+        "chance_by_rank": null,
+        "reward_places": [
+          1,
+          2,
+          3
+        ]
+      },
+      "unknowns": [
+        "各段位出现概率、天赋与奖励完整候选池。"
+      ]
+    },
+    {
+      "id": "rule.ranked.shared_score.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "有分同享结算",
+      "summary": "启用有分同享时，队员各自结算得分与队伍中名次最高者的对局结算得分一致。",
+      "values": {
+        "score_reference": "highest_placed_team_member",
+        "average_score": false
+      },
+      "unknowns": [
+        "与个人加成、段位保护、特殊赛制的组合关系。"
+      ]
+    },
+    {
+      "id": "rule.ranked.shared_eligibility.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "有分同享资格",
+      "summary": "最强王者以下组排可不限次数享有分同享；含王者0—4999分玩家的队伍需满足亲密度条件，且房间玩家之间须两两满足；含王者5000分及以上玩家时不可启用。",
+      "values": {
+        "king_score_disabled_from": 5000,
+        "pairwise_intimacy_required": true,
+        "intimacy_tiers": [
+          {
+            "intimacy": 500,
+            "king_score_threshold": 500,
+            "comparison_term": "以下",
+            "king_score_boundary_inclusive": null,
+            "intimacy_boundary_inclusive": null
+          },
+          {
+            "intimacy": 1000,
+            "king_score_threshold": 1000,
+            "comparison_term": "以下",
+            "king_score_boundary_inclusive": null,
+            "intimacy_boundary_inclusive": null
+          },
+          {
+            "intimacy": 3000,
+            "king_score_threshold": 3000,
+            "comparison_term": "以下",
+            "king_score_boundary_inclusive": null,
+            "intimacy_boundary_inclusive": null
+          },
+          {
+            "intimacy": 5000,
+            "king_score_threshold": 5000,
+            "comparison_term": "以下",
+            "king_score_boundary_inclusive": null,
+            "intimacy_boundary_inclusive": null
+          }
+        ]
+      },
+      "unknowns": [
+        "王者积分恰好500、1000、3000分是否满足对应档位，以及亲密度恰好阈值的处理",
+        "分档资格说明与5000分及以上明确禁用规定的覆盖关系",
+        "混合段位队伍逐对计算的完整口径"
+      ]
+    },
+    {
+      "id": "rule.ranked.room_scoring_choice.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "房间计分方式",
+      "summary": "房主可选择按队伍或个人计分；该规则集另描述王者以下组排使用有分同享，王者且不足5000分时依亲密度开启。",
+      "values": {
+        "room_choices": [
+          "team",
+          "individual"
+        ]
+      },
+      "unknowns": [
+        "房主选择与低段位默认有分同享之间的优先关系、具体房间适用范围。"
+      ]
+    },
+    {
+      "id": "rule.ranked.season_badge.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "赛季上分徽章",
+      "summary": "新赛季按上季结算段位提供储蓄分；取得前三时，从储蓄中领取对应额外加分，直到储蓄耗尽。",
+      "values": {
+        "banked_score_by_previous_rank": {
+          "秩序白银": 100,
+          "荣耀黄金": 200,
+          "尊贵铂金": 300,
+          "永恒钻石": 600,
+          "至尊星耀": 1000,
+          "最强王者": 1400,
+          "万象王者": 1900
+        },
+        "withdrawal_by_place": {
+          "1": 50,
+          "2": 40,
+          "3": 30
+        }
+      },
+      "unknowns": [
+        "储蓄不足单次奖励时的尾数处理、与其他加成的组合顺序。"
+      ]
+    },
+    {
+      "id": "rule.ranked.champion_lineup.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "queue.ranked",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "夺冠阵容保存",
+      "summary": "星耀及以上段位，在万象大赛排位夺冠后可于结算界面保存本局夺冠阵容。取得更强力的夺冠阵容后，主动保存会替换原阵容；可用已保存阵容与其他玩家的夺冠阵容切磋，胜负记录保存在夺冠阵容页面。",
+      "values": {
+        "minimum_rank": "至尊星耀",
+        "required_place": 1,
+        "saving_stronger_lineup_replaces_existing": true,
+        "automatic_replacement": false,
+        "duel_with_other_champion_lineups": true,
+        "duel_win_loss_recorded": true
+      },
+      "unknowns": [
+        "可保存数量、更强力的判定方式、是否包含装备与完整成长状态",
+        "阵容切磋的完整匹配规则及是否影响排位分"
+      ]
+    },
+    {
+      "id": "rule.diamond.profit_progression.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "mode.diamond_frenzy",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "钻石盈利阶段",
+      "summary": "钻石狂潮设置七个阶段，以累计盈利钻石数推进阶段；每个新赛季重置该模式段位与盈利进度。",
+      "values": {
+        "stages": 7,
+        "reset_profit_on_new_season": true
+      },
+      "unknowns": [
+        "各阶段盈利门槛、净盈利计算与返场/打赏支出的计入方式。"
+      ]
+    },
+    {
+      "id": "rule.diamond.weekly_ranking.pack774472",
+      "scope_id": "scope.cn.client.pack774472",
+      "mode_ref": "mode.diamond_frenzy",
+      "claim_kind": "rule_fact",
+      "current_applicability": "unspecified",
+      "title": "钻石收益周榜",
+      "summary": "钻石收益周榜统计钻石狂潮所得收益，系统产出不计入；每周一零点开始结算，之后重新随机分组，分组后参与玩法结算可进入榜单。",
+      "values": {
+        "settlement_weekday": "Monday",
+        "settlement_local_time": "00:00",
+        "system_generated_diamonds_counted": false,
+        "regroup_after_settlement": true
+      },
+      "unknowns": [
+        "榜单时区、钻石收益取净值还是其他口径、分组抽样。"
+      ]
+    }
+  ]
+}
